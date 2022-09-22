@@ -7,23 +7,23 @@
 
             // pensa un número
             numeroPensat = Integer.parseInt(args[0]);
-            System.out.print("El número pensat és " + numeroPensat);
+            System.out.print("El número pensat és " + numeroPensat + "\n");
 
             // Multiplica'l per 3
             numero = numeroPensat * 3;
-            System.out.print("Quan el multipliques per 3 obtens " + numero);
+            System.out.print("Quan el multipliques per 3 obtens " + numero + "\n");
 
             // Suma-li 6
             numero = numero + 6;
-            System.out.print("Quan li sumes 6 arriba a " + numero);
+            System.out.print("Quan li sumes 6 arriba a " + numero + "\n");
 
             // divideix-ho tot per 3
             numero = numero / 3;
-            System.out.print("Un cop dividit per 3 queda " + numero);
+            System.out.print("Un cop dividit per 3 queda " + numero +"\n");
 
             // resta-li el número pensat
             numero = numero - numeroPensat;
-            System.out.print("Finalment, en restar-li el valor inicial, queda " + numero);
+            System.out.print("Finalment, en restar-li el valor inicial, queda " + numero + "\n");
 
             // compara el resultat
             System.out.println("A que el resultat és 2?");
