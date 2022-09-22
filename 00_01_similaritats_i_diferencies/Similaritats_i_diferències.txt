@@ -1,0 +1,32 @@
+Títol: Similaritats i diferències
+Autoria: Javier García Vera 22/09/2022
+Introducció: Aquest excercici consisteix en comparar unes mateixes ordres donades amb diferents llenguatjes de programació i un pseudo-llenguatje
+
+Pregunta 1. Què fa el programa?
+
+Aquest programa calcula l'àrea d'un cercle
+
+Pregunta 2. Elements comuns
+
+El "print o escriu" es mostra de diverses maneres però a tots els programes, els càlculs també es representen de formes molt similars
+
+Pregunta 3. Entrada/sortida
+
+Pseudocodi:Obtenir dada:llegeix radi Mostra resultat: escriu "L'àrea és ", àrea
+
+C:Obtenir dada:scanf("%f", &radi); Mostra resultat:printf("L'àrea és %f\n", area);
+
+Python:Obtenir dada:linia = input("Introduïu el radi: ") Mostra resultat:print(f"L'àrea és {area}")
+
+Java:Obtenir dada: BufferedReader reader = new BufferedReader(newInputStreamReader(System.in));String linia = reader.readLine();
+Donar resultat:System.out.println("L'àrea és " + area);
+
+Kotlin: Obtenir dada:val reader = BufferedReader(InputStreamReader(System.`in`)) Mostrar resultat: println("L'àrea és $area")
+
+Pregunta 4. Variables
+
+Una altra variable es π i una altra es radi
+
+Pregunta 5. Preferència
+
+La versió Python, ja que sembla la més simple a primera vista
