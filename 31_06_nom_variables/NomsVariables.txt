@@ -1,0 +1,14 @@
+la teva talla de sabates
+talla_sabates
+la data del teu aniversari
+aniversari
+el teu nom
+nom
+el color de fons del teu escriptori
+fons_esc
+si t'agrada o no el gust de la llimona
+llimona
+la lletra de la teva cançó preferida
+lletra_canco (podria ser lletracanço però per evitar possibles problemes es millor canco)
+la llista de pel·lícules i llibres que més t'han marcat
+pelis_marcat
