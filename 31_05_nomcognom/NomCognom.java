@@ -8,6 +8,6 @@ public class NomCognom {
         System.out.println("Primer cognom?");
         String cognom = Entrada.readLine();
         
-        System.out.println("Ei" + nom +" ,tinc una amiga que també és " + cognom +".");
+        System.out.println("Ei" + nom + ",tinc una amiga que també és " + cognom +".");
         }
      }
