@@ -41,3 +41,13 @@ pates_renat==4 true;
     estem a més de 28 graus
 
 temperatura>28 false;
+
+    he tret una A a l'examen
+    
+nota_examen==notaA false; /*tenim unes variables pre-fetes que són char notaA i char nota_examen
+
+    la meva germana es major que jo
+    
+edat_germana>edat false;
+
+
