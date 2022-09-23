@@ -1,3 +1,13 @@
+/*
+     * Aquest programa mostra capacitats d'endevinació
+
+     *
+
+     * Per executar-ho, fes
+
+     * $ java EndevinaNombre 42
+
+     */ 
  public class EndevinaNombre {
 
         public static void main(String[] args) {
