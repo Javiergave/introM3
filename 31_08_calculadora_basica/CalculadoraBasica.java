@@ -1,3 +1,12 @@
+/*
+ * Aquest programa implementa una calculadora bàsica
+ *
+ * Demana dos nombres per entrada estàndard i mostra el
+ * resultat de sumar-los, restar-li el segon al primer, multiplicar-los,
+ * dividir el primer entre el segon.
+ *
+ * El programa no controla valors no adequats d'entrada
+ */
 public class CalculadoraBasica {
     public static void main(String[] args) {
 
