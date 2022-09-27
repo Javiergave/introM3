@@ -1,9 +1,9 @@
 
 
     la Clara és més jove que tu
-boolean clara_es_mes_jove_que_jo = !(edatClara>edatMeva)
+boolean clara_es_mes_jove_que_jo = edatClara<edatMeva
     la Clara i el Marc són més joves que tu
-boolean claraimarc_mes_joves_que_jo = !(edatClara>edatMeva && edatMarc>edatMeva)
+boolean claraimarc_mes_joves_que_jo = edatClara<edatMeva && edatMarc<edatMeva)
     la Clara és més jove que tu i tu ets més jove que el Marc
 boolean clara_mes_jove_marc_mes_vell_que_jo = edatClara<edatMeva && edatMarc>edatMeva
     la Clara no és més jove que el Marc
