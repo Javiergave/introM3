@@ -1,0 +1,14 @@
+Posa parèntesis i calcula el resultat final de les següents expressions.
+
+
+
+    5 + 4 * 3: 5 + (4 * 3) = 17
+    
+    -5 * 4 + -3: (-5 * 4) - 3 = -23
+
+    true && false || ! true: (true && false) || !true = false
+
+    false && (10 > 3) || ! (4 > 5): false && ( 10 > 3 ) || ! ( 4 > 5 ) = true
+
+    (false == (5 > 4)) && (false == ! true) || (false != true): (false == (5>4)) && (false == !true) || (false!=true) = true
+
