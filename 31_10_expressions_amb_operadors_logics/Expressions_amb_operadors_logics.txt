@@ -1,16 +1,38 @@
 
 
     la Clara és més jove que tu
+    
 boolean clara_es_mes_jove_que_jo = edatClara<edatMeva
+
     la Clara i el Marc són més joves que tu
+    
 boolean claraimarc_mes_joves_que_jo = edatClara<edatMeva && edatMarc<edatMeva)
+
     la Clara és més jove que tu i tu ets més jove que el Marc
+    
 boolean clara_mes_jove_marc_mes_vell_que_jo = edatClara<edatMeva && edatMarc>edatMeva
+
     la Clara no és més jove que el Marc
+    
 boolean clara_no_mes_jove_que_marc = !(edatClara<edatMarc)
+
     no és cert que el Marc sigui més jove que la Clara
+    
 boolean marcmesjovequeclara = !(edatMarc<edatClara)
+
     Ni el Marc és més jove que la Clara ni tu ets més jove que el Marc
+    
 boolean marcmajorqueclarajomajorquemarc = !(edatMarc<edatClara && edatMarc>edatMeva)
+
     Tu ets més gran que la Clara i el Marc junts o bé la Clara i el Marc tenen la mateixa edat
+    
 boolean jomajorqueclaraimarcoclaraimarcmateixaedat = edatMeva>edatClara+edatMarc || edatClara==edatMarc
+
+    Jo peso més que la Clara i el Marc junts o el mateix que el Joan
+   
+boolean pesomesqueclaraimarcoelmateixquejoan = pesMeu>pesClara+pesMarc || pesMeu == pesJoan
+
+    Ni peso mes que la Clara i el Joan junts ni soc més alt que el Marc
+    
+boolean nopesomesqueclaraijoansocmesaltquemarc = !(pesMeu>pesClara+pesJoan && alçadaMeva>alçadaMarc)
+
