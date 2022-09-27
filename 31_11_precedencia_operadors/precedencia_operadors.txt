@@ -12,3 +12,6 @@ Posa parèntesis i calcula el resultat final de les següents expressions.
 
     (false == (5 > 4)) && (false == ! true) || (false != true): (false == (5>4)) && (false == !true) || (false!=true) = true
 
+    5+2/2>1 && false: (5+(2/2))>1 && false = false
+    
+    -5-5+2*3: -5-(5+(2*3)) = -16
