@@ -13,4 +13,4 @@ la Clara és major d'edat, i tu ets major que el Marc però no major que la Clar
 
 char A = edatClara=>18, B = edatMeva<edatClara, C = edatMeva>edatMarc
 
-A && B && C
+A && (B && C)
