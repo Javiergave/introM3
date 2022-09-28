@@ -13,6 +13,6 @@ Fent servir taules de veritat, comprova que les següents expressions són equiv
     A || true, true
 
     ! (A && B), !A || !B
-
+s
     ! (A || B), !A && !B
 
