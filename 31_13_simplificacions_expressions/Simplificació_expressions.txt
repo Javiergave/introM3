@@ -1,0 +1,18 @@
+Fent servir taules de veritat, comprova que les següents expressions són equivalents:
+
+    true && A, A = true
+
+    A && A, A = true
+
+    A || false, A = true
+
+    A || A, A = true
+
+    A && false, false
+
+    A || true, true
+
+    ! (A && B), !A || !B
+
+    ! (A || B), !A && !B
+
