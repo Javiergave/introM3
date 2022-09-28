@@ -3,14 +3,43 @@ la Clara és major d'edat o bé la Clara és més jove que el Marc
 char A = edatClara>=18, B = edatClara<edatMarc 
 A || B
 
+n	A	    B	    A||B
+1	cert	cert	cert
+2	cert	false	cert
+3	false	cert	cert
+4	false	false	false
+
+
 Al menys un de vosaltres, la Clara, el Marc o tu, és major d'edat
 
 char A = edatClara>=18, B = edatMarc>=18, C = edatMeva>= 18
 
 A || B || C
 
+n	A	    B	    C 	    A||B||C
+1	cert	cert	cert	cert
+2	cert	false	cert	cert
+3	false	cert	cert	cert
+4	false	false	cert	cert
+5	cert	cert	false	cert
+6	cert	false	false	cert
+7	false	cert	false	cert
+8	false	false	false	false
+
+
 la Clara és major d'edat, i tu ets major que el Marc però no major que la Clara
 
 char A = edatClara>=18, B = edatMeva<edatClara, C = edatMeva>edatMarc
 
 A && (B && C)
+
+n	A	B	C 	A&& (B&&C)
+1	cert	cert	cert	cert
+2	cert	false	cert	false
+3	false	cert	cert	false
+4	false	false	cert	false
+5	cert	cert	false	false
+6	cert	false	false	false
+7	false	cert	false	false
+8	false	false	false	false
+
