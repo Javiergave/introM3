@@ -1,18 +1,80 @@
 Fent servir taules de veritat, comprova que les següents expressions són equivalents:
 
-    true && A, A = true
+    true && A, A 
+    
+n	A	    true	True && A
+1	cert	cert	cert
+2	cert	cert	cert
+3	false	cert	false
+4	false	cert	false
 
-    A && A, A = true
 
-    A || false, A = true
 
-    A || A, A = true
+    A && A, A 
+    
+n   A	    A	    A && A
+1	cert	false	false
+2	cert	cert	cert
+3	false	cert	false
+4	false	false	cert
+    
+
+    A || false, A 
+
+n	A	    false	A || false
+1	cert	false	cert
+2	cert	false	cert
+3	false	false	false
+4	false	false	false
+
+
+
+    A || A, A 
+
+n	A	    A	    A || A
+1	cert	cert	cert
+2	cert	cert	cert
+3	false	false	false
+4	false	false	false
+
+
 
     A && false, false
+    
+n	A	    false	A && false
+1	cert	false	false
+2	cert	false	false
+3	false	false	false
+4	false	false	false
+    
 
     A || true, true
+    
+n	A	    true	A || true
+1	cert	true	true
+2	cert	true	true
+3	false	true	true
+4	false	true	true
+
+    
 
     ! (A && B), !A || !B
-s
+    
+n	A	    B	    !(A && B) 	!A || !B
+1	cert	cert	false	    false
+2	false	cert	cert	    cert
+3	cert	false	cert	    cert
+4	false	false	cert	    cert
+    
+    
+
     ! (A || B), !A && !B
+
+n	A	    B	    !(A||B)	!A && !B
+1	cert	cert	false	false
+2	false	cert	false	false
+3	cert	false	false	false
+4	false	false	cert	cert
+
+
 
