@@ -22,7 +22,8 @@ boolean marcmesjovequeclara = !(edatMarc<edatClara)
 
     Ni el Marc és més jove que la Clara ni tu ets més jove que el Marc
     
-boolean marcmajorqueclarajomajorquemarc = !(edatMarc<edatClara && edatMarc>edatMeva)
+boolean marcmajorqueclarajomajorquemarc = !(edatMarc < edatClara) && !(edatTeva < edatMarc)
+
 
     Tu ets més gran que la Clara i el Marc junts o bé la Clara i el Marc tenen la mateixa edat
     
