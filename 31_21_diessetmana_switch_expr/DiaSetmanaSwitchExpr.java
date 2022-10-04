@@ -23,7 +23,7 @@ public class DiaSetmanaSwitchExpr {
      System.out.println("A");
      break;
      default :
-     System.out.println("X");
+     System.out.println("Error");
      break;
      }
      
