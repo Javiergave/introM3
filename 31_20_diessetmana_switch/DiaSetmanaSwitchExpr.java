@@ -6,7 +6,7 @@
  *
  * En cas que el nombre introduit no sigui de l'1 al 7 es mostrarà un missatge de "Error"
  */
-public class DiaSetmana {
+public class DiaSetmanaSwitchExpr {
   public static void main(String[] args) {
    int dia = Integer.parseInt(args[0]);
    switch (dia){
