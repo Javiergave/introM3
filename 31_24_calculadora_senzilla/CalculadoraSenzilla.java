@@ -13,8 +13,8 @@ public class CalculadoraSenzilla {
         System.out.println("Operand2?");
         double operand2 =Double.parseDouble(Entrada.readLine());
         
-        // operacio
-        if ((operador=='/')&&(operand2=='0')){
+      
+        if ((operador=='/')&&(operand2==0)){
         System.out.println("No es pot dividir entre 0");
         }else if (operador == '+') {
             double resultat = operand1 + operand2;
