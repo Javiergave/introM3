@@ -6,6 +6,9 @@ System.out.println("Mes?");
 int mes = Integer.parseInt(Entrada.readLine());
 System.out.println("Any?");
 int any = Integer.parseInt(Entrada.readLine());
+if (mes + 1==13){
+    mes=1;
+    }
 System.out.println("Mes anterior "+(mes-1)+"/"+any+" i mes següent "+(mes+1)+"/"+any);
 }
 }
