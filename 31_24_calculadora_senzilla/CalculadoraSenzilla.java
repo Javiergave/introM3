@@ -25,14 +25,13 @@ public class CalculadoraSenzilla {
             System.out.println(operand1 + " * " + operand2 + " = " + resultat);
         } if ((operador == '/')&&(operand2=='0')){
             System.out.println("No es pot dividir entre 0");
-            }
-        else if (operador == '/') {
+        }else if (operador == '/') {
          double resultat = operand1 / operand2;
             System.out.println(operand1 + " / " + operand2 + " = " + resultat);
         } else if (operador == '%') {
          double resultat = operand1 % operand2;
             System.out.println(operand1 + " % " + operand2 + " = " + resultat);
-        } else {
+        } else if ((operador != '+')&&(operador != '-')&&(operador != '/')&&(operador != '*')&&(operador != '%') ){
             System.out.println("L'operador "+operador+" no està disponible");
         }
 
