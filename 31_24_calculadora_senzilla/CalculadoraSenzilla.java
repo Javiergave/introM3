@@ -1,44 +1,41 @@
 /*
- * Aquest programa implementa una calculadora bàsica
- *
- * Demana dos nombres per entrada estàndard i un operand i mostra el
- * resultat de la operació.
- *
- * El programa no controla valors no adequats d'entrada
+ * Aquest programa demana dos operands i un operador binari (+, -, * o /)
+ * i mostra el resultat del càlcul corresponent
  */
 public class CalculadoraSenzilla {
     public static void main(String[] args) {
 
         // obté operands d'entrada
         System.out.println("Operand1?");
-        double Operand1 =Double.parseDouble(Entrada.readLine());
+        double operand1 =Double.parseDouble(Entrada.readLine());
         System.out.println("Operador?");       
         char operador =Entrada.readLine().charAt(0);
         System.out.println("Operand2?");
-        double Operand2 =Double.parseDouble(Entrada.readLine());
+        double operand2 =Double.parseDouble(Entrada.readLine());
         
         // operacio
-        switch (operador){
-        case "+":
-        double resultat = Operand1 + Operand2;
-        break;
-        case "-":
-        double resultat = Operand1 - Operand2;
-        break;
-        case "*":
-        double resultat = Operand1 * Operand2;
-        break;
-        case "/":
-        double resultat = Operand1 / Operand2;
-        break;
-        case "%":
-        double resultat = Operand1 % Operand2;
-        break;
+       if (operador == '+') {
+            double resultat = operand1 + operand2;
+            System.out.println(operand1 + " + " + operand2 + " = " + resultat);
+        } else if (operador == '-') {
+         double resultat = operand1 - operand2;
+            System.out.println(operand1 + " - " + operand2 + " = " + resultat);
+        } else if (operador == '*') {
+         double resultat = operand1 * operand2;
+            System.out.println(operand1 + " * " + operand2 + " = " + resultat);
+        } if ((operador == '/')&&(operand2=='0')){
+            System.out.println("No es pot dividir entre 0");
+            }
+        else if (operador == '/') {
+         double resultat = operand1 / operand2;
+            System.out.println(operand1 + " / " + operand2 + " = " + resultat);
+        } else if (operador == '%') {
+         double resultat = operand1 % operand2;
+            System.out.println(operand1 + " % " + operand2 + " = " + resultat);
+        } else {
+            System.out.println("L'operador "+operador+" no està disponible");
         }
 
-
-        // mostra resultat
-        System.out.println(primerOperand + ""+operador+""+segonOperand + " = " + resultat);
 
     }
 }
