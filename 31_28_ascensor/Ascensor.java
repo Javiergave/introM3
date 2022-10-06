@@ -5,7 +5,7 @@ public class Ascensor {
         String pis = Entrada.readLine();
         System.out.println("botó?");
         String boto = Entrada.readLine();
-        if (((pis.equals("planta baixa"))||(pis.equals("primer pis"))||(pis.equals("segona planta")))&&((boto.equals("pujar un"))||(boto.equals("pujar dos"))||(boto.equals("baixar un"))||(boto.equals("baixar dos")))){
+        if (((pis.equals("planta baixa"))||(pis.equals("primer pis"))||(pis.equals("segon pis")))&&((boto.equals("pujar un"))||(boto.equals("pujar dos"))||(boto.equals("baixar un"))||(boto.equals("baixar dos")))){
             if ((pis.equals("planta baixa"))&&((boto.equals("baixar un"))||((boto.equals("baixar dos"))))){
             System.out.println("error");
             }
