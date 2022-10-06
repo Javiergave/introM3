@@ -1,5 +1,5 @@
 //Aquest programa simula una transacció amb la quantitat a pagar i la pagada, de manera que el programa indiqui si sobren o falten diners.//
-public class Pagaments{
+public class Pagament{
 public static void main(String[] args) {
     System.out.println("Preu?");
         int preu = Integer.parseInt(Entrada.readLine());
