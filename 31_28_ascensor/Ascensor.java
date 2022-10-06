@@ -30,14 +30,13 @@ public class Ascensor {
             if (pis.equals("segon pis")&&(boto.equals("baixar dos"))){
                 System.out.println("planta baixa");
             }
+            
             if (pis.equals("segon pis")&&(boto.equals("baixar un"))){
                 System.out.println("primer pis");
             }
      
         } 
-        if (pis.equals("segon pis")&&(boto.equals("baixar un"))){
-                System.out.println("primer pis");
-            }
+        
    else {
     System.out.println("error");
     }
