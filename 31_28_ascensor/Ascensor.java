@@ -35,6 +35,9 @@ public class Ascensor {
             }
      
         } 
+        if (pis.equals("segon pis")&&(boto.equals("baixar un"))){
+                System.out.println("primer pis");
+            }
    else {
     System.out.println("error");
     }
