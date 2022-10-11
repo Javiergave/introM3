@@ -8,10 +8,10 @@ public class Fills {
             if (fills==1){
             System.out.println(" Compte de no mimar-lo massa!");
             }
-            if ((fills>=2)&&(fills<5)){
+            else if ((fills>=2)&&(fills<5)){
             System.out.println("No t'avorreixes a casa, eh?");
             }
-            if (fills>4){
+            else if (fills>4){
             System.out.println("Tu sí fas país!");
             }
         } else {
