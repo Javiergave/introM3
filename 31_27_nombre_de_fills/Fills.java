@@ -3,7 +3,6 @@ public class Fills {
     public static void main(String[] args) {
         System.out.println("Quants fills tens?");
         int fills = Integer.parseInt(Entrada.readLine());
-        if (0>fills){
             if (fills==0){
             System.out.println("Tot el que t'has estalviat en bolquers!");
             } else if (fills==1){
@@ -15,7 +14,7 @@ public class Fills {
             else if (fills>4){
             System.out.println("Tu sí fas país!");
             }
-        } else {
+         if (fills<0) {
         System.out.println("No pots tenir menys de 0 fills!");
         }
 }
