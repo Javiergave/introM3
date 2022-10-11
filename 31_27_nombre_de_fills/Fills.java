@@ -5,7 +5,7 @@ public class Fills {
         int fills = Integer.parseInt(Entrada.readLine());
         if (fills>0){
         System.out.println("Tot el que t'has estalviat en bolquers!");
-            if (fills=1){
+            if (fills==1){
             System.out.println(" Compte de no mimar-lo massa!");
             }
             if ((fills>1)&&(fills<5)){
