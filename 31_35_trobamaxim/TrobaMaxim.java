@@ -16,7 +16,7 @@ public class TrobaMaxim {
                 maxim = valor;
                 }
         
-            System.out.println("Introdueix una nota");
+            System.out.println("Introdueix un valor");
             valor = Integer.parseInt(Entrada.readLine());
             
            }    
