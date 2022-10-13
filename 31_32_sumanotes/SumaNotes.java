@@ -1,4 +1,4 @@
-public class SumaPositius {
+public class SumaNotes {
     public static void main(String[] args) {
 
         // creem la variable on guardarem el resultat de sumar
