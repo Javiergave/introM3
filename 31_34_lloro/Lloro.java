@@ -4,10 +4,7 @@ public class Lloro {
 
         System.out.println("El lloro espera paraula:");
         String paraula = Entrada.readLine();
-        if (paraula=="") {
-        System.out.println("Adéu");
-        } else {
-            while (paraula!="") {       
+            while (!(paraula=="")) {       
             System.out.println("El lloro repeteix: " + paraula);
             System.out.println("El lloro espera paraula:");
             paraula = Entrada.readLine();
@@ -15,6 +12,6 @@ public class Lloro {
         }
         
     }    
-}
+
 
 
