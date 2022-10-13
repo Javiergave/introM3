@@ -9,7 +9,7 @@ public class Lloro {
             System.out.println("El lloro repeteix: " + paraula);
             System.out.println("El lloro espera paraula:");
             paraula = Entrada.readLine();;
-            
+         return;   
        }      
     
         System.out.println("Adéu");
