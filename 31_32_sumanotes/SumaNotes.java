@@ -9,25 +9,15 @@ public class SumaNotes {
         // declarem la variable que contindrà els valors llegits
         int valor;
 
-        // processem el primer valor
+        // recollim primera nota
         System.out.println("Introdueix una nota");
         valor = Integer.parseInt(Entrada.readLine());
-        if ((valor >= 0) && (valor<=100)) {
+        while ((valor >= 0) && (valor<=100)) {
             suma = suma + valor;
         
-
-        // processem el segon valor
             System.out.println("Introdueix una nota");
             valor = Integer.parseInt(Entrada.readLine());
-            if ((valor >= 0) && (valor<=100)) {
-                suma = suma + valor;
             
-                System.out.println("Introdueix una nota");
-                valor = Integer.parseInt(Entrada.readLine());
-                if ((valor >= 0) && (valor<=100)) {
-                    suma = suma + valor;
-                }
-            }
        }    
                 
 
