@@ -1,3 +1,4 @@
+//Aquest programa suma notes de l'1 al 100 fins que se li dongui un valor invàlid
 public class SumaNotes {
     public static void main(String[] args) {
 

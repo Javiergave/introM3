@@ -1,3 +1,4 @@
+//aquest programa suma 3 valors a no ser que se li doni un valor negatiu
 public class SumaPositius {
     public static void main(String[] args) {
 
