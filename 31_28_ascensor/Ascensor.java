@@ -37,8 +37,8 @@ public class Ascensor {
      
         } 
         
-   else {
-    System.out.println("error");
-    }
+        else {
+        System.out.println("error");
+        }
 }
 }
