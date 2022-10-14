@@ -1,3 +1,4 @@
+//Aquest programa compta la quantitat de parells introduïts fins que s'escrigui un valor negatiu
 public class QuantsParells {
     public static void main(String[] args) {
 

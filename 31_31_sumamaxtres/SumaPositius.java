@@ -1,3 +1,4 @@
+//aquest programa suma els positius que s'introdueixin o fins a que s'introdueixi un negatiu
 public class SumaPositius {
     public static void main(String[] args) {
 
