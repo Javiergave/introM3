@@ -53,7 +53,7 @@ public class TrobaMesProxim {
 
             }
 
-            System.out.println("El nombre més pròxim a "+ancora+" és "+valorProxim);
+            System.out.println("El valor introduït més pròxim a "+ancora+" és "+valorProxim);
        }
        
        else {   
