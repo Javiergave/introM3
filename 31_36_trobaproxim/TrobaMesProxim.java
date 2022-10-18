@@ -35,12 +35,8 @@ public class TrobaMesProxim {
                 System.out.println("Introdueix un valor");
                 valor = Integer.parseInt(Entrada.readLine());
                 
-                if (valor == ancora){
-                    valorProxim = ancora;
-                }
-                
-                else {
-                
+                if (valor != ancora){
+                    
                     if (valor > ancora){
                     distancia = valor-ancora; 
                     }
@@ -57,6 +53,9 @@ public class TrobaMesProxim {
                     valorProxim = valor;
                     }
 
+                }
+                else {
+                valorProxim = ancora;
                 }
 
             }
