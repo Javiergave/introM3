@@ -50,6 +50,9 @@ public class TrobaMesProxim {
                 if ((distancia<=distanciaAnt)&&(valor<valorProxim)){
                     valorProxim = valor;
                 }
+                if (ancora==valor){
+                    valorProxim = valor;
+                }
 
             }
 
