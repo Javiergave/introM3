@@ -17,7 +17,10 @@ public class EndevinaNombre {
         }
         
         while (intent!=nombre){
-            if (nombre>intent){
+            if (intent<=0){
+                System.out.println("Com a mínim 1");
+            }
+            else if (nombre>intent){
                 System.out.println("És més gran que "+intent);
             }
             if (nombre<intent) {
