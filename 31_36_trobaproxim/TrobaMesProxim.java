@@ -35,27 +35,29 @@ public class TrobaMesProxim {
                 System.out.println("Introdueix un valor");
                 valor = Integer.parseInt(Entrada.readLine());
                 
-                if (valor > ancora){
-                    distancia = valor-ancora; 
-                }
-                 
-                else if (valor< ancora) {
-                   distancia = ancora-valor;
+                if (valor == ancora){
+                    valorProxim = valor;
                 }
                 
                 else {
-                    distancia = 0;
-                }
                 
-                if (distancia<distanciaAnt){
-                    valorProxim = valor;
-                }
+                    if (valor > ancora){
+                    distancia = valor-ancora; 
+                    }
+                 
+                    else if (valor< ancora) {
+                   distancia = ancora-valor;
+                    }
                 
-                if ((distancia<=distanciaAnt)&&(valor<valorProxim)){
+                
+                    if (distancia<distanciaAnt){
                     valorProxim = valor;
-                }
-                if (distancia == 0){
+                    }
+                
+                    if ((distancia<=distanciaAnt)&&(valor<valorProxim)){
                     valorProxim = valor;
+                    }
+
                 }
 
             }
