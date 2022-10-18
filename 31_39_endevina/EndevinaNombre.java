@@ -15,7 +15,7 @@ public class EndevinaNombre {
         System.out.println("Com a màxim 100");
         }
         
-        while ((intent>=0)&&(intent<100)){
+        while (intent!=nombre){
             if (nombre>intent){
                 System.out.println("És mes gran que "+intent);
             }
