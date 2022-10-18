@@ -8,9 +8,6 @@ public class EndevinaNombre {
         
         int intent = Integer.parseInt(Entrada.readLine());
         
-        if (intent<=0){
-        System.out.println("Com a mínim 1");
-        }
         
         if (intent>100){
         System.out.println("Com a màxim 100");
