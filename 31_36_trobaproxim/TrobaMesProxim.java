@@ -55,10 +55,11 @@ public class TrobaMesProxim {
                 System.out.println("El valor introduït més pròxim a "+ancora+" és "+valorProxim);
             }
        }
+       }
        
        else {   
             System.out.println("Àncora no vàlida");
        }
     }
 }
-}
+
