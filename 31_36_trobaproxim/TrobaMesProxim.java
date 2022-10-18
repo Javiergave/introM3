@@ -23,10 +23,7 @@ public class TrobaMesProxim {
                         distanciaAnt = ancora-valor;
                  }
                 
-                } 
-                else { 
-                System.out.println("No s'ha introduït cap valor positiu");
-                }
+                
             
             
             while (valor >= 0){
@@ -63,4 +60,5 @@ public class TrobaMesProxim {
             System.out.println("Àncora no vàlida");
        }
     }
+}
 }
