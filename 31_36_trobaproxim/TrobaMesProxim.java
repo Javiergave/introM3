@@ -47,7 +47,7 @@ public class TrobaMesProxim {
                     valorProxim = valor;
                 }
                 
-                if ((distancia<distanciaAnt)&&(valor<valorProxim)){
+                if ((distancia<=distanciaAnt)&&(valor<valorProxim)){
                     valorProxim = valor;
                 }
 
