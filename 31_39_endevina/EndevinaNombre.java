@@ -3,7 +3,7 @@ public class EndevinaNombre {
         
         int nombre = 42;
         
-        System.out.println("Ves introduïnt valors enters entre 1 i 100 fins que encertis el que jo he pensat");
+        System.out.println("Ves introduïnt enters entre 1 i 100 fins que encertis el que jo he pensat");
         
         int intent = Integer.parseInt(Entrada.readLine());
         
