@@ -20,7 +20,10 @@ public class EndevinaNombre {
             else if (nombre>intent){
                 System.out.println("És més gran que "+intent);
             }
-            if (nombre<intent) {
+            if (intent>100){
+                System.out.println("Com a màxim 100");
+            }
+            else if (nombre<intent) {
                 System.out.println("És més petit que "+intent);
             }
         
