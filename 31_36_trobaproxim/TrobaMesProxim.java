@@ -3,7 +3,7 @@ public class TrobaMesProxim {
     public static void main(String[] args) {
 
         int distanciaAnt = 345676543;
-        int distancia;
+        int distancia = 99999999;
         
         System.out.println("Introdueix l'àncora");
         int ancora = Integer.parseInt(Entrada.readLine());
