@@ -18,10 +18,10 @@ public class EndevinaNombre {
         
         while (intent!=nombre){
             if (nombre>intent){
-                System.out.println("És mes gran que "+intent);
+                System.out.println("És més gran que "+intent);
             }
             if (nombre<intent) {
-                System.out.println("És mes petit que "+intent);
+                System.out.println("És més petit que "+intent);
             }
         
             
