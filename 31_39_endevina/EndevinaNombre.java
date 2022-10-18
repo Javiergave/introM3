@@ -7,11 +7,7 @@ public class EndevinaNombre {
         System.out.println("Introdueix un valor");
         
         int intent = Integer.parseInt(Entrada.readLine());
-        
-        
-        if (intent>100){
-        System.out.println("Com a màxim 100");
-        }
+       
         
         while (intent!=nombre){
             if (intent<=0){
