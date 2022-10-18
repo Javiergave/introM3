@@ -22,8 +22,6 @@ public class TrobaMesProxim {
                  else {
                         distanciaAnt = ancora-valor;
                  }
-                
-                
             
             
             while (valor >= 0){
@@ -54,6 +52,8 @@ public class TrobaMesProxim {
             else{
                 System.out.println("El valor introduït més pròxim a "+ancora+" és "+valorProxim);
             }
+       } else {
+            System.out.println("No s'ha introduït cap valor positiu");
        }
        }
        
