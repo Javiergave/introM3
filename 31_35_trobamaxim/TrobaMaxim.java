@@ -1,3 +1,4 @@
+//Aquest programa rep una serie de valors i mostra el valor mes alt, el programa es para introduint un nombre negatiu
 public class TrobaMaxim {
     public static void main(String[] args) {
 

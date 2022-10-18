@@ -2,19 +2,22 @@
 public class TrobaMesProxim {
     public static void main(String[] args) {
 
-        int distanciaAnt = 0;
-        int valorProxim = 0;
+        int distanciaAnt = -1;
+        int valorProxim = -1;
         
         System.out.println("Introdueix l'àncora");
         int ancora = Integer.parseInt(Entrada.readLine());
+        if (ancora >= 0) {
         System.out.println("Introdueix un valor");
         int valor = Integer.parseInt(Entrada.readLine());
-            if (ancora >= 0) {
             if (valor>=0){
                 if (valor >= ancora){
                     distanciaAnt = valor-ancora;    
                 } else {
                     distanciaAnt = ancora-valor;
+                }
+            } else { 
+                System.out.println("No s'ha introduït cap valor positiu");
                 }
             
             
@@ -25,25 +28,24 @@ public class TrobaMesProxim {
                 if (valor >= ancora){
                 int distancia = valor-ancora;
                 
-                    if (distancia <= distanciaAnt) {
-                    valorProxim = valor;
+                    if (distancia<distanciaAnt) {
+                        if (valorProxim>valor){
+                            valorProxim = valor;
+                        }
                     }
                 } else {
                     int distancia = ancora-valor;
                     if (distancia <= distanciaAnt) {
-                        valorProxim = valor;
+                        if (valorProxim>valor){
+                            valorProxim = valor;
                         }
                     }
-
-            }
-            } else {
-            System.out.println("No s'ha introduït cap valor positiu");
-            }
-            System.out.println("El valor introduït més pròxim a " + ancora + " és " + valorProxim);   
+                }
          
-       } else {   
-        
-        System.out.println("Àncora no vàlida");
-        }
+       } 
+       System.out.println("El nombre més pròxim a "+ancora+" és "+valorProxim);
+       }else {   
+            System.out.println("Àncora no vàlida");
+       }
     }
 }
