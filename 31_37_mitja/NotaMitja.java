@@ -7,6 +7,7 @@ public class NotaMitja {
         int notesIntroduides = 1;
         if (nota>100){
         notesIntroduides = 0;
+        notaTotal = 0;
         }
         
         
