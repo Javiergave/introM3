@@ -15,37 +15,37 @@ public class TrobaMesProxim {
             int valorProxim = valor;
             if (valor>=0){
             
-                if (valor > ancora){
-                        distanciaAnt = valor-ancora; 
-                 }
-                 
-                 else {
-                        distanciaAnt = ancora-valor;
-                 }
-            
-            
-            while (valor >= 0){
-            
-                System.out.println("Introdueix un valor");
-                valor = Integer.parseInt(Entrada.readLine());
+                while (valor >= 0){
                     
                     if (valor > ancora){
-                        distancia = valor-ancora; 
+                        distanciaAnt = valor-ancora; 
                     }
                  
-                    else if (valor < ancora) {
-                        distancia = ancora-valor;
+                    else {
+                        distanciaAnt = ancora-valor;
                     }
-                
-                    if (distancia<=distanciaAnt){
-                        valorProxim = valor;
-                    }
-                
-                    if ((distancia<=distanciaAnt)&&(valor<valorProxim)){
-                        valorProxim = valor;
-                    }
+            
+            
+                    System.out.println("Introdueix un valor");
+                    valor = Integer.parseInt(Entrada.readLine());
                     
-            }
+                        if (valor > ancora){
+                            distancia = valor-ancora; 
+                        }
+                 
+                        else if (valor < ancora) {
+                            distancia = ancora-valor;
+                        }
+                
+                        if (distancia<distanciaAnt){
+                            valorProxim = valor;
+                        }
+                
+                        if ((distancia<=distanciaAnt)&&(valor<valorProxim)){
+                            valorProxim = valor;
+                        }
+                    
+                }
             if (valorProxim==-1){
                 System.out.println("El valor introduït més pròxim a "+ancora+" és "+ancora);
             }
