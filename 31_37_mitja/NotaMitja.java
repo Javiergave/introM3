@@ -7,9 +7,9 @@ public class NotaMitja {
         System.out.println("Introdueix un valor");
         int nota = Integer.parseInt(Entrada.readLine());
 
-        if ((nota>0)&&(nota<100)){
+        if ((nota>=0)&&(nota<100)){
 
-            while (nota > 0){
+            while (nota >= 0){
                 
                 if (nota>100){
                     notesIntroduides = 0;
@@ -21,7 +21,7 @@ public class NotaMitja {
                 System.out.println("Introdueix un valor");
                 nota = Integer.parseInt(Entrada.readLine());
             
-                if ((nota<100)&&(nota>0)){
+                if ((nota<100)&&(nota>=0)){
                     notesIntroduides = notesIntroduides + 1;
             
                     notaTotal = nota + notaTotal;
