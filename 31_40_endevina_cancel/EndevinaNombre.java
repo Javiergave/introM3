@@ -29,7 +29,7 @@ public class EndevinaNombre {
             intent = Integer.parseInt(Entrada.readLine());
         }
         
-        if (intent==0){
+        if (intent<0){
             System.out.println("Cancel·lat!");
         }
         
