@@ -26,7 +26,8 @@ public class NotaMitja {
         
        int mitja = notaTotal / notesIntroduides;
         
-        System.out.println("La mitja de les notes vàlides és "+mitja);
-        
+        if (notaTotal>0) {
+            System.out.println("La mitja de les notes vàlides és "+mitja);
+        }
      }
 }
