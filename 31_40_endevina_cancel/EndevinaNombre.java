@@ -2,14 +2,15 @@ public class EndevinaNombre {
     public static void main(String[] args) {
         
         int nombre = 42;
+        int intent = 0;
         
         System.out.println("Ves introduint enters entre 1 i 100 fins que encertis el que jo he pensat");
         System.out.println("Introdueix un valor");
         
-        int intent = Integer.parseInt(Entrada.readLine());
+        intent = Integer.parseInt(Entrada.readLine());
        
         
-        while ((intent!=nombre)&&(intent.isBlank()==false)){
+        while ((intent!=nombre)&&(intent!=0)){
             if (intent<=0){
                 System.out.println("Com a mínim 1");
             }
@@ -28,7 +29,7 @@ public class EndevinaNombre {
             intent = Integer.parseInt(Entrada.readLine());
         }
         
-        if (intent.isBlank()==true){
+        if (intent==0){
             System.out.println("Cancel·lat!");
         }
         
