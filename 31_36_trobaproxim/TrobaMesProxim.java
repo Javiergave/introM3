@@ -46,7 +46,7 @@ public class TrobaMesProxim {
                         }
                     
                 }
-            if (valorProxim==-1){
+            if (valorProxim==ancora){
                 System.out.println("El valor introduït més pròxim a "+ancora+" és "+ancora);
             }
             else{
