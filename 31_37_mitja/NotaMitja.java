@@ -2,19 +2,20 @@ public class NotaMitja {
     public static void main(String[] args) {
         
         int notaTotal= 0;
+        int notesIntroduides = 1;
         
         System.out.println("Introdueix un valor");
         int nota = Integer.parseInt(Entrada.readLine());
-        int notesIntroduides = 1;
+        
         if (nota>100){
-        notesIntroduides = 0;
-        notaTotal = 0;
+            notesIntroduides = 0;
+            notaTotal = 0;
         }
         
         
-        if (nota<0){
-        System.out.println("Cap nota vàlida introduïda");
-        }
+        if (nota>=0){
+            
+        
         
         
         while (nota >= 0){
@@ -32,10 +33,12 @@ public class NotaMitja {
             
         }
         
-       int mitja = notaTotal / notesIntroduides;
+        int mitja = notaTotal / notesIntroduides;
         
-        if (notaTotal>0) {
-            System.out.println("La mitja de les notes vàlides és "+mitja);
+        System.out.println("La mitja de les notes vàlides és "+mitja);
+        
         }
+        System.out.println("Cap nota vàlida introduïda");
+       
      }
 }
