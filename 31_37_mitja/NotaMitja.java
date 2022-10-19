@@ -12,18 +12,13 @@ public class NotaMitja {
             while ((nota>=0)&&(nota<100)){
                 
                 if (nota<=100){
-                    notaTotal=nota;
+                    notaTotal = nota + notaTotal;
                     notesIntroduides = notesIntroduides + 1;
                 }
 
                 System.out.println("Introdueix un valor");
                 nota = Integer.parseInt(Entrada.readLine());
             
-                if ((nota<100)&&(nota>=0)){
-                    notesIntroduides = notesIntroduides + 1;
-            
-                    notaTotal = nota + notaTotal;
-                }
             
             }
         
