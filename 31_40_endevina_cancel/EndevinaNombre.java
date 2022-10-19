@@ -1,3 +1,7 @@
+//Aquest programa pensarà un nombre enter entre el 1 i el 100, i reptarà els usuaris a que l'endevini. Per a cancel·lar el programa un input buit servirá.
+
+//Per simplicitat, el nombre pensat serà sempre el 42.
+
 public class EndevinaNombre {
     public static void main(String[] args) {
         
@@ -10,7 +14,7 @@ public class EndevinaNombre {
         intent = Integer.parseInt(Entrada.readLine());
        
         
-        while ((intent!=nombre)&&(intent>=0)){
+        while ((intent!=nombre)&&()){
             if (intent<0){
                 System.out.println("Com a mínim 1");
             }
