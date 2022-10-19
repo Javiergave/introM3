@@ -24,7 +24,9 @@ public class TrobaMesProxim {
                     else if (valor<ancora) {
                         distanciaAnt = ancora-valor;
                     }
-            
+                    if (valor==ancora) {
+                    valorProxim = valor;
+                    }
             
                     System.out.println("Introdueix un valor");
                     valor = Integer.parseInt(Entrada.readLine());
