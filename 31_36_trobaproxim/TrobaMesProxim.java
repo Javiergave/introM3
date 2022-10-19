@@ -30,22 +30,22 @@ public class TrobaMesProxim {
                 valor = Integer.parseInt(Entrada.readLine());
                     
                     if (valor > ancora){
-                    distancia = valor-ancora; 
+                        distancia = valor-ancora; 
                     }
                  
-                    else if (valor< ancora) {
-                   distancia = ancora-valor;
+                    else if (valor < ancora) {
+                        distancia = ancora-valor;
                     }
                 
-                    if (distancia<distanciaAnt){
-                    valorProxim = valor;
+                    if (distancia<=distanciaAnt){
+                        valorProxim = valor;
                     }
                 
-                    else if ((distancia<=distanciaAnt)&&(valor<valorProxim)){
-                    valorProxim = valor;
+                    if ((distancia<=distanciaAnt)&&(valor<valorProxim)){
+                        valorProxim = valor;
                     }
-
-                }
+                    
+            }
             if (valorProxim==-1){
                 System.out.println("El valor introduït més pròxim a "+ancora+" és "+ancora);
             }
