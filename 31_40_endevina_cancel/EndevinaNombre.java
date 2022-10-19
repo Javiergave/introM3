@@ -12,7 +12,7 @@ public class EndevinaNombre {
         String palabra = Entrada.readLine();
        
         
-        while (!palabra.equals(42)||(!palabra.isEmpty())){
+        while (!(palabra.equals(42))||(!(palabra.isEmpty()))){
             int intent = Integer.parseInt(palabra);
             if (intent<=0){
                 System.out.println("Com a mínim 1");
