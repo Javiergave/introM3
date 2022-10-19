@@ -9,7 +9,7 @@ public class NotaMitja {
 
         if ((nota>0)&&(nota<100)){
 
-            while (nota >= 0){
+            while (nota > 0){
                 
                 if (nota>100){
                     notesIntroduides = 0;
