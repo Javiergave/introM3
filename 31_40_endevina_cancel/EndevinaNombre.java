@@ -11,7 +11,7 @@ public class EndevinaNombre {
        
         
         while ((intent!=nombre)&&(intent>=0)){
-            if (intent<=0){
+            if (intent<0){
                 System.out.println("Com a mínim 1");
             }
             else if (nombre>intent){
