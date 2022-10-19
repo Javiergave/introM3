@@ -21,7 +21,7 @@ public class TrobaMesProxim {
                         distanciaAnt = valor-ancora; 
                     }
                  
-                    else {
+                    else if (valor<ancora) {
                         distanciaAnt = ancora-valor;
                     }
             
