@@ -1,3 +1,6 @@
+//Aquest programa pensarà un nombre enter entre el 1 i el 100, i reptarà els usuaris a que l'endevini.
+
+//Per simplicitat, el nombre pensat serà sempre el 42.
 public class EndevinaNombre {
     public static void main(String[] args) {
         
