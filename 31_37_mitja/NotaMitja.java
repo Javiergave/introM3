@@ -34,7 +34,8 @@ public class NotaMitja {
         System.out.println("La mitja de les notes vàlides és "+mitja);
         
         }
-        System.out.println("Cap nota vàlida introduïda");
-       
+        else{
+            System.out.println("Cap nota vàlida introduïda");
+        }
      }
 }
