@@ -9,14 +9,7 @@ public class TrobaMesProxim {
         int ancora = Integer.parseInt(Entrada.readLine());
         
         if (ancora >= 0) {
-            System.out.println("");
-            try 
-            {
-                Thread.sleep(5000);
-            }
-            catch(InterruptedException e){
-
-            }
+            
 
             System.out.println("Introdueix un valor");
             int valor = Integer.parseInt(Entrada.readLine());
@@ -62,4 +55,4 @@ public class TrobaMesProxim {
        }
        
        
-       }
+}
