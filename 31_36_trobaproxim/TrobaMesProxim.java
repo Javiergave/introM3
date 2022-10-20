@@ -9,7 +9,7 @@ public class TrobaMesProxim {
         int ancora = Integer.parseInt(Entrada.readLine());
         
         if (ancora >= 0) {
-            System.out.println("espera 5 segons");
+            System.out.println("");
             try 
             {
                 Thread.sleep(5000);
