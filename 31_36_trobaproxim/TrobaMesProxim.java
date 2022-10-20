@@ -2,8 +2,8 @@
 public class TrobaMesProxim {
     public static void main(String[] args) {
         
-        int distanciaAnt = 345676543;
-        int distancia = 99999999;
+        int distanciaAnt = 2147483647;
+        int distancia = 2147483647;
 
         System.out.println("Introdueix l'àncora");
         int ancora = Integer.parseInt(Entrada.readLine());
