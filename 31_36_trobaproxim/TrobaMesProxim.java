@@ -25,11 +25,11 @@ public class TrobaMesProxim {
 
                     distancia = Math.abs(valor-ancora);
                     
-                    if ((distancia<=distanciaAnt)&&(valor<valorProxim)){
+                    if ((valor>0)&&((distancia<=distanciaAnt)&&(valor<valorProxim))){
                         valorProxim = valor;
                     }
 
-                    if (distancia<distanciaAnt){
+                    if ((valor>0)&&(distancia<distanciaAnt)){
                         valorProxim = valor;
                     }
                 
