@@ -4,7 +4,7 @@ public class TrobaMesProxim {
 
         int distanciaAnt = 345676543;
         int distancia = 99999999;
-        int valorEncertat = 0;
+
         System.out.println("Introdueix l'àncora");
         int ancora = Integer.parseInt(Entrada.readLine());
         
@@ -14,7 +14,7 @@ public class TrobaMesProxim {
             int valor = Integer.parseInt(Entrada.readLine());
             int valorProxim = valor;
             
-            if (valor>=0){
+            if ((valor>=0)&&(valor!=ancora)){
             
                 while (valor >= 0){
                     
@@ -24,9 +24,6 @@ public class TrobaMesProxim {
                  
                     else if (valor<ancora) {
                         distanciaAnt = ancora-valor;
-                    }
-                    if (valor==ancora) {
-                    valorEncertat = valor;
                     }
             
                     System.out.println("Introdueix un valor");
@@ -49,20 +46,25 @@ public class TrobaMesProxim {
                         }
                     
                 }
-            if (valorEncertat==ancora){
-                System.out.println("El valor introduït més pròxim a "+ancora+" és "+valorEncertat);
-            }
-            else{
+                
                 System.out.println("El valor introduït més pròxim a "+ancora+" és "+valorProxim);
             }
-       } else {
-            System.out.println("No s'ha introduït cap valor positiu");
-       }
+            else if (valor<0){
+                System.out.println("No s'ha introduït cap valor positiu");
+            }
+            else if (valor == ancora){
+                while (valor>=0){
+                    System.out.println("Introdueix un valor");
+                    valor = Integer.parseInt(Entrada.readLine());   
+                }
+                System.out.println("El valor introduït més pròxim a "+ancora+" és "+ancora);
+            }
+        }
+        else {   
+            System.out.println("Àncora no vàlida");
+        }
+         
        }
        
-       else {   
-            System.out.println("Àncora no vàlida");
+       
        }
-    }
-}
-
