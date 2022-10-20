@@ -1,5 +1,5 @@
 //Aquest programa agafa una àncora entrada per l'usuari i indica quin dels valors introduïts després és mes proper fins a que s'introdueixi un nombre negatiu
-public class TrobaMesProxim {
+public class TrobaMesProximAlt {
     public static void main(String[] args) {
 
         int distanciaAnt = 345676543;
