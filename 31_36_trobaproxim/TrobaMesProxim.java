@@ -1,7 +1,7 @@
 //Aquest programa agafa una àncora entrada per l'usuari i indica quin dels valors introduïts després és mes proper fins a que s'introdueixi un nombre negatiu
 public class TrobaMesProxim {
     public static void main(String[] args) {
-
+        
         int distanciaAnt = 345676543;
         int distancia = 99999999;
 
@@ -9,7 +9,15 @@ public class TrobaMesProxim {
         int ancora = Integer.parseInt(Entrada.readLine());
         
         if (ancora >= 0) {
-        
+            System.out.println("espera 5 segons");
+            try 
+            {
+                Thread.sleep(5000);
+            }
+            catch(InterruptedException e){
+
+            }
+
             System.out.println("Introdueix un valor");
             int valor = Integer.parseInt(Entrada.readLine());
             int valorProxim = valor;
