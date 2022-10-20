@@ -1,3 +1,5 @@
+//Aquest programa t'informarà de la nota mitja corresponent a les notes vàlides (0-100) introduïdes.
+
 public class NotaMitja {
     public static void main(String[] args) {
         
