@@ -19,20 +19,19 @@ public class TrobaMesProxim {
                 while (valor >= 0){
                     
                     distanciaAnt = Math.abs(valor-ancora);
-                    
-                    if ((distancia<=distanciaAnt)&&(valor<valorProxim)){
-                        valorProxim = valor;
-                    }
-
-                    if (distancia<distanciaAnt){
-                        valorProxim = valor;
-                    }
 
                     System.out.println("Introdueix un valor");
                     valor = Integer.parseInt(Entrada.readLine());
 
                     distancia = Math.abs(valor-ancora);
-    
+                    
+                    if ((valor>0)&&((distancia<=distanciaAnt)&&(valor<valorProxim))){
+                        valorProxim = valor;
+                    }
+
+                    if ((valor>0)&&(distancia<distanciaAnt)){
+                        valorProxim = valor;
+                    }
                 }
                 
                 System.out.println("El valor introduït més pròxim a "+ancora+" és "+valorProxim);
