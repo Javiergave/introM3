@@ -9,7 +9,6 @@ public class TrobaMesProxim {
         int ancora = Integer.parseInt(Entrada.readLine());
         
         if (ancora >= 0) {
-            
 
             System.out.println("Introdueix un valor");
             int valor = Integer.parseInt(Entrada.readLine());
