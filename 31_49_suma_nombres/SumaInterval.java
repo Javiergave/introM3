@@ -11,11 +11,24 @@ public class SumaInterval {
 
         int total = 0;
 
-        for (int n = ini; n <= fin;n = n+1){
+        if (fin<ini){
 
-            total = total + n;
-            
+            for (int n = ini; n >= fin;n--){
+
+                total = total + n;
+                
+            }  
         }
+
+        else{
+
+            for (int n = ini; n <= fin;n++){
+
+                total = total + n;
+            
+            }
+        }
+          
         System.out.println(total); 
     }
 }
