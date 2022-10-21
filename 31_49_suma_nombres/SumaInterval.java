@@ -3,7 +3,7 @@ tots els nombres que hi hagin entre el més petit i el més gran d'ells.*/
 public class SumaInterval { 
     public static void main(String[] args) { 
 
-        System.out.println("Inici?"); 
+        System.out.println("inici?"); 
         int ini = Integer.parseInt(Entrada.readLine()); 
 
         System.out.println("Final?"); 
