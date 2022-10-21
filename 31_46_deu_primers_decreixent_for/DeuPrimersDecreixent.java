@@ -1,3 +1,4 @@
+//Aquest programa diu els nombres de 10 a 1
 public class DeuPrimersDecreixent{ 
     public static void main(String[] args) {  
 
