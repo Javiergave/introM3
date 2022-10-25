@@ -6,7 +6,7 @@ public class TriangleInvertit {
         
         for (int i = valor; i>=1; i--){
             for (int j = 1; j<=i; j++){
-                if (j!=1){
+                if (j!=i){
                     System.out.print(j+", ");
                 }
                 else {
