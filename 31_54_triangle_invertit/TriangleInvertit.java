@@ -5,7 +5,7 @@ public class TriangleInvertit {
         int valor = Integer.parseInt(Entrada.readLine()); 
         
         for (int i = valor; i>=1; i--){
-            for (int j = i; j>=1; j--){
+            for (int j = 1; j<=i; j++){
                 if (j!=1){
                     System.out.print(j+", ");
                 }
