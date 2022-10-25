@@ -8,17 +8,20 @@ public class TriangleNombres{
         
         System.out.println("Nombre?");
         int valor = Integer.parseInt(Entrada.readLine()); 
-        
+
         if (valor > 0){
-            for (int i=1; i<=valor;i++){
+              
+            for(int i=1; i<=valor; i++){  
 
-                for (int j=1; j<=valor; j++){
-                    
-                    System.out.println(j+" "); 
-                }
+                for(int j=i; j>=1; j--){
+   
+                    System.out.print(j+" ");  
 
-                System.out.println(); 
-            }
+                }   
+
+                System.out.println();
+               
+            } 
         }
 
     }
