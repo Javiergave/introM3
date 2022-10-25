@@ -14,7 +14,7 @@ public class QuadratNombres {
             }
         }
         else{
-            System.out.println("valor inadequat"); 
+            System.out.println("Valor inadequat"); 
         }
 
     }
