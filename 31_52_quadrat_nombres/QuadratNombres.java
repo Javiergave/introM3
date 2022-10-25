@@ -8,7 +8,7 @@ public class QuadratNombres {
         if ((valor>0)&&(valor<=9)){
             for (int a = 1; a<=valor; a++){
                 for (int j = 1; j<=valor; j++){
-                    System.out.print(j+" "); 
+                    System.out.print(" "+j); 
                 }
                 System.out.println(); 
             }
