@@ -10,7 +10,7 @@ public class TriangleInvertit {
                     System.out.print(j+", ");
                 }
                 else{
-                    System.out.println(j); 
+                    System.out.print(j); 
                 }
                 
 
