@@ -5,9 +5,9 @@ public class QuadratNombres {
         System.out.println("Valor final?"); 
         int valor = Integer.parseInt(Entrada.readLine()); 
         
-        if ((valor>0)&&(valor<9)){
-            for (int a = 0; a<valor; a++){
-                for (int j = 0; j<valor; j++){
+        if ((valor>0)&&(valor<=9)){
+            for (int a = 1; a<=valor; a++){
+                for (int j = 1; j<=valor; j++){
                     System.out.print(j+" "); 
                 }
                 System.out.println(); 
