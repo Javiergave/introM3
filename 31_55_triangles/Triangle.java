@@ -4,32 +4,33 @@ public class Triangle {
         
         System.out.println("Nombre?");
         int valor = Integer.parseInt(Entrada.readLine()); 
-        
+
         for (int i = valor; i>=1; i--){
             
-            for (int j = 1; j<=9; j++){
+            for (int j = 9; j>=0; j--){
                 
-                for (int l = j; l<=1; l--){
+                for (int k = j ; k>=1; k--){
                     System.out.print("."); 
                 }
 
-                System.out.print(j);
+                for (int l = j; l <= 8; l++) {
+                    System.out.print(l);
+                }
 
-                
+                System.out.print("9"); 
 
-            }
-            for (int k = 8; k>=1; k--){
-                
-                
+                for (int m = 8; m>=j ; m--) {
+                    System.out.print(m);
+                }
+            
+                for (int n = j ; n>=1; n--){
+                    System.out.print("."); 
+                }
 
-                System.out.print(k);
-
-                
+                System.out.println(); 
 
             }
             
-
-
             System.out.println(); 
 
         }

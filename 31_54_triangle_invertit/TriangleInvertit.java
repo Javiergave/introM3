@@ -1,4 +1,7 @@
-//Aquest programa et Desenvolupa un programa que demani un nombre positiu més gran que 0. El programa escriu una línia per nombre entre el nombre introduït i el 1 (és a dir, decreixentment). A cada línia escriu tots els nombres des de l’1 fins el nombre corresponent a la línia.
+/*Aquest programa et Desenvolupa un programa que demani un nombre positiu més gran 
+que 0. El programa escriu una línia per nombre entre el nombre introduït i el 1 
+(és a dir, decreixentment). A cada línia escriu tots els nombres des de l’1 fins 
+el nombre corresponent a la línia.*/
 
 public class TriangleInvertit {
     public static void main(String[] args) {     
