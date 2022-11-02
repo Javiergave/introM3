@@ -12,7 +12,7 @@ public class HistoricEdats {
         System.out.println("L'any actual?");
         int any_actual = Integer.parseInt(Entrada.readLine()); 
         
-        if (edat_actual>0){
+        if (edat_actual>=0){
 
             int any_neixement = any_actual - edat_actual;
 
