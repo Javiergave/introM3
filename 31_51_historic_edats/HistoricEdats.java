@@ -11,13 +11,17 @@ public class HistoricEdats {
         int any_actual = Integer.parseInt(Entrada.readLine()); 
         
         int any_neixement = any_actual - edat_actual;
-        System.out.println("El " +any_neixement+ " vau néixer"); 
+        System.out.println("El " +any_neixement+ " vau néixer");
+
         int any = any_neixement + 1;
+        
+        if  (edat_actual > 1){
         System.out.println("El " +any+ " teníeu 1 any");
+        }
 
         any = any + 1;
 
-        for (int edat = 2; any < any_actual && edat > 1; any++, edat++ ){
+        for (int edat = 2; any < any_actual; any++, edat++ ){
             System.out.println("El " +any+ " teníeu " +edat+ " anys"); 
         }
 
