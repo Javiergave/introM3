@@ -7,7 +7,7 @@ public class TaulaMultiplicar {
         int valor3 = Integer.parseInt(args[2]);
         int valor4 = Integer.parseInt(args[3]);
 
-        for (int i = valor1; i <= valor2; i++){
+        for (int i = valor1, j = valor3; i <= valor2 && j<=valor4; i++, j++){
             System.out.println(i+ " x " +valor3+ " = " +i*valor3);
 
             if (valor1!= valor2){
