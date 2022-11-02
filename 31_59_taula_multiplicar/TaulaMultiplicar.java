@@ -1,3 +1,4 @@
+/*Aquest programa  permet construir taules de multiplicar personalitzades. */
 public class TaulaMultiplicar { 
     public static void main(String[] args) {  
 
@@ -6,10 +7,10 @@ public class TaulaMultiplicar {
         int valor3 = Integer.parseInt(args[2]);
         int valor4 = Integer.parseInt(args[3]);
 
-        System.out.println( valor1 + " x " + valor4 + " = "+ valor1*valor4);
-        System.out.println("El segon argument és  " + args[1]);
-        System.out.println("El tercer argument és " + args[2]);
-        System.out.println("El quart argument és  " + args[3]);
-        
+        for (int i = valor1; i <= valor2; i++){
+            System.out.println(i+ " x " +valor3+ " = " +i*valor3);
+            System.out.println(i+ " x " +valor4+ " = " +i*valor4);  
+        }
+
     }
 }        
