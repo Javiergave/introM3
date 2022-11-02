@@ -10,6 +10,8 @@ public class TaulaMultiplicar {
         for (int i = valor1, j = valor3; i <= valor2 && j<=valor4; i++, j++){
             System.out.println(i+ " x " +j+ " = " +i*j);
 
+            j = j + 1;
+
             if (valor1!= valor2){
                 System.out.println(i+ " x " +j+ " = " +i*j);  
             }
