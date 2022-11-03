@@ -1,23 +1,21 @@
 /*Aquest programa demana un text i, respecte el primer caràcter,
  composa un petit informe  */
 
- import java.util.Scanner;
+import javax.swing.text.AttributeSet.CharacterAttribute;
 
  public class InformeCaracter { 
     public static void main(String[] args) {  
 
         
         System.out.println("Caràcter?"); 
+        String paraula = Entrada.readLine(); 
 
-        Scanner sc = new Scanner(System.in);   
-        char letra = sc.next().charAt(0);
-        sc.close();
-
-        if (Character.isWhitespace(letra)){
+        if (paraula.isBlank()){
             System.out.println("Caràcter buit"); 
         }
 
         else{
+            char letra = paraula.charAt(0);
             System.out.println("Character.getName('"+letra +"'): "+Character.getName(letra));
             System.out.println("Character.isDigit('"+letra +"'): "+Character.isDigit(letra)); 
             System.out.println("Character.isJavaIdentifierStart('"+letra +"'): "+Character.isJavaIdentifierStart(letra));
