@@ -33,6 +33,6 @@ public class ManipulaString {
         // Com en el cas anterior però ara corregint les majúscules i
         // minúscules de manera que la primera sigui majúscules i la resta en
         // minúscules.  (ex. si la paraula és «Nekane» mostrarà «Enek»)
-        System.out.println("La composició de quatre primeres és \""+Character.toUpperCase(paraula.charAt((paraula.length())-1))+Character.toLowerCase(paraula.charAt(0))+Character.toLowerCase(paraula.charAt(1))+Character.toLowerCase(paraula.charAt(2))+"\"");    
+        System.out.println("La composició de quatre és \""+Character.toUpperCase(paraula.charAt((paraula.length())-1))+Character.toLowerCase(paraula.charAt(0))+Character.toLowerCase(paraula.charAt(1))+Character.toLowerCase(paraula.charAt(2))+"\"");    
     }
 }
