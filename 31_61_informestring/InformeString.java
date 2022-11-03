@@ -22,8 +22,9 @@ public class InformeString {
         System.out.println("\""+paraula +"\".charAt("+valor+"): "+paraula.charAt(valor));
         System.out.println("\""+paraula +"\".concat(\""+paraula2+"\"): "+paraula.concat(paraula2));
         System.out.println("\""+paraula +"\".repeat("+valor+"): "+paraula.repeat(valor));
+        System.out.println("\""+paraula +"\".toUpperCase(): "+paraula.toUpperCase());
         System.out.println("\""+paraula +"\".toLowerCase(): "+paraula.toLowerCase()); 
-        System.out.println("\""+paraula +"\".toUpperCase(): "+paraula.toUpperCase()); 
+ 
 
     }
 }
