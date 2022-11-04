@@ -32,7 +32,7 @@ public class ManipulaString {
         // Una composició formada per la primera lletra de la paraula en
         // majúscules, seguida de les següents tres lletres en minúscules. Per
         // exemple, si la paraula és «nEkAnE», resultatà en «Neka».
-        if (paraula.length()>4){
+        if (paraula.length()>3){
             System.out.println("La composició de quatre primeres és \""+paraula.charAt(0)+paraula.charAt(1)+paraula.charAt(2)+paraula.charAt(3)+"\""); 
         }
 
@@ -40,7 +40,7 @@ public class ManipulaString {
         // seguida de les tres primeres. (ex. si la paraula és «Nekane»
         // mostrarà «eNek»)
 
-        if (paraula.length()>4){
+        if (paraula.length()>3){
             System.out.println("La composició de quatre és \""+paraula.charAt((paraula.length())-1)+paraula.charAt(0)+paraula.charAt(1)+paraula.charAt(2)+"\""); 
             
         }
@@ -49,7 +49,7 @@ public class ManipulaString {
         // minúscules de manera que la primera sigui majúscules i la resta en
         // minúscules.  (ex. si la paraula és «Nekane» mostrarà «Enek»)
         
-        if (paraula.length()>4){
+        if (paraula.length()>3){
         System.out.println("La composició de quatre corregint majúscules és \""+Character.toUpperCase(paraula.charAt((paraula.length())-1))+Character.toLowerCase(paraula.charAt(0))+Character.toLowerCase(paraula.charAt(1))+Character.toLowerCase(paraula.charAt(2))+"\"");
         }    
     }
