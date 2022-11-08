@@ -8,11 +8,11 @@ public class LloroAcabaLletra {
         
         while (((paraula.isBlank()))==false) {
                 
-            if (!(paraula.charAt(paraula.length()-1)=='a'||paraula.charAt(paraula.length()-1)=='e'||paraula.charAt(paraula.length()-1)=='i'||paraula.charAt(paraula.length()-1)=='o'||paraula.charAt(paraula.length()-1)=='u')){
+            if (!(Character.toLowerCase(paraula.charAt(paraula.length()-1))=='a')||Character.toLowerCase(paraula.charAt(paraula.length()-1))=='e'||Character.toLowerCase(paraula.charAt(paraula.length()-1))=='i'||Character.toLowerCase(paraula.charAt(paraula.length()-1))=='o'||Character.toLowerCase(paraula.charAt(paraula.length()-1))=='u'){
                 System.out.println("El lloro diu: "+paraula);
             }   
                 
-            System.out.println("El lloro pregunta paraula que finalitzi per lletra no vocal");
+            System.out.println("El lloro pregunta paraula que finalitzi per lletra no");
             paraula = Entrada.readLine();
             paraula = paraula.trim();
         }
