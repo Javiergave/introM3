@@ -5,12 +5,14 @@ public class Lloro {
         System.out.println("El lloro espera paraula:");
         String paraula = Entrada.readLine();
         // A l'inici vaig probar amb un or de (paraula = paraula.trim();)
-            while (((paraula.isBlank())==false)) {       
+        while (((paraula.isBlank())==false)) {       
             System.out.println("El lloro repeteix: " + paraula);
             System.out.println("El lloro espera paraula:");
             paraula = Entrada.readLine();
-            }
+        }
+        
         System.out.println("Adéu"); 
+        
         }
         
     }    
