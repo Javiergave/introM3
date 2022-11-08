@@ -12,7 +12,7 @@ public class LloroAcabaLletra {
                 System.out.println("El lloro diu: "+paraula);
             }   
                 
-            System.out.println("El lloro pregunta paraula que finalitzi per lletra no");
+            System.out.println("El lloro pregunta paraula que finalitzi per lletra no vocal");
             paraula = Entrada.readLine();
             paraula = paraula.trim();
         }
