@@ -8,7 +8,7 @@ public class LloroAcabaLletra {
         
         while (((paraula.isBlank()))==false) {
                 
-            if (!(Character.toLowerCase(paraula.charAt(paraula.length()-1))=='a')||Character.toLowerCase(paraula.charAt(paraula.length()-1))=='e'||Character.toLowerCase(paraula.charAt(paraula.length()-1))=='i'||Character.toLowerCase(paraula.charAt(paraula.length()-1))=='o'||Character.toLowerCase(paraula.charAt(paraula.length()-1))=='u'){
+            if (!(Character.toLowerCase(paraula.charAt(paraula.length()-1))=='a')||!(Character.toLowerCase(paraula.charAt(paraula.length()-1))=='e')||!(Character.toLowerCase(paraula.charAt(paraula.length()-1))=='i')||!(Character.toLowerCase(paraula.charAt(paraula.length()-1))=='o')||!(Character.toLowerCase(paraula.charAt(paraula.length()-1))=='u')){
                 System.out.println("El lloro diu: "+paraula);
             }   
                 
