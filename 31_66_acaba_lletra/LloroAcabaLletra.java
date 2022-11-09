@@ -7,21 +7,21 @@ public class LloroAcabaLletra {
         System.out.println("El lloro pregunta paraula que finalitzi per lletra no vocal");
         String paraula = Entrada.readLine();
         // A l'inici vaig probar amb un or de (paraula = paraula.trim();)
-        int ultima = paraula.length()-1;
-
-        boolean a = Character.toLowerCase(paraula.charAt(ultima))=='a';
-        boolean e = Character.toLowerCase(paraula.charAt(ultima))=='e';
-        boolean i = Character.toLowerCase(paraula.charAt(ultima))=='i';
-        boolean o = Character.toLowerCase(paraula.charAt(ultima))=='o';
-        boolean u = Character.toLowerCase(paraula.charAt(ultima))=='u';
         
-        boolean exclamacio = paraula.charAt(ultima)=='!';
-        boolean interrogacio = paraula.charAt(ultima)=='?';
-        boolean punt = paraula.charAt(ultima)=='.';
 
         while (((paraula.isBlank()))==false) {
 
+            int ultima = paraula.length()-1;
+
+            boolean a = Character.toLowerCase(paraula.charAt(ultima))=='a';
+            boolean e = Character.toLowerCase(paraula.charAt(ultima))=='e';
+            boolean i = Character.toLowerCase(paraula.charAt(ultima))=='i';
+            boolean o = Character.toLowerCase(paraula.charAt(ultima))=='o';
+            boolean u = Character.toLowerCase(paraula.charAt(ultima))=='u';
             
+            boolean exclamacio = paraula.charAt(ultima)=='!';
+            boolean interrogacio = paraula.charAt(ultima)=='?';
+            boolean punt = paraula.charAt(ultima)=='.'; 
 
             while (exclamacio||interrogacio||punt){
                 ultima = ultima - 1;
