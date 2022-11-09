@@ -20,6 +20,10 @@ public class SegonaIgualPenultima {
             
             }
 
+            if (paraula.length()>=1){
+                segonaIgualPenultima = false;
+            }
+
 
 
             if (segonaIgualPenultima){
