@@ -20,7 +20,7 @@ public class SegonaIgualPenultima {
             
             }
 
-            if (paraula.length()>=1){
+            if (paraula.length()<=1){
                 segonaIgualPenultima = false;
             }
 
