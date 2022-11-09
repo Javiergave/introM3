@@ -10,6 +10,8 @@ public class SegonaIgualPenultima {
         
 
         while (!(paraula.isBlank())) {
+
+            segonaIgualPenultima = true;
                 
             if (paraula.length()>3){
 
