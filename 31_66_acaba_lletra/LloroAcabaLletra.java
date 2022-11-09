@@ -7,8 +7,14 @@ public class LloroAcabaLletra {
         // A l'inici vaig probar amb un or de (paraula = paraula.trim();)
         
         while (((paraula.isBlank()))==false) {
-                
-            if (!((Character.toLowerCase(paraula.charAt(paraula.length()-1))=='a')||(Character.toLowerCase(paraula.charAt(paraula.length()-1))=='e')||(Character.toLowerCase(paraula.charAt(paraula.length()-1))=='i')||(Character.toLowerCase(paraula.charAt(paraula.length()-1))=='o')||(Character.toLowerCase(paraula.charAt(paraula.length()-1))=='u'))){
+
+            int ultima = paraula.length()-1;
+
+            while (paraula.charAt(ultima)=='!'||paraula.charAt(ultima)=='?'||paraula.charAt(ultima)=='.'){
+                ultima = ultima - 1;
+            }
+
+            if (!((Character.toLowerCase(paraula.charAt(ultima))=='a')||(Character.toLowerCase(paraula.charAt(paraula.length()-1))=='e')||(Character.toLowerCase(paraula.charAt(paraula.length()-1))=='i')||(Character.toLowerCase(paraula.charAt(paraula.length()-1))=='o')||(Character.toLowerCase(paraula.charAt(paraula.length()-1))=='u'))){
                 System.out.println("El lloro diu: "+paraula);
             }   
                 
