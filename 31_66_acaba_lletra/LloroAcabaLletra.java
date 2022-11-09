@@ -10,11 +10,6 @@ public class LloroAcabaLletra {
 
             int ultima = paraula.length()-1;
 
-            if (paraula.charAt(ultima)=='!'||paraula.charAt(ultima)=='?'||paraula.charAt(ultima)=='.'){
-                
-                ultima = paraula.length()-2;
-                
-            }
 
             boolean a = Character.toLowerCase(paraula.charAt(ultima))=='a';
             boolean e = Character.toLowerCase(paraula.charAt(ultima))=='e';
@@ -22,11 +17,11 @@ public class LloroAcabaLletra {
             boolean o = Character.toLowerCase(paraula.charAt(ultima))=='o';
             boolean u = Character.toLowerCase(paraula.charAt(ultima))=='u';
             
-            // boolean exclamacio = paraula.charAt(ultima)=='!';
-            // boolean interrogacio = paraula.charAt(ultima)=='?';
-            // boolean punt = paraula.charAt(ultima)=='.'; 
+            boolean exclamacio = paraula.charAt(ultima)=='!';
+            boolean interrogacio = paraula.charAt(ultima)=='?';
+            boolean punt = paraula.charAt(ultima)=='.'; 
 
-            if (!(a||e||i||o||u)){
+            if (!(a||e||i||o||u||exclamacio||interrogacio||punt)){
                 System.out.println("El lloro diu: "+paraula);
             }   
                 
