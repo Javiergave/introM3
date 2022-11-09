@@ -26,10 +26,10 @@ public class LloroAcabaLletra {
             if (exclamacio||interrogacio||punt){
 
                 ultima = ultima - 1;
-                
+
             }
 
-            if (a||e||i||o||u){
+            if (!(a||e||i||o||u)){
                 System.out.println("El lloro diu: "+paraula);
             }   
                 
