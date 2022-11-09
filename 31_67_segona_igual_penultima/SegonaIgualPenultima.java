@@ -25,7 +25,6 @@ public class SegonaIgualPenultima {
             }
 
 
-
             if (segonaIgualPenultima){
 
                 System.out.println("Segona igual a penúltima");
