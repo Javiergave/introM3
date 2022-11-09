@@ -10,6 +10,8 @@ public class SegonaIgualPenultima {
         
         if (paraula.length()>3){
 
+            paraula = paraula.trim();
+
             segonaIgualPenultima = (paraula.charAt(paraula.length()-2) == paraula.charAt(1));
         
         }
