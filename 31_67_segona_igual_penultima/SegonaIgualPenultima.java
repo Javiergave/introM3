@@ -12,7 +12,7 @@ public class SegonaIgualPenultima {
         while (!(paraula.isBlank())) {
 
                 
-            if (paraula.length()>4){
+            if (paraula.length()>3){
 
                 paraula = paraula.trim();
     
