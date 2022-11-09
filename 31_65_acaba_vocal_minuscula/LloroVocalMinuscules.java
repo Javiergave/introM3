@@ -4,7 +4,7 @@ public class LloroVocalMinuscules {
 
         System.out.println("El lloro pregunta paraula que finalitzi per vocal en minúscules");
         String paraula = Entrada.readLine();
-        // A l'inici vaig probar amb un or de (paraula = paraula.trim();)
+ 
         
         while (((paraula.isBlank()))==false) {
                 

@@ -1,4 +1,3 @@
-import java.sql.Blob;
 
 //Aquest programa nomes repeteix les paraules que no acabin en vocal minuscula i s'atura quan l'input sigui buit
 public class LloroAcabaLletra { 

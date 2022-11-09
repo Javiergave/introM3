@@ -1,8 +1,6 @@
 /*Aquest programa demana un text i, respecte el primer caràcter,
  composa un petit informe  */
 
-import javax.swing.text.AttributeSet.CharacterAttribute;
-
  public class InformeCaracter { 
     public static void main(String[] args) {  
 
