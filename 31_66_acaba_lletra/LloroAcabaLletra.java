@@ -23,11 +23,13 @@ public class LloroAcabaLletra {
             boolean interrogacio = paraula.charAt(ultima)=='?';
             boolean punt = paraula.charAt(ultima)=='.'; 
 
-            while (exclamacio||interrogacio||punt){
+            if (exclamacio||interrogacio||punt){
+
                 ultima = ultima - 1;
+                
             }
 
-            if (!(a||e||i||o||u)){
+            if (a||e||i||o||u){
                 System.out.println("El lloro diu: "+paraula);
             }   
                 
