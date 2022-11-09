@@ -12,13 +12,15 @@ public class SegonaIgualPenultima {
         while (!(paraula.isBlank())) {
 
                 
-            if (paraula.length()>3){
+            if (paraula.length()>4){
 
                 paraula = paraula.trim();
     
                 segonaIgualPenultima = (paraula.charAt(paraula.length()-2) == paraula.charAt(1));
             
             }
+
+
 
             if (segonaIgualPenultima){
 
