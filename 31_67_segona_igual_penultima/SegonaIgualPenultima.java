@@ -9,11 +9,15 @@ public class SegonaIgualPenultima {
         boolean segonaIgualPenultima = true;
         
         if (paraula.length()>3){
+
             segonaIgualPenultima = (paraula.charAt(paraula.length()-2) == paraula.charAt(1));
+        
         }
 
-        while (((paraula.isBlank()))==false) {
+        while (!(paraula.isBlank())) {
                 
+            System.out.println(segonaIgualPenultima); 
+
             if (segonaIgualPenultima){
 
                 System.out.println("Segona igual a penúltima");
