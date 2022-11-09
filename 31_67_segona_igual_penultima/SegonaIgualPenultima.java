@@ -8,17 +8,16 @@ public class SegonaIgualPenultima {
         
         boolean segonaIgualPenultima = true;
         
-        if (paraula.length()>3){
-
-            paraula = paraula.trim();
-
-            segonaIgualPenultima = (paraula.charAt(paraula.length()-2) == paraula.charAt(1));
-        
-        }
 
         while (!(paraula.isBlank())) {
                 
-            System.out.println(segonaIgualPenultima); 
+            if (paraula.length()>3){
+
+                paraula = paraula.trim();
+    
+                segonaIgualPenultima = (paraula.charAt(paraula.length()-2) == paraula.charAt(1));
+            
+            }
 
             if (segonaIgualPenultima){
 
