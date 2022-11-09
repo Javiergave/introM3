@@ -11,7 +11,9 @@ public class LloroAcabaLletra {
             int ultima = paraula.length()-1;
 
             if (paraula.charAt(ultima)=='!'||paraula.charAt(ultima)=='?'||paraula.charAt(ultima)=='.'){
+                
                 ultima = paraula.length()-2;
+                
             }
 
             boolean a = Character.toLowerCase(paraula.charAt(ultima))=='a';
