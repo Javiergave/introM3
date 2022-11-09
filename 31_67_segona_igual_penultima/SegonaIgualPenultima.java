@@ -30,7 +30,6 @@ public class SegonaIgualPenultima {
 
             }
                 
-            System.out.println("El lloro pregunta paraula que finalitzi per vocal en minúscules");
             paraula = Entrada.readLine();
             paraula = paraula.trim();
             
