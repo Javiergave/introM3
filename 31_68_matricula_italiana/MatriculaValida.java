@@ -10,7 +10,7 @@ public class MatriculaValida {
 
             boolean caracterInvalid = true;
 
-            for (int i = 0; i<=8; i++){
+            for (int i = 0; i>=7; i++){
 
                 if (paraula.charAt(i)=='I'||paraula.charAt(i)=='O'||paraula.charAt(i)=='Q'||paraula.charAt(i)=='U'){
 
