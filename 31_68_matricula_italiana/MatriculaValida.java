@@ -13,7 +13,7 @@ public class MatriculaValida {
             boolean ultimesLletres = (paraula.charAt(5)>64 && paraula.charAt(5)<91) && (paraula.charAt(6)>64 && paraula.charAt(6)<91);
             boolean lletresConfuses = ((paraula.indexOf("I")>0&&paraula.indexOf("O")>0)&&(paraula.indexOf("U")>0&&paraula.indexOf("Q")>0));
 
-            if (((primeresLletres && tresNumeros) && ultimesLletres)&& lletresConfuses==false){
+            if (((primeresLletres && tresNumeros) && ultimesLletres)&& lletresConfuses){
 
                 System.out.println("És una matrícula italiana vàlida"); 
 
