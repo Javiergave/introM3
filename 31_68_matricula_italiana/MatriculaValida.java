@@ -8,14 +8,11 @@ public class MatriculaValida {
 
         if (paraula.length()==7){
 
-            for (int i = 0; i>=7; i++){
 
-                if (paraula.charAt(i)==73||paraula.charAt(i)==79||paraula.charAt(i)==81||paraula.charAt(i)==85){
+            if (paraula.contains("IQUO")){
 
-                    System.out.println("No és una matrícula italiana vàlida"); 
-                    return;
-
-                }
+                System.out.println("No és una matrícula italiana vàlida"); 
+                return;
 
             }
 
