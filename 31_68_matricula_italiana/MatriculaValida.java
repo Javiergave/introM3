@@ -11,7 +11,7 @@ public class MatriculaValida {
             boolean primeresLletres = (paraula.charAt(0)>64 && paraula.charAt(0)<91) && (paraula.charAt(1)>64 && paraula.charAt(1)<91);
             boolean tresNumeros = (paraula.charAt(2)>47 && paraula.charAt(2)<58) && (paraula.charAt(3)>47 && paraula.charAt(3)<58) && (paraula.charAt(4)>47 && paraula.charAt(4)<58);
             boolean ultimesLletres = (paraula.charAt(5)>64 && paraula.charAt(5)<91) && (paraula.charAt(6)>64 && paraula.charAt(6)<91);
-            boolean lletresConfuses = ((paraula.contains("I")&&paraula.contains("O"))&&(paraula.contains("U")&&paraula.contains("Q")));
+            boolean lletresConfuses = ((paraula.indexOf("I")>0&&paraula.indexOf("O")>0)&&(paraula.indexOf("U")>0&&paraula.indexOf("Q")>0));
 
             if (((primeresLletres && tresNumeros) && ultimesLletres)&& lletresConfuses==false){
 
