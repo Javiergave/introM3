@@ -6,7 +6,7 @@ public class MatriculaValida {
         System.out.println("Introduïu una matrícula"); 
         String paraula = Entrada.readLine(); 
 
-        if (paraula.length()==8){
+        if (paraula.length()==7){
 
             boolean caracterInvalid = true;
 
