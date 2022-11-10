@@ -6,11 +6,11 @@ public class MatriculaValida {
         System.out.println("Introduïu una matrícula"); 
         String paraula = Entrada.readLine(); 
 
-        if (paraula.length()==7){
+        if (paraula.length()==8){
 
             boolean caracterInvalid = true;
 
-            for (int i = 0; i<=7; i++){
+            for (int i = 0; i<=8; i++){
 
                 if (paraula.charAt(i)=='I'||paraula.charAt(i)=='O'||paraula.charAt(i)=='Q'||paraula.charAt(i)=='U'){
 
