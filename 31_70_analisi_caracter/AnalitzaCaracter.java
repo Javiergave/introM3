@@ -17,34 +17,37 @@ public class AnalitzaCaracter {
 
         System.out.println("Text?");
         String paraula = Entrada.readLine(); 
-        System.out.println("Posició"); 
+        System.out.println("Posició?"); 
         int valor = Integer.parseInt(Entrada.readLine());
 
-        char selecionat = 1;
+        char seleccionat = 'A';
 
         if (Math.abs(valor)<paraula.length()){
 
             if (valor<0){
 
-                selecionat = paraula.charAt(paraula.length() - Math.abs(valor));
-
+                seleccionat = paraula.charAt(paraula.length() - Math.abs(valor));
+    
+            }
+            else {
+    
+                seleccionat = paraula.charAt(valor);
+    
             }
 
+            if (Character.isLetter(seleccionat)){
 
-
-            if (Character.isLetter(selecionat)){
-
-                System.out.println("'"+selecionat+"' és una lletra");
+                System.out.println("'"+seleccionat+"' és una lletra");
 
             }
-            else if (Character.isDigit(selecionat)){
+            else if (Character.isDigit(seleccionat)){
 
-                System.out.println("'"+selecionat+"' és un nombre"); 
+                System.out.println("'"+seleccionat+"' és un nombre"); 
 
             }
             else{
 
-                System.out.println("'"+selecionat+"' és una altra cosa"); 
+                System.out.println("'"+seleccionat+"' és una altra cosa"); 
 
             }
         }
