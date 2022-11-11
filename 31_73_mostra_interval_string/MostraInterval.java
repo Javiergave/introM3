@@ -16,13 +16,13 @@ public class MostraInterval {
 
         if (fin>paraula.length()){
 
-            fin = paraula.length();
+            fin = paraula.length()-1;
 
         }
 
         if (ini>paraula.length()){
 
-            ini = paraula.length();
+            ini = paraula.length()-1;
 
         }
 
