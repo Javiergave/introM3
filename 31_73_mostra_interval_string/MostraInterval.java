@@ -16,6 +16,12 @@ public class MostraInterval {
 
         if (fin<ini){
 
+            if (fin<-1) {
+
+                fin = -1;
+
+            }
+
             for (int n = ini; n >= fin;n--){
 
                 System.out.println(paraula.charAt(n)); 
@@ -24,6 +30,12 @@ public class MostraInterval {
         }
 
         else{
+
+            if (ini<-1) {
+
+                ini = -1;
+
+            }
 
             for (int n = ini; n <= fin;n++){
 
