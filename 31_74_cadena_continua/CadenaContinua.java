@@ -35,8 +35,9 @@ public class CadenaContinua {
             }
 
         }
-
+        else{
         System.out.println("error"); 
+        }
 
     }
 }
