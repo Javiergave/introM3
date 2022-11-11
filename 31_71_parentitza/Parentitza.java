@@ -1,4 +1,4 @@
-//
+//Aquest programa demana un text i mostra cada lletra entre parèntesis
 
 public class Parentitza {
     public static void main(String[] args) {  
