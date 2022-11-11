@@ -14,7 +14,7 @@ public class NomesLletres {
             
         }
         int n = paraula.length()-1;
-        while (Character.isLetter(paraula.charAt(n))){
+        while (Character.isLetter(paraula.charAt(n))==false){
             n = n-1;
         }
         System.out.println(paraula.charAt(n));
