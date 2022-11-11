@@ -14,23 +14,25 @@ public class CadenaContinua {
 
             System.out.println("Nombre?"); 
             int nombre = Integer.parseInt(Entrada.readLine());
-            int reps = nombre;
 
             if (nombre>0){
 
-                nombre = 0;
+                int reps = nombre;
+                nombre = 1;
 
                 for (int i = 0; nombre <= reps; i++,nombre++){
 
-                    if (i>paraula.length()){
+                    if (i>paraula.length()-1){
 
                         i = 0;
 
                     }
-
+                    
                     System.out.print(paraula.charAt(i)); 
 
                 }
+
+                System.out.println();
                
             }
 
