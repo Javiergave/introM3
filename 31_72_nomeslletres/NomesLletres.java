@@ -13,9 +13,11 @@ public class NomesLletres {
             }
             
         }
-        if (Character.isLetter(paraula.length()-1)){
-            System.out.println(paraula.charAt(paraula.length()-1));
+        int n = paraula.length()-1;
+        while (Character.isLetter(paraula.charAt(n))){
+            n = n-1;
         }
+        System.out.println(paraula.charAt(n));
     }
     
 }
