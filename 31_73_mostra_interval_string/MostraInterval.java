@@ -3,7 +3,10 @@ mostra tots els caràcters que hi ha entre el primer i el
 segon, en l'ordre marcat per l'entrada. */
 
 public class MostraInterval {
-    public static void main(String[] args) {  
+    public static void main(String[] args) { 
+        
+        System.out.println("text?"); 
+        String paraula = Entrada.readLine(); 
 
         System.out.println("inici?"); 
         int ini = Integer.parseInt(Entrada.readLine()); 
@@ -15,7 +18,7 @@ public class MostraInterval {
 
             for (int n = fin; n >= ini;n--){
 
-                System.out.println(n); 
+                System.out.println(paraula.charAt(n)); 
                 
             }  
         }
@@ -24,7 +27,7 @@ public class MostraInterval {
 
             for (int n = ini; n <= fin;n++){
 
-                System.out.println(n); 
+                System.out.println(paraula.charAt(n)); 
             
             }
         }
