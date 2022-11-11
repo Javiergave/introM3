@@ -8,39 +8,48 @@ public class EsEnter {
     public static void main(String[] args) {  
 
         System.out.println("Introdueix texts (enter sol per finalitzar)"); 
-        String paraula = Entrada.readLine();
+        String paraula = "text";
         boolean esNombre = true;
 
         while (paraula.isEmpty()==false){
 
+            paraula = Entrada.readLine();
             paraula = paraula.strip();
 
-            for (int i = 0; i == paraula.length(); i++){
+            if (paraula.isEmpty()){
+             
+                if (paraula.charAt(0)=='-'||paraula.charAt(0)=='+'||Character.isDigit(paraula.charAt(0))){
 
-                if (paraula.charAt(i)=='-'||paraula.charAt(i)=='+'){
-                    i = i+1;
+                    for (int i = 1; i <= paraula.length()-1; i++){
+
+                        if (Character.isDigit(paraula.charAt(i))==false){
+
+                            esNombre=false;
+
+                        }                        
+                    }
+
+                }
+                else{
+                    esNombre = false;
                 }
 
-                if (Character.isDigit(paraula.charAt(i))==false){
+                
 
-                esNombre = false;
-
+                if (esNombre = true){
+                    System.out.println("És enter"); 
+                }
+                else{
+                    System.out.println("No és enter"); 
                 }
 
+                
+
             }
 
-            if (esNombre){
-                System.out.println("És enter"); 
-            }
-            else{
-                System.out.println("No és enter"); 
-            }
-
-            paraula = Entrada.readLine();
+            System.out.println("Adéu"); 
 
         }
-
-        System.out.println("Adéu"); 
-
     }
+
 }
