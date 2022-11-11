@@ -16,7 +16,7 @@ public class MostraInterval {
 
         if (fin<ini){
 
-            for (int n = fin; n >= ini;n--){
+            for (int n = fin; n <= ini;n++){
 
                 System.out.println(paraula.charAt(n)); 
                 
