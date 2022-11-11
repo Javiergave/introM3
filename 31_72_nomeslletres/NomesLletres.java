@@ -17,7 +17,7 @@ public class NomesLletres {
         while (Character.isLetter(paraula.charAt(n))){
             n = n-1;
         }
-        System.out.println(paraula.charAt(paraula.length()-n));
+        System.out.println(paraula.charAt(n));
     }
     
 }
