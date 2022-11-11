@@ -16,9 +16,9 @@ public class MostraInterval {
 
         if (fin<ini){
 
-            if (fin<-1) {
+            if (fin<0) {
 
-                fin = -1;
+                fin = 0;
 
             }
 
@@ -31,9 +31,9 @@ public class MostraInterval {
 
         else{
 
-            if (ini<-1) {
+            if (ini<0) {
 
-                ini = -1;
+                ini = 0;
 
             }
 
