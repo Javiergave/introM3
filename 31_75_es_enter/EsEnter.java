@@ -39,5 +39,8 @@ public class EsEnter {
             paraula = Entrada.readLine();
 
         }
+
+        System.out.println("Adéu"); 
+
     }
 }
