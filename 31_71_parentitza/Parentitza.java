@@ -11,13 +11,14 @@ public class Parentitza {
             if (Character.isLetter(paraula.charAt(i))){
                 System.out.print("("+paraula.charAt(i)+")"); 
             }
-            else{
-                System.out.print(paraula.charAt(i)); 
-            }
             
         }
 
-        System.out.println();
+        int n = paraula.length()-1;
+        while (Character.isLetter(paraula.charAt(n))){
+            n = n-1;
+        }
+        System.out.println(paraula.charAt(n));
 
     }
     
