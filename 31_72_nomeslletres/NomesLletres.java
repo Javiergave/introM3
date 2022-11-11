@@ -13,9 +13,9 @@ public class NomesLletres {
             }
             
         }
-
-        System.out.println(paraula.charAt(paraula.length()-1));
-
+        if (Character.isLetter(paraula.length()-1)){
+            System.out.println(paraula.charAt(paraula.length()-1));
+        }
     }
     
 }
