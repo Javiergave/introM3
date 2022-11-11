@@ -12,7 +12,7 @@ public class NomesLletres {
             n = n-1;
         }
         
-        for (int i= 0; i <= n; i++){
+        for (int i= 0; i <= n-1; i++){
 
             if (Character.isLetter(paraula.charAt(i))){
                 System.out.print(paraula.charAt(i)+", "); 
