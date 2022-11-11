@@ -21,6 +21,11 @@ public class MostraInterval {
                 fin = 0;
 
             }
+            if (fin>paraula.length()){
+
+                fin = paraula.length();
+
+            }
 
             for (int n = ini; n >= fin;n--){
 
@@ -36,14 +41,15 @@ public class MostraInterval {
                 ini = 0;
 
             }
+            if (ini>paraula.length()){
+
+                ini = paraula.length();
+
+            }
 
             for (int n = ini; n <= fin;n++){
 
-                if (n<paraula.length()){
-
                 System.out.println(paraula.charAt(n)); 
-
-                }
             
             }
         }
