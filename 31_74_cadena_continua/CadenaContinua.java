@@ -18,7 +18,9 @@ public class CadenaContinua {
 
             if (nombre>0){
 
-                for (int i = 0, nombre = 0; nombre <= reps; i++,nombre++){
+                nombre = 0;
+
+                for (int i = 0; nombre <= reps; i++,nombre++){
 
                     if (i>paraula.length()){
 
