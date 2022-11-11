@@ -5,18 +5,21 @@ public class NomesLletres {
 
         System.out.println("Text?");
         String paraula = Entrada.readLine(); 
+
+        int n = paraula.length()-1;
+
+        while (Character.isLetter(paraula.charAt(n))==false){
+            n = n-1;
+        }
         
-        for (int i= 0; i <= paraula.length()-2; i++){
+        for (int i= 0; i <= n; i++){
 
             if (Character.isLetter(paraula.charAt(i))){
                 System.out.print(paraula.charAt(i)+", "); 
             }
             
         }
-        int n = paraula.length()-1;
-        while (Character.isLetter(paraula.charAt(n))==false){
-            n = n-1;
-        }
+        
         System.out.println(paraula.charAt(n));
     }
     
