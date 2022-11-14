@@ -18,19 +18,25 @@ public class EsEnter {
 
             if (paraula.isEmpty()==false){
              
-                for (int i = 0; (i <= paraula.length()-1)&&(esNombre = true); i++){
+                if (paraula.charAt(0)=='-'||paraula.charAt(0)=='+'||Character.isDigit(paraula.charAt(0))){
 
-                    esNombre = true;
+                    for (int i = 0; (i <= paraula.length()-1)&&(esNombre = true); i++){
 
-                    if (!(paraula.charAt(i)=='-'||paraula.charAt(i)=='+'||Character.isDigit(paraula.charAt(i))==true)){
+                        esNombre = true;
 
-                        esNombre = false;
+                        if (Character.isDigit(paraula.charAt(i))==false){
 
+                            esNombre=false;
+
+                        }                    
                     }
-                
-                }
 
-                
+                }
+                else{
+
+                    esNombre=false; 
+
+                }
 
                 if (esNombre){
                     System.out.println("És enter"); 
