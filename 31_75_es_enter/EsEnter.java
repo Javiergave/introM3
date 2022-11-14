@@ -27,7 +27,6 @@ public class EsEnter {
                         if (Character.isDigit(paraula.charAt(i))==false||paraula.charAt(i)=='-'||paraula.charAt(i)=='+'){
 
                             esNombre=false;
-                            System.out.println("bad"); 
 
                         }                    
                     }
