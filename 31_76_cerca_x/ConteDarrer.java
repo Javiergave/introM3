@@ -8,7 +8,16 @@ public class ConteDarrer {
 
         System.out.println("Introdueix texts (enter sol per finalitzar)"); 
         String frase = Entrada.readLine();
-        char ultimaLletra = Character.toLowerCase(frase.charAt(frase.length()-1));
+
+        if (frase.isEmpty){
+
+            goto 46;
+
+        }
+        else {
+            
+            char ultimaLletra = Character.toLowerCase(frase.charAt(frase.length()-1));
+        }
 
         while (frase.isEmpty()==false){
 
