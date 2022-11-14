@@ -16,17 +16,19 @@ public class EsEnter {
             paraula = Entrada.readLine();
             paraula = paraula.strip();
 
-            if (paraula.isEmpty()){
+            if (paraula.isEmpty()==false){
              
                 if (paraula.charAt(0)=='-'||paraula.charAt(0)=='+'||Character.isDigit(paraula.charAt(0))){
 
-                    for (int i = 1; i <= paraula.length()-1; i++){
+                    for (int i = 1; (i <= paraula.length()-1)&&(esNombre = true); i++){
+
+                        esNombre = true;
 
                         if (Character.isDigit(paraula.charAt(i))==false){
 
                             esNombre=false;
 
-                        }                        
+                        }                    
                     }
 
                 }
@@ -36,7 +38,7 @@ public class EsEnter {
 
                 
 
-                if (esNombre = true){
+                if (esNombre){
                     System.out.println("És enter"); 
                 }
                 else{
@@ -45,11 +47,9 @@ public class EsEnter {
 
                 
 
-            }
-
-            System.out.println("Adéu"); 
-
+            } 
         }
+        System.out.println("Adéu");
     }
 
 }
