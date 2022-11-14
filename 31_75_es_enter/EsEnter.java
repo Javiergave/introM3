@@ -29,6 +29,11 @@ public class EsEnter {
                             esNombre=false;
 
                         }
+                    }
+                    else{
+
+                        esNombre = false;
+
                     }                    
                 }
 
