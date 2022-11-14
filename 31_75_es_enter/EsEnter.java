@@ -20,11 +20,11 @@ public class EsEnter {
              
                 if (paraula.charAt(0)=='-'||paraula.charAt(0)=='+'||Character.isDigit(paraula.charAt(0))){
 
-                    for (int i = 01; (i <= paraula.length()-1)&&(esNombre = true); i++){
+                    for (int i = 1; (i <= paraula.length()-1)&&(esNombre = true); i++){
 
                         esNombre = true;
 
-                        if (Character.isDigit(paraula.charAt(i))==false){
+                        if (Character.isDigit(paraula.charAt(i))==false||paraula.charAt(i)=='-'||paraula.charAt(i)=='+'){
 
                             esNombre=false;
 
