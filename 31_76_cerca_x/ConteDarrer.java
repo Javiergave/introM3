@@ -9,15 +9,14 @@ public class ConteDarrer {
         System.out.println("Introdueix texts (enter sol per finalitzar)"); 
         String frase = Entrada.readLine();
 
-        if (frase.isEmpty){
+        if (frase.isEmpty()) {
 
-            goto 46;
-
-        }
-        else {
+            System.out.println("Adéu");
+            return;
             
-            char ultimaLletra = Character.toLowerCase(frase.charAt(frase.length()-1));
         }
+
+        char ultimaLletra = Character.toLowerCase(frase.charAt(frase.length()-1));
 
         while (frase.isEmpty()==false){
 
