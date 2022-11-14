@@ -23,8 +23,6 @@ public class EsEnter {
 
                     for (int i = 1; (i <= paraula.length()-1)&&(esNombre == true); i++){
 
-                        esNombre = true;
-
                         if (Character.isDigit(paraula.charAt(i))==false||paraula.charAt(i)=='-'||paraula.charAt(i)=='+'){
 
                             esNombre=false;
