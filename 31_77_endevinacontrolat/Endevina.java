@@ -6,10 +6,7 @@ import javax.swing.text.AttributeSet.ParagraphAttribute;
 public class Endevina {
     public static void main(String[] args) {
         
-        int nombre = 42;
-        
-        System.out.println("Ves introduint enters entre 1 i 100 fins que encertis el que jo he pensat");
-        
+        int nombre = 42;        
         String palabra = "123";
         boolean nomesInts = true;
         int intent = 3348;
