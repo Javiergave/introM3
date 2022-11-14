@@ -18,22 +18,18 @@ public class EsEnter {
 
             if (paraula.isEmpty()==false){
              
-                if (paraula.charAt(0)=='-'||paraula.charAt(0)=='+'||Character.isDigit(paraula.charAt(0))){
+                for (int i = 0; (i <= paraula.length()-1)&&(esNombre = true); i++){
 
-                    for (int i = 1; (i <= paraula.length()-1)&&(esNombre = true); i++){
+                    esNombre = true;
 
-                        esNombre = true;
+                    if (paraula.charAt(i)=='-'||paraula.charAt(i)=='+'||Character.isDigit(paraula.charAt(i))){
 
                         if (Character.isDigit(paraula.charAt(i))==false){
 
                             esNombre=false;
 
-                        }                    
-                    }
-
-                }
-                else{
-                    esNombre = false;
+                        }
+                    }                    
                 }
 
                 
