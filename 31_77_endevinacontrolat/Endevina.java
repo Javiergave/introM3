@@ -13,7 +13,7 @@ public class Endevina {
         
         while (!(palabra.equals("42"))&&(!(palabra.isEmpty()))){
             
-            System.out.println("Introdueix un valor");
+            System.out.println("Nombre?");
             palabra = Entrada.readLine();
             nomesInts = true;
 
@@ -61,7 +61,7 @@ public class Endevina {
             System.out.println("Cancel·lat!");
         }
         else {
-            System.out.println("Has encertat!");
+            System.out.println("Encertat!");
         }
      }
 }
