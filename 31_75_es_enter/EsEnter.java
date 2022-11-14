@@ -1,4 +1,3 @@
-import javax.management.monitor.StringMonitorMBean;
 
 /*vagi demanant texts fins rebre la cadena buida.Per 
 cada text no buit que rebi, indicarà si correspon o no a 
