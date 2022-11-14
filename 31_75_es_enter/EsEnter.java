@@ -22,19 +22,12 @@ public class EsEnter {
 
                     esNombre = true;
 
-                    if (paraula.charAt(i)=='-'||paraula.charAt(i)=='+'||Character.isDigit(paraula.charAt(i))){
-
-                        if (Character.isDigit(paraula.charAt(i))==false){
-
-                            esNombre=false;
-
-                        }
-                    }
-                    else{
+                    if (!(paraula.charAt(i)=='-'||paraula.charAt(i)=='+'||Character.isDigit(paraula.charAt(i))==true)){
 
                         esNombre = false;
 
-                    }                    
+                    }
+                
                 }
 
                 
