@@ -31,7 +31,7 @@ public class MostraInterval {
 
             if (fin<0) {
 
-                fin = paraula.length();
+                fin = ini+1;
 
             }
 
