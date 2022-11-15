@@ -41,7 +41,7 @@ public class Endevina {
                 else if (nombre>intent){
                     System.out.println("Massa petit");
                 }
-                if ((intent>100)||(intent == '0')){
+                else if ((intent>100)||(intent == '0')){
                     System.out.println("Fora de rang");
                 }
                 else if (nombre<intent) {
