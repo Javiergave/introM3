@@ -14,7 +14,7 @@ public class InformeText {
         int altres = 0;
         int total = paraula.length();
 
-        for (int i= 0; i <= paraula.length(); i++){
+        for (int i= 0; i <= paraula.length()-1; i++){
 
             char lletra = paraula.charAt(i);
 
