@@ -49,6 +49,11 @@ public class MostraInterval {
                 ini = 0;
 
             }
+            if (fin<0) {
+
+                fin = paraula.length();
+
+            }
             
             for (int n = ini; n <= fin;n++){
 
