@@ -35,29 +35,27 @@ public class Endevina {
                 }
             }
             
-            
-            if (palabra.isEmpty()==false){
+            if (palabra.isEmpty()){
 
-                if (nomesInts){
+                break;
+            }
+            if (nomesInts){
                 
-                    if ((intent>100)||(intent <= 0)){
-                        System.out.println("Fora de rang");
-                    }
-                    else if (nombre>intent){
-                        System.out.println("Massa petit");
-                    }
-                    else if (nombre<intent) {
-                        System.out.println("Massa gran");
-                    }
+                if ((intent>100)||(intent <= 0)){
+                    System.out.println("Fora de rang");
                 }
+                else if (nombre>intent){
+                    System.out.println("Massa petit");
+                }
+                else if (nombre<intent) {
+                    System.out.println("Massa gran");
+                }
+            }
                 else{
 
                     System.out.println("Només nombres"); 
 
                 }
-            }
-        
-
         }
         if (palabra.isEmpty()){
             System.out.println("Cancel·lat!");
