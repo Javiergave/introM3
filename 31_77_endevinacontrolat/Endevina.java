@@ -19,7 +19,7 @@ public class Endevina {
 
             for (int i = 0; i <= palabra.length()-1; i++){
 
-                if ((Character.isDigit(palabra.charAt(i))==false)||palabra.indexOf('+')>-1||palabra.indexOf('-')>-1){
+                if ((Character.isDigit(palabra.charAt(i))==false)||palabra.indexOf('+')>-1||palabra.charAt(i)=='-'){
 
                     nomesInts = false;
                     break;
