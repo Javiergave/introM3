@@ -66,14 +66,30 @@ public class InformeText {
 
         System.out.println("Informe"); 
         System.out.println("======="); 
-        System.out.println("lletres en majúscules: "+lletresMaj+" ("+100*lletresMaj/total+"%)"); 
-        System.out.println("lletres en minúscules: "+lletresMin+" ("+100*lletresMin/total+"%)"); 
-        System.out.println("total lletres: "+totalLletres+" ("+100*totalLletres/total+"%)"); 
-        System.out.println("vocals en majúscules: "+vocalesMaj+" ("+100*vocalesMaj/total+"%)"); 
-        System.out.println("vocals en minúscules: "+vocalesMin+" ("+100*vocalesMin/total+"%)"); 
-        System.out.println("total vocals: "+totalVocals+" ("+100*totalVocals/total+"%)"); 
-        System.out.println("digits: "+digits+" ("+100*digits/total+"%)"); 
-        System.out.println("altres caràcters: "+altres+" ("+100*altres/total+"%)"); 
+        System.out.printf("lletres en majúscules: %d (%.2f%%)%n",
+                  lletresMaj,
+                  100.0 * lletresMaj / total);
+        System.out.printf("lletres en minúscules: %d (%.2f%%)%n",
+                  lletresMin,
+                  100.0 * lletresMin / total);        
+        System.out.printf("total lletres: %d (%.2f%%)%n",
+                  totalLletres,
+                  100.0 * totalLletres / total);
+        System.out.printf("vocals en majúscules: %d (%.2f%%)%n",
+                  vocalesMaj,
+                  100.0 * vocalesMaj / total);
+        System.out.printf("vocals en minúscules: %d (%.2f%%)%n",
+                  vocalesMin,
+                  100.0 * vocalesMin / total);
+        System.out.printf("total vocals: %d (%.2f%%)%n",
+                  totalVocals,
+                  100.0 * totalVocals / total);        
+        System.out.printf("digits: %d (%.2f%%)%n",
+                  digits,
+                  100.0 * digits / total);
+        System.out.printf("altres caràcters: %d (%.2f%%)%n",
+                  altres,
+                  100.0 * altres / total);        
         System.out.println("total caràcters: "+total); 
     }
 }
