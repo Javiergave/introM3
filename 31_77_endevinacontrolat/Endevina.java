@@ -19,7 +19,7 @@ public class Endevina {
 
             for (int i = 0; i <= palabra.length()-1; i++){
 
-                if ((Character.isDigit(palabra.charAt(i))==false)||palabra.indexOf('+')>-1||palabra.charAt(i)=='-'){
+                if ((Character.isDigit(palabra.charAt(i))==false)||palabra.indexOf('+')>-1||palabra.indexOf('-')>-1){
 
                     nomesInts = false;
                     break;
@@ -35,7 +35,7 @@ public class Endevina {
             
             
 
-            if (nomesInts){
+            if (nomesInts && (intent >0)){
                 if (intent<=0){
                     System.out.println("Fora de rang");
                 }
