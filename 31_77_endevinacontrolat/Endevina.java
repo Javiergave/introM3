@@ -18,6 +18,7 @@ public class Endevina {
             nomesInts = true;
 
             for (int i = 0; i <= palabra.length()-1; i++){
+
                 if (palabra.charAt(0)=='-'){
                     i = i + 1;
                 }
@@ -35,25 +36,25 @@ public class Endevina {
             }
             
             
-            
+            if (palabra.isEmpty()==false){
 
-            if (nomesInts){
+                if (nomesInts){
                 
-                if ((intent>100)||(intent <= 0)){
-                    System.out.println("Fora de rang");
+                    if ((intent>100)||(intent <= 0)){
+                        System.out.println("Fora de rang");
+                    }
+                    else if (nombre>intent){
+                        System.out.println("Massa petit");
+                    }
+                    else if (nombre<intent) {
+                        System.out.println("Massa gran");
+                    }
                 }
-                else if (nombre>intent){
-                    System.out.println("Massa petit");
-                }
-                
-                else if (nombre<intent) {
-                    System.out.println("Massa gran");
-                }
-            }
-            else{
+                else{
 
-                System.out.println("Només nombres"); 
+                    System.out.println("Només nombres"); 
 
+                }
             }
         
 
