@@ -38,7 +38,7 @@ public class Endevina {
                 if (intent<0){
                     System.out.println("Només nombres");
                 }
-                else if ((intent>100)||(intent == '0')){
+                else if ((intent>100)||(intent <= 0)){
                     System.out.println("Fora de rang");
                 }
                 else if (nombre>intent){
