@@ -14,13 +14,13 @@ public class MostraInterval {
         System.out.println("final?"); 
         int fin = Integer.parseInt(Entrada.readLine()); 
 
-        if (fin>paraula.length()){
+        if (fin>paraula.length()-1){
 
             fin = paraula.length()-1;
 
         }
 
-        if (ini>paraula.length()){
+        if (ini>paraula.length()-1){
 
             ini = paraula.length()-1;
 
