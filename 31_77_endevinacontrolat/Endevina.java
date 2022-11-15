@@ -22,7 +22,6 @@ public class Endevina {
                 if ((Character.isDigit(palabra.charAt(i))==false)||palabra.indexOf('+')>-1||palabra.indexOf('-')>-1){
 
                     nomesInts = false;
-                    
 
                 }
                 else{
@@ -35,9 +34,9 @@ public class Endevina {
             
             
 
-            if (nomesInts && (intent >= -1)){
-                if (intent<=0){
-                    System.out.println("Fora de rang");
+            if (nomesInts){
+                if (intent<=-1){
+                    System.out.println("Només nombres");
                 }
                 else if (nombre>intent){
                     System.out.println("Massa petit");
