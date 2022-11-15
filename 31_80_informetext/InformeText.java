@@ -12,9 +12,9 @@ public class InformeText {
         int lletresMaj = 0;
         int digits = 0;
         int altres = 0;
-        int total = paraula.length()-1;
+        int total = paraula.length();
 
-        for (int i= 0; i <= paraula.length()-1; i++){
+        for (int i= 0; i <= paraula.length(); i++){
 
             char lletra = paraula.charAt(i);
 
