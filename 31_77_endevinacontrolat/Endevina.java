@@ -35,13 +35,13 @@ public class Endevina {
             
 
             if (nomesInts){
-                if (intent<1){
+                if (intent<0){
                     System.out.println("Només nombres");
                 }
                 else if (nombre>intent){
                     System.out.println("Massa petit");
                 }
-                if ((intent>100)||(intent == 0)){
+                if ((intent>100)||(intent == '0')){
                     System.out.println("Fora de rang");
                 }
                 else if (nombre<intent) {
