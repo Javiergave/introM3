@@ -35,7 +35,7 @@ public class Endevina {
             
             
 
-            if (nomesInts && (intent > -1)){
+            if (nomesInts && (intent >= -1)){
                 if (intent<=0){
                     System.out.println("Fora de rang");
                 }
