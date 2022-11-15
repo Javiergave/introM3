@@ -22,7 +22,7 @@ public class MostraInterval {
 
         if (ini>paraula.length()){
 
-            ini = paraula.length()-2;
+            ini = paraula.length()-1;
 
         }
 
