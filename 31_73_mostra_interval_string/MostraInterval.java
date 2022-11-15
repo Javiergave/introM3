@@ -44,14 +44,14 @@ public class MostraInterval {
 
         else{
 
-            if (ini<0) {
+            if (ini<=-1) {
 
                 ini = 0;
 
             }
             if (fin<0) {
 
-                fin = 0;
+                fin = ini+1;
 
             }
             
