@@ -11,7 +11,7 @@ public class VocalsMajuscules {
             boolean esVocal = paraula.charAt(i)=='a'||paraula.charAt(i)=='e'||paraula.charAt(i)=='i'||paraula.charAt(i)=='o'||paraula.charAt(i)=='u';
             boolean esVocalMajus = paraula.charAt(i)=='A'||paraula.charAt(i)=='E'||paraula.charAt(i)=='I'||paraula.charAt(i)=='O'||paraula.charAt(i)=='U';
 
-            if ((Character.isLetter(paraula.charAt(i))&&esVocal==false)||esVocalMajus){
+            if (Character.isLetter(paraula.charAt(i))&&((esVocal==false)&&(esVocalMajus==false))){
                 System.out.print(Character.toLowerCase(paraula.charAt(i))); 
             }
             else{
