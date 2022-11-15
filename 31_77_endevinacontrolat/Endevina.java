@@ -22,7 +22,7 @@ public class Endevina {
                 if ((Character.isDigit(palabra.charAt(i))==false)||palabra.indexOf('+')>-1||palabra.indexOf('-')>-1){
 
                     nomesInts = false;
-                    break;
+                    
 
                 }
                 else{
