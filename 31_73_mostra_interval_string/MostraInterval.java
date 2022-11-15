@@ -51,7 +51,7 @@ public class MostraInterval {
             }
             if (fin<0) {
 
-                fin = ini+1;
+                fin = ini;
 
             }
             
