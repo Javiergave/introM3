@@ -12,8 +12,10 @@ public class ComptaVocals {
             boolean esVocalMajus = paraula.charAt(i)=='A'||paraula.charAt(i)=='E'||paraula.charAt(i)=='I'||paraula.charAt(i)=='O'||paraula.charAt(i)=='U';
             boolean esVocalAcento = paraula.charAt(i)=='à'||paraula.charAt(i)=='è'||paraula.charAt(i)=='é'||paraula.charAt(i)=='í'||paraula.charAt(i)=='ò'||paraula.charAt(i)=='ó'||paraula.charAt(i)=='ú';
             boolean tieneDieresis = paraula.charAt(i)=='ï'||paraula.charAt(i)=='ü';
-
-            if (esVocal||esVocalMajus||esVocalAcento||tieneDieresis){
+            boolean esVocalMajusAcento = paraula.charAt(i)=='À'||paraula.charAt(i)=='È'||paraula.charAt(i)=='É'||paraula.charAt(i)=='Í'||paraula.charAt(i)=='Ó'||paraula.charAt(i)=='Ò'||paraula.charAt(i)=='Ú';
+            boolean majusDieresis = paraula.charAt(i)=='Ï'||paraula.charAt(i)=='Ü';
+            
+            if (esVocal||esVocalMajus||esVocalAcento||tieneDieresis||esVocalMajusAcento||majusDieresis){
 
                 vocales = vocales + 1;
 
