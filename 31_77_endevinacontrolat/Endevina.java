@@ -35,7 +35,7 @@ public class Endevina {
             
 
             if (nomesInts){
-                if (intent<0){
+                if (intent<1){
                     System.out.println("Només nombres");
                 }
                 else if (nombre>intent){
