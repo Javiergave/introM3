@@ -19,12 +19,12 @@ public class TransformaText {
         boolean esVocal = false;
         String nombre = "";
 
-        for (int i = 0; i <= paraula.length(); i++){
+        for (int i = 0; i <= paraula.length()-1; i++){
 
             esVocal = false;
             
             if (i > 0){
-                if ((Character.isDigit(paraula.charAt(i))==false)&&(Character.isDigit(paraula.charAt(i-1)))){
+                if (((Character.isDigit(paraula.charAt(i))==false)&&(Character.isDigit(paraula.charAt(i-1))))||(i == paraula.length()-1)&&(Character.isDigit(paraula.charAt(i-1)))){
 
                     System.out.print("("+nombre+")");
                     nombre = ""; 
