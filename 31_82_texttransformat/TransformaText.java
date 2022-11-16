@@ -58,7 +58,7 @@ public class TransformaText {
 
                     if (paraula.charAt(i)==digits.charAt(k)){
      
-                        nombre = nombre + paraula.charAt(i);
+                        nombre = paraula.charAt(i)+nombre;
 
                     }
     
