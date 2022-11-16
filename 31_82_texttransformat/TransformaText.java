@@ -1,4 +1,3 @@
-import javax.xml.stream.events.Characters;
 
 /*Aquest programa demana un text i mostra una versió transformada segons les següents regles:
 
