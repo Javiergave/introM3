@@ -26,7 +26,8 @@ public class TransformaText {
             if (i > 0){
                 if ((Character.isDigit(paraula.charAt(i))==false)&&(Character.isDigit(paraula.charAt(i-1)))){
 
-                    System.out.print("("+nombre+")"); 
+                    System.out.print("("+nombre+")");
+                    nombre = ""; 
 
                 }
             }
