@@ -23,8 +23,6 @@ public class TransformaText {
 
                 for (int j = 0; j<=vocals.length()-1; j++){
 
-                    System.out.println("for"); 
-
                     if (paraula.charAt(i)==vocals.charAt(j)){
      
                         esVocal = true;
