@@ -18,7 +18,7 @@ public class TransformaText {
         String vocals = "aeiouàèéíïòóüúAEIOUÀÈÉÍÏÓÒÜÚ";
         boolean esVocal = false;
         String nombre = "";
-        
+
         for (int i = 0; i <= paraula.length()-1; i++){
 
             esVocal = false;
@@ -60,7 +60,7 @@ public class TransformaText {
 
                     if (paraula.charAt(i)==digits.charAt(k)){
      
-                        nombre = paraula.charAt(i)+nombre;
+                        nombre = nombre+paraula.charAt(i);
 
                     }
     
