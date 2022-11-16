@@ -17,9 +17,13 @@ public class TransformaText {
         boolean esVocal = false;
         for (int i = 0; i <= paraula.length()-1; i++){
 
+            esVocal = false;
+
             if (Character.isLetter(paraula.charAt(i))){
 
                 for (int j = 0; j<=vocals.length()-1; j++){
+
+                    System.out.println("for"); 
 
                     if (paraula.charAt(i)==vocals.charAt(j)){
      
