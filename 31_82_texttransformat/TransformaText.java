@@ -19,7 +19,7 @@ public class TransformaText {
 
             if (Character.isLetter(paraula.charAt(i))){
 
-                for (int j = 0; i<=vocals.length()-1; j++){
+                for (int j = 0; j<=vocals.length()-1; j++){
 
                     if (paraula.charAt(i)==vocals.charAt(j)){
      
