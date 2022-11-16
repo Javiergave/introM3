@@ -13,7 +13,7 @@ public class MajusculitzaInicials {
             }
             else{
 
-                System.out.print(paraula.charAt(i)); 
+                System.out.print(Character.toLowerCase(paraula.charAt(i))); 
 
             }
 
