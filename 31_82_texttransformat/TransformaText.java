@@ -19,7 +19,7 @@ public class TransformaText {
         boolean esVocal = false;
         String nombre = "";
 
-        for (int i = 0; i <= paraula.length()-1; i++){
+        for (int i = 0; i <= paraula.length(); i++){
 
             esVocal = false;
             
