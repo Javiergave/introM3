@@ -24,11 +24,14 @@ public class TransformaText {
             esVocal = false;
             
             if (i > 0){
-                if (((Character.isDigit(paraula.charAt(i))==false)&&(Character.isDigit(paraula.charAt(i-1))))||(i == paraula.length()-1)&&(Character.isDigit(paraula.charAt(i-1)))){
+                if ((Character.isDigit(paraula.charAt(i))==false)&&(Character.isDigit(paraula.charAt(i-1)))){
 
                     System.out.print("("+nombre+")");
                     nombre = ""; 
 
+                }
+                if ((i == paraula.length()-1)&&(Character.isDigit(paraula.charAt(i-1)))){
+                    System.out.print("("+nombre+paraula.charAt(i)+")");
                 }
             }
 
