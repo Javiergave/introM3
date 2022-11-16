@@ -1,3 +1,5 @@
+import javax.xml.stream.events.Characters;
+
 /*Aquest programa demana un text i mostra una versió transformada segons les següents regles:
 
     les vocals (les catalanes) apareixeran en minúscules
@@ -18,6 +20,12 @@ public class TransformaText {
         for (int i = 0; i <= paraula.length()-1; i++){
 
             esVocal = false;
+            String nombre = "";
+            if ((Character.isDigit(paraula.charAt(i))==false)&&(Character.isDigit(paraula.charAt(i-1)))){
+
+                System.out.print("("+nombre+")"); 
+
+            }
 
             if (Character.isLetter(paraula.charAt(i))){
 
@@ -42,17 +50,17 @@ public class TransformaText {
             }
             else if (Character.isDigit(paraula.charAt(i))){
 
-                String digits = "";
+                String digits = "0987654321";
 
-                for (int k = i; (k<=paraula.length()-1)||(Character.isDigit(paraula.charAt(k))==false);k++){
+                for (int k = 0; k<=digits.length()-1; k++){
 
-                    digits = digits + paraula.charAt(k);
+                    if (paraula.charAt(i)==digits.charAt(k)){
+     
+                        nombre = nombre + paraula.charAt(i);
 
-                    i = k;
-
+                    }
+    
                 }
-
-                System.out.print("("+digits+")"); 
 
             }
             else if (Character.isWhitespace(paraula.charAt(i))){
