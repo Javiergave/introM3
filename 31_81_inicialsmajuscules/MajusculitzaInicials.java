@@ -8,7 +8,7 @@ public class MajusculitzaInicials {
         
         for (int i = 0; i<= paraula.length()-1; i++){
             
-            if (i==0|| Character.isLetter(paraula.charAt(i-1))==false){
+            if (i==0 || Character.isLetter(paraula.charAt(i-1))==false){
                 System.out.print(Character.toUpperCase(paraula.charAt(i))); 
             }
             else{
