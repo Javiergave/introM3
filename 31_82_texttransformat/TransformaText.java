@@ -14,25 +14,28 @@ public class TransformaText {
         System.out.println("Text?");
         String paraula = Entrada.readLine();
         String vocals = "aeiouàèéíïòóüúAEIOUÀÈÉÍÏÓÒÜÚ";
-
+        boolean esVocal = false;
         for (int i = 0; i <= paraula.length()-1; i++){
 
-            for (int j = 0; i<=vocals.length()-1; j++){
+            if (Character.isLetter(paraula.charAt(i))){
 
-                if (paraula.charAt(i)==vocals.charAt(j)){
+                for (int j = 0; i<=vocals.length()-1; j++){
+
+                    if (paraula.charAt(i)==vocals.charAt(j)){
+     
+                        esVocal = true;
+
+                    }
+    
+                }
+                if (esVocal){
 
                     System.out.print(Character.toLowerCase(paraula.charAt(i))); 
 
                 }
                 else{
-                    break;
-                }
-
-            }
-
-            if (Character.isLetter(paraula.charAt(i))){
-
                 System.out.print(Character.toUpperCase(paraula.charAt(i))); 
+                }
 
             }
             else if (Character.isDigit(paraula.charAt(i))){
