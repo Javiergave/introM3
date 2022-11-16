@@ -17,10 +17,12 @@ public class TransformaText {
         String paraula = Entrada.readLine();
         String vocals = "aeiouàèéíïòóüúAEIOUÀÈÉÍÏÓÒÜÚ";
         boolean esVocal = false;
+        String nombre = "";
+        
         for (int i = 0; i <= paraula.length()-1; i++){
 
             esVocal = false;
-            String nombre = "";
+            
             if (i > 0){
                 if ((Character.isDigit(paraula.charAt(i))==false)&&(Character.isDigit(paraula.charAt(i-1)))){
 
