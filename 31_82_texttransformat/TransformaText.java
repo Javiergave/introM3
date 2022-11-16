@@ -21,10 +21,12 @@ public class TransformaText {
 
             esVocal = false;
             String nombre = "";
-            if ((Character.isDigit(paraula.charAt(i))==false)&&(Character.isDigit(paraula.charAt(i-1)))){
+            if (i > 0){
+                if ((Character.isDigit(paraula.charAt(i))==false)&&(Character.isDigit(paraula.charAt(i-1)))){
 
-                System.out.print("("+nombre+")"); 
+                    System.out.print("("+nombre+")"); 
 
+                }
             }
 
             if (Character.isLetter(paraula.charAt(i))){
