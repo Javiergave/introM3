@@ -10,11 +10,11 @@ public class TriangleLletresInvertit {
                 for (int j = paraula.length()-1; j<=i; j++){
 
                     if (j!=i){
-                        System.out.print(j+", ");
+                        System.out.print(paraula.charAt(j)+", ");
                     }
 
                     else {
-                        System.out.print(j); 
+                        System.out.print(paraula.charAt(j)); 
                     }
                 
                 }
