@@ -14,6 +14,10 @@ public class CodificaBasic {
                 lletra+=1;
                 codificat = codificat + (lletra);
             }
+            if (lletra = 122){
+                lletra = 'a';
+                codificat = codificat + (lletra);
+            }
         }
 
         System.out.println(codificat); 
