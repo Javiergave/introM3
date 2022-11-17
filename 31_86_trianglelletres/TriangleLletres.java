@@ -8,7 +8,7 @@ public class TriangleLletres {
             for (int i = 0; i <= paraula.length()-2; i++){
                 for (int j = 0; j <= i;j++){
                     if (i==0){
-                        System.out.println(paraula.charAt(j)); 
+                        System.out.print(paraula.charAt(j)); 
                     }
                     else{
                         System.out.print(paraula.charAt(j)+", "); 
