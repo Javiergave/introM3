@@ -9,17 +9,14 @@ public class TriangleLletresInvertit {
             
                 for (int j = 0; j<=i; j++){
 
-                    for (int k = paraula.length()-1; k>=j;k--){
-
-                        if (k!=j){
-                            System.out.print(paraula.charAt(k)+", ");
+                        if (i!=j){
+                            System.out.print(paraula.charAt(i)+", ");
                         }
 
                         else {
-                            System.out.print(paraula.charAt(k)); 
+                            System.out.print(paraula.charAt(i)); 
                         }
-                    }
-                
+                    
                 }
 
                 System.out.println(); 
