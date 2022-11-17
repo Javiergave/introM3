@@ -6,7 +6,7 @@ public class TextReves {
         System.out.println("Text?");
         String paraula = Entrada.readLine(); 
 
-        for (int i = paraula.length()-1; i >0; i--){
+        for (int i = paraula.length()-1; i >=0; i--){
 
             if (i==0){
                 System.out.println(paraula.charAt(i)); 
