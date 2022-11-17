@@ -14,7 +14,7 @@ public class TriangleLletres {
                         System.out.print(paraula.charAt(j)+", "); 
                     }
                 }
-                System.out.println(); 
+
             }
         }
         else{
