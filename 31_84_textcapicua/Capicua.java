@@ -6,6 +6,10 @@ public class Capicua {
         String paraula = Entrada.readLine(); 
 
         boolean esCapicua = true;
+        
+        if (paraula.isEmpty()){
+            esCapicua = false;
+        }
 
         for (int i = 0; (i<=paraula.length()-1)&&(esCapicua); i++){
             for (int j = paraula.length()-i-1; j>=0; j--){
@@ -21,7 +25,7 @@ public class Capicua {
             }
              
         }
-
+        
         if (esCapicua){
             System.out.println("És capicua"); 
         }
