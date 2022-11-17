@@ -8,7 +8,7 @@ public class Capicua {
         boolean esCapicua = true;
 
         for (int i = 0; (i<=paraula.length()-1)&&(esCapicua); i++){
-            for (int j = paraula.length()-1; j>=0; j--){
+            for (int j = paraula.length()-i-1; j>=0; j--){
 
                 if (paraula.charAt(j)!=paraula.charAt(i)){
 
@@ -19,7 +19,7 @@ public class Capicua {
                 break;
 
             }
-    
+             
         }
 
         if (esCapicua){
