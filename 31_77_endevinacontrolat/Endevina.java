@@ -1,5 +1,3 @@
-import javax.swing.text.AttributeSet.ParagraphAttribute;
-
 //Aquest programa pensarà un nombre enter entre el 1 i el 100, i reptarà els usuaris a que l'endevini. Per a cancel·lar el programa un enter buit servirá.
 // A mes aquest programa comprova si poses valors enters o no
 //Per simplicitat, el nombre pensat serà sempre el 42.
