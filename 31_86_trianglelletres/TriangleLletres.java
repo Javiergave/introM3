@@ -14,12 +14,7 @@ public class TriangleLletres {
                         System.out.print(paraula.charAt(j)+", "); 
                     }
                 }
-                if (i == paraula.length()-1){
-                    System.out.println(paraula.charAt(i)); 
-                }
-                else{
-                    System.out.println();
-                } 
+                System.out.println(); 
             }
         }
         else{
