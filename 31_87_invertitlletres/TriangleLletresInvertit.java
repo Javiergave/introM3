@@ -5,9 +5,9 @@ public class TriangleLletresInvertit {
         System.out.println("Text?"); 
         String paraula = Entrada.readLine(); 
         if (paraula.length()>1){
-            for (int i = paraula.length(); i > 0; i--){
+            for (int i = paraula.length()-1; i > 0; i--){
                 
-                for(int j = i; j<paraula.length()-1; j++){
+                for (int j = i; j < paraula.length()-1; j++){
                     if (i==j){
                         System.out.println(paraula.charAt(j)); 
                     }
