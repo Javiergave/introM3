@@ -6,7 +6,6 @@ public class Capicua {
         String paraula = Entrada.readLine(); 
 
         boolean esCapicua = true;
-        
         if (paraula.isEmpty()){
             esCapicua = false;
         }
