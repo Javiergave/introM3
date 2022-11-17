@@ -10,11 +10,11 @@ public class TriangleLletresInvertit {
                 for (int j = 0; j<=i; j++){
 
                         if (i!=j){
-                            System.out.print(paraula.charAt(i)+", ");
+                            System.out.print(paraula.charAt(j)+", ");
                         }
 
                         else {
-                            System.out.print(paraula.charAt(i)); 
+                            System.out.print(paraula.charAt(j)); 
                         }
                     
                 }
