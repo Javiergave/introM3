@@ -12,7 +12,7 @@ public class TextReves {
                 System.out.println(paraula.charAt(i)); 
             }
             else{
-                System.out.print(+paraula.charAt(i)+", "); 
+                System.out.print(paraula.charAt(i)+", "); 
             }
         }
     }
