@@ -7,7 +7,12 @@ public class TriangleLletres {
         if (paraula.length()>1){
             for (int i = 0; i <= paraula.length()-1; i++){
                 for (int j = 0; j <= i;j++){
-                    System.out.print(paraula.charAt(j)+", "); 
+                    if (j==0){
+                        System.out.println(paraula.charAt(j)); 
+                    }
+                    else{
+                        System.out.print(paraula.charAt(j)+", "); 
+                    }
                 }
                 if (i == paraula.length()-1){
                     System.out.println(paraula.charAt(i)); 
