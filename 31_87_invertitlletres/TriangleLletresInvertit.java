@@ -9,12 +9,15 @@ public class TriangleLletresInvertit {
             
                 for (int j = 0; j<=i; j++){
 
-                    if (j!=i){
-                        System.out.print(paraula.charAt(j)+", ");
-                    }
+                    for (int k = paraula.length()-1; k<=j;k++){
 
-                    else {
-                        System.out.print(paraula.charAt(j)); 
+                        if (k!=j){
+                            System.out.print(paraula.charAt(k)+", ");
+                        }
+
+                        else {
+                            System.out.print(paraula.charAt(k)); 
+                        }
                     }
                 
                 }
