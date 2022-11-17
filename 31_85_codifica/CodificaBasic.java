@@ -10,7 +10,7 @@ public class CodificaBasic {
         String codificat = "";
         for (int i = 0; i<=paraula.length()-1; i++){
             char lletra = paraula.charAt(i);
-            if ((lletra>96)&&(lletra<122)){
+            if ((lletra>96)&&(lletra<=121)){
                 lletra+=1;
                 codificat = codificat + (lletra);
             }
