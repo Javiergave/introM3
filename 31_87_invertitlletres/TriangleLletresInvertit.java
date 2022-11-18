@@ -9,13 +9,13 @@ public class TriangleLletresInvertit {
             
                 for (int j = i; j>=0; j--){
 
-                        if (j==i){
-                            System.out.print(paraula.charAt(j)+", ");
-                        }
+                    if (j>0){
+                        System.out.print(paraula.charAt(j)+", ");
+                    }
 
-                        else {
-                            System.out.print(paraula.charAt(j)); 
-                        }
+                    else {
+                        System.out.print(paraula.charAt(j)); 
+                    }
                     
                 }
 
