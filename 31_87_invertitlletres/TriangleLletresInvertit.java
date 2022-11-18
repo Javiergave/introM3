@@ -7,9 +7,9 @@ public class TriangleLletresInvertit {
         if (paraula.length()>1){
             for (int i = paraula.length()-1; i>=0; i--){
             
-                for (int j = paraula.length()-1; j>=0; j--){
+                for (int j = i; j>=0; j--){
 
-                        if (i!=j){
+                        if (j==i){
                             System.out.print(paraula.charAt(j)+", ");
                         }
 
