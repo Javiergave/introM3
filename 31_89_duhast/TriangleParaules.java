@@ -6,7 +6,7 @@ public class TriangleParaules {
         System.out.println("Text?");
         String paraula = Entrada.readLine(); 
     
-        int cantidadPalabras = 0;
+        int cantidadPalabras = 1;
         for (int i = 0; i<=paraula.length()-1;i++){
             if (Character.isWhitespace(paraula.charAt(i))){
                 if (Character.isLetter(paraula.charAt(i-1))){
