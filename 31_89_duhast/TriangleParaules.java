@@ -9,7 +9,7 @@ public class TriangleParaules {
             for (int k = 0; (k<=paraula.length()-1); k++){
                 
                 if (Character.isWhitespace(paraula.charAt(k))){
-                    if (Character.isLetter(paraula.charAt(k-1))){
+                    if (Character.isLetter(paraula.charAt(k-1))||(Character.isDigit(paraula.charAt(k-1)))){
                         System.out.println(); 
                         for (int i = 0; i<=k; i++){
                             System.out.print(paraula.charAt(i)); 
