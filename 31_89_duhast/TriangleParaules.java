@@ -19,7 +19,7 @@ public class TriangleParaules {
                 
                 if (Character.isWhitespace(paraula.charAt(k))){
                     if (Character.isLetter(paraula.charAt(k-1))){
-                        System.out.println(paraula.charAt(k)); 
+                        System.out.println(); 
                     }
                 }
                 else{
