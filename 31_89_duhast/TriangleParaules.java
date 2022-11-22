@@ -28,7 +28,6 @@ public class TriangleParaules {
                 }
 
             }
-            System.out.println(); 
         }
     }
 }
