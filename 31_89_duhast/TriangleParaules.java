@@ -5,22 +5,15 @@ public class TriangleParaules {
 
         System.out.println("Text?");
         String paraula = Entrada.readLine(); 
-    
-        int cantidadPalabras = 1;
-        for (int i = 0; i<=paraula.length()-1;i++){
-            if (Character.isWhitespace(paraula.charAt(i))){
-                if (Character.isLetter(paraula.charAt(i-1))){
-                    cantidadPalabras += 1;
-                }
-            }
-        }
         
             for (int k = 0; (k<=paraula.length()-1); k++){
                 
                 if (Character.isWhitespace(paraula.charAt(k))){
                     if (Character.isLetter(paraula.charAt(k-1))){
                         System.out.println(); 
-                        k = 0;
+                        for (int i = 0; i<=k; i++){
+                            System.out.print(paraula.charAt(i)); 
+                        }
                     }
                 }
                 else{
@@ -28,7 +21,7 @@ public class TriangleParaules {
                 }
 
             }
-        
+        System.out.println(); 
     }
 }
 
