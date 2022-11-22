@@ -28,7 +28,7 @@ public class TriangleParaules {
             for (int k = 0; (k<=paraula.length()-1)&&(k<=l); k++){
                 if (Character.isWhitespace(paraula.charAt(k))){
                     if (Character.isLetter(paraula.charAt(k-1))){
-                        l = k;
+                        
                         break;
                     }
                 }
