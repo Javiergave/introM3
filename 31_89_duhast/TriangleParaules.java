@@ -14,11 +14,18 @@ public class TriangleParaules {
                 }
             }
         }
-        System.out.println(cantidadPalabras); 
+        int l = 0;
         for (int j = 1; j<= cantidadPalabras; j++){
-            for (int k = j; (k>=1 )&&(Character.isWhitespace(paraula.charAt(k))==false); k--){
-        
+            for (int k = l; (k<=paraula.length()-1)&&(Character.isWhitespace(paraula.charAt(k))==false); k++){
+                if (Character.isWhitespace(paraula.charAt(k))){
+                    if (Character.isLetter(paraula.charAt(k-1))){
+                        l = k;
+                        break;
+                    }
+                }
                 System.out.print(paraula.charAt(k)); 
+
+                
 
             }
             System.out.println(); 
