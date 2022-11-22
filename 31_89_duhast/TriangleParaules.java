@@ -16,7 +16,7 @@ public class TriangleParaules {
         }
         System.out.println(cantidadPalabras); 
         for (int j = 1; j<= cantidadPalabras; j++){
-            for (int k = 0; (k<= j)&&(Character.isWhitespace(paraula.charAt(k))==false); k++){
+            for (int k = j; (k>=1 )&&(Character.isWhitespace(paraula.charAt(k))==false); k--){
         
                 System.out.print(paraula.charAt(k)); 
 
