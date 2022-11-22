@@ -15,7 +15,6 @@ public class TriangleParaules {
             }
         }
         
-        for (int j = 1; j<= cantidadPalabras; j++){
             for (int k = 0; (k<=paraula.length()-1); k++){
                 
                 if (Character.isWhitespace(paraula.charAt(k))){
@@ -28,7 +27,7 @@ public class TriangleParaules {
                 }
 
             }
-        }
+        
     }
 }
 
