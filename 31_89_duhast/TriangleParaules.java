@@ -20,6 +20,7 @@ public class TriangleParaules {
                 if (Character.isWhitespace(paraula.charAt(k))){
                     if (Character.isLetter(paraula.charAt(k-1))){
                         System.out.println(); 
+                        k = 0;
                     }
                 }
                 else{
