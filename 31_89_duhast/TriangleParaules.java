@@ -19,7 +19,7 @@ public class TriangleParaules {
             for (int k = l; (k<=paraula.length()-1)&&(Character.isWhitespace(paraula.charAt(k))==false); k++){
                 if (Character.isWhitespace(paraula.charAt(k))){
                     if (Character.isLetter(paraula.charAt(k-1))){
-                        l = k;
+                        l = k+1;
                         break;
                     }
                 }
