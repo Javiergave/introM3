@@ -10,7 +10,7 @@ public class Quadrats {
         int valor = Integer.parseInt(Entrada.readLine()); 
         if (valor>0){
             for (int a = 1; a<=valor; a++){
-                for (int j = 1; j<=valor; j++){
+                for (int j = 1; j<=5; j++){
                     System.out.print(" X"); 
                 }
                 System.out.println(); 
