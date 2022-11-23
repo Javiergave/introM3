@@ -2,12 +2,12 @@
 public class Quadrats {
     public static void main(String[] args) {  
         System.out.println("Quants?");
-        int valor = Integer.parseInt(Entrada.readLine());
 
         dibuixaQuadratsDemanats();
 
     }
-    public static void dibuixaQuadratsDemanats(){  
+    public static void dibuixaQuadratsDemanats(){ 
+        int valor = Integer.parseInt(Entrada.readLine()); 
         if (valor>0){
             for (int a = 1; a<=valor; a++){
                 for (int j = 1; j<=valor; j++){
