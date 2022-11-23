@@ -2,20 +2,22 @@
 public class Quadrats {
     public static void main(String[] args) {  
         System.out.println("Quants?");
-
-        dibuixaQuadratsDemanats();
-
-    }
-    public static void dibuixaQuadratsDemanats(){ 
-        int valor = Integer.parseInt(Entrada.readLine()); 
+        int valor = Integer.parseInt(Entrada.readLine());
         if (valor>0){
-            for (int a = 1; a<=valor; a++){
-                for (int j = 1; j<=5; j++){
-                    System.out.print(" X"); 
-                }
-                System.out.println(); 
+            for (int i = 1; i<=5; i++){
+                dibuixaQuadrats();
+
             }
         }
     }
+    public static void dibuixaQuadrats(){ 
+        for (int a = 1; a<=5; a++){
+            for (int j = 1; j<=5; j++){
+                System.out.print(" X"); 
+            }
+            System.out.println(); 
+        }
+    }
 }
+
 
