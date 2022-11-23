@@ -4,7 +4,7 @@ public class Quadrats {
         System.out.println("Quants?");
         int valor = Integer.parseInt(Entrada.readLine());
         if (valor>0){
-            for (int i = 1; i<=5; i++){
+            for (int i = 1; i<=valor; i++){
                 dibuixaQuadrats();
                 System.out.println(); 
 
