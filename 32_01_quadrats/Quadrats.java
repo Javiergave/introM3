@@ -6,6 +6,7 @@ public class Quadrats {
         if (valor>0){
             for (int i = 1; i<=5; i++){
                 dibuixaQuadrats();
+                System.out.println(); 
 
             }
         }
