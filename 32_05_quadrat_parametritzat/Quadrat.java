@@ -3,9 +3,9 @@ public class Quadrat {
     public static void main(String[] args) {  
         int valor = Integer.parseInt(args[0]);
         if (valor>0){
-            for (int i = 1;i<=valor; i++){
-                dibuixaQuadrat(valor);
-            }
+            
+            dibuixaQuadrat(valor);
+        
         }
     }
     
