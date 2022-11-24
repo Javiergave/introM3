@@ -24,7 +24,7 @@ public class AnalitzaCaracter {
 
         if (Math.abs(valor)<paraula.length()){
 
-            AnalitzaCaracter(seleccionat,paraula,valor);
+            analitzaCaracter(seleccionat,paraula,valor);
             
         }
         else{
@@ -34,7 +34,7 @@ public class AnalitzaCaracter {
         }
 
     }
-    public static void AnalitzaCaracter(char seleccionat,String paraula,int valor) {  
+    public static void analitzaCaracter(char seleccionat,String paraula,int valor) {  
         if (valor<0){
 
             seleccionat = paraula.charAt(paraula.length() - Math.abs(valor));
