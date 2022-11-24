@@ -18,7 +18,7 @@ public class Quadrat {
     }
     public static void dibuixaLinia(int valor, char lletra){ 
         for (int a = 1; a<=valor; a++){
-            System.out.print(lletra); 
+            System.out.print(" "+lletra); 
         }
     }
 }
