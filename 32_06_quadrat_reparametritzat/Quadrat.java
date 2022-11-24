@@ -2,7 +2,7 @@
 public class Quadrat {
     public static void main(String[] args) {  
         int valor = Integer.parseInt(args[0]);
-        char lletra = args[1].charAt(1);
+        char lletra = args[1].charAt(0);
         if (valor>0){
             
             dibuixaQuadrat(valor,lletra);
