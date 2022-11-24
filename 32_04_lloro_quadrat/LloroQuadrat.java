@@ -2,7 +2,7 @@
 public class LloroQuadrat {
     public static void main(String[] args) {
         
-        String paraula ="a"
+        String paraula ="a";
         // A l'inici vaig probar amb un or de (paraula = paraula.trim();)
         while (((paraula.isBlank())==false)) {       
             
