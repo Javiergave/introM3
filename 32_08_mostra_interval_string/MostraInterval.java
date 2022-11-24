@@ -8,7 +8,7 @@ public class MostraInterval {
         System.out.println("text?"); 
         String text = Entrada.readLine(); 
 
-        System.out.println("inicici?"); 
+        System.out.println("inici?"); 
         int inici = Integer.parseInt(Entrada.readLine()); 
 
         System.out.println("fial?"); 
