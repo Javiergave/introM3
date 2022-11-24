@@ -1,5 +1,5 @@
 //aquest programa repeteix els inputs fins que no rebi un
-public class Lloro {
+public class LloroQuadrat {
     public static void main(String[] args) {
         
         System.out.println("El lloro espera paraula:");
