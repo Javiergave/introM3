@@ -16,8 +16,11 @@ public class LloroQuadrat {
                     dibuixaRectangle();
                 }
             }
-            else{
+            else if (paraula.isBlank()==false){
                 System.out.println("El lloro repeteix: " + paraula);
+            }
+            else{
+                break;
             }
         }
         
