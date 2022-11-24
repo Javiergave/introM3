@@ -5,13 +5,13 @@ public class Quadrats {
         int valor = Integer.parseInt(Entrada.readLine());
         if (valor>0){
             for (int i = 1; i<=valor; i++){
-                dibuixaQuadrats();
+                dibuixaQuadrat();
                 System.out.println(); 
 
             }
         }
     }
-    public static void dibuixaQuadrats(){ 
+    public static void dibuixaQuadrat(){ 
         for (int a = 1; a<=5; a++){
             dibuixaLinia();
             System.out.println(); 
