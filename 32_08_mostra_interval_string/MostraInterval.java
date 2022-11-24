@@ -11,7 +11,7 @@ public class MostraInterval {
         System.out.println("inici?"); 
         int inici = Integer.parseInt(Entrada.readLine()); 
 
-        System.out.println("fial?"); 
+        System.out.println("final?"); 
         int fi = Integer.parseInt(Entrada.readLine()); 
 
         mostraInterval(text,inici,fi);
