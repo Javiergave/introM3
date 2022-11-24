@@ -23,8 +23,17 @@ public class AnalitzaCaracter {
         char seleccionat = 'A';
 
         if (Math.abs(valor)<paraula.length()){
+            if (valor<0){
 
-            analitzaCaracter(seleccionat,paraula,valor);
+                seleccionat = paraula.charAt(paraula.length() - Math.abs(valor));
+    
+            }
+            else {
+    
+                seleccionat = paraula.charAt(valor);
+    
+            }
+            analitzaCaracter(seleccionat);
             
         }
         else{
@@ -34,17 +43,8 @@ public class AnalitzaCaracter {
         }
 
     }
-    public static void analitzaCaracter(char seleccionat,String paraula,int valor) {  
-        if (valor<0){
+    public static void analitzaCaracter(char seleccionat) {  
 
-            seleccionat = paraula.charAt(paraula.length() - Math.abs(valor));
-
-        }
-        else {
-
-            seleccionat = paraula.charAt(valor);
-
-        }
 
         if (Character.isLetter(seleccionat)){
 
