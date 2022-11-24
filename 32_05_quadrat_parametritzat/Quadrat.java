@@ -5,6 +5,7 @@ public class Quadrat {
         if (valor>0){
             for (int i = 1;i<=valor; i++){
                 dibuixaLinia();
+                System.out.println(); 
             }
         }
     }
