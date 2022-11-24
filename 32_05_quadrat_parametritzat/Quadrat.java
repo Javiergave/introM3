@@ -4,19 +4,19 @@ public class Quadrat {
         int valor = Integer.parseInt(args[0]);
         if (valor>0){
             for (int i = 1;i<=valor; i++){
-                dibuixaQuadrat();
+                dibuixaQuadrat(valor);
             }
         }
     }
     
-    public static void dibuixaQuadrat(){
-        for (int a = 1; a<=5; a++){
-            dibuixaLinia();
+    public static void dibuixaQuadrat(int valor){
+        for (int a = 1; a<=valor; a++){
+            dibuixaLinia(valor);
             System.out.println(); 
         }
     }
-    public static void dibuixaLinia(){ 
-        for (int a = 1; a<=5; a++){
+    public static void dibuixaLinia(int valor){ 
+        for (int a = 1; a<=valor; a++){
             System.out.print(" X"); 
         }
     }
