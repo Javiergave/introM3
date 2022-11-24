@@ -9,8 +9,8 @@ public class LloroQuadrat {
             
             System.out.println("El lloro espera paraula:");
             paraula = Entrada.readLine();
-            if (paraula = "dibuixa quadrat"||paraula="dibuixa rectangle"){
-                if(paraula = "dibuixa quadrat"){
+            if (paraula == "dibuixa quadrat"||paraula=="dibuixa rectangle"){
+                if(paraula == "dibuixa quadrat"){
                     dibuixaQuadrat();
                 }
                 else{
