@@ -2,7 +2,7 @@
 public class Quadrat {
     public static void main(String[] args) { 
         int valor = Integer.parseInt(args[0]);  
-        if (valor>1){
+        if (valor>=1){
             for (int i = 1;i<=valor; i++){
                 for (int j = 1;j<=valor; j++){
                     dibuixaX();
