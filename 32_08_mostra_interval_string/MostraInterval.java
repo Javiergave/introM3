@@ -59,12 +59,11 @@ public class MostraInterval {
                 fi = 0;
 
             }
-            if (fi!=0 && inici!=0){
-                for (int n = inici; n <= fi;n++){
+            
+            for (int n = inici; n <= fi;n++){
 
-                    System.out.println(text.charAt(n)); 
-                
-                }
+                System.out.println(text.charAt(n)); 
+            
             }
         }
 
