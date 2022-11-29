@@ -27,17 +27,6 @@ public class CodificaBasic {
                 codificat = codificat + (lletra);
             }
             else if (Character.isLetter(lletra)&&((lletra+=valor)>122||(lletra+=valor)<96)){
-                
-                if (Character.isUpperCase(lletra)&&((lletra+=valor)>90||(lletra+=valor)<65)){
-                    if(valor>0){
-                        lletra='@';
-                    }
-                }
-                else{
-                    lletra='`';
-                }
-        
-                lletra += valor;
                 codificat = codificat + lletra;
             }
             else{
