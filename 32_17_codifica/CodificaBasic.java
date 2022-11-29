@@ -22,11 +22,18 @@ public class CodificaBasic {
         for (int i = 0; i<=paraula.length()-1; i++){
             char lletra = paraula.charAt(i);
             if ((lletra>96)&&(lletra<=121)){
+                
                 lletra+=valor;
                 codificat = codificat + (lletra);
             }
             else if (Character.isLetter(lletra)&&((lletra+=valor)>122||(lletra+=valor)<96)){
-                if(valor>0){
+                
+                if (Character.isUpperCase(lletra)&&((lletra+=valor)>90||(lletra+=valor)<65)){
+                    if(valor>0){
+                        lletra='@';
+                    }
+                }
+                else{
                     lletra='`';
                 }
         
