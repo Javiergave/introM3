@@ -21,19 +21,16 @@ public class CodificaBasic {
         String codificat = "";
         for (int i = 0; i<=paraula.length()-1; i++){
             char lletra = paraula.charAt(i);
-            if ((lletra>96)&&(lletra<=121)){
+            if ((lletra>96)&&(lletra<=122)){
+                if (lletra+valor>122){
+                    if (valor>=1){
+                        lletra-=26;
+                    }
+                }
                 lletra+=valor;
                 codificat = codificat + (lletra);
             }
-            else if ((lletra>=97)&&(lletra<=122)&&(lletra+valor>122)){
 
-                if (valor>=1){
-                    lletra-=26;
-                }
-
-                lletra += valor;
-                codificat = codificat + lletra;
-            }
             else{
                 codificat = codificat + lletra;
             }
