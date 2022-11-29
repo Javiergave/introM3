@@ -27,7 +27,7 @@ public class CodificaBasic {
             }
             else if (lletra+valor>122){
                 if (valor>=1){
-                    lletra-=25;
+                    lletra-=24;
                 }
 
                 lletra += valor;
