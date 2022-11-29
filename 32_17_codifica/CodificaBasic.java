@@ -26,8 +26,9 @@ public class CodificaBasic {
                 codificat = codificat + (lletra);
             }
             else if (lletra == 'z'){
-                char a='a';
-                codificat = codificat + (a+valor);
+                lletra='a';
+                lletra += valor;
+                codificat = codificat + lletra;
             }
             else{
                 codificat = codificat + lletra;
