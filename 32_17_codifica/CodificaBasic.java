@@ -22,13 +22,12 @@ public class CodificaBasic {
         for (int i = 0; i<=paraula.length()-1; i++){
             char lletra = paraula.charAt(i);
             if ((lletra>96)&&(lletra<=121)){
-                
                 lletra+=valor;
                 codificat = codificat + (lletra);
             }
             else if (Character.isLowerCase(lletra)&&((lletra+=valor)>122||(lletra+=valor)<96)){
 
-                if (valor==0){
+                if (valor<1){
                     lletra='a';
                 }
         
