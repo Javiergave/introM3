@@ -25,7 +25,7 @@ public class CodificaBasic {
                 lletra+=valor;
                 codificat = codificat + (lletra);
             }
-            else if (lletra == 'z'){
+            else if ((lletra+=valor)>172){
                 if(valor>0){
                     lletra='`';
                 }
