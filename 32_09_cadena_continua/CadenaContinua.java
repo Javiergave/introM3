@@ -20,9 +20,6 @@ public class CadenaContinua {
                 mostraCadenaContinua(paraula, nombre);
 
             }
-            else{
-            System.out.println("error"); 
-            }
 
         }
         else {
