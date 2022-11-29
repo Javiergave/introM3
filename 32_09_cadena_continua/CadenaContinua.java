@@ -25,6 +25,9 @@ public class CadenaContinua {
             }
 
         }
+        else {
+            System.out.println("error");
+        }
     }
     public static void mostraCadenaContinua(String paraula,int nombre) {  
         int reps = nombre;
