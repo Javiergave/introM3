@@ -29,9 +29,6 @@ public class CodificaBasic {
                 if (valor>=1){
                     lletra='`';
                 }
-                else{
-                    lletra = 'a';
-                }
 
                 lletra += valor;
                 codificat = codificat + lletra;
