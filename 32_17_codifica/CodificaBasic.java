@@ -25,7 +25,7 @@ public class CodificaBasic {
                 lletra+=valor;
                 codificat = codificat + (lletra);
             }
-            else if (Character.isLowerCase(lletra)&&(lletra+=valor)>122){
+            else if (lletra=='z'){
 
                 if (valor<1){
                     lletra='a';
