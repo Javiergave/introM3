@@ -26,6 +26,7 @@ public class CodificaBasic {
                 codificat = codificat + (lletra);
             }
             else if ((lletra>96)&&(lletra<=122)&&(lletra+valor>122)){
+                
                 if (valor>=1){
                     lletra-=26;
                 }
