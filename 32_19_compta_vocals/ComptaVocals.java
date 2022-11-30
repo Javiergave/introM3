@@ -5,7 +5,7 @@ public class ComptaVocals {
     public static void main(String[] args) {
         System.out.println("Introdueix un text");
         String paraula = Entrada.readLine(); 
-        String vocals = "aeiouàéèíïóòüú";
+        String vocals = "aàeéèiíïoóòuüú";
         char lletra = paraula.charAt(0);
         for (int i = 0; i<=vocals.length()-1;i++){
             lletra = vocals.charAt(i);
