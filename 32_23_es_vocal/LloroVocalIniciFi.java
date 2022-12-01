@@ -6,6 +6,7 @@ public class LloroVocalIniciFi {
         String paraula = Entrada.readLine();
         boolean esVocal=false;
         boolean respostaBool = false;
+        System.out.println("El lloro diu: "+paraula);
         
         while (((paraula.isBlank()))==false) {  
                 
