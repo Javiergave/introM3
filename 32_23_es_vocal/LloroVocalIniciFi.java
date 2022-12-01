@@ -1,21 +1,20 @@
-//Aquest programa nomes repeteix les paraules que comencin en vocal minuscula i s'atura quan l'input sigui buit
+//Aquest programa nomes repeteix les paraules que comencin o acabin en vocal minuscula i s'atura quan l'input sigui buit
 public class LloroVocalIniciFi { 
     public static void main(String[] args) {  
-
+        
         String paraula = "a";
         boolean esVocal=false;
-        boolean respostaBool = false;
-
-        while (((paraula.isBlank()))==false) {  
+        while (true) {  
                 
             System.out.println("El lloro demana paraula amb vocal a l'inici o/i final");
             paraula = Entrada.readLine();
             paraula = paraula.trim();
+
             if (paraula.isEmpty()){
                 System.out.println("El lloro demana confirmació per finalitzar");
                 String resposta = Entrada.readLine();  
-                respostaBool = UtilitatsConfirmacio.respostaABoolean(resposta);
-                if (respostaBool){
+                boolean respostaExit = UtilitatsConfirmacio.respostaABoolean(resposta);
+                if (respostaExit){
                     break;
                 }
             }
@@ -24,7 +23,7 @@ public class LloroVocalIniciFi {
                 if (esVocal){
                     System.out.println("El lloro diu: "+paraula);
                 }
-            } 
+            }
         }
 
         System.out.println("Adéu");
