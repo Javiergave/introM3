@@ -13,15 +13,23 @@ public class MatriculaValida {
             for (int i = 0; i<=1; i++){
                 lletra = paraula.charAt(i);
                 lletravalida = esLletraValidaPerMatriculaItaliana(lletra);
+                if (lletravalida==false){
+                    break;
+                }
             }
 
             boolean tresNumeros = (paraula.charAt(2)>47 && paraula.charAt(2)<58) && (paraula.charAt(3)>47 && paraula.charAt(3)<58) && (paraula.charAt(4)>47 && paraula.charAt(4)<58);
-
-            for (int i = 5; i<=6; i++){
-                lletra = paraula.charAt(i);
-                lletravalida = esLletraValidaPerMatriculaItaliana(lletra);
+            
+            if (lletravalida){
+            
+                for (int i = 5; i<=6; i++){
+                    lletra = paraula.charAt(i);
+                    lletravalida = esLletraValidaPerMatriculaItaliana(lletra);
+                    if (lletravalida==false){
+                        break;
+                    }
+                }
             }
-            boolean ultimesLletres = (paraula.charAt(5)>64 && paraula.charAt(5)<91) && (paraula.charAt(6)>64 && paraula.charAt(6)<91);
 
             if (lletravalida&&tresNumeros){
 
