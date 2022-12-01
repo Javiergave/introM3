@@ -2,9 +2,9 @@
 public class Semafor {
     public static void main(String[] args) {
         System.out.println("Ets major d'edat?"); 
-        String paraula = Entrada.readLine(); 
+        String resposta = Entrada.readLine(); 
 
-        boolean majorEdat = UtilitatsConfirmacio.respostaABoolean(paraula);
+        boolean majorEdat = UtilitatsConfirmacio.respostaABoolean(resposta);
 
         if (majorEdat ==true){
             System.out.println("Color?");
