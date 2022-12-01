@@ -18,7 +18,7 @@ public class UtilString {
         for (int i= 0; i <= paraula.length()-1; i++){
 
             if (Character.isLetter(paraula.charAt(i))){
-                System.out.print(nomesLletres = nomesLletres+paraula.charAt(i)); 
+               nomesLletres = nomesLletres+paraula.charAt(i); 
             }
             
         }
@@ -29,7 +29,7 @@ public class UtilString {
         for (int i= 0; i <= paraula.length()-1; i++){
 
             if (Character.isLetter(paraula.charAt(i))){
-                System.out.print(separades = separades+paraula.charAt(i)+", "); 
+                separades = separades+paraula.charAt(i)+", "; 
             }
             
         }
