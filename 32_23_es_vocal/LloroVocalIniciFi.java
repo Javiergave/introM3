@@ -2,16 +2,10 @@
 public class LloroVocalIniciFi { 
     public static void main(String[] args) {  
 
-        System.out.println("El lloro demana paraula amb vocal a l'inici o/i final");
-        String paraula = Entrada.readLine();
         boolean esVocal=false;
         boolean respostaBool = false;
         
-        while (((paraula.isBlank()))==false) {
-                
-            if (esVocal){
-                System.out.println("El lloro diu: "+paraula);
-            }   
+        while (((paraula.isBlank()))==false) {  
                 
             System.out.println("El lloro demana paraula amb vocal a l'inici o/i final");
             paraula = Entrada.readLine();
@@ -25,6 +19,9 @@ public class LloroVocalIniciFi {
                 }
             }
             esVocal = ((UtilString.esVocal(paraula.charAt(0)))&&(UtilString.esVocal(paraula.charAt(paraula.length()-1))));
+            if (esVocal){
+                System.out.println("El lloro diu: "+paraula);
+            } 
         }
 
         System.out.println("Adéu");
