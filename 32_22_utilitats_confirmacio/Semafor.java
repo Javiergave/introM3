@@ -19,5 +19,8 @@ public class Semafor {
             System.out.println("ves a l'oculista");
             }
         }
+        else{
+            System.out.println("No pots fer servir aquest programa sense supervisió"); 
+        }
     }
 }
