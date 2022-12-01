@@ -19,9 +19,11 @@ public class LloroVocalIniciFi {
                     break;
                 }
             }
-            esVocal = ((UtilString.esVocal(paraula.charAt(0)))||(UtilString.esVocal(paraula.charAt(paraula.length()-1))));
-            if (esVocal){
-                System.out.println("El lloro diu: "+paraula);
+            else{
+                esVocal = ((UtilString.esVocal(paraula.charAt(0)))||(UtilString.esVocal(paraula.charAt(paraula.length()-1))));
+                if (esVocal){
+                    System.out.println("El lloro diu: "+paraula);
+                }
             } 
         }
 
