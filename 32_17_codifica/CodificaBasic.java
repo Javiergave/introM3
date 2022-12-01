@@ -15,7 +15,6 @@ public class CodificaBasic {
         else{
             codifica(paraula,valor);
         } 
-
     }    
     public static void codifica(String paraula, int valor) {  
         String codificat = "";
