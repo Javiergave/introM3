@@ -27,17 +27,14 @@ public class UtilString {
     public static String lletresSeparades(String paraula) {
         String separades = "";
         for (int i= 0; i <= paraula.length()-1; i++){
-
-            if (Character.isLetter(paraula.charAt(i))){
-                if (i==paraula.length()-1){
-                    separades = separades+paraula.charAt(i);
-                }
-                else{
-                separades = separades+paraula.charAt(i)+", "; 
-                }
+            if (i==paraula.length()-1){
+                separades = separades+paraula.charAt(i);
             }
-            
+            else{
+                separades = separades+paraula.charAt(i)+", "; 
+            }
         }
+        
         return separades;
     }
 
