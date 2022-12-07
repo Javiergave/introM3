@@ -1,7 +1,9 @@
+/*Diverses utilitats per a analitzar i modificar strings */
+
 public class UtilString {
 
 
-    /*Comprova si es una vocal */
+     /*rep un caràcter i retorna un booleà indicant si el caràcter correspon o no amb una vocal.*/
     public static boolean esVocal(char lletra1) {  
         String vocals = "aàeèéiíïoóòuúüAÀÁEÉÈUÜÚIÏÍOÓÒ";
         for (int i=0; i < vocals.length(); i++) {
@@ -13,6 +15,7 @@ public class UtilString {
         }
         return false;
     }
+    /*Guarda una string de només les lletres de la String donada */
     public static String nomesLletres(String paraula) {
         String nomesLletres = "";  
         for (int i= 0; i <= paraula.length()-1; i++){
@@ -24,6 +27,7 @@ public class UtilString {
         }
         return nomesLletres;
     }
+    /*Separa les lletres d'una string */
     public static String lletresSeparades(String paraula) {
         String separades = "";
         for (int i= 0; i <= paraula.length()-1; i++){
