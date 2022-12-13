@@ -8,20 +8,20 @@ public class EsEnter {
 
         System.out.println("Introdueix texts (enter sol per finalitzar)"); 
         String paraula = "text";
-        boolean obtingut = true;
+        boolean esEnter = true;
         boolean estricte = false;
         while (paraula.isEmpty()==false){
 
             paraula = Entrada.readLine();
             paraula = paraula.strip();
-            obtingut = true;
+            esEnter = true;
             
 
             if(paraula.isEmpty()==false){
                 
-                obtingut = UtilString.esEnter(paraula,estricte);
+                esEnter = UtilString.esEnter(paraula);
 
-                if (obtingut){
+                if (esEnter){
                     System.out.println("És enter"); 
                 }
                 else{

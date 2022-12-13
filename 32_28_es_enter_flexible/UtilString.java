@@ -4,6 +4,34 @@ import javax.swing.text.AttributeSet.ParagraphAttribute;
 
 public class UtilString {
 
+    public static boolean esEnter(String paraula){
+
+        if (paraula.isEmpty()==false){
+             
+            if (paraula.charAt(0)=='-'||paraula.charAt(0)=='+'||Character.isDigit(paraula.charAt(0))){
+
+                for (int i = 1; (i <= paraula.length()-1); i++){
+
+                    if (Character.isDigit(paraula.charAt(i))==false||paraula.charAt(i)=='-'||paraula.charAt(i)=='+'){
+
+                        return false;
+
+                    }                    
+                }
+
+            }
+            else{
+
+                return false; 
+
+            }
+            
+        }
+        else{
+            return false;
+        }
+        return true;
+    }
     public static boolean esEnter(String paraula, boolean estricte){
 
         if (paraula.isEmpty()==false){
@@ -33,16 +61,16 @@ public class UtilString {
         return true;
     }
 
+
     public static int aEnter(String paraula, boolean estricte){
-        
+
         if(estricte == true){
-        int aEnter = Integer.parseInt(paraula);
+        return Integer.parseInt(paraula);
         }
         else{
             paraula = paraula.strip();
             return Integer.parseInt(paraula);
         }
-        return Integer.parseInt(paraula);
 
     }
 
