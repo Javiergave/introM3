@@ -6,7 +6,9 @@ public class UtilString {
     /*Aquest programa agafa un text i dos valors enters, i que
     mostra tots els caràcters que hi ha entre el primer i el 
     segon, en l'ordre marcat per l'entrada. */
-    public static void intervalString(String paraula,int ini, int fin){
+    public static String intervalString(String paraula,int ini, int fin){
+        
+        String intervalString="";
 
         if (fin<ini){
 
@@ -18,10 +20,10 @@ public class UtilString {
 
             for (int n = ini; n >= fin;n--){
 
-                System.out.print(paraula.charAt(n)); 
+                intervalString=intervalString + (paraula.charAt(n)); 
                 
             }  
-            System.out.println(); 
+             
         }
 
         else{
@@ -39,12 +41,12 @@ public class UtilString {
             
             for (int n = ini; n <= fin;n++){
 
-                System.out.print(paraula.charAt(n)); 
+                intervalString=intervalString + (paraula.charAt(n)); 
             
             }
             System.out.println(); 
         }
-
+        return intervalString;
     }
 
 

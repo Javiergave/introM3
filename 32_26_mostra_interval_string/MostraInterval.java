@@ -26,7 +26,9 @@ public class MostraInterval {
 
         }
 
-        UtilString.intervalString(paraula,ini,fin);
+        String intervalString = (UtilString.intervalString(paraula,ini,fin));
+
+        System.out.println(intervalString); 
 
     }
 }
