@@ -10,6 +10,18 @@ public class UtilString {
         
         String intervalString="";
 
+        if (fin>paraula.length()-1){
+
+            fin = paraula.length()-1;
+
+        }
+
+        if (ini>paraula.length()-1){
+
+            ini = paraula.length()-1;
+
+        }
+
         if (fin<ini){
 
             if (fin<0) {
@@ -44,7 +56,6 @@ public class UtilString {
                 intervalString=intervalString + (paraula.charAt(n)); 
             
             }
-            System.out.println(); 
         }
         return intervalString;
     }
