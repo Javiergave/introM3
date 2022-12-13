@@ -15,7 +15,13 @@ public class CadenaContinua {
             System.out.println("Nombre?"); 
             int nombre = Integer.parseInt(Entrada.readLine());
 
-            System.out.println(UtilString.cadenaContinua(paraula,nombre)); 
+            if(UtilString.esEnter(paraula)){
+                System.out.println(UtilString.cadenaContinua(paraula,nombre)); 
+            }
+            else{
+                System.out.println("error"); 
+            }
+
 
         }
         else{
