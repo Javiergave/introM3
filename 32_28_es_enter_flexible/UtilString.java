@@ -33,7 +33,9 @@ public class UtilString {
         return true;
     }
     public static boolean esEnter(String paraula, boolean estricte){
-        paraula = paraula.strip();
+        if(estricte==false){
+            paraula = paraula.strip();
+        }
 
         if (paraula.isEmpty()==false){
              
