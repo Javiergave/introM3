@@ -30,7 +30,7 @@ public class UtilString {
 
             }
 
-            for (int n = ini; n >= Math.abs(ini-fin);n--){
+            for (int n = ini; n >= fin;n--){
 
                 intervalString=intervalString + (paraula.charAt(n)); 
                 
