@@ -9,16 +9,17 @@ public class EsEnter {
         System.out.println("Introdueix texts (enter sol per finalitzar)"); 
         String paraula = "text";
         boolean esEnter = true;
-
+        boolean estricte = false;
         while (paraula.isEmpty()==false){
 
             paraula = Entrada.readLine();
             paraula = paraula.strip();
             esEnter = true;
+            
 
             if(paraula.isEmpty()==false){
                 
-                esEnter = UtilString.esEnter(paraula,false);
+                esEnter = UtilString.esEnter(paraula,estricte);
 
                 if (esEnter){
                     System.out.println("És enter"); 
