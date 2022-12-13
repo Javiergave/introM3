@@ -18,6 +18,9 @@ public class CadenaContinua {
                 int nombre = Integer.parseInt(paraula);
                 System.out.println(UtilString.cadenaContinua(paraula1,nombre)); 
             }
+            else{
+                System.out.println("error"); 
+            }
 
 
 
