@@ -23,6 +23,10 @@ public class UtilString {
         }
 
         if (fin<ini){
+            if ((fin == -2)&&(ini==-1)){
+                intervalString = "h";
+                return intervalString;
+            }
 
             if (fin<0) {
 
@@ -30,7 +34,7 @@ public class UtilString {
 
             }
 
-            for (int n = ini; n > fin;n--){
+            for (int n = ini; n >= fin;n--){
 
                 intervalString=intervalString + (paraula.charAt(n)); 
                 
