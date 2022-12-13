@@ -26,11 +26,11 @@ public class UtilString {
 
             if (fin<0) {
 
-                fin = 1;
+                fin = 0;
 
             }
 
-            for (int n = ini; n >= fin;n--){
+            for (int n = ini; n > fin;n--){
 
                 intervalString=intervalString + (paraula.charAt(n)); 
                 
