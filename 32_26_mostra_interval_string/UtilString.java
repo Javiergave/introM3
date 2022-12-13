@@ -26,7 +26,7 @@ public class UtilString {
 
             if (fin<0) {
 
-                fin = 0;
+                fin = 1;
 
             }
 
