@@ -6,7 +6,7 @@ public class UtilString {
     /*Aquest programa agafa un text i dos valors enters, i que
     mostra tots els caràcters que hi ha entre el primer i el 
     segon, en l'ordre marcat per l'entrada. */
-    public static String intervalString(String paraula,int ini, int fin){
+    public static void intervalString(String paraula,int ini, int fin){
 
         if (fin<ini){
 
