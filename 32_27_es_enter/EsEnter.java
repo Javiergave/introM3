@@ -17,12 +17,17 @@ public class EsEnter {
             esEnter = true;
             esEnter = UtilString.esEnter(paraula);
 
-            if (esEnter){
-                System.out.println("És enter"); 
+            if(paraula.isEmpty()==false){
+                if (esEnter){
+                    System.out.println("És enter"); 
+                }
+                else{
+                    System.out.println("No és enter"); 
+                } 
             }
-            else{
-                System.out.println("No és enter"); 
-            } 
+            else {
+                break;
+            }
         }
         System.out.println("Adéu");
     }
