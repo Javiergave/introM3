@@ -18,9 +18,7 @@ public class CadenaContinua {
             if(UtilString.esEnter(paraula)){
                 System.out.println(UtilString.cadenaContinua(paraula,nombre)); 
             }
-            else{
-                System.out.println("error"); 
-            }
+
 
 
         }
