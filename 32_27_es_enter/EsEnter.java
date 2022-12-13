@@ -15,9 +15,11 @@ public class EsEnter {
             paraula = Entrada.readLine();
             paraula = paraula.strip();
             esEnter = true;
-            esEnter = UtilString.esEnter(paraula);
 
             if(paraula.isEmpty()==false){
+                
+                esEnter = UtilString.esEnter(paraula);
+
                 if (esEnter){
                     System.out.println("És enter"); 
                 }
