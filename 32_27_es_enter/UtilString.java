@@ -27,6 +27,9 @@ public class UtilString {
             }
             
         }
+        else{
+            return false;
+        }
         return true;
     }
 
