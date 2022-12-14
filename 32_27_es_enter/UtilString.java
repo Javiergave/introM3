@@ -4,6 +4,7 @@ import javax.swing.text.AttributeSet.ParagraphAttribute;
 
 public class UtilString {
 
+    /*Aquest programa diu si una string es un nombre enter o no */
     public static boolean esEnter(String paraula){
 
         if (paraula.isEmpty()==false){
