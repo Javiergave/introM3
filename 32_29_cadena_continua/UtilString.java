@@ -4,6 +4,8 @@ import javax.swing.text.AttributeSet.ParagraphAttribute;
 
 public class UtilString {
 
+    /*Aquest programa mostra tants caràcters del text com indiqui el nombre enters, començant pel primer. 
+    En cas que en faltin, el programa tornarà a mostrar el text a partir del primer caràcter fins que hagi aconseguit tots els caràcters demanats.*/
     public static String cadenaContinua(String paraula, int nombre){
 
         String cadenaContinua = "";

@@ -4,6 +4,7 @@ import javax.swing.text.AttributeSet.ParagraphAttribute;
 
 public class UtilString {
 
+    /*Aquest programa diu si una string es un nombre enter o no*/
     public static boolean esEnter(String paraula){
 
         if (paraula.isEmpty()==false){
@@ -32,6 +33,8 @@ public class UtilString {
         }
         return true;
     }
+
+    /*Aquest programa diu si una string es un nombre enter o no de manera estricta o no estricta*/
     public static boolean esEnter(String paraula, boolean estricte){
         if(estricte==false){
             paraula = paraula.strip();
@@ -64,7 +67,7 @@ public class UtilString {
         return true;
     }
 
-
+    /*Aquest programa converteix una string a enter de manera estricta o no estricta */
     public static int aEnter(String paraula, boolean estricte){
 
         if(estricte == true){
