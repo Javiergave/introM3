@@ -5,13 +5,13 @@ public class NotaMesAlta {
     public static void main(String[] args) {  
 
         int nota= 0;
-        int notes [] = {} ;
+        int notes [] = {0} ;
         int notaMesAlta = 0;
 
         System.out.println("Introdueix les notes (-1 per finalitzar)"); 
-        System.out.println(notes.length); 
+        System.out.println(); 
         
-        for (int i = 0; nota!=-1; i++){
+        for (int i = 1; nota!=-1; i++){
             nota = Integer.parseInt(Entrada.readLine()); 
             if (nota == -1){
                 break;
