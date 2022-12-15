@@ -9,6 +9,7 @@ public class NotaMesAlta {
         int notaMesAlta = 0;
 
         System.out.println("Introdueix les notes (-1 per finalitzar)"); 
+        System.out.println(notes.length); 
         
         for (int i = 0; nota!=-1; i++){
             nota = Integer.parseInt(Entrada.readLine()); 
