@@ -16,7 +16,7 @@ public class NotaMesAlta {
                 break;
             }
             else{
-                notes[i] += nota;
+                notes[i] = nota;
             }
 
 
