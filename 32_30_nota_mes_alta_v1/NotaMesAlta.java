@@ -5,7 +5,7 @@ public class NotaMesAlta {
     public static void main(String[] args) {  
 
         int nota= 0;
-        int[] notes = {} ;
+        int notes [] = {} ;
         int notaMesAlta = 0;
 
         System.out.println("Introdueix les notes (-1 per finalitzar)"); 
