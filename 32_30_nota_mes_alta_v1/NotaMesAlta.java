@@ -24,8 +24,6 @@ public class NotaMesAlta {
 
         }
 
-        
-
         if (i <2){
             System.out.println("Com a minim calen dues notes"); 
         }
