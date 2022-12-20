@@ -37,11 +37,12 @@ public class EntersEntreComes {
             else{
                 System.out.println("Per favor, un valor enter"); 
             }
-
-            String textFinal = UtilString.entreComes(numeros, separador);
-
-            System.out.println();
         }
+
+        String textFinal = UtilString.entreComes(numeros, separador);
+
+        System.out.println();
+        
         
     }
 }
