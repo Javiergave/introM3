@@ -15,7 +15,7 @@ public class EntersEntreComes {
             }
         }
 
-        System.out.println("Seprarador?");
+        System.out.println("Separador?");
         String text = Entrada.readLine();  
         char separador = text.charAt(0);
         
