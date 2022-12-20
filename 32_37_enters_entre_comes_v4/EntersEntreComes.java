@@ -18,9 +18,14 @@ public class EntersEntreComes {
 
         int valor = Integer.parseInt(paraula); 
 
+
+        char separador = ',';
         System.out.println("Separador?");
-        String text = Entrada.readLine();  
-        char separador = text.charAt(0);
+        String text = Entrada.readLine();
+
+        if(text.isEmpty()==false){
+            separador = text.charAt(0);
+        }
         
 
         int[] numeros;
