@@ -8,6 +8,7 @@ public class EntersEntreComes {
 
         System.out.println("Quants?"); 
         int valor = Integer.parseInt(Entrada.readLine()); 
+        if (valor >= 1){
 
         int[] numeros;
 
@@ -27,6 +28,13 @@ public class EntersEntreComes {
         }
 
         System.out.println();
+        }
+
+        else{
+
+            System.out.println("Res a fer"); 
+
+        }
 
     }
 
