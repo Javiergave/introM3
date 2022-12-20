@@ -6,15 +6,17 @@ public class EntersEntreComes {
 
     public static void main(String[] args) {
 
+        System.out.println("Quants?"); 
+        int valor = Integer.parseInt(Entrada.readLine()); 
+
         int[] numeros;
 
-        numeros = new int[3];
+        numeros = new int[valor];
 
-        numeros[0] = 1;
-
-        numeros[1] = 2;
-
-        numeros[2] = 3;
+        for (int i = 0; i<valor-1; i++){
+            System.out.println("Valor"+i+"?"); 
+            numeros [i] = Integer.parseInt(Entrada.readLine()); 
+        }
 
         System.out.print(numeros[0]);
 
