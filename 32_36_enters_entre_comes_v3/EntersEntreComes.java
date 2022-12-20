@@ -13,7 +13,7 @@ public class EntersEntreComes {
 
         numeros = new int[valor];
 
-        for (int i = 1; i<valor; i++){
+        for (int i = 1; i<=valor; i++){
             System.out.println("Valor "+i+"?"); 
             numeros [i-1] = Integer.parseInt(Entrada.readLine()); 
         }
