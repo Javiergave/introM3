@@ -11,7 +11,7 @@ public class UtilString {
 
             for (int i = 1; i < numeros.length; i++) {
 
-                textFinal= textFinal + (separador+" " + numeros[i]);
+                textFinal= textFinal + (separador+" "+ numeros[i]);
 
             }
         return textFinal;

@@ -8,6 +8,7 @@ public class EntersEntreComes {
 
         System.out.println("Quants?");
         String paraula = Entrada.readLine();
+
         if(UtilString.esEnter(paraula)==false){ 
             while (UtilString.esEnter(paraula)==false){
                 System.out.println("Per favor, un valor enter"); 
@@ -15,12 +16,12 @@ public class EntersEntreComes {
             }
         }
 
+        int valor = Integer.parseInt(paraula); 
+
         System.out.println("Separador?");
         String text = Entrada.readLine();  
         char separador = text.charAt(0);
         
-
-        int valor = Integer.parseInt(paraula);; 
 
         int[] numeros;
 
@@ -41,7 +42,7 @@ public class EntersEntreComes {
 
         String textFinal = UtilString.entreComes(numeros, separador);
 
-        System.out.println();
+        System.out.println(textFinal);
         
         
     }
