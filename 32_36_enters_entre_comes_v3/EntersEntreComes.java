@@ -13,9 +13,9 @@ public class EntersEntreComes {
 
         numeros = new int[valor];
 
-        for (int i = 0; i<valor-1; i++){
-            System.out.println("Valor"+i+"?"); 
-            numeros [i] = Integer.parseInt(Entrada.readLine()); 
+        for (int i = 1; i<valor-1; i++){
+            System.out.println("Valor "+i+" ?"); 
+            numeros [i-1] = Integer.parseInt(Entrada.readLine()); 
         }
 
         System.out.print(numeros[0]);
