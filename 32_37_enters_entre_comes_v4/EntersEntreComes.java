@@ -10,7 +10,7 @@ public class EntersEntreComes {
         String paraula = Entrada.readLine();
 
         if((UtilString.esEnter(paraula)==false)||(paraula!="-1")){ 
-            while ((UtilString.esEnter(paraula)==false)||(paraula!="-1")){
+            while ((UtilString.esEnter(paraula)==false)||(paraula=="-1")){
                 System.out.println("Per favor, un valor enter"); 
                 paraula = Entrada.readLine(); 
             }
