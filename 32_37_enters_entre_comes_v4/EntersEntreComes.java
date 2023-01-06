@@ -18,7 +18,7 @@ public class EntersEntreComes {
 
         int valor = Integer.parseInt(paraula); 
         if (valor<=-1){
-            System.out.println("valor no valid");
+            System.out.println("Res a fer");
         }
         else{
             char separador = ',';
