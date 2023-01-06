@@ -9,7 +9,7 @@ public class EntersEntreComes {
         System.out.println("Quants?");
         String paraula = Entrada.readLine();
 
-        if(UtilString.esEnter(paraula)==false){ 
+        if((UtilString.esEnter(paraula)==false)||(paraula!="-1")){ 
             while (UtilString.esEnter(paraula)==false){
                 System.out.println("Per favor, un valor enter"); 
                 paraula = Entrada.readLine(); 
@@ -32,7 +32,7 @@ public class EntersEntreComes {
 
         numeros = new int[valor];
 
-        for (int i = 1; (i<=valor)&&(valor>=0); i++){
+        for (int i = 1; i<=valor; i++){
             System.out.println("Valor "+i+"?"); 
 
             String nombre = Entrada.readLine(); 
