@@ -47,6 +47,7 @@ public class EntersEntreComes {
                         System.out.println("Per favor, un valor enter"); 
                         nombre = Entrada.readLine(); 
                     }
+                    numeros [i-1] = Integer.parseInt(nombre);
                 }
             }
 
