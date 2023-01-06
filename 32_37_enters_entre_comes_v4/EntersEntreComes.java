@@ -22,34 +22,37 @@ public class EntersEntreComes {
         }
         else{
             char separador = ',';
-        System.out.println("Separador?");
-        String text = Entrada.readLine();
+            System.out.println("Separador?");
+            String text = Entrada.readLine();
 
-        if(text.isEmpty()==false){
-            separador = text.charAt(0);
-        }
-        
-
-        int[] numeros;
-
-        numeros = new int[valor];
-
-        for (int i = 1; i<=valor; i++){
-            System.out.println("Valor "+i+"?"); 
-
-            String nombre = Entrada.readLine(); 
-        
-            if(UtilString.esEnter(nombre)){
-                numeros [i-1] = Integer.parseInt(nombre);
+            if(text.isEmpty()==false){
+                separador = text.charAt(0);
             }
-            else{
-                System.out.println("Per favor, un valor enter"); 
+            
+
+            int[] numeros;
+
+            numeros = new int[valor];
+
+            for (int i = 1; i<=valor; i++){
+                System.out.println("Valor "+i+"?"); 
+
+                String nombre = Entrada.readLine(); 
+            
+                if(UtilString.esEnter(nombre)){
+                    numeros [i-1] = Integer.parseInt(nombre);
+                }
+                else{
+                    while(UtilString.esEnter(nombre)==false){
+                        System.out.println("Per favor, un valor enter"); 
+                        nombre = Entrada.readLine(); 
+                    }
+                }
             }
-        }
 
-        String textFinal = UtilString.entreComes(numeros, separador);
+            String textFinal = UtilString.entreComes(numeros, separador);
 
-        System.out.println(textFinal);
+            System.out.println(textFinal);
         }
         
     }
