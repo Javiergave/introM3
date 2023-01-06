@@ -17,7 +17,7 @@ public class EntersEntreComes {
         }
 
         int valor = Integer.parseInt(paraula); 
-        if (valor<=-1){
+        if (valor<=0){
             System.out.println("Res a fer");
         }
         else{
