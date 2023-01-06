@@ -32,7 +32,7 @@ public class EntersEntreComes {
 
         numeros = new int[valor];
 
-        for (int i = 1; i<=valor; i++){
+        for (int i = 1; (i<=valor)&&(valor>=0); i++){
             System.out.println("Valor "+i+"?"); 
 
             String nombre = Entrada.readLine(); 
