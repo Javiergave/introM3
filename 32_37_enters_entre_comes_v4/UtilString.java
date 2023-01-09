@@ -81,7 +81,7 @@ public class UtilString {
 
     /*Aquest programa diu si una string és formada només per nombres enters amb la possibilitat de filtrar els espais*/
 
-    public static boolean esEnter(String paraula, boolean estricte){
+    public static boolean esEnterEstricte(String paraula, boolean estricte){
         if(estricte==false){
             paraula = paraula.strip();
         }
