@@ -6,23 +6,20 @@ public class UtilString {
     /*Aquest programa retorna els elements de l'array entrat separats amb el char escollit */
     public static String entreComes(int numeros[], char separador){
         String textFinal = "";
+        
+        if (numeros.length>0){
+            textFinal = textFinal + (numeros[0]);
 
-        textFinal = textFinal + (numeros[0]);
+        }
 
-        if (numeros.length!=0){
-
+        
             for (int i = 1; i < numeros.length; i++) {
 
                 textFinal= textFinal + (separador+" "+ numeros[i]);
 
             }
         return textFinal;
-        }
-        else{
-            textFinal = ("Res a fer");
-            return textFinal;
-
-        }
+        
     }
 
 
