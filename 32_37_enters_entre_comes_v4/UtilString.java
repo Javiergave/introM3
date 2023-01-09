@@ -9,7 +9,7 @@ public class UtilString {
 
         textFinal= textFinal + (numeros[0]);
 
-            for (int i = 0; i <= numeros.length; i++) {
+            for (int i = 1; i < numeros.length; i++) {
 
                 textFinal= textFinal + (separador+" "+ numeros[i]);
 
