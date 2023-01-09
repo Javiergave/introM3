@@ -7,7 +7,9 @@ public class UtilString {
     public static String entreComes(int numeros[], char separador){
         String textFinal = "";
 
-        textFinal= textFinal + (numeros[0]);
+        textFinal = textFinal + (numeros[0]);
+
+        if (numeros.length!=0){
 
             for (int i = 1; i < numeros.length; i++) {
 
@@ -15,6 +17,12 @@ public class UtilString {
 
             }
         return textFinal;
+        }
+        else{
+            textFinal = ("Res a fer");
+            return textFinal;
+
+        }
     }
 
 
