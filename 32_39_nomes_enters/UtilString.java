@@ -8,7 +8,7 @@ public class UtilString {
     public static int quantsEnters(String[] valors) {
         int quantsEnters = 0;
 
-        for (int i = 0;i<valors.length;i++){
+        for (int i = 0;i<=valors.length;i++){
             if (esEnter(valors[i])){
                 quantsEnters++;
             }
