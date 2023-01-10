@@ -5,7 +5,7 @@ public class SumaEnters {
     public static void main(String[] args) {
 
         if(args.length==0){
-            System.out.println("Cap argument"); 
+            System.out.println("0"); 
         }
         else{
 
