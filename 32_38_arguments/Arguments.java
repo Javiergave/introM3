@@ -1,6 +1,5 @@
-/*Aquest programa mostra tres enters separats per comes tenint en 
-comptes que els tres valors es troben emmagatzemats en un array 
-d'enters. */
+/*Aquest programa analitza els arguments que es passen per la línia de comandes i distingeixi 
+si són o no enters.*/
 
 public class Arguments {
 
