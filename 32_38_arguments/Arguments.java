@@ -15,7 +15,7 @@ public class Arguments {
                     System.out.println("["+i+"] \""+args[i]+"\": és enter"); 
                 }
                 else{
-                    System.out.println("["+i+"]: no és enter"); 
+                    System.out.println("["+i+"] \""+args[i]+"\": no és enter"); 
                 }
             }
         }
