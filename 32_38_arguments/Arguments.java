@@ -12,7 +12,7 @@ public class Arguments {
         else{
             for (int i=0; i<args.length; i++){
                 if (UtilString.esEnter(args[i])){
-                    System.out.println("["+i+"]: és enter"); 
+                    System.out.println("["+i+"] \""+args[i]+"\": és enter"); 
                 }
                 else{
                     System.out.println("["+i+"]: no és enter"); 
