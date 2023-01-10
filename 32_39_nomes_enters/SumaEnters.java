@@ -1,6 +1,6 @@
 /*Aquest programa mostra el resultat de sumar els enters que rep per comandes.*/
 
-public class Arguments {
+public class SumaEnters {
 
     public static void main(String[] args) {
 
