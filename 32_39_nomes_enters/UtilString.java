@@ -1,4 +1,3 @@
-import javax.lang.model.element.QualifiedNameable;
 
 /*Diverses utilitats per a analitzar i modificar strings */
 
@@ -24,11 +23,18 @@ public class UtilString {
 
         numeros = new int[quantsEnters];
 
-        for (int i=0; i<quantsEnters;i++){
-            if (esEnter(valors[i])){
-                numeros[i] = Integer.parseInt(valors[i]);
+        for (int i=0; i<numeros.length;i++){
+            for (int j = i; j<valors.length;j++){
+                if (esEnter(valors[j])){
+                    numeros[i] = Integer.parseInt(valors[j]);
+                    break;
+                }
+                else{
+                    
+                }
             }
         }
+
         return numeros;
     }
 

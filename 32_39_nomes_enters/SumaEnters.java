@@ -4,25 +4,17 @@ public class SumaEnters {
 
     public static void main(String[] args) {
 
-        if(args.length==0){
-            System.out.println("0"); 
-        }
-        else{
+        int resultat=0;
 
-            int resultat=0;
+        int[] numeros;
 
-            int quantitatEnters = UtilString.quantsEnters(args);
+        numeros = new int[UtilString.quantsEnters(args)];
 
-            int[] numeros;
+        numeros = UtilString.filtraEnters(args);
 
-            numeros = new int[quantitatEnters];
+        resultat = UtilString.sumaEnters(numeros);
 
-            numeros = UtilString.filtraEnters(args);
-
-            resultat = UtilString.sumaEnters(numeros);
-
-            System.out.println(resultat); 
-        }
-        
+        System.out.println(resultat); 
     }
+        
 }
