@@ -59,26 +59,26 @@ public class TresEnRatlla {
                     }
                     else{
                         taulell[fila][col] = jugador;
-                    }
 
-                    // comprova jugador guanya
-                    if (jugadorGuanya(taulell,jugador)){
-                        mostraTaulell(taulell);
-                        System.out.println(jugador+" Guanya"); 
-                        return;
-                    }
+                            // comprova jugador guanya
+                        if (jugadorGuanya(taulell,jugador)){
+                            mostraTaulell(taulell);
+                            System.out.println(jugador+" Guanya"); 
+                            return;
+                        }
 
-                    // comprova empat
-                    if (hiHaEmpat(taulell)){
-                        System.out.println("Empat"); 
-                        return;
-                    }
+                        // comprova empat
+                        if (hiHaEmpat(taulell)){
+                            System.out.println("Empat"); 
+                            return;
+                        }
 
-                    // passa torn a l'altre jugador
-                    if (jugador =='X'){
-                        jugador = 'O';
-                    }else {
-                        jugador = 'X';
+                        // passa torn a l'altre jugador
+                        if (jugador =='X'){
+                            jugador = 'O';
+                        }else {
+                            jugador = 'X';
+                        }
                     }
                 }
                 else{
