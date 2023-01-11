@@ -34,50 +34,49 @@ public class TresEnRatlla {
             // obté el moviment del jugador actual
             String moviment = Entrada.readLine();
             
-
-            // comprova abandonament
-            if (moviment=="a"||moviment=="A"){
-                System.out.println(jugador+" abandona"); 
-                return;
-            }
+            if(moviment.length()>1){
+                // comprova abandonament
+                if (moviment=="a"||moviment=="A"){
+                    System.out.println(jugador+" abandona"); 
+                    return;
+                }
             
                 // obté coordenades del moviment
                 String num1 = ""+moviment.charAt(0);
                 String num2 = ""+moviment.charAt(1);
                 int fila = Integer.parseInt(num1);
                 int col = Integer.parseInt(num2);
+
+                // comprova si la casella està ocupada
+                boolean ocupada = casellaOcupada(taulell,fila,col);
+
+                // realitza el moviment
+                if (ocupada){
+                    System.out.println("Ocupada");
+                }
+                else{
+                    taulell[fila][col] = jugador;
+                }
+
+                // comprova jugador guanya
+                if (jugadorGuanya(taulell,jugador)){
+                    System.out.println(jugador+" Guanya"); 
+                    return;
+                }
+
+                // comprova empat
+                if (hiHaEmpat(taulell)){
+                    System.out.println("Empat"); 
+                }
+
+                // passa torn a l'altre jugador
+                if (jugador =='X'){
+                    jugador = 'O';
+                }else {
+                    jugador = 'X';
+                }
+            }
             
-
-            
-
-            // comprova si la casella està ocupada
-            boolean ocupada = casellaOcupada(taulell,fila,col);
-
-            // realitza el moviment
-            if (ocupada){
-                System.out.println("Ocupada");
-            }
-            else{
-                taulell[fila][col] = jugador;
-            }
-
-            // comprova jugador guanya
-            if (jugadorGuanya(taulell,jugador)){
-                System.out.println(jugador+" Guanya"); 
-                return;
-            }
-
-            // comprova empat
-            if (hiHaEmpat(taulell)){
-                System.out.println("Empat"); 
-            }
-
-            // passa torn a l'altre jugador
-            if (jugador =='X'){
-                jugador = 'O';
-            }else {
-                jugador = 'X';
-            }
         }
     }
 
