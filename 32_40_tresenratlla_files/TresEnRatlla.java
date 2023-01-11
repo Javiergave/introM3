@@ -1,4 +1,3 @@
-import javax.swing.event.MouseInputListener;
 
 /* Aquest programa representa una partida de tres en ratlla */
 public class TresEnRatlla {
