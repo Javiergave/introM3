@@ -151,12 +151,7 @@ public class TresEnRatlla {
                     totaOcupada = casellaOcupada(taulell,i,j);
                 }
             }
-            if (totaOcupada){
-                return true;
-            }
-            else{
-                return false;
-            }
+            return totaOcupada;
         }
         else{
             return false;
