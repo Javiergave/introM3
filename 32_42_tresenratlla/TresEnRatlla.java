@@ -40,12 +40,15 @@ public class TresEnRatlla {
                 System.out.println(jugador+" abandona"); 
                 return;
             }
+            
+                // obté coordenades del moviment
+                String num1 = ""+moviment.charAt(0);
+                String num2 = ""+moviment.charAt(1);
+                int fila = Integer.parseInt(num1);
+                int col = Integer.parseInt(num2);
+            
 
-            // obté coordenades del moviment
-            String num1 = ""+moviment.charAt(1);
-            String num2 = ""+moviment.charAt(2);
-            int fila = Integer.parseInt(num1);
-            int col = Integer.parseInt(num2);
+            
 
             // comprova si la casella està ocupada
             boolean ocupada = casellaOcupada(taulell,fila,col);
