@@ -16,6 +16,7 @@ public class SumaEnters {
 
         System.out.println(resultat); 
     }
+    
     /*Aquest programa crea un valor amb la quantitar d'enters que hi ha */
     public static int quantsEnters(String[] valors) {
         int quantsEnters = 0;
