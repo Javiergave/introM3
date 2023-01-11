@@ -24,24 +24,21 @@ public class UtilString {
         numeros = new int[quantsEnters];
 
         for (int i=0; i<numeros.length;i++){
-            for (int j = i; j<valors.length;j++){
+            for (int j = 0; j<valors.length;j++){
                 if (esEnter(valors[j])){
                     numeros[i] = Integer.parseInt(valors[j]);
+                    valors[j] = "a";
                     break;
                 }
-                else{
-                    
-                }
+                
             }
         }
-
         return numeros;
     }
 
     /*Aquest programa suma un array d'enters */
     public static int sumaEnters(int[] valors) {
         int resultat = 0;
-
         for (int i = 0; i<valors.length;i++){
             resultat = resultat + valors[i];
         }
