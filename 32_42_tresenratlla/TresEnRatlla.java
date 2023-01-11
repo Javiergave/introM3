@@ -24,7 +24,6 @@ public class TresEnRatlla {
         System.out.println("Comença el joc");
 
         
-
         while (jugadorGuanya(taulell,jugador) == false||hiHaEmpat(taulell)==true) {
 
             mostraTaulell(taulell);
@@ -33,50 +32,59 @@ public class TresEnRatlla {
 
             // obté el moviment del jugador actual
             String moviment = Entrada.readLine();
-            
-            if(moviment.length()>1){
-                // comprova abandonament
-                if (moviment=="a"||moviment=="A"){
+
+            // comprova abandonament
+            if (UtilString.esEnter(moviment)==false||moviment.length()<=1||moviment.length()>2){
+                if (moviment.equalsIgnoreCase("a")){
                     System.out.println(jugador+" abandona"); 
                     return;
                 }
-            
+                else{
+                    System.out.println("Error"); 
+                }
+            }else{
                 // obté coordenades del moviment
                 String num1 = ""+moviment.charAt(0);
                 String num2 = ""+moviment.charAt(1);
-                int fila = Integer.parseInt(num1);
-                int col = Integer.parseInt(num2);
+                int fila = Integer.parseInt(num2);
+                int col = Integer.parseInt(num1);
 
-                // comprova si la casella està ocupada
-                boolean ocupada = casellaOcupada(taulell,fila,col);
+                if ((fila<=2&&fila>=0)&&(col<=2&&col>=0)){
+                    // comprova si la casella està ocupada
+                    boolean ocupada = casellaOcupada(taulell,fila,col);
 
-                // realitza el moviment
-                if (ocupada){
-                    System.out.println("Ocupada");
+                    // realitza el moviment
+                    if (ocupada){
+                        System.out.println("Ocupada");
+                    }
+                    else{
+                        taulell[fila][col] = jugador;
+                    }
+
+                    // comprova jugador guanya
+                    if (jugadorGuanya(taulell,jugador)){
+                        mostraTaulell(taulell);
+                        System.out.println(jugador+" Guanya"); 
+                        return;
+                    }
+
+                    // comprova empat
+                    if (hiHaEmpat(taulell)){
+                        System.out.println("Empat"); 
+                        return;
+                    }
+
+                    // passa torn a l'altre jugador
+                    if (jugador =='X'){
+                        jugador = 'O';
+                    }else {
+                        jugador = 'X';
+                    }
                 }
                 else{
-                    taulell[fila][col] = jugador;
-                }
-
-                // comprova jugador guanya
-                if (jugadorGuanya(taulell,jugador)){
-                    System.out.println(jugador+" Guanya"); 
-                    return;
-                }
-
-                // comprova empat
-                if (hiHaEmpat(taulell)){
-                    System.out.println("Empat"); 
-                }
-
-                // passa torn a l'altre jugador
-                if (jugador =='X'){
-                    jugador = 'O';
-                }else {
-                    jugador = 'X';
+                    System.out.println("Error");
                 }
             }
-            
         }
     }
 
@@ -135,9 +143,20 @@ public class TresEnRatlla {
 
     }
 
-    public static boolean hiHaEmpat(char[][] taulell) {  
+    public static boolean hiHaEmpat(char[][] taulell) { 
+        boolean totaOcupada = true;
         if((jugadorGuanya(taulell,'X')==false)&&(jugadorGuanya(taulell,'O')==false)){
-            return true;
+            for(int i=0; i<3; i++){
+                for (int j = 0; j<3; j++){
+                    totaOcupada = casellaOcupada(taulell,i,j);
+                }
+            }
+            if (totaOcupada){
+                return true;
+            }
+            else{
+                return false;
+            }
         }
         else{
             return false;
