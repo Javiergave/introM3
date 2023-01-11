@@ -144,14 +144,15 @@ public class TresEnRatlla {
     }
 
     public static boolean hiHaEmpat(char[][] taulell) { 
-        boolean totaOcupada = true;
         if((jugadorGuanya(taulell,'X')==false)&&(jugadorGuanya(taulell,'O')==false)){
             for(int i=0; i<3; i++){
                 for (int j = 0; j<3; j++){
-                    totaOcupada = casellaOcupada(taulell,i,j);
+                    if(casellaOcupada(taulell,i,j)){
+                        return true;
+                    }
                 }
             }
-            return totaOcupada;
+            return false;
         }
         else{
             return false;
