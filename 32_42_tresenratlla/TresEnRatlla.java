@@ -153,7 +153,12 @@ public class TresEnRatlla {
                     }
                 }
             }
-            return totesOcupades;
+            if(totesOcupades){
+                return true;
+            }
+            else{
+                return false;
+            }
         }
         else{
             return false;
