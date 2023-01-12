@@ -17,8 +17,9 @@ public class SumaDigits {
         // tracta pas actual
         char numero = text.charAt(0);
         int total = 0;
-        int nombre = Integer.parseInt(String.valueOf(numero));
         if (Character.isDigit(text.charAt(0))){
+            int nombre = Integer.parseInt(String.valueOf(numero));
+
             total = total + nombre;
         }
 
