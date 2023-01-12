@@ -46,8 +46,8 @@ public class TresEnRatlla {
                 // obté coordenades del moviment
                 String num1 = ""+moviment.charAt(0);
                 String num2 = ""+moviment.charAt(1);
-                int fila = Integer.parseInt(num2);
-                int col = Integer.parseInt(num1);
+                int fila = Integer.parseInt(num1);
+                int col = Integer.parseInt(num2);
 
                 if ((fila<=2&&fila>=0)&&(col<=2&&col>=0)){
                     // comprova si la casella està ocupada
