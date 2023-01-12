@@ -1,5 +1,5 @@
 
-/* Aquest programa representa una partida de tres en ratlla */
+/* Aquest programa representa una partida de tres en ratlla i permet fer un moviment */
 public class TresEnRatlla {
     public static void main(String[] args){
         // declaració del taulell
