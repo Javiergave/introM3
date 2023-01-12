@@ -150,6 +150,7 @@ public class TresEnRatlla {
                 for (int j = 0; j<3; j++){
                     if(casellaOcupada(taulell,i,j)==false){
                         totesOcupades =false;
+                         
                     }
                 }
             }
