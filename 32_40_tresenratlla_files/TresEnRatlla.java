@@ -1,5 +1,4 @@
-
-/* Aquest programa representa una partida de tres en ratlla */
+// Aquest programa mostra una partida de tres en ratlla 
 public class TresEnRatlla {
     public static void main(String[] args){
         // declaració de les files
