@@ -42,7 +42,8 @@ public class Subcadenes {
         
         String meitat =  text.substring(0,(text.length()/2));
         String meitatfinal = text.substring((text.length()/2),text.length()-1);
-    
+        
+        System.out.println("les mitats son"+meitat +" i "+meitatfinal); 
         // tracta pas recursiu
         mostraCadena(meitat);     
         mostraCadena(meitatfinal); 
