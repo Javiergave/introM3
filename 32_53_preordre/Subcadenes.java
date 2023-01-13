@@ -49,7 +49,7 @@ public class Subcadenes {
             meitatFinal = text.substring((text.length()/2),text.length()-1);
         }
         
-        System.out.println("les mitats son"+meitat +" i "+meitatFinal); 
+        //System.out.println("les mitats son"+meitat +" i "+meitatFinal); 
         // tracta pas recursiu
         mostraCadena(meitat);     
         mostraCadena(meitatFinal); 
