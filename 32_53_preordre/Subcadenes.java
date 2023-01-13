@@ -41,13 +41,12 @@ public class Subcadenes {
         }
         String meitat = "";
         String meitatFinal = "";
-        if (text.length()>3){
-            meitat =  text.substring(0,(text.length()/2));
-            meitatFinal = text.substring((text.length()/2),text.length()-1);
-        }
         if (text.length()==2){
             meitat = ""+text.charAt(0);
             meitatFinal = ""+ text.charAt(1);
+        }else{
+            meitat =  text.substring(0,(text.length()/2));
+            meitatFinal = text.substring((text.length()/2),text.length()-1);
         }
         
         //System.out.println("les mitats son"+meitat +" i "+meitatfinal); 
