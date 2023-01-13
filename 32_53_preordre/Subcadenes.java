@@ -33,7 +33,7 @@ public class Subcadenes {
         }
     
         // tracta pas actual
-        if (text.length()>9){
+        if (text.length()<10){
             System.out.println("   "+text.length()+": "+text); 
         }
         else{
