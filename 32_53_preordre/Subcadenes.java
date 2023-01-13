@@ -28,7 +28,7 @@ public class Subcadenes {
        // extrae los numeros y los suma entre ellos
     public static void mostraCadena(String text) {
         // cas base
-        if (text.isEmpty()||text.length()<1){ 
+        if (text.isEmpty()){ 
             return;
         }
     
@@ -44,8 +44,8 @@ public class Subcadenes {
         String meitatfinal = text.substring((text.length()/2),text.length()-1);
     
         // tracta pas recursiu
-        mostraCadena(meitatfinal); 
         mostraCadena(meitat);     
+        mostraCadena(meitatfinal); 
         // composa resultat
         return;
     }
