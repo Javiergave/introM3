@@ -15,7 +15,7 @@ public class Subcadenes {
         char lletra = 'a';
         for (int i = 0; i<=text.length()-1;i++){
             lletra = text.charAt(i);
-            if ((lletra==' ')){
+            if ((Character.isLetter(lletra)==false)){
                 continue; 
             }else{
                 senseEspais = senseEspais + text.charAt(i);
