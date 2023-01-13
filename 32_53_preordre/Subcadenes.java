@@ -44,8 +44,8 @@ public class Subcadenes {
         String meitatfinal = text.substring((text.length()/2),text.length()-1);
     
         // tracta pas recursiu
-        mostraCadena(meitat);     
         mostraCadena(meitatfinal); 
+        mostraCadena(meitat);     
         // composa resultat
         return;
     }
