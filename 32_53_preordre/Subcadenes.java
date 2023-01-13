@@ -41,7 +41,7 @@ public class Subcadenes {
         }
         String meitat = "";
         String meitatFinal = "";
-        if (text.length()>2){
+        if (text.length()>3){
             meitat =  text.substring(0,(text.length()/2));
             meitatFinal = text.substring((text.length()/2),text.length()-1);
         }
