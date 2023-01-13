@@ -39,14 +39,21 @@ public class Subcadenes {
         else{
             System.out.println("  "+text.length()+": "+text); 
         }
-        
-        String meitat =  text.substring(0,(text.length()/2));
-        String meitatfinal = text.substring((text.length()+1/2),text.length()-1);
+        String meitat = "";
+        String meitatFinal = "";
+        if (text.length()>2){
+            meitat =  text.substring(0,(text.length()/2));
+            meitatFinal = text.substring((text.length()/2),text.length()-1);
+        }
+        if (text.length()==2){
+            meitat = ""+text.charAt(0);
+            meitatFinal = ""+ text.charAt(1);
+        }
         
         //System.out.println("les mitats son"+meitat +" i "+meitatfinal); 
         // tracta pas recursiu
         mostraCadena(meitat);     
-        mostraCadena(meitatfinal); 
+        mostraCadena(meitatFinal); 
         // composa resultat
         return;
     }
