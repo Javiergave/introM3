@@ -24,7 +24,11 @@ public class Subcadenes {
        // extrae los numeros y los suma entre ellos
     public static void mostraCadena(String text) {
         // cas base
-        if (text.isEmpty()||text.length()==1){ 
+        if (text.isEmpty()){ 
+            return;
+        }
+        if (text.length()==1){
+            System.out.println("   "+text.length()+": "+text);
             return;
         }
     
