@@ -33,7 +33,7 @@ public class Subcadenes {
         }
     
         // tracta pas actual
-        System.out.println("  "+text.length()+": "+text); 
+        System.out.println("   "+text.length()+": "+text); 
         String meitat =  text.substring(0,(text.length()/2));
         String meitatfinal = text.substring((text.length()/2),text.length()-1);
     
