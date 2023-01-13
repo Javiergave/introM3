@@ -40,8 +40,8 @@ public class Subcadenes {
             System.out.println("  "+text.length()+": "+text); 
         }
         
-        String meitat =  text.substring(0,(text.length()/2));
-        String meitatfinal = text.substring((text.length()/2),text.length()-1);
+        String meitat =  text.substring(0,((text.length()-1)/2));
+        String meitatfinal = text.substring(((text.length()-1)/2),text.length()-1);
     
         // tracta pas recursiu
         mostraCadena(meitat);     
