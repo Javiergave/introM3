@@ -28,13 +28,12 @@ public class Subcadenes {
        // extrae los numeros y los suma entre ellos
     public static void mostraCadena(String text) {
         // cas base
-        if (text.isEmpty()||text.length()==1){
-            System.out.println(text); 
+        if (text.isEmpty()||text.length()<1){ 
             return;
         }
     
         // tracta pas actual
-        System.out.println(text); 
+        System.out.println(text.length()+": "+text); 
         String meitat =  text.substring(0,(text.length()/2));
         String meitatfinal = text.substring((text.length()/2),text.length()-1);
     
