@@ -19,7 +19,7 @@ public class Subcadenes {
             return "";            
         }
 
-        if (text.charAt(0) == ' ') {
+        if (Character.isLetter(text.charAt(0)) == false) {
             return senseEspais(text.substring(1));
         }
         return text.charAt(0)
