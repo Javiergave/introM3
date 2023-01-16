@@ -22,8 +22,7 @@ public class Subcadenes {
         if (Character.isLetter(text.charAt(0)) == false) {
             return senseEspais(text.substring(1));
         }
-        return text.charAt(0)
-            + senseEspais(text.substring(1));
+        return text.charAt(0) + senseEspais(text.substring(1));
         
     }
     
