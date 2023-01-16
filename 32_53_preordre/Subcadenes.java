@@ -7,18 +7,24 @@ public class Subcadenes {
     public static void main(String[] args){
         System.out.println("Text?");
         String text = Entrada.readLine();
-        String senseEspais = "";
+        String senseEspais = senseEspais(text);
         char lletra = 'a';
-        for (int i = 0; i<=text.length()-1;i++){
-            lletra = text.charAt(i);
-            if ((Character.isLetter(lletra)==false)){
-                continue; 
-            }else{
-                senseEspais = senseEspais + text.charAt(i);
-            }
-            
-        }
+        
         mostraCadena(senseEspais);
+    }
+
+    public static String senseEspais(String text){
+        
+        if (text.length() == 0) {
+            return "";            
+        }
+
+        if (text.charAt(0) == ' ') {
+            return senseEspais(text.substring(1));
+        }
+        return text
+            + senseEspais(text.substring(1));
+        
     }
     
        // extrae los numeros y los suma entre ellos
