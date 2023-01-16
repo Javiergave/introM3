@@ -22,7 +22,7 @@ public class Subcadenes {
         if (text.charAt(0) == ' ') {
             return senseEspais(text.substring(1));
         }
-        return text
+        return text.charAt(0)
             + senseEspais(text.substring(1));
         
     }
