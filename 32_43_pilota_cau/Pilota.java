@@ -16,19 +16,29 @@ public class Pilota {
         }
     }
     public static void netejaCamp(char[][] camp) {
-        /* XXX */;
+        for (int i=0; i<N_FILES; i++){
+            for (int j=0; j<N_COLS; j++){
+                camp[i][j]='·';
+            }
+        }
     }
     public static void netejaPosicio(char[][] camp, int fila, int col) {
-        /* XXX */
+        camp[fila][col] = '·';
     }
     public static void posicionaPilota(char[][] camp, int fila, int col) {
-        /* XXX */
+        camp[fila][col] = 'O';
     }
     public static int seguentFila(int actual) {
-        /* XXX */
+        if(actual==N_FILES-1){
+            return 0;
+        }
+        return actual+1;
     }
     public static int seguentCol(int actual) {
-        /* XXX */
+        if(actual==N_COLS-1){
+            return 0;
+        }
+        return actual+1;
     }
     public static void main(String[] args)  {
         char[][] camp = new char[N_FILES][N_COLS];

@@ -1,4 +1,4 @@
-/*Aquest programa permet jugar al tres en ratlla */
+/*Aquest programa permet jugar al tres en ratlla introduint les posicions al taulell*/
 public class TresEnRatlla {
 
     public static void main(String[] args) {
