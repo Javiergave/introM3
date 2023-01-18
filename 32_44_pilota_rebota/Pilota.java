@@ -96,7 +96,7 @@ public class Pilota {
 
         if (fila < 0) { // es passa per sobre
 
-            fila = 0; // torna a la primera fila
+            fila = 1; // torna a la primera fila
 
             incFila = 1; // toca baixar
 
@@ -113,7 +113,7 @@ public class Pilota {
 
         if (col < 0) { // es passa per sobre
 
-            col = 0; // torna a la primera fila
+            col = 1; // torna a la primera fila
 
             incCol = 1; // toca baixar
 
