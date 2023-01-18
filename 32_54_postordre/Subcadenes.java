@@ -48,8 +48,9 @@ public class Subcadenes {
         
 
         // tracta pas recursiu
+        mostraCadena(meitat); 
         mostraCadena(meitatFinal);
-        mostraCadena(meitat);  
+         
          
         
         // composa resultat
