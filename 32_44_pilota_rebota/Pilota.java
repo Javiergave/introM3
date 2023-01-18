@@ -68,8 +68,8 @@ public class Pilota {
 
     public static void canviaPosicio(int[] posicio, int novaFila, int novaCol) {
 
-        posicio[0] = posicio[0] + obteIncrFila(posicio);
-        posicio[1] = posicio[1] + obteIncrCol(posicio);
+        posicio[0] = novaFila;
+        posicio[1] = novaCol;
 
     }
 
@@ -96,13 +96,13 @@ public class Pilota {
 
         if (fila < 0) { // es passa per sobre
 
-            fila = 1; // torna a la primera fila
+            fila = 0; // torna a la primera fila
 
             incFila = 1; // toca baixar
 
         } else if (fila > N_FILES - 1) { // es passa per sota
 
-            fila = fila - 1;
+            fila = N_FILES-2;
             incFila = -1;
 
         }
@@ -117,9 +117,9 @@ public class Pilota {
 
             incCol = 1; // toca baixar
 
-        } else if (fila > N_COLS - 1) { // es passa per sota
+        } else if (col > N_COLS-1) { // es passa per sota
 
-            col = col - 1;
+            col = N_COLS-2;
             incCol = -1;
 
         }
@@ -154,7 +154,7 @@ public class Pilota {
 
             mostraCamp(camp);
 
-            netejaPosicio(camp, posicio);
+            netejaPosicio(camp, posicio); 
 
             seguentPosicio(posicio, increment);
 
