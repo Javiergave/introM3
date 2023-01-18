@@ -1,5 +1,3 @@
-import javax.swing.text.AttributeSet.ParagraphAttribute;
-
 /*Diverses utilitats per a analitzar i modificar strings */
 
 public class UtilString {
