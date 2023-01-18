@@ -34,40 +34,31 @@ public class Subcadenes {
         }
     
         // tracta pas actual
-        if (text.length()<10){
-            String meitat = "";
-            String meitatFinal = "";
-            if (text.length()==2){
-                meitat = ""+text.charAt(0);
-                meitatFinal = ""+text.charAt(1);
-            }else {
-                meitat =  text.substring(0,(text.length())/2);
-                meitatFinal = text.substring(((text.length())/2));
-            }
-            System.out.println("   "+text.length()+": "+text); 
-            mostraCadena(meitat);
-            mostraCadena(meitatFinal);
+        String meitat = "";
+        String meitatFinal = "";
+        if (text.length()==2){
+            meitat = ""+text.charAt(0);
+            meitatFinal = ""+text.charAt(1);
+        }else {
+            meitat =  text.substring(0,(text.length())/2);
+            meitatFinal = text.substring(((text.length())/2));
         }
-        else{
-            String meitat = "";
-            String meitatFinal = "";
-            if (text.length()==2){
-                meitat = ""+text.charAt(0);
-                meitatFinal = ""+text.charAt(1);
-            }else {
-                meitat =  text.substring(0,(text.length())/2);
-                meitatFinal = text.substring(((text.length())/2));
-            }
-            System.out.println("  "+text.length()+": "+text); 
-            mostraCadena(meitat);
-            mostraCadena(meitatFinal);
-        }
+
+        
         
 
         // tracta pas recursiu
+        mostraCadena(meitatFinal);
+        mostraCadena(meitat);  
+         
         
-            
         // composa resultat
+        if (text.length()<10){
+            System.out.println("   "+text.length()+": "+text); 
+        }
+        else{
+            System.out.println("  "+text.length()+": "+text); 
+        }
         return;
     }
 }
