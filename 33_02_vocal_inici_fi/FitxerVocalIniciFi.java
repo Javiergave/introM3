@@ -19,7 +19,7 @@ public class FitxerVocalIniciFi{
 
             if (UtilString.esVocal(linia.charAt(0))||UtilString.esVocal(linia.charAt(linia.length()))){
                 System.out.println(linia);
-                break;  
+                  
             }
         }
         
