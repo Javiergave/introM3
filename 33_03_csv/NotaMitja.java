@@ -2,7 +2,7 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-public class ProcesaLiniaCSV {
+public class NotaMitja {
     public static void main(String[] args) throws IOException  {
 
         String cami = "notes.csv";
