@@ -17,16 +17,13 @@ public class FitxerVocalIniciFi{
 
             if (null == linia) break;
 
-            String vocals = "aeiouàéèíóòúù";
-            for (int i = 0; i<= vocals.length()-1; i++){
-                if (linia.charAt(0)==vocals.charAt(i)||linia.charAt(linia.length()-1)==vocals.charAt(i)){
-                    System.out.println(linia);
-                    break;  
-                }
+            if (UtilString.esVocal(linia.charAt(0))||UtilString.esVocal(linia.charAt(linia.length()-1))){
+                System.out.println(linia);
+                break;  
             }
-            
         }
+        
+        input.close();      
 
-        input.close();             
     }
 }
