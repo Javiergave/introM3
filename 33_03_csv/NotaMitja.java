@@ -11,6 +11,8 @@ public class NotaMitja {
 
         BufferedReader input = new BufferedReader(fileReader);      // obrir
 
+        int linias = 0;
+
         while (true) {
 
             String linia = input.readLine();
@@ -40,8 +42,13 @@ public class NotaMitja {
             float mitja = total / (float) quants;
 
             System.out.println(elements[0]+" ("+String.format("%.2f", mitja)+")");
+
+            linias++;
         }
         input.close();
+        if (linias<1){
+            System.out.println("Cap entrada"); 
+        }
     }
 
 }
