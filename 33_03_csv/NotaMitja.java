@@ -24,7 +24,10 @@ public class NotaMitja {
             if(linia==null){
                 break;
             }   
-            if (linia.equals("alumne,uf1,uf2,uf3,uf4,uf5,uf6")) continue;
+            if (linia.equals("alumne,uf1,uf2,uf3,uf4,uf5,uf6")){
+                a++;
+                continue;
+            } 
 
             String[] elements = linia.split(",");
             int[] enters = new int[elements.length-1];
