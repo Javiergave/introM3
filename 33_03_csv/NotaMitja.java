@@ -12,22 +12,13 @@ public class NotaMitja {
         BufferedReader input = new BufferedReader(fileReader);      // obrir
 
         while (true) {
-            int a=0;
 
             String linia = input.readLine();
-
-            if (a>=1&&(linia==null)){
-                System.out.println("Cap entrada"); 
-                break;
-            }
             
             if(linia==null){
                 break;
             }   
-            if (linia.equals("alumne,uf1,uf2,uf3,uf4,uf5,uf6")){
-                a++;
-                continue;
-            } 
+            if (linia.equals("alumne,uf1,uf2,uf3,uf4,uf5,uf6")) continue;
 
             String[] elements = linia.split(",");
             int[] enters = new int[elements.length-1];
@@ -49,7 +40,6 @@ public class NotaMitja {
             float mitja = total / (float) quants;
 
             System.out.println(elements[0]+" ("+String.format("%.2f", mitja)+")");
-            a++;
         }
         input.close();
     }
