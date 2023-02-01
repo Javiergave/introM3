@@ -16,7 +16,7 @@ public class NotaMitja {
 
             String linia = input.readLine();
 
-            if ((a<=1)&&(linia==null)){
+            if (a>1&&(linia==null)){
                 System.out.println("Cap entrada"); 
                 break;
             }
@@ -24,7 +24,7 @@ public class NotaMitja {
             if(linia==null){
                 break;
             }   
-            if ((a==0)&&linia.equals("alumne,uf1,uf2,uf3,uf4,uf5,uf6")){
+            if (linia.equals("alumne,uf1,uf2,uf3,uf4,uf5,uf6")){
                 a++;
                 continue;
             } 
