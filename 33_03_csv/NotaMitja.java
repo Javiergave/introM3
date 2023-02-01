@@ -37,7 +37,7 @@ public class NotaMitja {
             
             float mitja = total / (float) quants;
 
-            System.out.println(elements[0]+" ("+mitja+")");
+            System.out.println(elements[0]+" ("+Math.round(mitja)+")");
         }
         input.close();
     }
