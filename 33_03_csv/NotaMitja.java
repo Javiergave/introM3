@@ -16,7 +16,7 @@ public class NotaMitja {
 
             String linia = input.readLine();
 
-            if (a<1&&(linia==null)){
+            if (a<=1&&(linia==null)){
                 System.out.println("Cap entrada"); 
                 break;
             }
