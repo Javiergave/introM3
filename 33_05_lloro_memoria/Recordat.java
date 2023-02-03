@@ -34,7 +34,7 @@ public class Recordat {
 
     public static void processaEntrada(final String nomFitxer) throws IOException {
         
-        String record = Entrada.readLine();
+        String record = Entrada.readLine().trim();
 
         FileWriter fileWriter = new FileWriter(NOMFITXER);
 
