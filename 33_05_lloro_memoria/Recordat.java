@@ -76,7 +76,7 @@ public class Recordat {
 
         while (input!=null){
 
-            System.out.println(record); 
+            System.out.println("El lloro recorda: "+record); 
             if(input!=null){
                 record = input.readLine();
             }
