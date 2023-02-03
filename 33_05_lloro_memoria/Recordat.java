@@ -43,7 +43,7 @@ public class Recordat {
         if (record.isEmpty()==false){
             while(record.isEmpty()==false){
 
-                output.write(record);
+                output.write(record+"\n");
 
                 System.out.println("El lloro registra: " + record);
 
