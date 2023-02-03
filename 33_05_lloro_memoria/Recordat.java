@@ -74,10 +74,10 @@ public class Recordat {
 
         String record =input.readLine();
 
-        while (input!=null){
+        while (record!=null){
 
             System.out.println("El lloro recorda: "+record); 
-            if(input!=null){
+            if(record!=null){
                 record = input.readLine();
             }
 
