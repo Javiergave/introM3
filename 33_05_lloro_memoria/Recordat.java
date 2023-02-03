@@ -49,7 +49,7 @@ public class Recordat {
 
                 System.out.println("El lloro pregunta paraula:");
 
-                record = Entrada.readLine();
+                record = Entrada.readLine().trim();
 
             }
         }
