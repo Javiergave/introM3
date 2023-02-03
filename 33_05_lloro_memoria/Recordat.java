@@ -72,6 +72,8 @@ public class Recordat {
 
         BufferedReader input = new BufferedReader(fileReader);
 
+        int contador = 0;
+
         while (true){
             String record =input.readLine();
                 
@@ -82,11 +84,15 @@ public class Recordat {
             }
             else{
     
-                System.out.println("El lloro recorda: "+record); 
+                System.out.println("El lloro recorda: "+record);
+                contador++; 
 
             }
         }
 
         input.close();
+        if(contador==0){
+            System.out.println("El lloro no recorda res");
+        }
     }
 }
