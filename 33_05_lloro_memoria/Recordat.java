@@ -20,7 +20,7 @@ public class Recordat {
         
         System.out.println("D'acord"); 
         mostraRecords(NOMFITXER);
-        
+        System.out.println("Adéu"); 
     }
     
 
