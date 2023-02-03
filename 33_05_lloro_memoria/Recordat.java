@@ -72,15 +72,19 @@ public class Recordat {
 
         BufferedReader input = new BufferedReader(fileReader);
 
-        String record =input.readLine();
+        while (true){
+            String record =input.readLine();
+                
+            if (null == record){
 
-        while (record!=null){
-
-            System.out.println("El lloro recorda: "+record); 
-            if(record!=null){
-                record = input.readLine();
+                break;
+    
             }
+            else{
+    
+                System.out.println("El lloro recorda: "+record); 
 
+            }
         }
 
         input.close();
