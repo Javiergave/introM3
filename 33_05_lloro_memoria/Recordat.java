@@ -73,10 +73,13 @@ public class Recordat {
         BufferedReader input = new BufferedReader(fileReader);
 
         String record =input.readLine();
+
         while (input!=null){
 
             System.out.println(record); 
-            record = input.readLine();
+            if(input!=null){
+                record = input.readLine();
+            }
 
         }
 
