@@ -1,10 +1,10 @@
 //Aquest programa mostra el pisos on són el ascensors, hi ha tants ascensors com vulgui l'usuari
 public class Ascensor {
-    static int pis = 0;
+    static int pis;
     public static Ascensor[] creaAscensors(int quants) {
                 
         Ascensor[] ascensor = new Ascensor[quants];
-        for (int i = 0; i<=ascensor.length-1;i++){
+        for (int i = 0; i<=ascensor.length;i++){
             ascensor[i] = new Ascensor();
             ascensor[i].pis=i;
         }
