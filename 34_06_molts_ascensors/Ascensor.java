@@ -7,7 +7,6 @@ public class Ascensor {
         for (int i = 0; i<quants;i++){
             ascensor[i] = new Ascensor();
             ascensor[i].pis=i;
-            System.out.println(i);
         }
         return ascensor;
     }
