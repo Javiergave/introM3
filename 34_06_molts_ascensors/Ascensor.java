@@ -4,9 +4,10 @@ public class Ascensor {
     public static Ascensor[] creaAscensors(int quants) {
                 
         Ascensor[] ascensor = new Ascensor[quants];
-        for (int i = 0; i<ascensor.length;i++){
+        for (int i = 0; i<quants;i++){
             ascensor[i] = new Ascensor();
             ascensor[i].pis=i;
+            System.out.println(i);
         }
         return ascensor;
     }
@@ -21,11 +22,11 @@ public class Ascensor {
             System.out.println("Cap ascensor"); 
         }
         else{
-            Ascensor[] ascensors = creaAscensors(quants);
+            Ascensor[] ascensor = creaAscensors(quants);
             
-            for (int i = 0; i < ascensors.length; i++) {
+            for (int i = 0; i < ascensor.length; i++) {
 
-                System.out.printf("Ascensor %d al pis %d%n", i, ascensors[i].pis);
+                System.out.printf("Ascensor %d al pis %d%n", i, ascensor[i].pis);
             
             }
         }
