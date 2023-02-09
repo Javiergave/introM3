@@ -12,10 +12,9 @@ public class Ascensor {
     }
     public static void main(String[] args){
         int quants = 0;
-        System.out.println("Quants ascensors vols?"); 
-        String text = Entrada.readLine();
-        if(UtilString.esEnter(text)){
-            quants = Integer.parseInt(text);
+        
+        if(UtilString.esEnter(args[0])){
+            quants = Integer.parseInt(args[0]);
         }
                 
         if(quants == 0){
