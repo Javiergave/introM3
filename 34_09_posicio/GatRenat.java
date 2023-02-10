@@ -2,7 +2,7 @@ import javax.swing.text.Position;
 
 //Aquest programa és una representació d'un ascensor
 public class GatRenat{ 
-    private int vides = -1;
+    private int vides = 7;
     private String posicio = "estirat";
     public String getPosicio() {  
         return posicio;
