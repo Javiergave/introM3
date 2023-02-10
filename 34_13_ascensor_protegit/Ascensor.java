@@ -9,7 +9,7 @@ public class Ascensor{
         return moviment;
     }
     public void setPis(int nouPis) {  
-        if(nouPis>-1&&nouPis<10){
+        if(nouPis>-1&&nouPis<=10){
             pis = nouPis;
         }
     }
