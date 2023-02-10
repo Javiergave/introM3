@@ -5,11 +5,11 @@ public class UsaAscensor {
         Ascensor ascensor = new Ascensor();
         System.out.println("Pis inicial: " + ascensor.getPis());
 
-        System.out.println("Posició inicial: " + ascensor.getMoviment());
+        System.out.println("Moviment inicial: " + ascensor.getMoviment());
 
         ascensor.setMoviment("pujant");
 
-        System.out.println("Posició final: " + ascensor.getMoviment()); 
+        System.out.println("Moviment final: " + ascensor.getMoviment()); 
     }
     
 }
