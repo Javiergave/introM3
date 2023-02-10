@@ -1,5 +1,3 @@
-import javax.swing.text.Position;
-
 //Aquest programa és una representació d'un ascensor
 public class GatRenat{ 
     public int vides = 7;

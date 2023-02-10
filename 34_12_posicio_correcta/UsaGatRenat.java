@@ -7,7 +7,9 @@ public class UsaGatRenat {
 
         System.out.println("Posició inicial: " + renat.getPosicio());
 
-        renat.setPosicio("assegut");
+        System.out.println("Introdueix nova posició:"); 
+
+        renat.setPosicio(Entrada.readLine());
 
         System.out.println("Posició final: " + renat.getPosicio()); 
     }
