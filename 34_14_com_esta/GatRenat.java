@@ -15,6 +15,12 @@ public class GatRenat{
     public boolean estaViu() {
         return vides>0;
     }
+    public String getPosicio(){
+        return posicio;
+    }
+    public int getVides(){
+        return vides;   
+    }
     public void setVides(int novesVides){
         if(novesVides>=0){
             vides=novesVides;
