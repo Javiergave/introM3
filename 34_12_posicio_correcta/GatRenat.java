@@ -1,7 +1,7 @@
 //Aquest programa és una representació d'un ascensor
 public class GatRenat{ 
-    public int vides = 7;
-    public String posicio = "estirat";
+    private int vides = 7;
+    private String posicio = "estirat";
     public String getPosicio() {  
         return posicio;
     }
