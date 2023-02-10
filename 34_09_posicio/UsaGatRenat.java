@@ -5,11 +5,11 @@ public class UsaGatRenat {
         GatRenat renat = new GatRenat();
         System.out.println("Vides inicials: " + renat.getVides());
 
-         System.out.println("Posició inicial: " + renat.getPosicio());
+        System.out.println("Posició inicial: " + renat.getPosicio());
 
-         renat.setPosicio("assegut");
+        renat.setPosicio("assegut");
 
-         System.out.println("Posició final: " + renat.getPosicio()); 
+        System.out.println("Posició final: " + renat.getPosicio()); 
     }
     
 }
