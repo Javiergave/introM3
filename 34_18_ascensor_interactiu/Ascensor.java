@@ -16,12 +16,14 @@ public class Ascensor{
         if(pis==10){
             return true;
         }
+        setMoviment("pujant");
         return true;
     }
     public boolean arrencaAbaix(){
         if(pis==-1){
             return true;
         }
+        setMoviment("baixant");
         return true;
     }
     public int seguentPis(){
