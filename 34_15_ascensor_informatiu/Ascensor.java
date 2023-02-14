@@ -3,46 +3,46 @@ public class Ascensor{
     private int pis = -1;
     private String moviment = "aturat";
 
-    public boolean estaAbaix (int pis){
+    public boolean estaAbaix (){
         if (pis==-1){
             return true;
         }
         return false;
     }
-    public boolean estaAmunt (int pis){
+    public boolean estaAmunt (){
         if (pis==10){
             return true;
         }
         return false;
     }
 
-    public boolean estaAturat (String moviment){
+    public boolean estaAturat (){
         if (moviment.equals("aturat")){
             return true;
         }
         return false;
     }
-    public boolean estaMovent (String moviment){
+    public boolean estaMovent (){
         if(!moviment.equals("aturat")){
             return true;
         }
         return false;
     }
 
-    public boolean estaPujant (String moviment){
+    public boolean estaPujant (){
         if (moviment.equals("pujant")){
             return true;
         }
         return false;
     }
-    public boolean estaBaixant (String moviment){
+    public boolean estaBaixant (){
         if (moviment.equals("baixant")){
             return true;
         }
         return false;
     }
 
-    public String comEsta(String moviment,int pis){
+    public String comEsta(){
         return (moviment+" al pis "+pis);
     }
 
