@@ -1,6 +1,6 @@
 //Aquest programa és una representació d'un ascensor
 public class Ascensor{ 
-    private int pis = 7;
+    private int pis = -1;
     private String moviment = "aturat";
 
     public String getMoviment(){
