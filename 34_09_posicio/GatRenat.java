@@ -1,4 +1,4 @@
-//Aquest programa és una representació d'un ascensor
+//Aquest objecte és el gat Renat
 public class GatRenat{ 
     public int vides = 7;
     public String posicio = "estirat";

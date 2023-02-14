@@ -1,4 +1,4 @@
-/*Aquest programa permet utilitzar l'ascensor */
+/*Aquest programa permet utilitzar al gat Renat */
 
 public class UsaGatRenat {
     public static void main(String[] args) {  
