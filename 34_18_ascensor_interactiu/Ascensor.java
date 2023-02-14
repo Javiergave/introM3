@@ -3,7 +3,7 @@ import javax.sql.StatementEventListener;
 //Aquest programa és una representació d'un ascensor
 public class Ascensor{ 
     private int pis = -1;
-    private String moviment = "pujant";
+    private String moviment = "aturat";
 
     public boolean aturat(){
         if(moviment.equals("aturat")){
