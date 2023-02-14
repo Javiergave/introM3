@@ -4,8 +4,8 @@ public class GatRenat{
     private String posicio = "estirat";
 
     public String aixecat(){
-        if(!posicio.equals("aixecat")){
-            setPosicio("aixecat");
+        if(!posicio.equals("dret")){
+            setPosicio("dret");
             return ("m'aixeco"); 
         }
         else{
