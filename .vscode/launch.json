@@ -1,0 +1,637 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch AnalitzaCaracter",
+            "request": "launch",
+            "mainClass": "AnalitzaCaracter",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Arguments",
+            "request": "launch",
+            "mainClass": "Arguments",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ascensor",
+            "request": "launch",
+            "mainClass": "Ascensor",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch CadenaContinua",
+            "request": "launch",
+            "mainClass": "CadenaContinua",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch CalculadoraBasica",
+            "request": "launch",
+            "mainClass": "CalculadoraBasica",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch CalculadoraSenzilla",
+            "request": "launch",
+            "mainClass": "CalculadoraSenzilla",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Capicua",
+            "request": "launch",
+            "mainClass": "Capicua",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch CodificaBasic",
+            "request": "launch",
+            "mainClass": "CodificaBasic",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch ComptaAiEs",
+            "request": "launch",
+            "mainClass": "ComptaAiEs",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch ComptaVocals",
+            "request": "launch",
+            "mainClass": "ComptaVocals",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch ConteDarrer",
+            "request": "launch",
+            "mainClass": "ConteDarrer",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch DeuPrimers",
+            "request": "launch",
+            "mainClass": "DeuPrimers",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch DeuPrimersDecreixent",
+            "request": "launch",
+            "mainClass": "DeuPrimersDecreixent",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch DiaSetmana",
+            "request": "launch",
+            "mainClass": "DiaSetmana",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch DiaSetmanaSwitch",
+            "request": "launch",
+            "mainClass": "DiaSetmanaSwitch",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch DiaSetmanaSwitchExpr",
+            "request": "launch",
+            "mainClass": "DiaSetmanaSwitchExpr",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch DigitArt",
+            "request": "launch",
+            "mainClass": "DigitArt",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch DosEnOrdre",
+            "request": "launch",
+            "mainClass": "DosEnOrdre",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Duplica",
+            "request": "launch",
+            "mainClass": "Duplica",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch EmPresento",
+            "request": "launch",
+            "mainClass": "EmPresento",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Endevina",
+            "request": "launch",
+            "mainClass": "Endevina",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch EndevinaNombre",
+            "request": "launch",
+            "mainClass": "EndevinaNombre",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch EntersEntreComes",
+            "request": "launch",
+            "mainClass": "EntersEntreComes",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch EntersIniciFi",
+            "request": "launch",
+            "mainClass": "EntersIniciFi",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch EsEnter",
+            "request": "launch",
+            "mainClass": "EsEnter",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch ExtreuNombres",
+            "request": "launch",
+            "mainClass": "ExtreuNombres",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Fills",
+            "request": "launch",
+            "mainClass": "Fills",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch FitxerVocalIniciFi",
+            "request": "launch",
+            "mainClass": "FitxerVocalIniciFi",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch HistoricEdats",
+            "request": "launch",
+            "mainClass": "HistoricEdats",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch HolaMon",
+            "request": "launch",
+            "mainClass": "HolaMon",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch InformeCaracter",
+            "request": "launch",
+            "mainClass": "InformeCaracter",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch InformeString",
+            "request": "launch",
+            "mainClass": "InformeString",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch InformeText",
+            "request": "launch",
+            "mainClass": "InformeText",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lloro",
+            "request": "launch",
+            "mainClass": "Lloro",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch LloroAcabaLletra",
+            "request": "launch",
+            "mainClass": "LloroAcabaLletra",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch LloroQuadrat",
+            "request": "launch",
+            "mainClass": "LloroQuadrat",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch LloroVocalIniciFi",
+            "request": "launch",
+            "mainClass": "LloroVocalIniciFi",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch LloroVocalMinuscules",
+            "request": "launch",
+            "mainClass": "LloroVocalMinuscules",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch MajusculitzaInicials",
+            "request": "launch",
+            "mainClass": "MajusculitzaInicials",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch ManipulaString",
+            "request": "launch",
+            "mainClass": "ManipulaString",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch MatriculaValida",
+            "request": "launch",
+            "mainClass": "MatriculaValida",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch MesosAnys",
+            "request": "launch",
+            "mainClass": "MesosAnys",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Metge",
+            "request": "launch",
+            "mainClass": "Metge",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch MostraInterval",
+            "request": "launch",
+            "mainClass": "MostraInterval",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch MostraLletres",
+            "request": "launch",
+            "mainClass": "MostraLletres",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch NomCognom",
+            "request": "launch",
+            "mainClass": "NomCognom",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch NomesLletres",
+            "request": "launch",
+            "mainClass": "NomesLletres",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch NotaMesAlta",
+            "request": "launch",
+            "mainClass": "NotaMesAlta",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch NotaMitja",
+            "request": "launch",
+            "mainClass": "NotaMitja",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Pacman",
+            "request": "launch",
+            "mainClass": "Pacman",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Pagament",
+            "request": "launch",
+            "mainClass": "Pagament",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch ParellSenar",
+            "request": "launch",
+            "mainClass": "ParellSenar",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Parentitza",
+            "request": "launch",
+            "mainClass": "Parentitza",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Penjat",
+            "request": "launch",
+            "mainClass": "Penjat",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Pilota",
+            "request": "launch",
+            "mainClass": "Pilota",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch PiramideLletres",
+            "request": "launch",
+            "mainClass": "PiramideLletres",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Preso",
+            "request": "launch",
+            "mainClass": "Preso",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrimersParells",
+            "request": "launch",
+            "mainClass": "PrimersParells",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Quadrat",
+            "request": "launch",
+            "mainClass": "Quadrat",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch QuadratNombres",
+            "request": "launch",
+            "mainClass": "QuadratNombres",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Quadrats",
+            "request": "launch",
+            "mainClass": "Quadrats",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch QuantsParells",
+            "request": "launch",
+            "mainClass": "QuantsParells",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Recordat",
+            "request": "launch",
+            "mainClass": "Recordat",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Rombos",
+            "request": "launch",
+            "mainClass": "Rombos",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch SegonaIgualPenultima",
+            "request": "launch",
+            "mainClass": "SegonaIgualPenultima",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Semafor",
+            "request": "launch",
+            "mainClass": "Semafor",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Subcadenes",
+            "request": "launch",
+            "mainClass": "Subcadenes",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch SumaDigits",
+            "request": "launch",
+            "mainClass": "SumaDigits",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch SumaEnters",
+            "request": "launch",
+            "mainClass": "SumaEnters",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch SumaInterval",
+            "request": "launch",
+            "mainClass": "SumaInterval",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch SumaNotes",
+            "request": "launch",
+            "mainClass": "SumaNotes",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch SumaPositius",
+            "request": "launch",
+            "mainClass": "SumaPositius",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch TaulaMultiplicar",
+            "request": "launch",
+            "mainClass": "TaulaMultiplicar",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch TextReves",
+            "request": "launch",
+            "mainClass": "TextReves",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Traducció",
+            "request": "launch",
+            "mainClass": "Traducció",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch TransformaText",
+            "request": "launch",
+            "mainClass": "TransformaText",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch TresEnOrdre",
+            "request": "launch",
+            "mainClass": "TresEnOrdre",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch TresEnRatlla",
+            "request": "launch",
+            "mainClass": "TresEnRatlla",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Triangle",
+            "request": "launch",
+            "mainClass": "Triangle",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch TriangleInvertit",
+            "request": "launch",
+            "mainClass": "TriangleInvertit",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch TriangleLletres",
+            "request": "launch",
+            "mainClass": "TriangleLletres",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch TriangleLletresInvertit",
+            "request": "launch",
+            "mainClass": "TriangleLletresInvertit",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch TriangleNombres",
+            "request": "launch",
+            "mainClass": "TriangleNombres",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch TriangleParaules",
+            "request": "launch",
+            "mainClass": "TriangleParaules",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch TrobaMaxim",
+            "request": "launch",
+            "mainClass": "TrobaMaxim",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch TrobaMesProxim",
+            "request": "launch",
+            "mainClass": "TrobaMesProxim",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch UsaAscensor",
+            "request": "launch",
+            "mainClass": "UsaAscensor",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch UsaGatRenat",
+            "request": "launch",
+            "mainClass": "UsaGatRenat",
+            "projectName": "introM3_4066884a"
+        },
+        {
+            "type": "java",
+            "name": "Launch VocalsMajuscules",
+            "request": "launch",
+            "mainClass": "VocalsMajuscules",
+            "projectName": "introM3_4066884a"
+        }
+    ]
+}
