@@ -17,14 +17,14 @@ public class GatRenat{
         }
         return "...";
     }
-    public String resucita(){
+    public String resuscita(){
         if(vides==0){
             setVides(1);
             return ("guai!");
         }
         return ("...");
     }
-    public String resucita(int novesVides){
+    public String resuscita(int novesVides){
         if(vides==0){
             if(novesVides<1){
                 return ("...");
