@@ -1,14 +1,19 @@
+import javax.sql.StatementEventListener;
+
 //Aquest programa és una representació d'un ascensor
 public class GatRenat{ 
     private int vides = 7;
     private String posicio = "estirat";
 
     public String mor(){
+
         if(vides-1>0){
+            setVides(vides-1);
             return ("auch");
         }
         if(vides-1==0){
-           return ("ximpún");
+            setVides(vides-1);
+            return ("ximpún");
         }
         return "...";
     }
