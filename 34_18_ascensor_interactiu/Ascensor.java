@@ -8,8 +8,9 @@ public class Ascensor{
             return true;
         }
         setMoviment("aturat");
-        return false;
+        return true;
     }
+    
     public boolean arrencaAmunt(){
         if(moviment.equals("aturat")){
             setMoviment("pujant");
@@ -33,7 +34,7 @@ public class Ascensor{
             setPis(pis+1);
         }
         if(moviment.equals("baixant")){
-            if(pis==-1&&moviment.equals("baixant")){
+            if(pis==-1){
                 setPis(0);
                 setMoviment("pujant");
             }
