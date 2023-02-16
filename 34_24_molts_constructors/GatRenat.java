@@ -33,7 +33,7 @@ public class GatRenat {
 
         if (novesVides >= 0)  {
 
-            vides = novesVides;
+            this.vides = novesVides;
 
         }
 
