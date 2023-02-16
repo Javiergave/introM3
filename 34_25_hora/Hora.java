@@ -15,6 +15,12 @@
 
  */
 public class Hora {
+    private int hores=0;
+    private int minuts=0;
+    private int segons=0;
+    public Hora(int hora,int minut,int segon){
+        
+    }
     public void incrementa(){
 
     }
