@@ -1,5 +1,3 @@
-import javax.sql.StatementEventListener;
-
 //Aquest programa és una representació d'un ascensor
 public class Ascensor{ 
     private int pis = -1;
@@ -13,19 +11,12 @@ public class Ascensor{
         return false;
     }
     public boolean arrencaAmunt(){
-        if(pis!=10){
-            setMoviment("pujant");
-            return true;
-        }
-        
-        return false;
+        setMoviment("pujant");
+        return true;
     }
     public boolean arrencaAbaix(){
-        if(pis<=4){
-            setMoviment("baixant");
-            return true;
-        }
-        return false;
+        setMoviment("baixant");
+        return true;
     }
     public int seguentPis(){
         if(moviment.equals("pujant")){
