@@ -5,7 +5,7 @@ public class Ascensor{
 
     public boolean aturat(){
         if(moviment.equals("aturat")){
-            return true;
+            return false;
         }
         setMoviment("aturat");
         return true;
@@ -35,7 +35,7 @@ public class Ascensor{
         }
         if(moviment.equals("baixant")){
             if(pis==-1){
-                setPis(-1);
+                setPis(0);
                 setMoviment("pujant");
             }
             setPis(pis-1);
