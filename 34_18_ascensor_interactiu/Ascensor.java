@@ -37,6 +37,7 @@ public class Ascensor{
             if(pis==-1){
                 setPis(0);
                 setMoviment("pujant");
+                return pis;
             }
             setPis(pis-1);
         }
