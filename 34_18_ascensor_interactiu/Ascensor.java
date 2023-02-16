@@ -10,19 +10,19 @@ public class Ascensor{
             return true;
         }
         setMoviment("aturat");
-        return true;
+        return false;
     }
     public boolean arrencaAmunt(){
-        if(pis==10){
-            setMoviment("baixant");
+        if(pis>=5){
+            setMoviment("pujant");
             return true;
         }
         
         return false;
     }
     public boolean arrencaAbaix(){
-        if(pis==-1){
-            setMoviment("pujant");
+        if(pis<5){
+            setMoviment("baixant");
 
             return true;
         }
