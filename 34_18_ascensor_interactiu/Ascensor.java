@@ -26,14 +26,14 @@ public class Ascensor{
     }
     public int seguentPis(){
         if(moviment.equals("pujant")){
-            if(pis>4){
+            if(pis==10){
                 setPis(9);
                 setMoviment("baixant");
             }
             setPis(pis+1);
         }
         if(moviment.equals("baixant")){
-            if(pis==10&&moviment.equals("baiixant")){
+            if(pis==-1&&moviment.equals("baixant")){
                 setPis(0);
                 setMoviment("pujant");
             }
