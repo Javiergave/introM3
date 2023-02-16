@@ -13,11 +13,12 @@ public class GatRenat {
 
     public String toString() {
 
-        return String.format("Vides: %d. Posició: %s", vides,posicio);
+        return String.format("Vides: %d. Posició: %s", getVides(),getPosicio());
 
     }
 
     public int getVides() { return vides; }
+    public String getPosicio() {return posicio;}
 
     public static void main(String[] args) {
 
