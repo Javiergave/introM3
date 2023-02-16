@@ -13,12 +13,10 @@ public class Ascensor{
         return false;
     }
     public boolean arrencaAmunt(){
-        if(pis>=5){
-            setMoviment("pujant");
-            return true;
-        }
+        setMoviment("pujant");
+        return true;
         
-        return false;
+        //return false;
     }
     public boolean arrencaAbaix(){
         if(pis<5){
