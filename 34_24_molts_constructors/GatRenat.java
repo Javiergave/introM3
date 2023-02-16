@@ -45,7 +45,7 @@ public class GatRenat {
 
         if (novaPosicio.equals("dret")||novaPosicio.equals("assegut")||novaPosicio.equals("estirat"))  {
 
-            posicio = novaPosicio;
+            this.posicio = novaPosicio;
 
         }
 
