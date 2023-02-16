@@ -34,7 +34,7 @@ public class Ascensor{
             setPis(pis+1);
         }
         if(moviment.equals("baixant")){
-            if(pis==0){
+            if(pis==-1){
                 setPis(-1);
                 setMoviment("pujant");
             }
