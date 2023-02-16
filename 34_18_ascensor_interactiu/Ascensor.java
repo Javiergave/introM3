@@ -13,14 +13,19 @@ public class Ascensor{
         return false;
     }
     public boolean arrencaAmunt(){
-        setMoviment("pujant");
-        return true;
+        if(pis!=10){
+            setMoviment("pujant");
+            return true;
+        }
         
-        //return false;
+        return false;
     }
     public boolean arrencaAbaix(){
-        setMoviment("baixant");
-        return true;
+        if(pis!=-1){
+            setMoviment("baixant");
+            return true;
+        }
+        return false;
     }
     public int seguentPis(){
         if(moviment.equals("pujant")){
