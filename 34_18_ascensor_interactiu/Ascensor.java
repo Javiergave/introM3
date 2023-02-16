@@ -19,12 +19,8 @@ public class Ascensor{
         //return false;
     }
     public boolean arrencaAbaix(){
-        if(pis<5){
-            setMoviment("baixant");
-
-            return true;
-        }
-        return false;
+        setMoviment("baixant");
+        return true;
     }
     public int seguentPis(){
         if(moviment.equals("pujant")){
