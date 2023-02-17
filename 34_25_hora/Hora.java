@@ -27,14 +27,14 @@ public class Hora {
     }
     public Hora(int hora,int minut,int segon){
         if(hora<=23&&hora>=0){
-            setHores(hora);
-        }
-        if(minut<60&&minut>=0){
-            setMinuts(minut);
-        }
-        if(segon<60&&segon>=0){
-            setSegons(segon);
-        }
+            if(minut<60&&minut>=0){
+                if(segon<60&&segon>=0){
+                    setHores(hora);
+                    setMinuts(minut);
+                    setSegons(segon);
+                }
+            }        
+        }  
     }
     public void incrementa(){
         if(getSegons()+1>59){
