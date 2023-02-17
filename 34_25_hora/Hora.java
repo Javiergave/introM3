@@ -37,16 +37,77 @@ public class Hora {
         }
     }
     public void incrementa(){
+        if(getSegons()+1>59){
+            if(getMinuts()+1>59){
+                setHores(getHores()+1);
+                setMinuts(0);
+            }
+            
+            else{
+                setMinuts(getMinuts()+1);
+            }
+
+            setSegons(0);
+        }
         setSegons(segons+1);
     }
     public void incrementa(int increment){
-        setSegons(segons+increment);
+
+        if (increment<0){
+            return;
+        } 
+
+        if(getSegons()+increment<59){
+            setSegons(getSegons()+increment);
+        }
+        else if(getSegons()+increment>59){
+            for(int i = (getSegons()+increment)/60;i>0;i--,increment=-60){
+                if(getMinuts()+1>59){
+                    setHores(getHores()+1);
+                }
+                else{
+                    setMinuts(getMinuts()+1);
+                }
+            }
+            setMinuts(getMinuts()+increment);
+            
+        }
+
     }
     public void decrementa(){
-        setSegons(segons-1);
+        if(getSegons()-1<0){
+            if(getMinuts()-1<0){
+                setHores(getHores()-1);
+                setMinuts(59);
+            }
+            else{
+                setMinuts(getMinuts()-1);
+            }
+            setSegons(59);
+        }else{
+            setSegons(getSegons()-1);
+        }
     }
     public void decrementa(int decrementa){
-        setSegons(segons-decrementa);
+        if (decrementa<0){
+            return;
+        }
+
+        if(getSegons()-decrementa<0){
+            for(int i = (getSegons()-decrementa)/60;i>0;i--,decrementa=+60){
+                if(getMinuts()-1<0){
+                    setHores(getHores()-1);
+                }
+                else{
+                    setMinuts(getMinuts()-1);
+                }
+            }
+            setSegons(getSegons()-decrementa);
+        }
+        else{
+            setMinuts(getMinuts()-decrementa);
+        }
+
     }
     public int compareTo(Hora hora){
         int totalHoraEste = this.hores*3600 + this.minuts*60 + this.segons;
@@ -77,37 +138,10 @@ public class Hora {
         }
     }
     public void setMinuts(int novaMinuts){
-        if(novaMinuts<60&&novaMinuts>=0){
-            minuts=novaMinuts;
-        }
-        else if(novaMinuts>=60){
-            setMinuts(0);
-            setHores(getHores()+1);
-            setMinuts(novaMinuts);
-            return;
-        }else if(novaMinuts<0){
-            setMinuts(59);
-            setHores(getHores()-1);
-            setMinuts(novaMinuts);
-            return;
-        }
+        minuts=novaMinuts;
     }
     public void setSegons(int novaSegons){
-        if(novaSegons<60&&novaSegons>=0){
-            segons=novaSegons;
-        }
-        else if(novaSegons>60){
-            setSegons(0);
-            setMinuts(getMinuts()+1);
-            setSegons(novaSegons);
-            return;
-        }
-        else if(novaSegons<0){
-            setSegons(59);
-            setMinuts(getMinuts()-1);
-            setSegons(novaSegons);
-            return;
-        }
+        segons=novaSegons;
     }
     private static String composaOperadorComparacio(Hora hora1, Hora hora2) {
 
