@@ -45,7 +45,6 @@ public class Hora {
                 else{
                     setHores(getHores()+1);
                 }
-                setHores(getHores()+1);
                 setMinuts(0);
             }
             
@@ -83,8 +82,14 @@ public class Hora {
     public void decrementa(){
         if(getSegons()-1<0){
             if(getMinuts()-1<0){
-                setHores(getHores()-1);
+                if(getHores()-1<0){
+                    setHores(23);
+                }
+                else{
+                    setHores(getHores()-1);
+                }
                 setMinuts(59);
+                setSegons(59);
             }
             else{
                 setMinuts(getMinuts()-1);
