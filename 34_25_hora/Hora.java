@@ -1,3 +1,7 @@
+import javax.swing.SwingConstants;
+
+import org.w3c.dom.stylesheets.StyleSheet;
+
 //Un rellotge que es pot incrementar i decrementar la hora
 /**
 
@@ -18,26 +22,79 @@ public class Hora {
     private int hores=0;
     private int minuts=0;
     private int segons=0;
+    public Hora(){
+
+    }
     public Hora(int hora,int minut,int segon){
-        
+        if(hora<=24&&hora>=0){
+            setHores(hora);
+        }
+        if(minut<60&&minut>=0){
+            setMinuts(minut);
+        }
+        if(segon<60&&segon>=0){
+            setSegons(segon);
+        }
     }
     public void incrementa(){
-
+        setSegons(segons+1);
     }
     public void incrementa(int increment){
-
+        setSegons(segons+increment);
     }
     public void decrementa(){
-
+        setSegons(segons-1);
     }
     public void decrementa(int decrementa){
-
+        setSegons(segons-decrementa);
     }
-    public int compareTo(int Hora){
-
+    public int compareTo(Hora hora){
+        int totalHoraEste = this.hores*3600 + this.minuts*60 + this.segons;
+        int totalHoraOtro = hora.hores*3600 + hora.minuts*60 + hora.segons;
+        if(totalHoraEste<totalHoraOtro){
+            return -1;
+        }
+        else if(totalHoraEste>totalHoraOtro){
+            return 1;
+        }
+        return 0;
     }
     public String toString(){
-
+        return String.format("%d %02d %02d", hores, minuts, segons);
+    }
+    public int getHores(){
+        return hores;
+    }
+    public int getMinuts(){
+        return minuts;
+    }
+    public int getSegons(){
+        return segons;
+    }
+    public void setHores(int novaHora){
+        if(novaHora<=24&&novaHora>=0){
+            hores=novaHora;
+        }
+    }
+    public void setMinuts(int novaMinuts){
+        if(novaMinuts<60&&novaMinuts>=0){
+            minuts=novaMinuts;
+        }
+        else if(novaMinuts>=60){
+            setMinuts(0);
+            setHores(getHores()+1);
+            setMinuts(novaMinuts);
+        }
+    }
+    public void setSegons(int novaSegons){
+        if(novaSegons<60&&novaSegons>=0){
+            segons=novaSegons;
+        }
+        else if(novaSegons>60){
+            setSegons(0);
+            setMinuts(getMinuts()+1);
+            setSegons(novaSegons);
+        }
     }
     private static String composaOperadorComparacio(Hora hora1, Hora hora2) {
 
