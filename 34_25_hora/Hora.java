@@ -84,10 +84,12 @@ public class Hora {
             setMinuts(0);
             setHores(getHores()+1);
             setMinuts(novaMinuts);
+            return;
         }else if(novaMinuts<0){
             setMinuts(59);
             setHores(getHores()-1);
             setMinuts(novaMinuts);
+            return;
         }
     }
     public void setSegons(int novaSegons){
@@ -98,11 +100,13 @@ public class Hora {
             setSegons(0);
             setMinuts(getMinuts()+1);
             setSegons(novaSegons);
+            return;
         }
         else if(novaSegons<0){
             setSegons(59);
             setMinuts(getMinuts()-1);
             setSegons(novaSegons);
+            return;
         }
     }
     private static String composaOperadorComparacio(Hora hora1, Hora hora2) {
