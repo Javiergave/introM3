@@ -39,7 +39,7 @@ public class Hora {
     public void incrementa(){
         if(getSegons()+1>59){
             if(getMinuts()+1>59){
-                if(getHores()+1>24){
+                if(getHores()+1>23){
                     setHores(0);
                 }
                 else{
@@ -47,14 +47,13 @@ public class Hora {
                 }
                 setMinuts(0);
             }
-            
             else{
-                setMinuts(getMinuts()+1);
+                setMinuts(getMinuts()-1);
             }
-
             setSegons(0);
+        }else{
+            setSegons(getSegons()-1);
         }
-        setSegons(segons+1);
     }
     public void incrementa(int increment){
 
