@@ -60,7 +60,7 @@ public class Hora {
         return 0;
     }
     public String toString(){
-        return String.format("%d %02d %02d", hores, minuts, segons);
+        return String.format("%d:%02d:%02d", hores, minuts, segons);
     }
     public int getHores(){
         return hores;
