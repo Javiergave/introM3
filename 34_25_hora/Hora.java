@@ -48,11 +48,11 @@ public class Hora {
                 setMinuts(0);
             }
             else{
-                setMinuts(getMinuts()-1);
+                setMinuts(getMinuts()+1);
             }
             setSegons(0);
         }else{
-            setSegons(getSegons()-1);
+            setSegons(getSegons()+1);
         }
     }
     public void incrementa(int increment){
