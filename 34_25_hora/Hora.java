@@ -104,21 +104,23 @@ public class Hora {
         }
 
         if(getSegons()-decrementa<0){
-            for(int i = (getSegons()-decrementa)/60;i>0;i--,decrementa=-60){
-                if(getMinuts()-1<0){
-                    setHores(getHores()-1);
-                    setMinuts(59);
+            if(getMinuts()-(decrementa/60)<0){
+                if(getHores()-(decrementa/3600)<0){
+                    setHores(23-(decrementa/3600));
                 }
                 else{
-                    setMinuts(getMinuts()-1);
+                    setHores(getHores()-(decrementa/3600));
                 }
+                setMinuts(59);
+                setSegons(59);
             }
+            else{
+                setMinuts(getMinuts()-(decrementa/60));
+            }
+            setSegons(59-decrementa);
+        }else{
             setSegons(getSegons()-decrementa);
         }
-        else{
-            setSegons(getSegons()-decrementa);
-        }
-
     }
     public int compareTo(Hora hora){
         int totalHoraEste = this.hores*3600 + this.minuts*60 + this.segons;
