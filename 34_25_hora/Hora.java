@@ -104,12 +104,12 @@ public class Hora {
         }
 
         if(getSegons()-decrementa<0){
-            if(getMinuts()-(decrementa/60)<0){
-                if(getHores()-(decrementa/3600)<0){
-                    setHores(23-(decrementa/3600));
+            if(getMinuts()-(1-decrementa/60)<0){
+                if(getHores()-(1-decrementa/3600)<0){
+                    setHores(23-(1-decrementa/3600));
                 }
                 else{
-                    setHores(getHores()-(decrementa/3600));
+                    setHores(getHores()-(1-decrementa/3600));
                 }
                 setMinuts(getMinuts()-(1+(decrementa/60)));
                 setSegons(59);
