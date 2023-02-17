@@ -26,7 +26,7 @@ public class Hora {
 
     }
     public Hora(int hora,int minut,int segon){
-        if(hora<=24&&hora>=0){
+        if(hora<=23&&hora>=0){
             setHores(hora);
         }
         if(minut<60&&minut>=0){
@@ -72,7 +72,7 @@ public class Hora {
         return segons;
     }
     public void setHores(int novaHora){
-        if(novaHora<=24&&novaHora>=0){
+        if(novaHora<=23&&novaHora>=0){
             hores=novaHora;
         }
     }
@@ -84,6 +84,10 @@ public class Hora {
             setMinuts(0);
             setHores(getHores()+1);
             setMinuts(novaMinuts);
+        }else if(novaMinuts<0){
+            setMinuts(59);
+            setHores(getHores()-1);
+            setMinuts(novaMinuts);
         }
     }
     public void setSegons(int novaSegons){
@@ -93,6 +97,11 @@ public class Hora {
         else if(novaSegons>60){
             setSegons(0);
             setMinuts(getMinuts()+1);
+            setSegons(novaSegons);
+        }
+        else if(novaSegons<0){
+            setSegons(59);
+            setMinuts(getMinuts()-1);
             setSegons(novaSegons);
         }
     }
