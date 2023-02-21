@@ -100,7 +100,7 @@ public class Hora {
     }
     public void decrementa(int decrementa){
         if (decrementa<0){
-            return;
+            incrementa(-decrementa);
         }
 
         int decrementahores = decrementa/3600;
