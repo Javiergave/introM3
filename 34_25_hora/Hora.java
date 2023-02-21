@@ -115,7 +115,7 @@ public class Hora {
             else{
                 setMinuts(getMinuts()-((decrementa/60)));
             }
-            setMinuts(getMinuts()-((decrementa/60)));
+            setMinuts(getMinuts()-(1+(decrementa/60)));
             setSegons(59-((decrementa/60)));
         }else{
             setSegons(getSegons()-decrementa);
