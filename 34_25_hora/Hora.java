@@ -103,40 +103,52 @@ public class Hora {
             return;
         }
 
-        if(getSegons()-decrementa<0){
-            if(getMinuts()-(1+(decrementa/60))<0){
-                if(getHores()-(1+decrementa/3600)<0){
-                    if(decrementa>=3600){
-                        setHores(24-(decrementa/3600));
-                        setMinuts(59-(decrementa/60));  
-                    }else{
-                        setHores(24-(1+decrementa/3600));
-                        setMinuts(59-(decrementa/60));                          
+        int decrementahores = decrementa/3600;
+        int decrementaminuts = (decrementa%3600)/60;
+        decrementa = decrementa-(decrementa%3600)%60;
+
+        for(int i = decrementa;i>=0;i--){
+            if(getSegons()-1<0){
+                if(getMinuts()-1<0){
+                    if(getHores()-1<0){
+                        setHores(23);
+                        setMinuts(59);
+                        setSegons(59);
                     }
-                                   
+                    else{
+                        setHores(getHores()-1);
+                        setMinuts(59);
+                        setSegons(59);
+                    }
                 }
                 else{
-                    setHores(getHores()-(1+decrementa/3600));
-                    setMinuts(59-(decrementa/60));
+                    setMinuts(getMinuts()-1);
+                    setSegons(59);
                 }
             }
             else{
-                if(decrementa>=60){
-                    setMinuts(getMinuts()-(decrementa/60));
-                }
-                else{
-                    setMinuts(getMinuts()-(1+decrementa/60));
-                }
+                setSegons(getSegons()-decrementa);
             }
-            if(decrementa>=60){
-            
-            }
-            else{
-                setSegons(59-((decrementa/60)));
-            }
-        }else{
-            setSegons(getSegons()-decrementa);
         }
+        for(int i = decrementaminuts;i>=0;i--){
+            if(getMinuts()-1<0){
+                setHores(getHores()-1);
+                setMinuts(59);
+            }
+            else{
+                setMinuts(getMinuts()-1);
+            }
+        }
+
+        for (int i = decrementahores; i>=0;i--){
+            if (getHores()-1<0){
+                setHores(24-1);
+            }
+            else{
+                setHores(getHores()-1);
+            }
+        }
+        
     }
     public int compareTo(Hora hora){
         int totalHoraEste = this.hores*3600 + this.minuts*60 + this.segons;
