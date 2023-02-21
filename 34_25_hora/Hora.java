@@ -69,7 +69,7 @@ public class Hora {
             if(getSegons()+1>59){
                 if(getMinuts()+1>59){
                     if(getHores()+1>23){
-                        setHores(1);
+                        setHores(0);
                         setMinuts(0);
                         setSegons(0);
                     }
@@ -99,7 +99,7 @@ public class Hora {
         }
 
         for (int i = incrementahores; i>0;i--){
-            if (getHores()+1>59){
+            if (getHores()+1>23){
                 setHores(0);
             }
             else{
