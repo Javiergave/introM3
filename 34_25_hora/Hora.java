@@ -102,6 +102,9 @@ public class Hora {
         if (decrementa<0){
             return;
         }
+        if(decrementa==1){
+            decrementa();
+        }
 
         int decrementahores = decrementa/3600;
         int decrementaminuts = (decrementa%3600)/60;
