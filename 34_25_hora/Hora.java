@@ -58,7 +58,7 @@ public class Hora {
     public void incrementa(int incrementa){
 
         if (incrementa<0){
-            incrementa(-incrementa);
+            decrementa(-incrementa);
         }
 
         int incrementahores = incrementa/3600;
