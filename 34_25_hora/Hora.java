@@ -130,7 +130,7 @@ public class Hora {
                 setSegons(getSegons()-1);
             }
         }
-        for(int i = decrementaminuts;i>=0;i--){
+        for(int i = decrementaminuts;i>0;i--){
             if(getMinuts()-1<0){
                 setHores(getHores()-1);
                 setMinuts(59);
@@ -140,7 +140,7 @@ public class Hora {
             }
         }
 
-        for (int i = decrementahores; i>=0;i--){
+        for (int i = decrementahores; i>0;i--){
             if (getHores()-1<0){
                 setHores(24-1);
             }
