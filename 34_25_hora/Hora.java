@@ -127,7 +127,7 @@ public class Hora {
                 }
             }
             else{
-                setSegons(getSegons()-decrementa);
+                setSegons(getSegons()-1);
             }
         }
         for(int i = decrementaminuts;i>=0;i--){
