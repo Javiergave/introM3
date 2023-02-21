@@ -107,7 +107,7 @@ public class Hora {
         int decrementaminuts = (decrementa%3600)/60;
         decrementa = decrementa-((decrementahores*3600)+decrementaminuts*60);
 
-        for(int i = decrementa;i>=0;i--){
+        for(int i = decrementa;i>0;i--){
             if(getSegons()-1<0){
                 if(getMinuts()-1<0){
                     if(getHores()-1<0){
