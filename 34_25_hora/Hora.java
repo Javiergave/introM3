@@ -107,7 +107,6 @@ public class Hora {
             if(getMinuts()-(1+decrementa/60)<0){
                 if(getHores()-(1+decrementa/3600)<0){
                     setHores(23-(decrementa/3600));
-                    setMinuts(59-(decrementa/60));
                 }
                 else{
                     setHores(getHores()-(1+decrementa/3600));
