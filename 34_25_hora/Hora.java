@@ -120,10 +120,14 @@ public class Hora {
                 }
                 else{
                     setMinuts(getMinuts()-(1+decrementa/60));
-
                 }
             }
-            setSegons(59-((decrementa/60)));
+            if(decrementa>=60){
+            
+            }
+            else{
+                setSegons(59-((decrementa/60)));
+            }
         }else{
             setSegons(getSegons()-decrementa);
         }
