@@ -2,7 +2,7 @@ import javax.swing.SwingConstants;
 
 import org.w3c.dom.stylesheets.StyleSheet;
 
-//Un rellotge que es pot incrementar i decrementar la hora
+//Un rellotge que es pot incrementar i incrementar la hora
 /**
 
  * Compara dues hores i retorna l'operador corresponent
@@ -55,26 +55,56 @@ public class Hora {
             setSegons(getSegons()+1);
         }
     }
-    public void incrementa(int increment){
+    public void incrementa(int incrementa){
 
-        if (increment<0){
-            return;
-        } 
-
-        if(getSegons()+increment<59){
-            setSegons(getSegons()+increment);
+        if (incrementa<0){
+            incrementa(-incrementa);
         }
-        else if(getSegons()+increment>59){
-            for(int i = (getSegons()+increment)/60;i>0;i--,increment=-60){
+
+        int incrementahores = incrementa/3600;
+        int incrementaminuts = (incrementa%3600)/60;
+        incrementa = incrementa-((incrementahores*3600)+incrementaminuts*60);
+
+        for(int i = incrementa;i>0;i--){
+            if(getSegons()+1>59){
                 if(getMinuts()+1>59){
-                    setHores(getHores()+1);
+                    if(getHores()+1>23){
+                        setHores(0);
+                        setMinuts(0);
+                        setSegons(0);
+                    }
+                    else{
+                        setHores(getHores()+1);
+                        setMinuts(0);
+                        setSegons(0);
+                    }
                 }
                 else{
                     setMinuts(getMinuts()+1);
+                    setSegons(0);
                 }
             }
-            setMinuts(getMinuts()+increment);
-            
+            else{
+                setSegons(getSegons()+1);
+            }
+        }
+        for(int i = incrementaminuts;i>0;i--){
+            if(getMinuts()+1>59){
+                setHores(getHores()+1);
+                setMinuts(0);
+            }
+            else{
+                setMinuts(getMinuts()+1);
+            }
+        }
+
+        for (int i = incrementahores; i>0;i--){
+            if (getHores()+1>59){
+                setHores(0);
+            }
+            else{
+                setHores(getHores()+1);
+            }
         }
 
     }
