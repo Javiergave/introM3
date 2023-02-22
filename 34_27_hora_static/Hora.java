@@ -207,6 +207,18 @@ public class Hora {
         }
         return 0;
     }
+    public int compareTo(Hora hora1){
+        int totalHoraOtro = this.hores*3600 + this.minuts*60 + this.segons;
+        int totalHoraEste = hora1.hores*3600 + hora1.minuts*60 + hora1.segons;
+        
+        if(totalHoraEste<totalHoraOtro){
+            return -1;
+        }
+        else if(totalHoraEste>totalHoraOtro){
+            return 1;
+        }
+        return 0;
+    }
     public String toString(){
         return String.format("%d:%02d:%02d", hores, minuts, segons);
     }
