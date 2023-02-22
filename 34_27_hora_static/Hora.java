@@ -208,8 +208,8 @@ public class Hora {
         return 0;
     }
     public int compareTo(Hora hora1){
-        int totalHoraEste = hora1.hores*3600 + hora1.minuts*60 + hora1.segons;
-        int totalHoraOtro = this.hores*3600 + this.minuts*60 + this.segons;
+        int totalHoraOtro = hora1.hores*3600 + hora1.minuts*60 + hora1.segons;
+        int totalHoraEste = this.hores*3600 + this.minuts*60 + this.segons;
 
         if(totalHoraEste<totalHoraOtro){
             return -1;
