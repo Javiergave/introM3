@@ -18,9 +18,29 @@ public class Hora {
     private int hores=0;
     private int minuts=0;
     private int segons=0;
+
+    public static boolean esValida(int hores,int minuts, int segons){
+        if(hores<24&&hores>-1){
+            if(minuts<60&&minuts>-1){
+                if(segons<60&&segons>-1){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public Hora duplica(){
+        return new Hora(this.getHores(),this.getMinuts(),this.getSegons());
+    }
+    public static Hora duplica(Hora hora){
+        return new Hora(hora.getHores(),hora.getMinuts(),hora.getSegons());
+    }
+
     public Hora(){
 
     }
+
     public Hora(int hora,int minut,int segon){
         if(hora<=23&&hora>=0){
             if(minut<60&&minut>=0){
@@ -176,9 +196,9 @@ public class Hora {
         }
         
     }
-    public int compareTo(Hora hora){
-        int totalHoraEste = this.hores*3600 + this.minuts*60 + this.segons;
-        int totalHoraOtro = hora.hores*3600 + hora.minuts*60 + hora.segons;
+    public static int compareTo(Hora hora1,Hora hora2){
+        int totalHoraEste = hora1.hores*3600 + hora1.minuts*60 + hora1.segons;
+        int totalHoraOtro = hora2.hores*3600 + hora2.minuts*60 + hora2.segons;
         if(totalHoraEste<totalHoraOtro){
             return -1;
         }
@@ -212,7 +232,7 @@ public class Hora {
     }
     private static String composaOperadorComparacio(Hora hora1, Hora hora2) {
 
-        int comparacio = hora1.compareTo(hora2);
+        int comparacio = compareTo(hora1,hora2);
     
         if (comparacio < 0) {
     

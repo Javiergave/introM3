@@ -1,0 +1,6 @@
+34_20 Com fer una classe immutable i la seva utilitat
+34_21 Com fer un constructor que pugui crear instàncies amb diferents valors
+34_22 Com protegir els valors d'una instància i regular els valors que es poden assignar
+34_23 Que el constructor i el setter poden tenir el mateix nom per a una propietat
+34_24 Que es poden tenir dos constructors amb el mateix nom i si tenen paràmetres diferents el programa decideix el més adequat
+34_25 Utilitzar dos constructors diferents amb paràmetres adequats (i com fer un rellotge a Java)
