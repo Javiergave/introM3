@@ -22,7 +22,7 @@ public class GatRenat {
         if(instancia==null){
             return instancia = new GatRenat(posicio);
         }
-        return new GatRenat();
+        return new GatRenat(posicio);
     }
     public static GatRenat getInstancia(int vides,String posicio){
         if(instancia==null){
