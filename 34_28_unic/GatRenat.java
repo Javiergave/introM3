@@ -25,9 +25,7 @@ public class GatRenat {
         return new GatRenat(posicio);
     }
     public static GatRenat getInstancia(int vides,String posicio){
-        if(instancia==null){
-            return instancia = new GatRenat(vides,posicio);
-        }
+        
         return new GatRenat(vides,posicio);
     }
     private GatRenat(int vides,String posicio) {
