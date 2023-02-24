@@ -34,12 +34,11 @@ public class UsaGatRenat {
                 case 3:
                     GatRenat.getInstancia("dret");
                 break;
-                
+
                 default:
                 break;
             }
 
-            GatRenat.getInstancia(novaPosicio);
         }
 
     }
