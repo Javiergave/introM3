@@ -42,12 +42,12 @@ public class GatRenat {
 
     }
 
-    public GatRenat(int novesVides) {
+    private GatRenat(int novesVides) {
 
         setVides(novesVides);
 
     }
-    public GatRenat(String novaPosicio) {
+    private GatRenat(String novaPosicio) {
 
         setPosicio(novaPosicio);
 
@@ -60,9 +60,9 @@ public class GatRenat {
     }
     
 
-    public int getVides() { return vides; }
+    private int getVides() { return vides; }
 
-    public void setVides(int novesVides) { 
+    private void setVides(int novesVides) { 
 
         if (novesVides >= 0)  {
 
@@ -74,7 +74,7 @@ public class GatRenat {
 
     public String getPosicio() { return posicio; }
 
-    public void setPosicio(String novaPosicio) { 
+    private void setPosicio(String novaPosicio) { 
 
         if (novaPosicio.equals("dret")||novaPosicio.equals("assegut")||novaPosicio.equals("estirat"))  {
 
@@ -83,8 +83,5 @@ public class GatRenat {
         }
 
     }
-    
-
-    public String toString() { return String.format(posicio); }
 
 }
