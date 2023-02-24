@@ -24,14 +24,17 @@ public class UsaGatRenat {
 
             switch (pos){
                 case 1:
-                GatRenat.getInstancia("estirat");
+                    GatRenat.getInstancia("estirat");
                 break;
+
                 case 2:
-                GatRenat.getInstancia("assegut");
+                    GatRenat.getInstancia("assegut");
                 break;
+
                 case 3:
-                GatRenat.getInstancia("dret");
+                    GatRenat.getInstancia("dret");
                 break;
+                
                 default:
                 break;
             }
