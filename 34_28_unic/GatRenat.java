@@ -45,6 +45,7 @@ public class GatRenat {
     public GatRenat(String novaPosicio) {
 
         setPosicio(novaPosicio);
+        System.out.println(novaPosicio); 
 
     }
     private GatRenat() {
@@ -76,6 +77,7 @@ public class GatRenat {
             this.posicio = novaPosicio;
 
         }
+        System.out.println(this.posicio); 
 
     }
     
