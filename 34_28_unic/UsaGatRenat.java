@@ -18,7 +18,7 @@ public class UsaGatRenat {
 
     private static void canviaPosicio(String novaPosicio) {
 
-        if(novaPosicio=="1"||novaPosicio=="2"||novaPosicio=="3"){
+        if(novaPosicio.equals("1")||novaPosicio.equals("2")||novaPosicio.equals("3")){
 
             int pos = Integer.parseInt(novaPosicio);
 
@@ -39,6 +39,8 @@ public class UsaGatRenat {
                 break;
             }
 
+        }else if(novaPosicio.equals("dret")||novaPosicio.equals("estirat")||novaPosicio.equals("assegut")){
+            GatRenat.getInstancia(novaPosicio);
         }
 
     }
