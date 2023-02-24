@@ -10,7 +10,7 @@ public class UsaGatRenat {
 
             canviaPosicio(posicio);
 
-            System.out.println("Ara està " + renat.getInstancia());
+            System.out.println("Ara està " + renat.getPosicio());
 
         }
 
