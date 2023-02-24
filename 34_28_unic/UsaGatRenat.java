@@ -18,23 +18,26 @@ public class UsaGatRenat {
 
     private static void canviaPosicio(String novaPosicio) {
 
-        int pos = Integer.parseInt(novaPosicio);
+        if(novaPosicio=="1"||novaPosicio=="2"||novaPosicio=="3"){
 
-        switch (pos){
-            case 1:
-            GatRenat.getInstancia("estirat");
-            break;
-            case 2:
-            GatRenat.getInstancia("assegut");
-            break;
-            case 3:
-            GatRenat.getInstancia("dret");
-            break;
-            default:
-            break;
+            int pos = Integer.parseInt(novaPosicio);
+
+            switch (pos){
+                case 1:
+                GatRenat.getInstancia("estirat");
+                break;
+                case 2:
+                GatRenat.getInstancia("assegut");
+                break;
+                case 3:
+                GatRenat.getInstancia("dret");
+                break;
+                default:
+                break;
+            }
+
+            GatRenat.getInstancia(novaPosicio);
         }
-
-        GatRenat.getInstancia(novaPosicio);
 
     }
 
