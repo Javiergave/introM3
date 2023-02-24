@@ -60,9 +60,9 @@ public class GatRenat {
     }
     
 
-    private int getVides() { return vides; }
+    public int getVides() { return vides; }
 
-    private void setVides(int novesVides) { 
+    public void setVides(int novesVides) { 
 
         if (novesVides >= 0)  {
 
@@ -74,7 +74,7 @@ public class GatRenat {
 
     public String getPosicio() { return posicio; }
 
-    private void setPosicio(String novaPosicio) { 
+    public void setPosicio(String novaPosicio) { 
 
         if (novaPosicio.equals("dret")||novaPosicio.equals("assegut")||novaPosicio.equals("estirat"))  {
 
