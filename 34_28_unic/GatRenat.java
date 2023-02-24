@@ -82,6 +82,6 @@ public class GatRenat {
     }
     
 
-    public String toString() { return String.format("Vides: %d. Posició: %s", vides,posicio); }
+    public String toString() { return String.format(posicio); }
 
 }
