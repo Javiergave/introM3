@@ -1,5 +1,5 @@
 /*Aquest programa permet utilitzar l'ascensor */
-
+//
 public class UsaAscensor {
 
     public static int llegeixEnter() {

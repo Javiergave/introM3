@@ -1,4 +1,5 @@
 //Aquest objecte es el gat Renat
+/* */
 public class GatRenat{ 
     private int vides = 7;
     private String posicio = "estirat";

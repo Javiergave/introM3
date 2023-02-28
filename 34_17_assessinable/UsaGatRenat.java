@@ -7,6 +7,7 @@
  * Finalment el gat Renat acaba tenint tres vides però no les
  * pot aprofitar gaire pequè el programa s'acaba.
  */
+//
 public class UsaGatRenat {
     public static void main(String[] args) {
         GatRenat renat = new GatRenat();
