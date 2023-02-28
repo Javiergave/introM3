@@ -1,5 +1,4 @@
-import javax.sql.StatementEventListener;
-
+/* */
 //Aquest programa és una representació d'un ascensor
 public class GatRenat{ 
     private int vides = 7;

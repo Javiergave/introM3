@@ -1,4 +1,5 @@
 //Aquest és el gat Renat, te vides i és a una posicio
+/* */
 public class GatRenat {
 
     private int vides = 7;

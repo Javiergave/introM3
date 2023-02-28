@@ -1,5 +1,5 @@
 /*Diverses utilitats per a analitzar i modificar strings */
-
+//
 public class UtilString {
 
     /*Aquest programa diu si una string es un nombre enter o no */
