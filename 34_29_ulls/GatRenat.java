@@ -10,6 +10,18 @@ public class GatRenat {
     public class UllDeGat{
         public String estat="tancat";
 
+        public UllDeGat(){
+            estat = "tancat";
+        }
+        public UllDeGat(boolean obert){
+            if(obert){
+                estat="obert";
+            }
+            else{
+                estat = "tancat";
+            }
+        }
+
         public boolean estaObert(){
             if(this.estat.equals("tancat")){
                 return false;
