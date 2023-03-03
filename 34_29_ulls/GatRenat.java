@@ -7,7 +7,7 @@ public class GatRenat {
     private UllDeGat dret;
     private UllDeGat esquerre;
 
-    public class UllDeGat{
+    private class UllDeGat{
         public String estat="tancat";
 
         public UllDeGat(){
@@ -160,8 +160,7 @@ public class GatRenat {
 
     }
        
-    
-    
+
     public static void main(String[] args) {
 
         GatRenat renat = new GatRenat();
@@ -199,6 +198,4 @@ public class GatRenat {
                 renat.getUllEsquerre().estaObert());
     
     }
-    
-    
 }
