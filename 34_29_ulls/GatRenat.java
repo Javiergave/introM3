@@ -4,13 +4,11 @@ public class GatRenat {
     private static GatRenat renat;
     private int vides = 7;
     private String posicio = "estirat";
-    private UllDeGat dret;
-    private UllDeGat esquerre;
+    public UllDeGat dret;
+    public UllDeGat esquerre;
 
     public class UllDeGat{
         public String estat="tancat";
-
-        
 
         public boolean estaObert(){
             if(this.estat.equals("tancat")){
