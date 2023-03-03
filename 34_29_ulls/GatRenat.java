@@ -4,8 +4,8 @@ public class GatRenat {
     private static GatRenat renat;
     private int vides = 7;
     private String posicio = "estirat";
-    private UllDeGat ullDret;
-    private UllDeGat ullEsquerre;
+    private UllDeGat dret;
+    private UllDeGat esquerre;
 
     public class UllDeGat{
         public String estat="tancat";
@@ -42,35 +42,35 @@ public class GatRenat {
     }
 
     public UllDeGat getUllEsquerre(){
-        if(this.ullEsquerre==null){
-            return this.ullEsquerre = new UllDeGat();
+        if(this.esquerre==null){
+            return this.esquerre = new UllDeGat();
         }
-        return this.ullEsquerre;
+        return this.esquerre;
     }
 
     public UllDeGat getUllDret(){
-        if(this.ullDret==null){
-            return this.ullDret = new UllDeGat();
+        if(this.dret==null){
+            return this.dret = new UllDeGat();
         }
-        return this.ullDret;
+        return this.dret;
     }
     
     public String aixecat(){
         this.setPosicio("dret");
-        ullDret.obret();
-        ullEsquerre.obret();
+        dret.obret();
+        esquerre.obret();
         return this.getPosicio();
     }
     public String seu(){
         this.setPosicio("assegut");
-        ullDret.obret();
-        ullEsquerre.tancat();
+        dret.obret();
+        esquerre.tancat();
         return this.getPosicio();
     }
     public String estirat(){
         this.setPosicio("estirat");
-        ullDret.tancat();
-        ullEsquerre.tancat();
+        dret.tancat();
+        esquerre.tancat();
         return this.getPosicio();
     }
     
@@ -167,9 +167,9 @@ public class GatRenat {
 
         GatRenat renat = new GatRenat();
     
-        UllDeGat ullDret = renat.getUllDret();
+        UllDeGat dret = renat.getUllDret();
     
-        UllDeGat ullEsquerre = renat.getUllEsquerre();
+        UllDeGat esquerre = renat.getUllEsquerre();
     
         System.out.printf("Quan està %s: %b + %b%n",
     
