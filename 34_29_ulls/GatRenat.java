@@ -7,7 +7,7 @@ public class GatRenat {
     private UllDeGat dret;
     private UllDeGat esquerre;
 
-    private class UllDeGat{
+    public class UllDeGat{
         public String estat="tancat";
 
         public UllDeGat(){
