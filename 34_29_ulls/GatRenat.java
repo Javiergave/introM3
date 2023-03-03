@@ -1,12 +1,6 @@
 //Aquest és el gat Renat, te vides i és a una posicio
 /* */
 public class GatRenat {
-    private static GatRenat renat;
-    private int vides = 7;
-    private String posicio = "estirat";
-    private UllDeGat dret;
-    private UllDeGat esquerre;
-
     public class UllDeGat{
         public String estat="tancat";
 
@@ -40,6 +34,13 @@ public class GatRenat {
         }
         
     }
+    private static GatRenat renat;
+    private int vides = 7;
+    private String posicio = "estirat";
+    private UllDeGat dret;
+    private UllDeGat esquerre;
+
+    
     
 
     public UllDeGat getUllEsquerre(){
