@@ -100,14 +100,14 @@ public class GatRenat {
         renat.setVides(vides);
         return renat; 
     }
-    private GatRenat(int vides,String posicio) {
+    public GatRenat(int vides,String posicio) {
 
         setVides(vides);
         setPosicio(posicio);
 
     }
 
-    private GatRenat(int novesVides) {
+    public GatRenat(int novesVides) {
 
         setVides(novesVides);
 
@@ -117,7 +117,7 @@ public class GatRenat {
         setPosicio(novaPosicio);
 
     }
-    private GatRenat() {
+    public GatRenat() {
 
         setVides(vides);
         setPosicio(posicio);
