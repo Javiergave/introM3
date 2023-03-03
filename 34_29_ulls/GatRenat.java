@@ -112,7 +112,7 @@ public class GatRenat {
         setVides(novesVides);
 
     }
-    private GatRenat(String novaPosicio) {
+    public GatRenat(String novaPosicio) {
 
         setPosicio(novaPosicio);
 
