@@ -13,17 +13,14 @@ public class GatRenat {
         if(this.esquerre==null){
             return this.esquerre = new UllDeGat();
         }
-        UllDeGat copia = this.esquerre;
-
-        return copia;
+        return this.esquerre;
     }
 
     public UllDeGat getUllDret(){
         if(this.dret==null){
             return this.dret = new UllDeGat();
         }
-        UllDeGat copia = this.dret;
-        return copia;
+        return this.dret;
     }
     
     public String aixecat(){
@@ -84,6 +81,18 @@ public class GatRenat {
 
         setVides(vides);
         setPosicio(posicio);
+        if (posicio.equals("dret")){
+            this.dret = new UllDeGat(true);
+            this.esquerre = new UllDeGat(true);
+        }
+        if (posicio.equals("assegut")){
+            this.dret = new UllDeGat(true);
+            this.esquerre = new UllDeGat(false);
+        }
+        if(posicio.equals("estirat")){
+            this.dret = new UllDeGat(false);
+            this.esquerre = new UllDeGat(false);
+        }
 
     }
 
@@ -95,12 +104,37 @@ public class GatRenat {
     public GatRenat(String novaPosicio) {
 
         setPosicio(novaPosicio);
+        if (novaPosicio.equals("dret")){
+            this.dret = new UllDeGat(true);
+            this.esquerre = new UllDeGat(true);
+        }
+        if (novaPosicio.equals("assegut")){
+            this.dret = new UllDeGat(true);
+            this.esquerre = new UllDeGat(false);
+        }
+        if(novaPosicio.equals("estirat")){
+            this.dret = new UllDeGat(false);
+            this.esquerre = new UllDeGat(false);
+        }
+        
 
     }
     public GatRenat() {
 
         setVides(vides);
         setPosicio(posicio);
+        if (posicio.equals("dret")){
+            this.dret = new UllDeGat(true);
+            this.esquerre = new UllDeGat(true);
+        }
+        if (posicio.equals("assegut")){
+            this.dret = new UllDeGat(true);
+            this.esquerre = new UllDeGat(false);
+        }
+        if(posicio.equals("estirat")){
+            this.dret = new UllDeGat(false);
+            this.esquerre = new UllDeGat(false);
+        }
 
     }
     
@@ -124,16 +158,16 @@ public class GatRenat {
         if (novaPosicio.equals("dret")||novaPosicio.equals("assegut")||novaPosicio.equals("estirat"))  {
 
             if (novaPosicio.equals("dret")){
-                this.dret.obret();
-                this.esquerre.obret();
+                dret.obret();
+                esquerre.obret();
             }
             if (novaPosicio.equals("assegut")){
-                this.dret.obret();
-                this.esquerre.tancat();
+                dret.obret();
+                esquerre.tancat();
             }
             if(novaPosicio.equals("estirat")){
-                this.dret.tancat();
-                this.esquerre.tancat();
+                dret.tancat();
+                esquerre.tancat();
             }
             this.posicio = novaPosicio;
         }
