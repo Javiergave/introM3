@@ -13,14 +13,17 @@ public class GatRenat {
         if(this.esquerre==null){
             return this.esquerre = new UllDeGat();
         }
-        return this.esquerre;
+        UllDeGat copia = this.esquerre;
+
+        return copia;
     }
 
     public UllDeGat getUllDret(){
         if(this.dret==null){
             return this.dret = new UllDeGat();
         }
-        return this.dret;
+        UllDeGat copia = this.dret;
+        return copia;
     }
     
     public String aixecat(){
