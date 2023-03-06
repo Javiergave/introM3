@@ -4,23 +4,38 @@ public class GatRenat {
     private static GatRenat renat;
     private int vides = 7;
     private String posicio = "estirat";
-    private UllDeGat dret;
-    private UllDeGat esquerre;
+    private Picarol picarol;
 
-    
+    public class Picarol{
+        public Picarol Picarol;
+        public int cops=0;
 
-    public UllDeGat getUllEsquerre(){
-        if(this.esquerre==null){
-            return this.esquerre = new UllDeGat();
+        public Picarol(){
+            cops = "tancat";
         }
-        return this.esquerre;
+        public void sona(){
+            System.out.println("clink-clink"); 
+        }
+
+        public int quantsCops(){
+            return false;
+        }  
     }
 
-    public UllDeGat getUllDret(){
-        if(this.dret==null){
-            return this.dret = new UllDeGat();
+    public Picarol posaPicarol(){
+        if(==){
+            return this.picarol = new Picarol();
         }
-        return this.dret;
+        return this.picarol;
+    }
+
+    public Picarol treuPicarol(){
+        if(this.picarol!=null){
+            this.picarol=null;
+            return;
+        }
+
+        return;
     }
     
     public String aixecat(){
@@ -49,13 +64,13 @@ public class GatRenat {
         return renat = new GatRenat();
     }
     public static GatRenat getrenat(){
-        if(renat==null){
+        if(renat==nPicarol){
             return renat = new GatRenat();
         }
         return renat;
     }
     public static GatRenat getrenat(int vides){
-        if(renat==null){
+        if(renat==nPicarol){
             renat = new GatRenat(vides);
             return renat;
         }
@@ -63,14 +78,14 @@ public class GatRenat {
         return renat;
     }
     public static GatRenat getrenat(String posicio){
-        if(renat==null){
+        if(renat==nPicarol){
             return renat = new GatRenat(posicio);
         }
         renat.setPosicio(posicio);
         return renat;
     }
     public static GatRenat getrenat(int vides,String posicio){
-        if(renat==null){
+        if(renat==nPicarol){
             return renat = new GatRenat(vides,posicio);
         }
         renat.setPosicio(posicio);
@@ -132,39 +147,25 @@ public class GatRenat {
 
     public static void main(String[] args) {
 
-        GatRenat renat = new GatRenat();
-    
-        UllDeGat dret = renat.getUllDret();
-    
-        UllDeGat esquerre = renat.getUllEsquerre();
-    
-        System.out.printf("Quan està %s: %b + %b%n",
-    
-                renat.getPosicio(),
-    
-                renat.getUllDret().estaObert(),
-    
-                renat.getUllEsquerre().estaObert());
-    
-        renat.seu();
-    
-        System.out.printf("Quan està %s: %b + %b%n",
-    
-                renat.getPosicio(),
-    
-                renat.getUllDret().estaObert(),
-    
-                renat.getUllEsquerre().estaObert());
-    
-        renat.aixecat();
-    
-        System.out.printf("Quan està %s: %b + %b%n",
-    
-                renat.getPosicio(),
-    
-                renat.getUllDret().estaObert(),
-    
-                renat.getUllEsquerre().estaObert());
-    
-    }
+    Picarol picarol = new Picarol();
+
+    picarol.sona();   // el picarol funciona fins i tot sense gat!
+
+    GatRenat renat = new GatRenat();
+
+    renat.aixecat();
+
+    renat.posaPicarol(picarol);
+
+    renat.seu();      // ha de sonar el picarol
+
+    renat.seu();      // no sona el picarol doncs no es mou!
+
+    renat.treuPicarol();
+
+    renat.estirat();  // no sona el picarol doncs ja no el té
+
+    System.out.println("Nombre de cops que sona el picarol: " + picarol.quantsCops());
+
+}
 }
