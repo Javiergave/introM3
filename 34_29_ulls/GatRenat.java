@@ -124,7 +124,13 @@ public class GatRenat {
         if (novaPosicio.equals("dret")||novaPosicio.equals("assegut")||novaPosicio.equals("estirat"))  {
 
             if (novaPosicio.equals("dret")){
-
+                aixecat();
+            }
+            if (novaPosicio.equals("assegut")){
+                seu();
+            }
+            if(novaPosicio.equals("estirat")){
+                estirat();
             }
             this.posicio = novaPosicio;
 
