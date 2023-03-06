@@ -4,8 +4,8 @@ public class GatRenat {
     private static GatRenat renat;
     private int vides = 7;
     private String posicio = "estirat";
-    private UllDeGat dret;
-    private UllDeGat esquerre;
+    private UllDeGat dret = new UllDeGat();
+    private UllDeGat esquerre = new UllDeGat();
 
     
 
