@@ -7,22 +7,22 @@ public class GatRenat {
     private UllDeGat dret = new UllDeGat();
     private UllDeGat esquerre = new UllDeGat();
 
-    public UllDeGat getUll(UllDeGat ull){
-        return ull;
-    }
-
     public UllDeGat getUllEsquerre(){
         if(this.esquerre==null){
             return this.esquerre = new UllDeGat();
         }
-        return getUll(this.esquerre);
+        UllDeGat copia = new UllDeGat(this.esquerre.estaObert());
+
+        return copia;
     }
 
     public UllDeGat getUllDret(){
         if(this.dret==null){
             return this.dret = new UllDeGat();
         }
-        return getUll(this.dret);
+        UllDeGat copia = new UllDeGat(this.dret.estaObert());
+
+        return copia;
     }
     
     public String aixecat(){
