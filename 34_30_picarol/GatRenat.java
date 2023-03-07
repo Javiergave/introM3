@@ -4,7 +4,7 @@ public class GatRenat {
     private static GatRenat renat;
     private int vides = 7;
     private String posicio = "estirat";
-    private Picarol picarol = new Picarol();
+    private Picarol picarol;
 
     public boolean tePicarol(){
         if(picarol!=null){
@@ -14,7 +14,9 @@ public class GatRenat {
     }
 
     public Picarol posaPicarol(Picarol picarol){
-
+        if(picarol==null){
+            return null;
+        }
         return this.picarol;
     }
 
