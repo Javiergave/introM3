@@ -4,7 +4,7 @@ public class GatRenat {
     private static GatRenat renat;
     private int vides = 7;
     private String posicio = "estirat";
-    private Picarol picarol;
+    private Picarol picarol = new Picarol();
 
     public boolean tePicarol(){
         if(picarol!=null){
