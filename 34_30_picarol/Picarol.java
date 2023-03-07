@@ -3,7 +3,7 @@ public class Picarol{
     private int cops=1;
 
     public Picarol(){
-        cops= 1;
+        
     }
     public void sona(){
         for(int i = 0; i<=cops;i++){
