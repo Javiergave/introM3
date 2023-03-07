@@ -1,6 +1,6 @@
 public class Picarol{
     public Picarol Picarol;
-    private int cops=1;
+    private int cops=0;
 
     public Picarol(){
         
@@ -10,7 +10,7 @@ public class Picarol{
             System.out.println("clink-clink"); 
             
         }
-        cops++;
+        cops+=2;
         
     }
 
