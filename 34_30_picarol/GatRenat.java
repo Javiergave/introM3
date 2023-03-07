@@ -6,24 +6,10 @@ public class GatRenat {
     private String posicio = "estirat";
     private Picarol picarol;
 
-    public class Picarol{
-        public Picarol Picarol;
-        public int cops=0;
+    
 
-        public Picarol(){
-            cops = "tancat";
-        }
-        public void sona(){
-            System.out.println("clink-clink"); 
-        }
-
-        public int quantsCops(){
-            return false;
-        }  
-    }
-
-    public Picarol posaPicarol(){
-        if(==){
+    public Picarol posaPicarol(Picarol picarol){
+        if(picarol==null){
             return this.picarol = new Picarol();
         }
         return this.picarol;
@@ -32,28 +18,25 @@ public class GatRenat {
     public Picarol treuPicarol(){
         if(this.picarol!=null){
             this.picarol=null;
-            return;
+            return picarol;
         }
 
-        return;
+        return picarol;
     }
     
     public String aixecat(){
         this.setPosicio("dret");
-        dret.obret();
-        esquerre.obret();
+        
         return this.getPosicio();
     }
     public String seu(){
         this.setPosicio("assegut");
-        dret.obret();
-        esquerre.tancat();
+        
         return this.getPosicio();
     }
     public String estirat(){
         this.setPosicio("estirat");
-        dret.tancat();
-        esquerre.tancat();
+        
         return this.getPosicio();
     }
     
@@ -64,13 +47,13 @@ public class GatRenat {
         return renat = new GatRenat();
     }
     public static GatRenat getrenat(){
-        if(renat==nPicarol){
+        if(renat==null){
             return renat = new GatRenat();
         }
         return renat;
     }
     public static GatRenat getrenat(int vides){
-        if(renat==nPicarol){
+        if(renat==null){
             renat = new GatRenat(vides);
             return renat;
         }
@@ -78,14 +61,14 @@ public class GatRenat {
         return renat;
     }
     public static GatRenat getrenat(String posicio){
-        if(renat==nPicarol){
+        if(renat==null){
             return renat = new GatRenat(posicio);
         }
         renat.setPosicio(posicio);
         return renat;
     }
     public static GatRenat getrenat(int vides,String posicio){
-        if(renat==nPicarol){
+        if(renat==null){
             return renat = new GatRenat(vides,posicio);
         }
         renat.setPosicio(posicio);
