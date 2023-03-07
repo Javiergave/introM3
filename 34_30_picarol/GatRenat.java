@@ -6,7 +6,12 @@ public class GatRenat {
     private String posicio = "estirat";
     private Picarol picarol;
 
-    
+    public boolean tePicarol(){
+        if(picarol!=null){
+            return false;
+        }
+        return true;
+    }
 
     public Picarol posaPicarol(Picarol picarol){
         if(picarol==null){
