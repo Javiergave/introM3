@@ -25,11 +25,10 @@ public class GatRenat {
 
     public Picarol treuPicarol(){
         if(this.picarol!=null){
-            this.picarol=null;
-            return picarol;
+            return this.picarol=null;
         }
 
-        return picarol;
+        return this.picarol=null;
     }
     
     public String aixecat(){
