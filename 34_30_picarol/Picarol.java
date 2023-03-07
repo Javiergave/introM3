@@ -6,8 +6,11 @@ public class Picarol{
         cops= 1;
     }
     public void sona(){
-        System.out.println("clink-clink"); 
-        cops++;
+        for(int i = 0; i<=cops;i++){
+            System.out.println("clink-clink"); 
+            cops++;
+        }
+        
     }
 
     public int quantsCops(){
