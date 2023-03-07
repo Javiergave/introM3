@@ -4,20 +4,20 @@ public class GatRenat {
     private static GatRenat renat;
     private int vides = 7;
     private String posicio = "estirat";
-    private Picarol picarol;
+    private Picarol picarol = null;
 
     public boolean tePicarol(){
         if(picarol!=null){
-            return false;
+            return true;
         }
-        return true;
+        return false;
     }
 
     public Picarol posaPicarol(Picarol picarol){
         if(picarol==null){
             return null;
         }
-        return this.picarol = new Picarol();
+        return null;
     }
 
     public Picarol treuPicarol(){
