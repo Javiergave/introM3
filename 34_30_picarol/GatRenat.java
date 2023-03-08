@@ -21,13 +21,14 @@ public class GatRenat {
 
     public Picarol posaPicarol(Picarol picarol1){
         if(picarol1==null){ 
-            this.picarol = new Picarol();
+            this.picarol = null;
             return this.picarol;
         }
         if(this.picarol==null){
-            return picarol = new Picarol();
+            picarol = picarol1;
+            return null;
         }
-        return picarol;
+        return this.picarol;
     }
 
     public Picarol treuPicarol(){
