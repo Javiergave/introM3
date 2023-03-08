@@ -8,10 +8,10 @@
  */
 public class Picarol{
     public Picarol Picarol;
-    private int cops = 2;
+    private int cops ;
 
     public Picarol(){
-        
+        cops=2;
     }
     public void sona(){
         for(int i = 0; i<cops;i++){
