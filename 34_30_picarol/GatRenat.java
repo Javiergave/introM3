@@ -13,7 +13,7 @@ public class GatRenat {
     private Picarol picarol = null;
 
     public boolean tePicarol(){
-        if(picarol!=null){
+        if(this.picarol!=null){
             return true;
         }
         return false;
@@ -42,17 +42,23 @@ public class GatRenat {
     
     public String aixecat(){
         this.setPosicio("dret");
-        
+        if(renat.tePicarol()){
+            picarol.sona();
+        }
         return this.getPosicio();
     }
     public String seu(){
         this.setPosicio("assegut");
-        
+        if(renat.tePicarol()){
+            picarol.sona();        
+        }
         return this.getPosicio();
     }
     public String estirat(){
         this.setPosicio("estirat");
-        
+        if(renat.tePicarol()){
+            picarol.sona();
+        }
         return this.getPosicio();
     }
     
