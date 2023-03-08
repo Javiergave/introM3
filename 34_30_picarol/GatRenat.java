@@ -33,11 +33,14 @@ public class GatRenat {
     }
 
     public Picarol treuPicarol(){
-        if(this.picarol!=null){
-            return this.picarol=null;
+        Picarol antic = this.picarol;
+
+        if(antic!=null){
+            this.picarol=null;
+            return antic;
         }
 
-        return this.picarol=null;
+        return this.picarol;
     }
     
     public String aixecat(){
