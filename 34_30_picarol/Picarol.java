@@ -11,7 +11,7 @@ public class Picarol{
     private int cops;
 
     public Picarol(){
-        cops=0;
+        
     }
     public void sona(){
         cops+= 2;
