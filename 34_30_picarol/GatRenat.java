@@ -43,21 +43,18 @@ public class GatRenat {
     public String aixecat(){
         this.setPosicio("dret");
         if(this.tePicarol()){
-            picarol.sona();
         }
         return this.getPosicio();
     }
     public String seu(){
         this.setPosicio("assegut");
         if(this.tePicarol()){
-            picarol.sona();        
         }
         return this.getPosicio();
     }
     public String estirat(){
         this.setPosicio("estirat");
         if(this.tePicarol()){
-            picarol.sona();
         }
         return this.getPosicio();
     }
