@@ -23,7 +23,6 @@ public class GatRenat {
         if(picarol1==null){ 
             this.picarol = new Picarol();
             return this.picarol;
-            //return null;
         }
         if(this.picarol==null){
             return picarol = new Picarol();
