@@ -15,7 +15,9 @@ public class GatRenat {
 
     public Picarol posaPicarol(Picarol picarol1){
         if(picarol1==null){
-            return null;
+            return picarol = new Picarol();
+
+            //return null;
         }
         if(this.picarol==null){
             return picarol = new Picarol();
