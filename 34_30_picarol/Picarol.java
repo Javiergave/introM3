@@ -1,4 +1,4 @@
-/*Aquest és el Picarol del Gat Renat, fa clink-clink una quantitat de cops determinada
+/* Aquest és el Picarol del Gat Renat, fa clink-clink una quantitat de cops determinada
  *
  * Copyright 2022 Javier García Vera
  * 
