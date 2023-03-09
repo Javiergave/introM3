@@ -140,8 +140,8 @@ public class GatRenat {
 
         if (novaPosicio.equals("dret")||novaPosicio.equals("assegut")||novaPosicio.equals("estirat"))  {
 
-            if (novaPosicio.equals("dret")){
-
+            if (!getPosicio().equals(novaPosicio) && picarol!=null){
+                picarol.sona();
             }
             this.posicio = novaPosicio;
 
