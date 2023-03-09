@@ -16,7 +16,7 @@ public class Picarol{
     public void sona(){
         cops+=1;
 
-        for(int i = 0; i<cops;i++){
+        for(int i = 0; i<=cops;i++){
             System.out.println("clink-clink"); 
             
         }
