@@ -21,7 +21,6 @@ public class Picarol{
             
         }
         
-        
     }
 
     public int quantsCops(){

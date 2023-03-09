@@ -37,7 +37,7 @@ public class GatRenat {
 
         if(antic!=null){
             this.picarol=null;
-            return antic;
+            return null;
         }
 
         return this.picarol;
