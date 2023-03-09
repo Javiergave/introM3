@@ -5,7 +5,7 @@
  * See http://www.gnu.org/licenses/gpl.html for more information
  * 
  */
-//Aquest objecte és el gat Renat 
+//Aquest objecte és el gat Renat, té vides i una posicio
 
 public class GatRenat{ 
     private int vides = 7;
