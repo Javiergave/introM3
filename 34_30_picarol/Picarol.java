@@ -8,7 +8,7 @@
  */
 public class Picarol{
     public Picarol Picarol;
-    private int cops ;
+    private int cops=0 ;
 
     public Picarol(){
 
