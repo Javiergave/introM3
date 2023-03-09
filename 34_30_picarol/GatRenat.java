@@ -34,13 +34,8 @@ public class GatRenat {
 
     public Picarol treuPicarol(){
         Picarol antic = this.picarol;
-
-        if(antic!=null){
-            this.picarol=null;
-            return null;
-        }
-
-        return this.picarol;
+        this.picarol=null;
+        return antic;
     }
     
     public String aixecat(){
