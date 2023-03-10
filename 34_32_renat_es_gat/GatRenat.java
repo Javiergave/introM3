@@ -8,34 +8,50 @@
 
 //Aquest es el Gat Renat, te més funcions que un gat normal
 public class GatRenat extends Gat{ 
+    public String getPosicio() {  
+        return super.getPosicio();
+    }
+    public int getVides() {
+        return super.getVides();
+    }
+    public void setVides(int novesVides){
+        if(novesVides>=0){
+            super.setVides(novesVides);
+        }
+    }
+    public void setPosicio(String novaPosicio) {
+        if(novaPosicio.equals("dret")||novaPosicio.equals("assegut")||novaPosicio.equals("estirat")){
+            super.setPosicio(novaPosicio);
+        }
+    }
 
     public GatRenat(int vides,String posicio) {
 
-        super.setVides(vides);
-        super.setPosicio(posicio);
+        setVides(vides);
+        setPosicio(posicio);
 
     }
 
     public GatRenat(int novesVides) {
 
-        super.setVides(novesVides);
+        setVides(novesVides);
 
     }
     public GatRenat(String novaPosicio) {
 
-        super.setPosicio(novaPosicio);
+        setPosicio(novaPosicio);
 
     }
     public GatRenat() {
 
-        super.setVides(7);
-        super.setPosicio("estirat");
+        setVides(7);
+        setPosicio("estirat");
 
     }
 
     public String aixecat(){
-        if(!super.getPosicio().equals("dret")){
-            super.setPosicio("dret");
+        if(!getPosicio().equals("dret")){
+            setPosicio("dret");
             return ("m'aixeco"); 
         }
         else{
@@ -43,8 +59,8 @@ public class GatRenat extends Gat{
         }
     }
     public String seu(){
-        if(!super.getPosicio().equals("assegut")){
-            super.setPosicio("assegut");
+        if(!getPosicio().equals("assegut")){
+            setPosicio("assegut");
             return ("m'assec"); 
         }
         else{
@@ -52,8 +68,8 @@ public class GatRenat extends Gat{
         }
     }
     public String estirat(){
-        if(!super.getPosicio().equals("estirat")){
-            super.setPosicio("estirat");
+        if(!getPosicio().equals("estirat")){
+            setPosicio("estirat");
             return ("m'estiro"); 
         }
         else{
@@ -62,16 +78,16 @@ public class GatRenat extends Gat{
     }
 
     public boolean estaDret() {  
-        return super.getPosicio().equals("dret");
+        return getPosicio().equals("dret");
     }
     public boolean estaAssegut() {
-        return super.getPosicio().equals("assegut");
+        return getPosicio().equals("assegut");
     }
     public boolean estaEstirat() {
-        return super.getPosicio().equals("estirat");
+        return getPosicio().equals("estirat");
     }
     public boolean estaViu() {
-        return super.getVides()>0;
+        return getVides()>0;
     }
     
 }
