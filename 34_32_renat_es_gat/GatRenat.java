@@ -54,7 +54,7 @@ public class GatRenat extends Gat{
     }
 
     public String aixecat(){
-        if(!posicio.equals("dret")){
+        if(!getPosicio().equals("dret")){
             setPosicio("dret");
             return ("m'aixeco"); 
         }
@@ -63,7 +63,7 @@ public class GatRenat extends Gat{
         }
     }
     public String seu(){
-        if(!posicio.equals("assegut")){
+        if(!getPosicio().equals("assegut")){
             setPosicio("assegut");
             return ("m'assec"); 
         }
@@ -72,7 +72,7 @@ public class GatRenat extends Gat{
         }
     }
     public String estirat(){
-        if(!posicio.equals("estirat")){
+        if(!getPosicio().equals("estirat")){
             setPosicio("estirat");
             return ("m'estiro"); 
         }
@@ -82,16 +82,16 @@ public class GatRenat extends Gat{
     }
 
     public boolean estaDret() {  
-        return posicio.equals("dret");
+        return getPosicio().equals("dret");
     }
     public boolean estaAssegut() {
-        return posicio.equals("assegut");
+        return getPosicio().equals("assegut");
     }
     public boolean estaEstirat() {
-        return posicio.equals("estirat");
+        return getPosicio().equals("estirat");
     }
     public boolean estaViu() {
-        return vides>0;
+        return getVides()>0;
     }
     
 }
