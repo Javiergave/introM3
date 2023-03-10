@@ -9,6 +9,23 @@
 //Aquest es el Gat Renat, te més funcions que un gat normal
 public class GatRenat extends Gat{ 
     
+    public GatRenat(int novesVides,String novaPosicio) {
+
+        setVides(novesVides);
+        setPosicio(novaPosicio);
+
+    }
+    public GatRenat(int novesVides) {
+
+        setVides(novesVides);
+
+    }
+    public GatRenat(String novaPosicio) {
+
+        setPosicio(novaPosicio);
+
+    }
+
     public GatRenat() {
 
         setVides(7);
