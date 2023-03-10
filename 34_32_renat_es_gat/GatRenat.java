@@ -7,8 +7,8 @@
  */
 //Aquest és el gat Renat, te vides i és a una posicio
 class Gat{
-    public int vides = 7;
-    public String posicio = "estirat";
+    private int vides = 7;
+    private String posicio = "estirat";
 
     public String getPosicio() {  
         return posicio;
@@ -48,8 +48,8 @@ public class GatRenat extends Gat{
     }
     public GatRenat() {
 
-        setVides(super.vides);
-        setPosicio(super.posicio);
+        setVides(7);
+        setPosicio("estirat");
 
     }
 
