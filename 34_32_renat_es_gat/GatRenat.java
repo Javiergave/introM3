@@ -27,6 +27,7 @@ class Gat{
         }
     }
 }
+//Aquest es el Gat Renat, te més funcions que un gat normal
 public class GatRenat extends Gat{ 
 
     public GatRenat(int vides,String posicio) {
