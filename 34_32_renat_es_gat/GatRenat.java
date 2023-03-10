@@ -8,22 +8,6 @@
 
 //Aquest es el Gat Renat, te més funcions que un gat normal
 public class GatRenat extends Gat{ 
-    public String getPosicio() {  
-        return super.getPosicio();
-    }
-    public int getVides() {
-        return super.getVides();
-    }
-    public void setVides(int novesVides){
-        if(novesVides>=0){
-            super.setVides(novesVides);
-        }
-    }
-    public void setPosicio(String novaPosicio) {
-        if(novaPosicio.equals("dret")||novaPosicio.equals("assegut")||novaPosicio.equals("estirat")){
-            super.setPosicio(novaPosicio);
-        }
-    }
 
     public GatRenat(int vides,String posicio) {
 
