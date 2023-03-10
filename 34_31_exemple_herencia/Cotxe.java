@@ -48,6 +48,7 @@ class Roda extends Cotxe{
             
             if(desgastRoda==70){
                 funciona=false;
+                trencar();
                 super.trencar();
                 System.out.println("La roda s'ha trencat"); 
             }
@@ -74,6 +75,7 @@ class Chasis extends Cotxe{
             
             if(desgastChasis==90){
                 funciona=false;
+                trencar();
                 super.trencar();
                 System.out.println("El chasis s'ha trencat"); 
             }
