@@ -18,7 +18,7 @@ public class GatRenat extends Gat{
 
     public String aixecat(){
         if(!estaDret()){
-            setPosicio("dret");
+            this.setPosicio("dret");
             return ("m'aixeco"); 
         }
         else{
@@ -27,7 +27,7 @@ public class GatRenat extends Gat{
     }
     public String seu(){
         if(!estaAssegut()){
-            setPosicio("assegut");
+            this.setPosicio("assegut");
             return ("m'assec"); 
         }
         else{
@@ -36,7 +36,7 @@ public class GatRenat extends Gat{
     }
     public String estirat(){
         if(!estaEstirat()){
-            setPosicio("estirat");
+            this.setPosicio("estirat");
             return ("m'estiro"); 
         }
         else{
