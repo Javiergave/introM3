@@ -11,31 +11,31 @@ public class GatRenat extends Gat{
 
     public GatRenat(int vides,String posicio) {
 
-        setVides(vides);
-        setPosicio(posicio);
+        super.setVides(vides);
+        super.setPosicio(posicio);
 
     }
 
     public GatRenat(int novesVides) {
 
-        setVides(novesVides);
+        super.setVides(novesVides);
 
     }
     public GatRenat(String novaPosicio) {
 
-        setPosicio(novaPosicio);
+        super.setPosicio(novaPosicio);
 
     }
     public GatRenat() {
 
-        setVides(7);
-        setPosicio("estirat");
+        super.setVides(7);
+        super.setPosicio("estirat");
 
     }
 
     public String aixecat(){
-        if(!getPosicio().equals("dret")){
-            setPosicio("dret");
+        if(!super.getPosicio().equals("dret")){
+            super.setPosicio("dret");
             return ("m'aixeco"); 
         }
         else{
@@ -43,8 +43,8 @@ public class GatRenat extends Gat{
         }
     }
     public String seu(){
-        if(!getPosicio().equals("assegut")){
-            setPosicio("assegut");
+        if(!super.getPosicio().equals("assegut")){
+            super.setPosicio("assegut");
             return ("m'assec"); 
         }
         else{
@@ -52,8 +52,8 @@ public class GatRenat extends Gat{
         }
     }
     public String estirat(){
-        if(!getPosicio().equals("estirat")){
-            setPosicio("estirat");
+        if(!super.getPosicio().equals("estirat")){
+            super.setPosicio("estirat");
             return ("m'estiro"); 
         }
         else{
@@ -62,16 +62,16 @@ public class GatRenat extends Gat{
     }
 
     public boolean estaDret() {  
-        return getPosicio().equals("dret");
+        return super.getPosicio().equals("dret");
     }
     public boolean estaAssegut() {
-        return getPosicio().equals("assegut");
+        return super.getPosicio().equals("assegut");
     }
     public boolean estaEstirat() {
-        return getPosicio().equals("estirat");
+        return super.getPosicio().equals("estirat");
     }
     public boolean estaViu() {
-        return getVides()>0;
+        return super.getVides()>0;
     }
     
 }
