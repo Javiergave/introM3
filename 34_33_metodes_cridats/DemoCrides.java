@@ -18,7 +18,6 @@ class DemoCrides {
         gatrenat1.miola();
         Menjar bacalla = new Menjar("bacallà");
         gatrenat1.menja(bacalla);
-        gat1.menja(bacalla);
         
     }
     
