@@ -6,17 +6,20 @@
  * 
  */
 //Aquest excercici fa les crides en l'ordre demanat a l'excercici
-public class DemoCrides {
-    Feli feli = new GatRenat();
-    Gat gat = new GatRenat();
-    GatRenat gatrenat = new GatRenat();
-    feli.netejaUrpes();
-    gat.netejaUrpes();
-    gatrenat.netejaUrpes();
-    gat.miola();
-    gatrenat.miola();
-    Menjar bacalla = new Menjar("bacallà");
-    gatrenat.menja();
-    gat.menja();
-    gat.netejaUrpes();
+class DemoCrides {
+    public static void main(String[] args) {
+        Feli feli1 = new GatRenat();
+        Gat gat1 = new GatRenat();
+        GatRenat gatrenat1 = new GatRenat();
+        feli1.netejaUrpes();
+        gat1.netejaUrpes();
+        gatrenat1.netejaUrpes();
+        gat1.miola();
+        gatrenat1.miola();
+        Menjar bacalla = new Menjar("bacallà");
+        gatrenat1.menja(bacalla);
+        gat1.menja(bacalla);
+        gat1.netejaUrpes();
+    }
+    
 }
