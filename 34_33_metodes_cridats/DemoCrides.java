@@ -8,8 +8,8 @@
 //Aquest excercici fa les crides en l'ordre demanat a l'excercici
 class DemoCrides {
     public static void main(String[] args) {
-        Feli feli1 = new GatRenat();
-        Gat gat1 = new GatRenat();
+        Feli feli1 = new Feli();
+        Gat gat1 = new Gat();
         GatRenat gatrenat1 = new GatRenat();
         feli1.netejaUrpes();
         gat1.netejaUrpes();
