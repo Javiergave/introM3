@@ -28,8 +28,6 @@ public class GatRenat extends Gat{
 
     public GatRenat() {
 
-        setVides(7);
-        setPosicio("estirat");
 
     }
 
@@ -71,7 +69,7 @@ public class GatRenat extends Gat{
         return getPosicio().equals("estirat");
     }
     public boolean estaViu() {
-        return getVides()>0;
+        return (getVides()>0);
     }
     
 }
