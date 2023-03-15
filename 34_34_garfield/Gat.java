@@ -10,13 +10,12 @@
 class Gat{
     private int vides = 7;
     private String posicio = "estirat";
+    private String nom="anònim";
 
-    public String getPosicio() {  
-        return posicio;
-    }
-    public int getVides() {
-        return vides;
-    }
+    public String getNom(){ return nom; }
+    public String getPosicio() { return posicio; }
+    public int getVides() { return vides; }
+
     public void setVides(int novesVides){
         if(novesVides>=0){
             vides=novesVides;
@@ -66,5 +65,30 @@ class Gat{
     }
     public boolean estaViu() {
         return (getVides()>0);
+    }
+
+    public Gat(String newNom,int novesVides,String novaPosicio) {
+
+        setVides(novesVides);
+        setPosicio(novaPosicio);
+        nom=newNom;
+
+    }
+    public Gat(String newNom,int novesVides) {
+
+        setVides(novesVides);
+        nom=newNom;
+
+    }
+    public Gat(String newNom,String novaPosicio) {
+
+        setPosicio(novaPosicio);
+        nom=newNom;
+
+    }
+
+    public Gat(String newNom) {
+        nom=newNom;
+
     }
 }
