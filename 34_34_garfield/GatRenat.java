@@ -11,23 +11,21 @@ public class GatRenat extends Gat{
     
     public GatRenat(int novesVides,String novaPosicio) {
 
-        setVides(novesVides);
-        setPosicio(novaPosicio);
-
+        Gat("Renat",novesVides,novaPosicio);
     }
     public GatRenat(int novesVides) {
 
-        setVides(novesVides);
+        Gat("Renat",novesVides);
 
     }
     public GatRenat(String novaPosicio) {
 
-        setPosicio(novaPosicio);
+        Gat("Renat",novaPosicio);
 
     }
 
     public GatRenat() {
-
+        Gat("Renat");
     }
 
 }
