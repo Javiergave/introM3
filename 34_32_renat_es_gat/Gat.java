@@ -7,7 +7,7 @@
  */
 
 //Aquest és un gat, te vides i és a una posicio
-class Gat{
+public class Gat{
     private int vides = 7;
     private String posicio = "estirat";
 
