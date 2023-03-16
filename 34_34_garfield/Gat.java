@@ -7,10 +7,10 @@
  */
 
 //Aquest és un gat, te vides i és a una posicio
-class Gat{
+public class Gat{
     private int vides = 7;
     private String posicio = "estirat";
-    private String nom="anònim";
+    private final String NOM;
 
     public String getNom(){ return nom; }
     public String getPosicio() { return posicio; }
@@ -69,26 +69,42 @@ class Gat{
 
     public Gat(String newNom,int novesVides,String novaPosicio) {
 
+        
         setVides(novesVides);
         setPosicio(novaPosicio);
-        nom=newNom;
+        if(newNom==null){
+            NOM="anònim";
+            return;
+        }
+        NOM=newNom;
 
     }
     public Gat(String newNom,int novesVides) {
 
         setVides(novesVides);
-        nom=newNom;
+        if(newNom==null){
+            NOM="anònim";
+            return;
+        }
+        NOM=newNom;
 
     }
     public Gat(String newNom,String novaPosicio) {
 
         setPosicio(novaPosicio);
-        nom=newNom;
+        if(newNom==null){
+            NOM="anònim";
+            return;
+        }
+        NOM=newNom;
 
     }
 
     public Gat(String newNom) {
-        nom=newNom;
-
+        if(newNom==null){
+            NOM="anònim";
+            return;
+        }
+        NOM=newNom;
     }
 }
