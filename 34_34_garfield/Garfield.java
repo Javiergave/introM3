@@ -46,7 +46,7 @@ public class Garfield extends Gat{
         }
     }
     public String estirat(){
-        if(estaAssegut()&&!estaEstirat())   {
+        if(estaAssegut()){
             this.setPosicio("estirat");
             return ("m'estiro"); 
         }
