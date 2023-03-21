@@ -12,7 +12,7 @@ public class Gat{
     private String posicio = "estirat";
     private final String NOM;
 
-    public String getNom(){ return nom; }
+    public String getNom(){ return NOM; }
     public String getPosicio() { return posicio; }
     public int getVides() { return vides; }
 
