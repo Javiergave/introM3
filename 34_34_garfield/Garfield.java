@@ -25,7 +25,7 @@ public class Garfield extends Gat{
         }
     }
     public String aixecat(){
-        if(!estaDret()&&!estaAssegut()){
+        if(estaAssegut()){
             setPosicio("dret");
             return ("m'aixeco"); 
         }
