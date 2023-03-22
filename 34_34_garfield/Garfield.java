@@ -22,12 +22,12 @@ public class Garfield extends Gat{
     @Override
     public void setVides(int novesVides){
         if(novesVides<9&novesVides>=0){
-            this.setVides(novesVides);
+            super.setVides(novesVides);
         }
     }
     public String aixecat(){
         if(estaAssegut()){
-            this.setPosicio("dret");
+            setPosicio("dret");
             return ("m'aixeco"); 
         }
         else if(estaEstirat()){
