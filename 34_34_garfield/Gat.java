@@ -10,7 +10,7 @@
 public class Gat{
     private int vides = 7;
     private String posicio = "estirat";
-    private final String NOM;
+    public final String NOM;
 
     public String getNom(){ return NOM; }
     public String getPosicio() { return posicio; }
