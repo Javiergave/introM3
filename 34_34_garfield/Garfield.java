@@ -17,6 +17,7 @@ public class Garfield extends Gat{
         super("Garfield");
         setVides(vides);
     }
+    
 
     @Override
     public void setVides(int novesVides){
