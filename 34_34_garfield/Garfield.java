@@ -15,7 +15,7 @@ public class Garfield extends Gat{
     Garfield (int vides){
         
         super("Garfield");
-        setVides(vides);
+        super.setVides(vides);
     }
     
 
