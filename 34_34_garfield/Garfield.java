@@ -7,12 +7,12 @@
  */
 //Aquest es el Garfield, neix amb 9 vides i el nombre màxim de vides son 9, sempre neix estirat
 public class Garfield extends Gat{
-    public Garfield (){
+    Garfield (){
         super("Garfield");
         setVides(9);
 
     }
-    public Garfield (int vides){
+    Garfield (int vides){
         
         super("Garfield");
         setVides(vides);
