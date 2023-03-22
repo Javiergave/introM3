@@ -72,7 +72,7 @@ public class Gat{
         
         setVides(novesVides);
         setPosicio(novaPosicio);
-        if(newNom==null||newNom.isEmpty()){
+        if(newNom==null||newNom.isEmpty()||newNom.isBlank()){
             nom="anònim";
             return;
         }
