@@ -22,7 +22,7 @@ public class Garfield extends Gat{
     @Override
     public void setVides(int novesVides){
         if(novesVides<9&novesVides>=0){
-            super.setVides(novesVides);
+            this.setVides(novesVides);
         }
     }
     public String aixecat(){
