@@ -8,7 +8,7 @@
 
 //Aquest és un gat, te vides i és a una posicio
 public class Gat{
-    private int vides = 7;
+    private int vides ;
     private String posicio = "estirat";
     private final String nom;
 
@@ -92,6 +92,7 @@ public class Gat{
     public Gat(String newNom,String novaPosicio) {
 
         setPosicio(novaPosicio);
+        setVides(7);
         if(newNom==null){
             nom="anònim";
             return;
@@ -106,5 +107,6 @@ public class Gat{
             return;
         }
         nom=newNom;
+        setVides(7);
     }
 }
