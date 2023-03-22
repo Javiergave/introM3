@@ -72,7 +72,7 @@ public class Gat{
         
         setVides(novesVides);
         setPosicio(novaPosicio);
-        if(newNom==null){
+        if(newNom==null||newNom.isEmpty()){
             nom="anònim";
             return;
         }
@@ -82,7 +82,7 @@ public class Gat{
     public Gat(String newNom,int novesVides) {
 
         setVides(novesVides);
-        if(newNom==null){
+        if(newNom==null||newNom.isEmpty()){
             nom="anònim";
             return;
         }
@@ -92,7 +92,7 @@ public class Gat{
     public Gat(String newNom,String novaPosicio) {
 
         setPosicio(novaPosicio);
-        if(newNom==null){
+        if(newNom==null||newNom.isEmpty()){
             nom="anònim";
             return;
         }
@@ -101,7 +101,7 @@ public class Gat{
     }
 
     public Gat(String newNom) {
-        if(newNom==null){
+        if(newNom==null||newNom.isEmpty()){
             nom="anònim";
             return;
         }
