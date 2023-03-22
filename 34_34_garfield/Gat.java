@@ -10,9 +10,9 @@
 public class Gat{
     private int vides = 7;
     private String posicio = "estirat";
-    public final String NOM;
+    private final String nom;
 
-    public String getNom(){ return NOM; }
+    public String getNom(){ return nom; }
     public String getPosicio() { return posicio; }
     public int getVides() { return vides; }
 
@@ -73,38 +73,38 @@ public class Gat{
         setVides(novesVides);
         setPosicio(novaPosicio);
         if(newNom==null){
-            NOM="anònim";
+            nom="anònim";
             return;
         }
-        NOM=newNom;
+        nom=newNom;
 
     }
     public Gat(String newNom,int novesVides) {
 
         setVides(novesVides);
         if(newNom==null){
-            NOM="anònim";
+            nom="anònim";
             return;
         }
-        NOM=newNom;
+        nom=newNom;
 
     }
     public Gat(String newNom,String novaPosicio) {
 
         setPosicio(novaPosicio);
         if(newNom==null){
-            NOM="anònim";
+            nom="anònim";
             return;
         }
-        NOM=newNom;
+        nom=newNom;
 
     }
 
     public Gat(String newNom) {
         if(newNom==null){
-            NOM="anònim";
+            nom="anònim";
             return;
         }
-        NOM=newNom;
+        nom=newNom;
     }
 }
