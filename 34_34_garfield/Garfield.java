@@ -9,7 +9,7 @@
 public class Garfield extends Gat{
     Garfield (){
         super("Garfield");
-        setVides(9);
+        super.setVides(9);
 
     }
     Garfield (int vides){
