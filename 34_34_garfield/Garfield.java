@@ -12,11 +12,7 @@ public class Garfield extends Gat{
         super.setVides(9);
 
     }
-    Garfield (int vides){
-        
-        super("Garfield");
-        super.setVides(vides);
-    }
+    
     
 
     @Override
