@@ -97,6 +97,9 @@ public class Gat{
             return;
         }
         nom=newNom;
+        if(nom.equals("Garfield")){
+            setVides(9);
+        }
 
     }
 
@@ -105,6 +108,10 @@ public class Gat{
             nom="anònim";
             return;
         }
+        
         nom=newNom;
+        if(nom.equals("Garfield")){
+            setVides(9);
+        }
     }
 }
