@@ -60,10 +60,10 @@ public class Botiga {
     }
 
     public Vi cerca(String aTrobar){
-        aTrobar=Vi.normalitzaNom(aTrobar);
+        aTrobar=Vi.normalitzaNom(aTrobar.toLowerCase());
         for(int i=0;i<vi.length;i++){
             if(vi[i]!=null){
-                if(vi[i].getNom().equals(aTrobar)){
+                if(vi[i].getNom().toLowerCase().equals(aTrobar)){
                     return vi[i];
                 }
             }
