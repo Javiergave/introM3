@@ -26,12 +26,12 @@ public class Botiga {
 
     public Vi afegeix(Vi nouVi){
         if(nouVi.esValid()){
-            for(int i=0;i<=vi.length();i++){
+            for(int i=0;i<=vi.length;i++){
                 if(nouVi.getNom().equals(vi[i].getNom())){
                     return null;
                 }
             }
-            for(int i=0;i<=vi.length()){
+            for(int i=0;i<=vi.length;i++){
                 if(vi[i]==null){
                     vi[i]=nouVi;
                     return vi[i];
@@ -43,9 +43,26 @@ public class Botiga {
 
     public Vi elimina(String aEliminar){
         aEliminar=Vi.normalitzaNom(aEliminar);
-        for(int i=0;i<=vi.length();i++){
-            
+        for(int i=0;i<=vi.length;i++){
+            if(vi[i].getNom().equals(aEliminar)){
+                if(vi[i].getEstoc()<=0){
+                    Vi eliminat=vi[i];
+                    vi[i]=null;
+                    return eliminat;
+                }
+            }
         }
+        return null;
+    }
+
+    public Vi cerca(String aTrobar){
+        aTrobar=Vi.normalitzaNom(aTrobar);
+        for(int i=0;i<=vi.length;i++){
+            if(vi[i].getNom().equals(aTrobar)){
+                return vi[i];
+            }
+        }
+        return null;
     }
 }
 
