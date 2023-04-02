@@ -26,11 +26,7 @@ public class Botiga {
 
     public Vi afegeix(Vi nouVi){
         if(nouVi.esValid()){
-            for(int i=0;i<=vi.length;i++){
-                if(vi[i].getNom().equals(vi[i].getNom())){
-                    return null;
-                }
-            }
+            
             for(int i=0;i<=vi.length;i++){
                 if(vi[i]==null){
                     vi[i]=nouVi;
