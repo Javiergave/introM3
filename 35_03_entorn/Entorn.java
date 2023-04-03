@@ -191,8 +191,6 @@ public class Entorn {
 
             System.out.print("preu (enter "+botiga.cerca(nom).getPreu()+")> "); 
             String preuString=Entrada.readLine();
-            //if(!UtilString.esEnter(preuString)){return;}
-
             
             System.out.print("estoc (enter "+botiga.cerca(nom).getEstoc()+")> "); 
             String estocString=Entrada.readLine();
@@ -202,41 +200,42 @@ public class Entorn {
             }
             if(preuString.isEmpty()){
                 preuString="69420";
-            }     
-            if(UtilString.esEnter(preuString)){
-                int preu;
-                if(preuString.equals("69420")){
-                    preu=botiga.cerca(nom).getPreu();
+            }  
+
+            if(!UtilString.esEnter(preuString)){
+                System.out.println("ERROR: el valor ha de ser un enter positiu"); 
+                return;
+            }
+ 
+            int preu;
+            if(preuString.equals("69420")){
+                preu=botiga.cerca(nom).getPreu();
+            }
+            else{
+                preu=Integer.parseInt(preuString);
+            }
+            if(UtilString.esEnter(estocString)){
+                int estoc;
+                if(estocString.equals("69420")){
+                    estoc=botiga.cerca(nom).getEstoc();
                 }
                 else{
-                    preu=Integer.parseInt(preuString);
+                    estoc=Integer.parseInt(estocString);
                 }
-                if(UtilString.esEnter(estocString)){
-                    int estoc;
-                    if(estocString.equals("69420")){
-                        estoc=botiga.cerca(nom).getEstoc();
-                    }
-                    else{
-                        estoc=Integer.parseInt(estocString);
-                    }
 
-                    Vi cercat = botiga.cerca(nom);
+                Vi cercat = botiga.cerca(nom);
 
-                    cercat.setEstoc(estoc);
-                    cercat.setPreu(preu);
+                cercat.setEstoc(estoc);
+                cercat.setPreu(preu);
                     
-                }
-                else{
-                    System.out.println("ERROR: el valor ha de ser un enter positiu");
-                    return; 
-                }
-                System.out.print    ("Modificat:"); 
-                System.out.println(botiga.cerca(nom).toString()); 
             }
             else{
                 System.out.println("ERROR: el valor ha de ser un enter positiu");
                 return; 
             }
+            System.out.print    ("Modificat:"); 
+            System.out.println(botiga.cerca(nom).toString()); 
+            
         }
         else{
             System.out.println("No trobat"); 
