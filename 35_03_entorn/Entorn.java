@@ -81,7 +81,7 @@ public class Entorn {
     } 
 
     public static void mostraPrompt() { 
-        System.out.print("botiga>"); 
+        System.out.print("botiga> "); 
     }
 
     public void processaAfegeix() {
