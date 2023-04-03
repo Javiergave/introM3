@@ -187,7 +187,7 @@ public class Entorn {
         System.out.print("nom (enter cancel·la)> ");
         String nom=Entrada.readLine();
         if(nom.isEmpty()){return;}
-        if(botiga.cerca(nom)==null){
+        if(botiga.cerca(nom)!=null){
             System.out.print("preu (en cèntims)> "); 
             String preuString=Entrada.readLine();
             if(!UtilString.esEnter(preuString)){return;}
