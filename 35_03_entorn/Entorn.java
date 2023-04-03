@@ -91,6 +91,11 @@ public class Entorn {
 
         System.out.print("preu (en cèntims)> "); 
         String preuString=Entrada.readLine();
+
+       
+        if(preuString.isEmpty()){
+            preuString="0";
+        } 
         if(!UtilString.esEnter(preuString)){
             System.out.println("ERROR: el valor ha de ser un enter positiu");
             return;
@@ -102,19 +107,12 @@ public class Entorn {
         if(estocString.isEmpty()){
             estocString="0";
         }
-        if(preuString.isEmpty()){
-            estocString="0";
-        }     
+             
         if(UtilString.esEnter(preuString)){
             int preu=Integer.parseInt(preuString);
             if(UtilString.esEnter(estocString)){
                 int estoc=Integer.parseInt(estocString);
                 Vi nouVi=new Vi(nom,preu,estoc);
-                if(nouVi!=null){
-                    if(botiga.cerca(nouVi.getNom())==null){
-                        
-                    }
-                }
                 System.out.println("Introduït:"); 
             System.out.println(nouVi.toString()); 
             }
@@ -134,7 +132,7 @@ public class Entorn {
             System.out.println("ERROR: el valor ha de ser un enter positiu");
             return;
         }
-       
+        
     }
     public void processaCerca() {
         System.out.print("nom (enter cancel·la)> "); 
