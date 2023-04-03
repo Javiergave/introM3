@@ -87,10 +87,13 @@ public class Entorn {
     public void processaAfegeix() {
         System.out.print("nom (enter cancel·la)> ");
         String nom=Entrada.readLine();
+        System.out.println(); 
         System.out.print("preu (en cèntims)> "); 
         String preuString=Entrada.readLine();
+        System.out.println(); 
         System.out.print("estoc (enter sense estoc)> "); 
         String estocString=Entrada.readLine();
+        System.out.println(); 
         if(estocString.isEmpty()){
             estocString="0";
         }
@@ -132,6 +135,8 @@ public class Entorn {
     public void processaCerca() {
         System.out.print("nom (enter cancel·la)> "); 
         String nomString = Entrada.readLine();
+        System.out.println(); 
+
         Vi cercat = botiga.cerca(nomString);
         if(cercat==null){
             System.out.println("No trobat"); 
@@ -144,6 +149,8 @@ public class Entorn {
     public void processaElimina() {
         System.out.print("nom (enter cancel·la)> ");
         String nom=Entrada.readLine();
+        System.out.println(); 
+
         Vi cercat = botiga.cerca(nom);
         if(cercat==null){
             System.out.println("No trobat"); 
@@ -151,8 +158,12 @@ public class Entorn {
         else{
             System.out.println("A eliminar: ");
             System.out.println(cercat.toString());
+            System.out.println(); 
+
             System.out.print("Segur?> "); 
             String confirma = Entrada.readLine();
+            System.out.println(); 
+
             if(UtilitatsConfirmacio.respostaABoolean(confirma)){
                 if(botiga.elimina(nom)==null){
                     System.out.println("ERROR: no s'ha pogut eliminar"); 
@@ -171,10 +182,16 @@ public class Entorn {
     public void processaModifica() {
         System.out.print("nom (enter cancel·la)> ");
         String nom=Entrada.readLine();
+        System.out.println(); 
+
         System.out.print("preu (en cèntims)> "); 
         String preuString=Entrada.readLine();
+        System.out.println(); 
+
         System.out.print("estoc (enter sense estoc)> "); 
         String estocString=Entrada.readLine();
+        System.out.println(); 
+
 
         Vi aModificar = botiga.cerca(nom);
 
