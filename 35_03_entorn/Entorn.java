@@ -91,8 +91,6 @@ public class Entorn {
 
         System.out.print("preu (en cèntims)> "); 
         String preuString=Entrada.readLine();
-
-       
         if(preuString.isEmpty()){
             preuString="0";
         } 
@@ -125,7 +123,7 @@ public class Entorn {
                     }            
                 }
                 System.out.println("Introduït:"); 
-                System.out.println(nouVi.toString()); 
+                System.out.print(nouVi.toString()); 
             }
         }
         else{
