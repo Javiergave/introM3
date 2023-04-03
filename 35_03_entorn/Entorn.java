@@ -91,7 +91,10 @@ public class Entorn {
 
         System.out.print("preu (en cèntims)> "); 
         String preuString=Entrada.readLine();
-        if(!UtilString.esEnter(preuString)){return;}
+        if(!UtilString.esEnter(preuString)){
+            System.out.println("ERROR: el valor ha de ser un enter positiu");
+            return;
+        }
 
         System.out.print("estoc (enter sense estoc)> "); 
         String estocString=Entrada.readLine();
@@ -127,11 +130,6 @@ public class Entorn {
             System.out.println("Introduït:"); 
             System.out.println(nouVi.toString()); 
         }
-        else{
-            System.out.println("ERROR: el valor ha de ser un enter positiu");
-            return; 
-        }
-        
        
     }
     public void processaCerca() {
