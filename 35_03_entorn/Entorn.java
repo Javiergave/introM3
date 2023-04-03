@@ -162,7 +162,6 @@ public class Entorn {
         else{
             System.out.print("A eliminar:");
             System.out.println(cercat.toString());
-            System.out.println(); 
 
             System.out.print("Segur?> "); 
             String confirma = Entrada.readLine();
