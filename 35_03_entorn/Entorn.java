@@ -191,14 +191,11 @@ public class Entorn {
 
             System.out.print("preu (enter "+botiga.cerca(nom).getPreu()+")> "); 
             String preuString=Entrada.readLine();
-            if(!UtilString.esEnter(preuString)){return;}
+            //if(!UtilString.esEnter(preuString)){return;}
 
             
             System.out.print("estoc (enter "+botiga.cerca(nom).getEstoc()+")> "); 
             String estocString=Entrada.readLine();
-
-
-            Vi aModificar = botiga.cerca(nom);
 
             if(estocString.isEmpty()){
                 estocString="0";
