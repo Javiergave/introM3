@@ -84,7 +84,7 @@ public class Entorn {
         System.out.print("botiga>"); 
     }
 
-    public static void processaAfegeix() {
+    public void processaAfegeix() {
         System.out.print("nom (enter cancel·la)> ");
         String nom=Entrada.readLine();
         System.out.print("preu (en cèntims)> "); 
@@ -129,7 +129,7 @@ public class Entorn {
         
        
     }
-    public static void processaCerca() {
+    public void processaCerca() {
         System.out.print("nom (enter cancel·la)> "); 
         String nomString = Entrada.readLine();
         Vi cercat = botiga.cerca(nomString);
@@ -141,10 +141,34 @@ public class Entorn {
             System.out.println(cercat.toString());
         }
     }
-    public static void processaElimina() {
-        
+    public void processaElimina() {
+        System.out.print("nom (enter cancel·la)> ");
+        String nom=Entrada.readLine();
+        Vi cercat = botiga.cerca(nom);
+        if(cercat==null){
+            System.out.println("No trobat"); 
+        }
+        else{
+            System.out.println("A eliminar: ");
+            System.out.println(cercat.toString());
+            System.out.print("Segur?> "); 
+            String confirma = Entrada.readLine();
+            if(UtilitatsConfirmacio.respostaABoolean(confirma)){
+                if(botiga.elimina(nom)==null){
+                    System.out.println("ERROR: no s'ha pogut eliminar"); 
+                }
+                else{
+                    botiga.elimina(nom);
+                    System.out.println("Eliminat"); 
+                }
+            }
+            else{
+                System.out.println("No eliminat");
+                return; 
+            }
+        }
     }
-    public static void processaModifica() {
+    public void processaModifica() {
         System.out.print("nom (enter cancel·la)> ");
         String nom=Entrada.readLine();
         System.out.print("preu (en cèntims)> "); 
@@ -179,7 +203,7 @@ public class Entorn {
                 return; 
             }
             System.out.println("Modificat:"); 
-            System.out.println(nouVi.toString()); 
+            System.out.println(botiga.cerca(nom).toString()); 
         }
         else{
             System.out.println("ERROR: el valor ha de ser un enter positiu");
