@@ -112,7 +112,7 @@ public class Entorn {
                 Vi nouVi=new Vi(nom,preu,estoc);
                 if(nouVi!=null){
                     Vi fet = botiga.afegeix(nouVi);
-                    if(fet==null){
+                    if(botiga.cerca(nouVi.getNom())==null){
                         System.out.println("ERROR: no s'ha pogut afegir"); 
                     }
                 }
