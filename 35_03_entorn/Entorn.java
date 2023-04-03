@@ -160,7 +160,7 @@ public class Entorn {
             System.out.println("No trobat"); 
         }
         else{
-            System.out.println("A eliminar: ");
+            System.out.println("A eliminar:");
             System.out.println(cercat.toString());
             System.out.println(); 
 
