@@ -201,7 +201,7 @@ public class Entorn {
                 estocString="69420";
             }
             if(preuString.isEmpty()){
-                preuString="60420";
+                preuString="69420";
             }     
             if(UtilString.esEnter(preuString)){
                 int preu;
@@ -213,7 +213,7 @@ public class Entorn {
                 }
                 if(UtilString.esEnter(estocString)){
                     int estoc;
-                    if(preuString.equals("69420")){
+                    if(estocString.equals("69420")){
                         estoc=botiga.cerca(nom).getEstoc();
                     }
                     else{
