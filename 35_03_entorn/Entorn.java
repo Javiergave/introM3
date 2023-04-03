@@ -111,8 +111,8 @@ public class Entorn {
                 int estoc=Integer.parseInt(estocString);
                 Vi nouVi=new Vi(nom,preu,estoc);
                 if(nouVi!=null){
-                    Vi fet = botiga.afegeix(nouVi);
                     if(botiga.cerca(nouVi.getNom())==null){
+                        System.out.println("ERROR: no s'ha pogut afegir"); 
                     }
                 }
             }
@@ -122,8 +122,7 @@ public class Entorn {
             }
             Vi nouVi=new Vi(nom,preu);
             if(nouVi!=null){
-                Vi fet = botiga.afegeix(nouVi);
-                if(fet==null){
+                if(botiga.cerca(nouVi.getNom())==null){
                     System.out.println("ERROR: no s'ha pogut afegir"); 
                 }            }
             System.out.println("Introduït:"); 
