@@ -188,11 +188,13 @@ public class Entorn {
         String nom=Entrada.readLine();
         if(nom.isEmpty()){return;}
         if(botiga.cerca(nom)!=null){
-            System.out.print("preu (en cèntims)> "); 
+
+            System.out.print("preu (enter "+botiga.cerca(nom).getPreu()+")> "); 
             String preuString=Entrada.readLine();
             if(!UtilString.esEnter(preuString)){return;}
 
-            System.out.print("estoc (enter sense estoc)> "); 
+            
+            System.out.print("preu (enter "+botiga.cerca(nom).getEstoc()+")> "); 
             String estocString=Entrada.readLine();
 
 
@@ -218,7 +220,7 @@ public class Entorn {
                     System.out.println("ERROR: el valor ha de ser un enter positiu");
                     return; 
                 }
-                System.out.println("Modificat:"); 
+                System.out.print    ("Modificat:"); 
                 System.out.println(botiga.cerca(nom).toString()); 
             }
             else{
