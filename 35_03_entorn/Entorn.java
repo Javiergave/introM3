@@ -112,7 +112,6 @@ public class Entorn {
                 Vi nouVi=new Vi(nom,preu,estoc);
                 if(nouVi!=null){
                     if(botiga.cerca(nouVi.getNom())==null){
-                        System.out.println("ERROR: no s'ha pogut afegir"); 
                     }
                 }
             }
@@ -123,8 +122,8 @@ public class Entorn {
             Vi nouVi=new Vi(nom,preu);
             if(nouVi!=null){
                 if(botiga.cerca(nouVi.getNom())==null){
-                    System.out.println("ERROR: no s'ha pogut afegir"); 
-                }            }
+                }            
+            }
             System.out.println("Introduït:"); 
             System.out.println(nouVi.toString()); 
         }
