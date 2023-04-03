@@ -88,6 +88,8 @@ public class Entorn {
         System.out.print("nom (enter cancel·la)> ");
         String nom=Entrada.readLine();
         System.out.println(); 
+        if(nom.isEmpty()){return;}
+
         System.out.print("preu (en cèntims)> "); 
         String preuString=Entrada.readLine();
         System.out.println(); 
@@ -136,6 +138,7 @@ public class Entorn {
         System.out.print("nom (enter cancel·la)> "); 
         String nomString = Entrada.readLine();
         System.out.println(); 
+        if(nomString.isEmpty()){return;}
 
         Vi cercat = botiga.cerca(nomString);
         if(cercat==null){
@@ -150,6 +153,7 @@ public class Entorn {
         System.out.print("nom (enter cancel·la)> ");
         String nom=Entrada.readLine();
         System.out.println(); 
+        if(nom.isEmpty()){return;}
 
         Vi cercat = botiga.cerca(nom);
         if(cercat==null){
@@ -183,6 +187,7 @@ public class Entorn {
         System.out.print("nom (enter cancel·la)> ");
         String nom=Entrada.readLine();
         System.out.println(); 
+        if(nom.isEmpty()){return;}
 
         System.out.print("preu (en cèntims)> "); 
         String preuString=Entrada.readLine();
