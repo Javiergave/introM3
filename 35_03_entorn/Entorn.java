@@ -87,8 +87,8 @@ public class Entorn {
     public void processaAfegeix() {
         System.out.print("nom (enter cancel·la)> ");
         String nom=Entrada.readLine();
-        System.out.println(); 
         if(nom.isEmpty()){return;}
+        System.out.println(); 
 
         System.out.print("preu (en cèntims)> "); 
         String preuString=Entrada.readLine();
@@ -137,8 +137,8 @@ public class Entorn {
     public void processaCerca() {
         System.out.print("nom (enter cancel·la)> "); 
         String nomString = Entrada.readLine();
-        System.out.println(); 
         if(nomString.isEmpty()){return;}
+        System.out.println(); 
 
         Vi cercat = botiga.cerca(nomString);
         if(cercat==null){
@@ -186,8 +186,8 @@ public class Entorn {
     public void processaModifica() {
         System.out.print("nom (enter cancel·la)> ");
         String nom=Entrada.readLine();
-        System.out.println(); 
         if(nom.isEmpty()){return;}
+        System.out.println(); 
 
         System.out.print("preu (en cèntims)> "); 
         String preuString=Entrada.readLine();
