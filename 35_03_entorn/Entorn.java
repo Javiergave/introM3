@@ -191,13 +191,6 @@ public class Entorn {
 
             System.out.print("preu (enter "+botiga.cerca(nom).getPreu()+")> "); 
             String preuString=Entrada.readLine();
-            
-            System.out.print("estoc (enter "+botiga.cerca(nom).getEstoc()+")> "); 
-            String estocString=Entrada.readLine();
-
-            if(estocString.isEmpty()){
-                estocString="69420";
-            }
             if(preuString.isEmpty()){
                 preuString="69420";
             }  
@@ -205,6 +198,13 @@ public class Entorn {
             if(!UtilString.esEnter(preuString)){
                 System.out.println("ERROR: el valor ha de ser un enter positiu"); 
                 return;
+            }
+            
+            System.out.print("estoc (enter "+botiga.cerca(nom).getEstoc()+")> "); 
+            String estocString=Entrada.readLine();
+
+            if(estocString.isEmpty()){
+                estocString="69420";
             }
  
             int preu;
