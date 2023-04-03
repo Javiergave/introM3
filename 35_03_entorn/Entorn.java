@@ -198,15 +198,28 @@ public class Entorn {
             String estocString=Entrada.readLine();
 
             if(estocString.isEmpty()){
-                estocString="0";
+                estocString="69420";
             }
             if(preuString.isEmpty()){
-                estocString="0";
+                preuString="60420";
             }     
             if(UtilString.esEnter(preuString)){
-                int preu=Integer.parseInt(preuString);
+                int preu;
+                if(preuString.equals("69420")){
+                    preu=botiga.cerca(nom).getPreu();
+                }
+                else{
+                    preu=Integer.parseInt(preuString);
+                }
                 if(UtilString.esEnter(estocString)){
-                    int estoc=Integer.parseInt(estocString);
+                    int estoc;
+                    if(preuString.equals("69420")){
+                        estoc=botiga.cerca(nom).getEstoc();
+                    }
+                    else{
+                        estoc=Integer.parseInt(estocString);
+                    }
+
                     Vi cercat = botiga.cerca(nom);
 
                     cercat.setEstoc(estoc);
