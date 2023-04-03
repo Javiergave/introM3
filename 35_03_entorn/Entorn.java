@@ -194,7 +194,7 @@ public class Entorn {
             if(!UtilString.esEnter(preuString)){return;}
 
             
-            System.out.print("preu (enter "+botiga.cerca(nom).getEstoc()+")> "); 
+            System.out.print("estoc (enter "+botiga.cerca(nom).getEstoc()+")> "); 
             String estocString=Entrada.readLine();
 
 
