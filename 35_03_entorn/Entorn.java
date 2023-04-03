@@ -112,20 +112,24 @@ public class Entorn {
                 Vi nouVi=new Vi(nom,preu,estoc);
                 if(nouVi!=null){
                     if(botiga.cerca(nouVi.getNom())==null){
+                        System.out.println("ERROR: el valor ha de ser un enter positiu");
+                        return; 
                     }
                 }
+                System.out.println("Introduït:"); 
+            System.out.println(nouVi.toString()); 
             }
             else{
-                System.out.println("ERROR: el valor ha de ser un enter positiu");
-                return; 
+                Vi nouVi=new Vi(nom,preu);
+                if(nouVi!=null){
+                    if(botiga.cerca(nouVi.getNom())==null){
+                        System.out.println("ERROR: el valor ha de ser un enter positiu");
+                        return; 
+                    }            
+                }
+                System.out.println("Introduït:"); 
+                System.out.println(nouVi.toString()); 
             }
-            Vi nouVi=new Vi(nom,preu);
-            if(nouVi!=null){
-                if(botiga.cerca(nouVi.getNom())==null){
-                }            
-            }
-            System.out.println("Introduït:"); 
-            System.out.println(nouVi.toString()); 
         }
        
     }
