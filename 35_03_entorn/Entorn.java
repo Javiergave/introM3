@@ -187,48 +187,48 @@ public class Entorn {
         System.out.print("nom (enter cancel·la)> ");
         String nom=Entrada.readLine();
         if(nom.isEmpty()){return;}
+        if(botiga.cerca(nom)==null){
+            System.out.print("preu (en cèntims)> "); 
+            String preuString=Entrada.readLine();
+            if(!UtilString.esEnter(preuString)){return;}
 
-        System.out.print("preu (en cèntims)> "); 
-        String preuString=Entrada.readLine();
-        if(!UtilString.esEnter(preuString)){return;}
-
-        System.out.print("estoc (enter sense estoc)> "); 
-        String estocString=Entrada.readLine();
+            System.out.print("estoc (enter sense estoc)> "); 
+            String estocString=Entrada.readLine();
 
 
-        Vi aModificar = botiga.cerca(nom);
+            Vi aModificar = botiga.cerca(nom);
 
-        if(estocString.isEmpty()){
-            estocString="0";
-        }
-        if(preuString.isEmpty()){
-            estocString="0";
-        }     
-        if(UtilString.esEnter(preuString)){
-            int preu=Integer.parseInt(preuString);
-            if(UtilString.esEnter(estocString)){
-                int estoc=Integer.parseInt(estocString);
-                Vi cercat = botiga.cerca(nom);
-                if(cercat==null){
-                    System.out.println("No trobat"); 
-                    return;
-                }
-                else{
+            if(estocString.isEmpty()){
+                estocString="0";
+            }
+            if(preuString.isEmpty()){
+                estocString="0";
+            }     
+            if(UtilString.esEnter(preuString)){
+                int preu=Integer.parseInt(preuString);
+                if(UtilString.esEnter(estocString)){
+                    int estoc=Integer.parseInt(estocString);
+                    Vi cercat = botiga.cerca(nom);
+
                     cercat.setEstoc(estoc);
                     cercat.setPreu(preu);
+                    
                 }
+                else{
+                    System.out.println("ERROR: el valor ha de ser un enter positiu");
+                    return; 
+                }
+                System.out.println("Modificat:"); 
+                System.out.println(botiga.cerca(nom).toString()); 
             }
             else{
                 System.out.println("ERROR: el valor ha de ser un enter positiu");
                 return; 
             }
-            System.out.println("Modificat:"); 
-            System.out.println(botiga.cerca(nom).toString()); 
         }
         else{
-            System.out.println("ERROR: el valor ha de ser un enter positiu");
-            return; 
+            System.out.println("No trobat"); 
+            return;
         }
-        
     }
 }
