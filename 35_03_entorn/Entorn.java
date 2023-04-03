@@ -88,14 +88,14 @@ public class Entorn {
         System.out.print("nom (enter cancel·la)> ");
         String nom=Entrada.readLine();
         if(nom.isEmpty()){return;}
-        System.out.println(); 
 
         System.out.print("preu (en cèntims)> "); 
         String preuString=Entrada.readLine();
-        System.out.println(); 
+        if(!UtilString.esEnter(preuString)){return;}
+
         System.out.print("estoc (enter sense estoc)> "); 
         String estocString=Entrada.readLine();
-        System.out.println(); 
+
         if(estocString.isEmpty()){
             estocString="0";
         }
@@ -138,7 +138,6 @@ public class Entorn {
         System.out.print("nom (enter cancel·la)> "); 
         String nomString = Entrada.readLine();
         if(nomString.isEmpty()){return;}
-        System.out.println(); 
 
         Vi cercat = botiga.cerca(nomString);
         if(cercat==null){
@@ -152,7 +151,6 @@ public class Entorn {
     public void processaElimina() {
         System.out.print("nom (enter cancel·la)> ");
         String nom=Entrada.readLine();
-        System.out.println(); 
         if(nom.isEmpty()){return;}
 
         Vi cercat = botiga.cerca(nom);
@@ -187,15 +185,13 @@ public class Entorn {
         System.out.print("nom (enter cancel·la)> ");
         String nom=Entrada.readLine();
         if(nom.isEmpty()){return;}
-        System.out.println(); 
 
         System.out.print("preu (en cèntims)> "); 
         String preuString=Entrada.readLine();
-        System.out.println(); 
+        if(!UtilString.esEnter(preuString)){return;}
 
         System.out.print("estoc (enter sense estoc)> "); 
         String estocString=Entrada.readLine();
-        System.out.println(); 
 
 
         Vi aModificar = botiga.cerca(nom);
