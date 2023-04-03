@@ -165,7 +165,6 @@ public class Entorn {
 
             System.out.print("Segur?> "); 
             String confirma = Entrada.readLine();
-            System.out.println(); 
 
             if(UtilitatsConfirmacio.respostaABoolean(confirma)){
                 if(botiga.elimina(nom)==null){
