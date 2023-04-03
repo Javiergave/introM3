@@ -1,3 +1,11 @@
+/*
+ * Copyright 2022 Javier García Vera
+ * 
+ * This is free software, licensed under the GNU General Public License V3.
+ * See http://www.gnu.org/licenses/gpl.html for more information
+ * 
+ */
+//Aquest programa representa l'objecte Vi, te un preu un nom que no es pot canviar i un estoc
 public class Vi { 
     private final String nom;
     private int preu;
