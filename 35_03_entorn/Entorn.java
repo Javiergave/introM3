@@ -146,7 +146,7 @@ public class Entorn {
             System.out.println("No trobat"); 
         }
         else{
-            System.out.println("Trobat: ");
+            System.out.print("Trobat:");
             System.out.println(cercat.toString());
         }
     }
