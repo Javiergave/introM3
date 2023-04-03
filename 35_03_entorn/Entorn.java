@@ -111,8 +111,12 @@ public class Entorn {
             if(UtilString.esEnter(estocString)){
                 int estoc=Integer.parseInt(estocString);
                 Vi nouVi=new Vi(nom,preu,estoc);
+                if(botiga.afegeix(nouVi)==null){
+                    System.out.println("ERROR: no s'ha pogut afegir");
+                    return; 
+                }
                 System.out.println("Introduït:"); 
-            System.out.println(nouVi.toString()); 
+                System.out.print(nouVi.toString()); 
             }
             else{
                 Vi nouVi=new Vi(nom,preu);
