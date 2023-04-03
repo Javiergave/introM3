@@ -130,6 +130,10 @@ public class Entorn {
                 System.out.println(nouVi.toString()); 
             }
         }
+        else{
+            System.out.println("ERROR: el valor ha de ser un enter positiu");
+            return;
+        }
        
     }
     public void processaCerca() {
