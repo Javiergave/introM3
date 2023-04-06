@@ -26,7 +26,7 @@ public class Botiga {
     }
 
     public Vi afegeix(Vi nouVi) throws IOException{
-        FileWriter file = new FileWriter("botiga.csv",true);
+        FileWriter file = new FileWriter("./botiga.csv",true);
         PrintWriter botigacsv= new PrintWriter(file);
         if(nouVi.esValid()){
             for(int i=0;i<vins.length;i++){
@@ -82,16 +82,16 @@ public class Botiga {
     }
 
     public void iniciaRecorregut() throws IOException{
-        File botiga=new File("botiga.csv");
+        File botiga=new File("./botiga.csv");
         if(botiga.exists()){
             int referencies=0;
-            FileReader file = new FileReader("botiga.csv");
+            FileReader file = new FileReader("./botiga.csv");
             BufferedReader botigacsv= new BufferedReader(file);
         }
     }
 
     public Vi getSeguent() throws IOException{
-        FileReader file = new FileReader("botiga.csv");
+        FileReader file = new FileReader("./botiga.csv");
         BufferedReader botigaCsv= new BufferedReader(file);
 
         String vi = botigaCsv.readLine();
