@@ -80,7 +80,7 @@ public class Entorn {
         }
         int referencies=0;
         if(botiga.exists()){
-            FileReader file = new FileReader("botiga.csv");
+            FileReader file = new FileReader("35_04_csv/botiga.csv");
             BufferedReader botigacsv= new BufferedReader(file);
             while(true){
                 String linia = botigacsv.readLine();
