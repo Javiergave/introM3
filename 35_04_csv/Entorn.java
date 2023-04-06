@@ -14,10 +14,10 @@ public class Entorn {
 
     public static void main(String[] args) throws IOException{
 
-        File botiga=new File("35_04_csv/botiga.csv");
+        File botiga=new File("botiga.csv");
         if(botiga.exists()){
             int referencies=0;
-            FileReader file = new FileReader("35_04_csv/botiga.csv");
+            FileReader file = new FileReader("botiga.csv");
             BufferedReader botigacsv= new BufferedReader(file);
             while(true){
                 String linia = botigacsv.readLine();
@@ -78,7 +78,7 @@ public class Entorn {
 
         }
         int referencies=0;
-        FileReader file = new FileReader("35_04_csv/botiga.csv");
+        FileReader file = new FileReader("botiga.csv");
         BufferedReader botigacsv= new BufferedReader(file);
         while(true){
             String linia = botigacsv.readLine();
