@@ -14,7 +14,7 @@ public class Entorn {
 
     public static void main(String[] args) throws IOException{
 
-        File botiga=new File("botiga.csv");
+        File botiga=new File("/botiga.csv");
         
 
         Entorn entorn = new Entorn();
