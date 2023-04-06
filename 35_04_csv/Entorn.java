@@ -14,7 +14,7 @@ public class Entorn {
 
     public static void main(String[] args) throws IOException{
 
-        File botiga=new File("35_04_csv/botiga.csv");
+        File botiga=new File("./botiga.csv");
         
 
         Entorn entorn = new Entorn();
@@ -22,7 +22,7 @@ public class Entorn {
         mostraBenvinguda();
         if(botiga.exists()){
             
-            FileReader file = new FileReader("35_04_csv/botiga.csv");
+            FileReader file = new FileReader("./botiga.csv");
             BufferedReader botigacsv= new BufferedReader(file);
             while(true){
                 String linia = botigacsv.readLine();
