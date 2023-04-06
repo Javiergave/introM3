@@ -15,6 +15,11 @@ public class Entorn {
     public static void main(String[] args) throws IOException{
 
         File botiga=new File("botiga.csv");
+        
+
+        Entorn entorn = new Entorn();
+
+        mostraBenvinguda();
         if(botiga.exists()){
             int referencies=0;
             FileReader file = new FileReader("botiga.csv");
@@ -35,10 +40,6 @@ public class Entorn {
         else{
             System.out.println("Referències llegides: 0");
         }
-
-        Entorn entorn = new Entorn();
-
-        mostraBenvinguda();
 
         while (true) {
 
