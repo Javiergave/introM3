@@ -23,15 +23,10 @@ public class Hora {
 
     }
     public Hora(int hora,int minut,int segon) throws Exception{
-        if(hora<=23&&hora>=0){
-            if(minut<60&&minut>=0){
-                if(segon<60&&segon>=0){
-                    setHores(hora);
-                    setMinuts(minut);
-                    setSegons(segon);
-                }
-            }        
-        }  
+        
+        setHores(hora);
+        setMinuts(minut);
+        setSegons(segon);
     }
     public void incrementa()throws Exception{
         if(getSegons()+1>59){
