@@ -199,16 +199,26 @@ public class Hora {
     public int getSegons(){
         return segons;
     }
-    public void setHores(int novaHora){
+    public boolean setHores(int novaHora){
         if(novaHora<=23&&novaHora>=0){
             hores=novaHora;
+            return true;
         }
+        return false;
     }
-    public void setMinuts(int novaMinuts){
-        minuts=novaMinuts;
+    public boolean setMinuts(int novaMinuts){
+        if(novaMinuts<60&&novaMinuts>=0){
+            minuts=novaMinuts;
+            return true;
+        }
+        return false;
     }
-    public void setSegons(int novaSegons){
-        segons=novaSegons;
+    public boolean setSegons(int novaSegons){
+        if(novaSegons>=0&&novaSegons<60){
+            segons=novaSegons;
+            return true;
+        }
+        return false;
     }
     private static String composaOperadorComparacio(Hora hora1, Hora hora2) {
 
