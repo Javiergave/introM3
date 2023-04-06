@@ -23,15 +23,10 @@ public class Hora {
 
     }
     public Hora(int hora,int minut,int segon) throws Exception{
-        if(hora<=23&&hora>=0){
-            if(minut<60&&minut>=0){
-                if(segon<60&&segon>=0){
-                    setHores(hora);
-                    setMinuts(minut);
-                    setSegons(segon);
-                }
-            }        
-        }  
+        
+        setHores(hora);
+        setMinuts(minut);
+        setSegons(segon);
     }
     public void incrementa()throws Exception{
         if(getSegons()+1>59){
@@ -204,21 +199,24 @@ public class Hora {
 
         if(novaHora<=23&&novaHora>=0){
             hores=novaHora;
+            return;
         }
-        throw new Exception("hores fora de rang: «"+novaHora+"»");
+        throw new Exception("hores fora de rang: "+novaHora);
     }
     public void setMinuts(int novaMinuts) throws Exception{
 
         if(novaMinuts<60&&novaMinuts>=0){
             minuts=novaMinuts;
+            return;
         }
-        throw new Exception("minuts fora de rang: «"+novaMinuts+"»");
+        throw new Exception("minuts fora de rang: "+novaMinuts);
     }
     public void setSegons(int novaSegons) throws Exception{
         if(novaSegons>=0&&novaSegons<60){
             segons=novaSegons;
+            return;
         }
-        throw new Exception("segons fora de rang: «"+novaSegons+"»");
+        throw new Exception("segons fora de rang: "+novaSegons);
     }
     private static String composaOperadorComparacio(Hora hora1, Hora hora2) {
 
