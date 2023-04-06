@@ -18,10 +18,10 @@ public class Entorn {
         
 
         Entorn entorn = new Entorn();
-
+        int referencies=0;
         mostraBenvinguda();
         if(botiga.exists()){
-            int referencies=0;
+            
             FileReader file = new FileReader("botiga.csv");
             BufferedReader botigacsv= new BufferedReader(file);
             while(true){
@@ -78,21 +78,8 @@ public class Entorn {
             }
 
         }
-        int referencies=0;
-            FileReader file = new FileReader(botiga);
-            BufferedReader botigacsv= new BufferedReader(file);
-            while(true){
-                String linia = botigacsv.readLine();
-                if(linia==null){
-                    break;
-                }
-                else{
-                    referencies++;
-                }
-            }
+        
             System.out.println("Referències guardades: "+referencies);
-            botigacsv.close();
-            file.close();
         
         mostraComiat();
 
