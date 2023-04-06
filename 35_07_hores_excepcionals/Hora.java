@@ -204,6 +204,7 @@ public class Hora {
 
         if(novaHora<=23&&novaHora>=0){
             hores=novaHora;
+            return;
         }
         throw new Exception("hores fora de rang: "+novaHora);
     }
@@ -211,12 +212,14 @@ public class Hora {
 
         if(novaMinuts<60&&novaMinuts>=0){
             minuts=novaMinuts;
+            return;
         }
         throw new Exception("minuts fora de rang: "+novaMinuts);
     }
     public void setSegons(int novaSegons) throws Exception{
         if(novaSegons>=0&&novaSegons<60){
             segons=novaSegons;
+            return;
         }
         throw new Exception("segons fora de rang: "+novaSegons);
     }
