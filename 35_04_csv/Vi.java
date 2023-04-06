@@ -80,9 +80,9 @@ public class Vi {
     public String[] aArrayString(){
         String[] valorsVi= new String[3];
 
-        valorsVi[0] = this.getNom();
-        valorsVi[1] = String.valueOf(this.getPreu());
-        valorsVi[2] = String.valueOf(this.getEstoc());
+        valorsVi[0] = this.getNom()+";";
+        valorsVi[1] = String.valueOf(this.getPreu())+";";
+        valorsVi[2] = String.valueOf(this.getEstoc())+"\n";
         
         return valorsVi;
     }

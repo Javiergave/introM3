@@ -14,10 +14,10 @@ public class Entorn {
 
     public static void main(String[] args) throws IOException{
 
-        File botiga=new File("botiga.csv");
+        File botiga=new File("35_04_csv/botiga.csv");
         if(botiga.exists()){
             int referencies=0;
-            FileReader file = new FileReader("botiga.csv");
+            FileReader file = new FileReader("35_04_csv/botiga.csv");
             BufferedReader botigacsv= new BufferedReader(file);
             while(true){
                 String linia = botigacsv.readLine();
@@ -29,10 +29,11 @@ public class Entorn {
                 }
             }
             botigacsv.close();
-            System.out.println("Referències llegides: "+referencies); 
+            file.close();
+            System.out.println("Referències llegides: "+referencies);
         }
         else{
-            System.out.println("Referències llegides: 0"); 
+            System.out.println("Referències llegides: 0");
         }
 
         Entorn entorn = new Entorn();
@@ -76,7 +77,21 @@ public class Entorn {
             }
 
         }
-
+        int referencies=0;
+        FileReader file = new FileReader("35_04_csv/botiga.csv");
+        BufferedReader botigacsv= new BufferedReader(file);
+        while(true){
+            String linia = botigacsv.readLine();
+            if(linia==null){
+                break;
+            }
+            else{
+                referencies++;
+            }
+        }
+        System.out.println("Referències guardades: "+referencies);
+        botigacsv.close();
+        file.close();
         mostraComiat();
 
     }
@@ -107,7 +122,7 @@ public class Entorn {
         System.out.print("botiga> "); 
     }
 
-    public void processaAfegeix() {
+    public void processaAfegeix() throws IOException{
         System.out.print("nom (enter cancel·la)> ");
         String nom=Entrada.readLine();
         if(nom.isEmpty()){return;}

@@ -12,8 +12,6 @@ public class Botiga {
     private final int DEFAULT_MAX_VINS=10;
     private Vi[] vins; 
 
-
-
     public Botiga(){
         vins=new Vi[DEFAULT_MAX_VINS];
     }
@@ -28,12 +26,16 @@ public class Botiga {
     }
 
     public Vi afegeix(Vi nouVi) throws IOException{
-        FileWriter file = new FileWriter("botiga.csv");
-        BufferedWriter botigacsv= new BufferedWriter(file);
+        FileWriter file = new FileWriter("35_04_csv/botiga.csv",true);
+        PrintWriter botigacsv= new PrintWriter(file);
         if(nouVi.esValid()){
             for(int i=0;i<vins.length;i++){
                 if(vins[i]!=null){
                     if(nouVi.getNom().equals(vins[i].getNom())){
+                        String text=null;
+                        botigacsv.append(text+"\n");
+                        botigacsv.close();
+                        file.close();
                         return null;
                     }
                 }
@@ -41,6 +43,9 @@ public class Botiga {
             for(int i=0;i<vins.length;i++){
                 if(vins[i]==null){
                     vins[i]=nouVi;
+                    botigacsv.append(vins[i].getNom()+";"+vins[i].getPreu()+";"+vins[i].getEstoc()+"\n");
+                    botigacsv.close();
+
                     return vins[i];
                 }
             }
@@ -76,12 +81,25 @@ public class Botiga {
         return null;
     }
 
-    public void iniciaRecorregut() {
-
+    public void iniciaRecorregut() throws IOException{
+        File botiga=new File("35_04_csv/botiga.csv");
+        if(botiga.exists()){
+            int referencies=0;
+            FileReader file = new FileReader("35_04_csv/botiga.csv");
+            BufferedReader botigacsv= new BufferedReader(file);
+        }
     }
 
-    public Vi getSeguent(){
-        return new Vi("Default",0);
+    public Vi getSeguent() throws IOException{
+        FileReader file = new FileReader("35_04_csv/botiga.csv");
+        BufferedReader botigaCsv= new BufferedReader(file);
+
+        String vi = botigaCsv.readLine();
+        String[] vins = new String[3];
+        vins= vi.split(";");
+        botigaCsv.close();
+        file.close();
+        return Vi.deArrayString(vins);
     }
 }
 

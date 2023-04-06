@@ -7,9 +7,11 @@
  */
 //Aquest programa comprova el funcionament de Botiga.java
 
+import java.io.IOException;
+
 public class UsaBotiga {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         System.out.println("Creem uns quants vins");
 
