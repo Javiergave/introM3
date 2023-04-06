@@ -14,10 +14,15 @@ public class Entorn {
 
     public static void main(String[] args) throws IOException{
 
-        File botiga=new File("35_04_csv/botiga.csv");
+        File botiga=new File("./botiga.csv");
+        
+
+        Entorn entorn = new Entorn();
+        int referencies=0;
+        mostraBenvinguda();
         if(botiga.exists()){
-            int referencies=0;
-            FileReader file = new FileReader("35_04_csv/botiga.csv");
+            
+            FileReader file = new FileReader("./botiga.csv");
             BufferedReader botigacsv= new BufferedReader(file);
             while(true){
                 String linia = botigacsv.readLine();
@@ -35,10 +40,6 @@ public class Entorn {
         else{
             System.out.println("Referències llegides: 0");
         }
-
-        Entorn entorn = new Entorn();
-
-        mostraBenvinguda();
 
         while (true) {
 
@@ -77,21 +78,9 @@ public class Entorn {
             }
 
         }
-        int referencies=0;
-        FileReader file = new FileReader("35_04_csv/botiga.csv");
-        BufferedReader botigacsv= new BufferedReader(file);
-        while(true){
-            String linia = botigacsv.readLine();
-            if(linia==null){
-                break;
-            }
-            else{
-                referencies++;
-            }
-        }
-        System.out.println("Referències guardades: "+referencies);
-        botigacsv.close();
-        file.close();
+        
+            System.out.println("Referències guardades: "+referencies);
+        
         mostraComiat();
 
     }
