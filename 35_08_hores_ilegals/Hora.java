@@ -22,13 +22,13 @@ public class Hora {
     public Hora(){
 
     }
-    public Hora(int hora,int minut,int segon) throws Exception{
+    public Hora(int hora,int minut,int segon) throws IllegalArgumentException{
         
         setHores(hora);
         setMinuts(minut);
         setSegons(segon);
     }
-    public void incrementa()throws Exception{
+    public void incrementa()throws IllegalArgumentException{
         if(getSegons()+1>59){
             if(getMinuts()+1>59){
                 if(getHores()+1>23){
@@ -47,7 +47,7 @@ public class Hora {
             setSegons(getSegons()+1);
         }
     }
-    public void incrementa(int incrementa)throws Exception{
+    public void incrementa(int incrementa)throws IllegalArgumentException{
 
         if (incrementa<0){
             decrementa(-incrementa);
@@ -100,7 +100,7 @@ public class Hora {
         }
 
     }
-    public void decrementa()throws Exception{
+    public void decrementa()throws IllegalArgumentException{
         if(getSegons()-1<0){
             if(getMinuts()-1<0){
                 if(getHores()-1<0){
@@ -120,7 +120,7 @@ public class Hora {
             setSegons(getSegons()-1);
         }
     }
-    public void decrementa(int decrementa)throws Exception{
+    public void decrementa(int decrementa)throws IllegalArgumentException{
         if (decrementa<0){
             incrementa(-decrementa);
         }
@@ -195,28 +195,28 @@ public class Hora {
     public int getSegons(){
         return segons;
     }
-    public void setHores(int novaHora) throws Exception{
+    public void setHores(int novaHora) throws IllegalArgumentException{
 
         if(novaHora<=23&&novaHora>=0){
             hores=novaHora;
             return;
         }
-        throw new Exception("hores fora de rang: "+novaHora);
+        throw new IllegalArgumentException("hores fora de rang: "+novaHora);
     }
-    public void setMinuts(int novaMinuts) throws Exception{
+    public void setMinuts(int novaMinuts) throws IllegalArgumentException{
 
         if(novaMinuts<60&&novaMinuts>=0){
             minuts=novaMinuts;
             return;
         }
-        throw new Exception("minuts fora de rang: "+novaMinuts);
+        throw new IllegalArgumentException("minuts fora de rang: "+novaMinuts);
     }
-    public void setSegons(int novaSegons) throws Exception{
+    public void setSegons(int novaSegons) throws IllegalArgumentException{
         if(novaSegons>=0&&novaSegons<60){
             segons=novaSegons;
             return;
         }
-        throw new Exception("segons fora de rang: "+novaSegons);
+        throw new IllegalArgumentException("segons fora de rang: "+novaSegons);
     }
     private static String composaOperadorComparacio(Hora hora1, Hora hora2) {
 
@@ -239,7 +239,7 @@ public class Hora {
     }
     
     
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws IllegalArgumentException{
     
         Hora hora1 = new Hora();
     

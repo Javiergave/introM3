@@ -5,7 +5,7 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/.introprg" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/33_04_elpenjat" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/35_07_hores_excepcionals" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/35_08_hores_ilegals" isTestSource="true" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
