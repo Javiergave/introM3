@@ -29,27 +29,11 @@ public class Botiga {
         FileWriter file = new FileWriter("./botiga.csv",true);
         PrintWriter botigacsv= new PrintWriter(file);
         if(nouVi.esValid()){
-            for(int i=0;i<vins.length;i++){
-                if(vins[i]!=null){
-                    if(nouVi.getNom().equals(vins[i].getNom())){
-                        String text=null;
-                        botigacsv.append(text+"\n");
-                        botigacsv.close();
-                        file.close();
-                        return null;
-                    }
-                }
+            if(cerca(nouVi.getNom())==null){
+                botigacsv.append(nouVi.aArrayString()+"\n");
             }
-            for(int i=0;i<vins.length;i++){
-                if(vins[i]==null){
-                    vins[i]=nouVi;
-                    botigacsv.append(vins[i].getNom()+";"+vins[i].getPreu()+";"+vins[i].getEstoc()+"\n");
-                    botigacsv.close();
-
-                    return vins[i];
-                }
-            }
-        }
+        }                 
+            
         return null;
     }
 
