@@ -83,7 +83,7 @@ public class Entorn {
         }
         
         if(botiga.exists()){
-            
+            referencies=0;
             FileReader file = new FileReader("./botiga.csv");
             BufferedReader botigacsv= new BufferedReader(file);
             while(true){
@@ -97,7 +97,7 @@ public class Entorn {
             }
             botigacsv.close();
             file.close();
-            System.out.println("Referències llegides: "+referencies);
+            System.out.println("Referències guardades: "+referencies);
         }        
         mostraComiat();
 
