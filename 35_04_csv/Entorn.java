@@ -181,7 +181,7 @@ public class Entorn {
         }
         
     }
-    public void processaCerca() {
+    public void processaCerca() throws IOException{
         System.out.print("nom (enter cancel·la)> "); 
         String nomString = Entrada.readLine();
         if(nomString.isEmpty()){return;}
@@ -195,7 +195,7 @@ public class Entorn {
             System.out.println(cercat.toString());
         }
     }
-    public void processaElimina() {
+    public void processaElimina() throws IOException{
         System.out.print("nom (enter cancel·la)> ");
         String nom=Entrada.readLine();
         if(nom.isEmpty()){return;}
@@ -226,7 +226,7 @@ public class Entorn {
             }
         }
     }
-    public void processaModifica() {
+    public void processaModifica() throws IOException{
         System.out.print("nom (enter cancel·la)> ");
         String nom=Entrada.readLine();
         if(nom.isEmpty()){return;}
