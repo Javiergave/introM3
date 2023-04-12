@@ -69,12 +69,12 @@ public class Botiga {
         return null;
     }
 
-    public Vi cerca(String aTrobar){
+    public Vi cerca(String aTrobar) throws IOException{
         aTrobar=Vi.normalitzaNom(aTrobar.toLowerCase());
         for(int i=0;i<vins.length;i++){
-            if(vins[i]!=null){
-                if(vins[i].getNom().toLowerCase().equals(aTrobar)){
-                    return vins[i];
+            if(getSeguent()!=null){
+                if(getSeguent().getNom().toLowerCase().equals(aTrobar)){
+                    return getSeguent();
                 }
             }
         }
