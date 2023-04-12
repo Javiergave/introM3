@@ -14,8 +14,11 @@ public class Entorn {
 
     public static void main(String[] args) throws IOException{
 
+
         File botiga=new File("./botiga.csv");
-        
+        if(botiga.exists()!=true){
+            botiga.createNewFile();
+        }
 
         Entorn entorn = new Entorn();
         int referencies=0;
