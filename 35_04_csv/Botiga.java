@@ -70,15 +70,26 @@ public class Botiga {
     }
 
     public Vi cerca(String aTrobar) throws IOException{
-        aTrobar=Vi.normalitzaNom(aTrobar.toLowerCase());
-        for(int i=0;i<vins.length;i++){
-            if(getSeguent()!=null){
-                if(getSeguent().getNom().toLowerCase().equals(aTrobar)){
-                    return getSeguent();
-                }
+        aTrobar = Vi.normalitzaNom(aTrobar);
+        FileReader file = new FileReader("./botiga.csv");
+        BufferedReader botigaCsv= new BufferedReader(file);
+        while(true){
+            String vi = botigaCsv.readLine();
+            if(vi==null){
+                botigaCsv.close();
+                file.close();
+                return null;
             }
+            String[] vins = new String[3];
+            vins= vi.split(";");
+            
+            if(Vi.deArrayString(vins).getNom().equals(aTrobar)){
+                botigaCsv.close();
+                file.close();
+                return Vi.deArrayString(vins);
+            }
+       
         }
-        return null;
     }
 
     public void iniciaRecorregut() throws IOException{
