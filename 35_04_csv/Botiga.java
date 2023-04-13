@@ -29,16 +29,14 @@ public class Botiga {
         FileWriter file = new FileWriter("botiga.csv",true);
         PrintWriter botigacsv= new PrintWriter(file);
         if(nouVi.esValid()){
-            for(int i=0;i<vins.length;i++){
-                if(vins[i]!=null){
-                    if(nouVi.getNom().equals(vins[i].getNom())){
-                        String text=null;
-                        botigacsv.append(text+"\n");
-                        botigacsv.close();
-                        file.close();
-                        return null;
-                    }
-                }
+            if(cerca(nouVi.getNom())==null){  
+                    String[] text = new String[3];
+                    text = nouVi.aArrayString();
+                    botigacsv.append(text[0]+text[1]+text[2]);
+                    botigacsv.close();
+                    file.close();
+                    return nouVi;
+                }   
             }
             for(int i=0;i<vins.length;i++){
                 if(vins[i]==null){
@@ -49,9 +47,8 @@ public class Botiga {
                     return vins[i];
                 }
             }
-        }
+        
         return null;
-    
     }
 
     public Vi elimina(String aEliminar){
