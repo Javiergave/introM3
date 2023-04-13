@@ -96,12 +96,11 @@ public class Entorn {
             BufferedReader botigacsv= new BufferedReader(file);
             while(true){
                 String linia = botigacsv.readLine();
-                if(linia==null){
-                    break;
-                }
-                else{
+                if(linia!=null){
                     referencies++;
                 }
+                else{break;}
+                
             }
             botigacsv.close();
             file.close();
