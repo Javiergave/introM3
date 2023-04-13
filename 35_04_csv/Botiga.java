@@ -29,12 +29,29 @@ public class Botiga {
         FileWriter file = new FileWriter("./botiga.csv",true);
         PrintWriter botigacsv= new PrintWriter(file);
         if(nouVi.esValid()){
-            if(cerca(nouVi.getNom())==null){
-                botigacsv.append(nouVi.aArrayString()+"\n");
+            for(int i=0;i<vins.length;i++){
+                if(vins[i]!=null){
+                    if(nouVi.getNom().equals(vins[i].getNom())){
+                        String text=null;
+                        botigacsv.append(text+"\n");
+                        botigacsv.close();
+                        file.close();
+                        return null;
+                    }
+                }
             }
-        }                 
-            
+            for(int i=0;i<vins.length;i++){
+                if(vins[i]==null){
+                    vins[i]=nouVi;
+                    botigacsv.append(vins[i].getNom()+";"+vins[i].getPreu()+";"+vins[i].getEstoc()+"\n");
+                    botigacsv.close();
+
+                    return vins[i];
+                }
+            }
+        }
         return null;
+    
     }
 
     public Vi elimina(String aEliminar){
@@ -72,7 +89,7 @@ public class Botiga {
                 file.close();
                 return Vi.deArrayString(vins);
             }
-       
+            
         }
     }
 
