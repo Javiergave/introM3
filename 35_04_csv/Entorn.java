@@ -91,7 +91,7 @@ public class Entorn {
     }
 
     public static void mostraComiat() throws IOException{
-            int referencies=0;
+            int referencies=1;
             FileReader file = new FileReader("botiga.csv");
             BufferedReader botigacsv= new BufferedReader(file);
             while(true){
