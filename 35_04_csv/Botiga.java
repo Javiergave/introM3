@@ -35,7 +35,7 @@ public class Botiga {
                     botigacsv.append(text[0]+text[1]+text[2]);
                     botigacsv.close();
                     file.close();
-                    for(int i = 0; i<=vins.length;i++){
+                    for(int i = 0; i<vins.length;i++){
                         if(vins[i]==null){
                             vins[i] = nouVi;
                         }
