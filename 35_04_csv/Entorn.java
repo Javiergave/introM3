@@ -83,7 +83,7 @@ public class Entorn {
         }
         
         if(botiga.exists()){
-            referencies=0;
+            
             FileReader file = new FileReader("./botiga.csv");
             BufferedReader botigacsv= new BufferedReader(file);
             while(true){
@@ -161,7 +161,7 @@ public class Entorn {
                     return; 
                 }
                 System.out.println("Introduït:"); 
-                System.out.print(nouVi.toString()); 
+                System.out.print(nouVi.toString());
             }
             else{
                 Vi nouVi=new Vi(nom,preu);
