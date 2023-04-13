@@ -81,9 +81,17 @@ public class Entorn {
             }
 
         }
-        
-        if(botiga.exists()){
-            referencies=0;
+           
+        mostraComiat();
+
+    }
+
+    public static void mostraBenvinguda() {  
+        System.out.println("Celler La Bona Estrella. Escriviu ajuda per veure opcions."); 
+    }
+
+    public static void mostraComiat() throws IOException{
+            int referencies=0;
             FileReader file = new FileReader("botiga.csv");
             BufferedReader botigacsv= new BufferedReader(file);
             while(true){
@@ -98,16 +106,7 @@ public class Entorn {
             botigacsv.close();
             file.close();
             System.out.println("Referències guardades: "+referencies);
-        }      
-        mostraComiat();
-
-    }
-
-    public static void mostraBenvinguda() {  
-        System.out.println("Celler La Bona Estrella. Escriviu ajuda per veure opcions."); 
-    }
-
-    public static void mostraComiat() {
+        
         System.out.println("adéu"); 
     } 
 
