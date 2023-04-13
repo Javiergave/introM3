@@ -97,7 +97,7 @@ public class Entorn {
             }
             botigacsv.close();
             file.close();
-            System.out.println("Referències guardades: "+referencies);
+            System.out.println("Referències guardades: "+referencies+1);
         }        
         mostraComiat();
 
