@@ -14,9 +14,10 @@ public class GatRenat{
     public GatRenat(GatPosicio pos){
         posicio=pos;
     }
-    public GatRenat(String pos){
-        posicio=GatPosicio.fromString(pos);
-    }
+    public GatRenat(String novaPosicio){
+        if(novaPosicio.equals("dret")||novaPosicio.equals("assegut")||novaPosicio.equals("estirat")){
+            posicio=GatPosicio.fromString(novaPosicio);
+        }    }
 
     public GatPosicio getPosicio() {  
         return this.posicio;
