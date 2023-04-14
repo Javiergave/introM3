@@ -20,8 +20,9 @@ public enum GatPosicio{
         else if(text.equals("estirat")){
             return GatPosicio.ESTIRAT;
         }
-        else{
+        else if(text.equals("assegut")){
             return GatPosicio.ASSEGUT;
         }
+        return null;
     }
 }

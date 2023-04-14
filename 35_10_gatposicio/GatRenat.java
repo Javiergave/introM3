@@ -15,7 +15,7 @@ public class GatRenat{
         posicio=pos;
     }
     public GatRenat(String pos){
-        setPosicio(pos);
+        posicio=GatPosicio.fromString(pos);
     }
 
     public GatPosicio getPosicio() {  
@@ -29,9 +29,12 @@ public class GatRenat{
             posicio = pos;
         }
     }
-    public void setPosicio(String novaPosicio) {
+    public void setPosicio(String novaPosicio) throws Exception{
         if(novaPosicio.equals("dret")||novaPosicio.equals("assegut")||novaPosicio.equals("estirat")){
             posicio=GatPosicio.fromString(novaPosicio);
+        }
+        if(posicio==null){
+            throw new Exception("Valor "+novaPosicio+" no suportat per GatPosicio");
         }
     }
 }
