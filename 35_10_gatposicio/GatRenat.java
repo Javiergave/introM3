@@ -12,7 +12,7 @@ public class GatRenat{
     private GatPosicio posicio = GatPosicio.ASSEGUT;
 
     public GatRenat(GatPosicio pos){
-        setPosicio(pos);
+        posicio=pos;
     }
     public GatRenat(String pos){
         setPosicio(pos);
@@ -21,8 +21,13 @@ public class GatRenat{
     public GatPosicio getPosicio() {  
         return this.posicio;
     }
-    public void setPosicio(GatPosicio pos){
-        posicio = pos;
+    public void setPosicio(GatPosicio pos)throws Exception{
+        if(pos!=GatPosicio.ASSEGUT||pos!=GatPosicio.DRET||pos!=GatPosicio.ESTIRAT){
+            throw new Exception("Valor "+pos+" no suportat per GatPosicio");
+        }
+        else{
+            posicio = pos;
+        }
     }
     public void setPosicio(String novaPosicio) {
         if(novaPosicio.equals("dret")||novaPosicio.equals("assegut")||novaPosicio.equals("estirat")){
