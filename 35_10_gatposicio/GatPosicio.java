@@ -13,7 +13,7 @@ public enum GatPosicio{
     ASSEGUT;
 
 
-    public static GatPosicio fromString(String text){
+    public static GatPosicio fromString(String text)throws IllegalArgumentException{
         if(text.equals("dret")){
             return GatPosicio.DRET;
         }
@@ -23,6 +23,6 @@ public enum GatPosicio{
         else if(text.equals("assegut")){
             return GatPosicio.ASSEGUT;
         }
-        return null;
+        throw new IllegalArgumentException("Valor "+text+" no suportat per GatPosicio");
     }
 }
