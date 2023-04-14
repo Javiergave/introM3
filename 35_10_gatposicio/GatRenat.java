@@ -14,10 +14,14 @@ public class GatRenat{
     public GatRenat(GatPosicio pos){
         posicio=pos;
     }
-    public GatRenat(String novaPosicio){
+    public GatRenat(String novaPosicio)throws Exception{
         if(novaPosicio.equals("dret")||novaPosicio.equals("assegut")||novaPosicio.equals("estirat")){
             posicio=GatPosicio.fromString(novaPosicio);
-        }    }
+        }
+        else{
+            throw new Exception("Valor "+novaPosicio+" no suportat per GatPosicio");
+        }
+    }
 
     public GatPosicio getPosicio() {  
         return this.posicio;
@@ -34,7 +38,7 @@ public class GatRenat{
         if(novaPosicio.equals("dret")||novaPosicio.equals("assegut")||novaPosicio.equals("estirat")){
             posicio=GatPosicio.fromString(novaPosicio);
         }
-        if(posicio==null){
+        else{
             throw new Exception("Valor "+novaPosicio+" no suportat per GatPosicio");
         }
     }
