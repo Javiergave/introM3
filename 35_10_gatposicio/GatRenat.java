@@ -31,11 +31,11 @@ public class GatRenat{
         return this.posicio;
     }
     public void setPosicio(GatPosicio pos)throws IllegalArgumentException{
-        if(pos!=GatPosicio.ASSEGUT||pos!=GatPosicio.DRET||pos!=GatPosicio.ESTIRAT){
-            throw new IllegalArgumentException("Valor \""+pos+"\" no suportat per GatPosicio");
+        if(pos==GatPosicio.ASSEGUT||pos==GatPosicio.DRET||pos==GatPosicio.ESTIRAT){
+            posicio = pos;
         }
         else{
-            posicio = pos;
+            throw new IllegalArgumentException("Valor \""+pos+"\" no suportat per GatPosicio");
         }
     }
     public void setPosicio(String novaPosicio) throws IllegalArgumentException{
