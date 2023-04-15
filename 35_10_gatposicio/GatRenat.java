@@ -12,7 +12,7 @@ public class GatRenat{
     private GatPosicio posicio = GatPosicio.ASSEGUT;
 
     public GatRenat(){
-        posicio=GatPosicio.ASSEGUT;
+        posicio=GatPosicio.ESTIRAT;
     }
 
     public GatRenat(GatPosicio pos){
