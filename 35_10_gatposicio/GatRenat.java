@@ -18,32 +18,32 @@ public class GatRenat{
     public GatRenat(GatPosicio pos){
         posicio=pos;
     }
-    public GatRenat(String novaPosicio)throws Exception{
+    public GatRenat(String novaPosicio)throws IllegalArgumentException{
         if(novaPosicio.equals("dret")||novaPosicio.equals("assegut")||novaPosicio.equals("estirat")){
             posicio=GatPosicio.fromString(novaPosicio);
         }
         else{
-            throw new Exception("Valor \""+novaPosicio+"\" no suportat per GatPosicio");
+            throw new IllegalArgumentException("Valor \""+novaPosicio+"\" no suportat per GatPosicio");
         }
     }
 
     public GatPosicio getPosicio() {  
         return this.posicio;
     }
-    public void setPosicio(GatPosicio pos)throws Exception{
+    public void setPosicio(GatPosicio pos)throws IllegalArgumentException{
         if(pos!=GatPosicio.ASSEGUT||pos!=GatPosicio.DRET||pos!=GatPosicio.ESTIRAT){
-            throw new Exception("Valor \""+pos+"\" no suportat per GatPosicio");
+            throw new IllegalArgumentException("Valor \""+pos+"\" no suportat per GatPosicio");
         }
         else{
             posicio = pos;
         }
     }
-    public void setPosicio(String novaPosicio) throws Exception{
+    public void setPosicio(String novaPosicio) throws IllegalArgumentException{
         if(novaPosicio.equals("dret")||novaPosicio.equals("assegut")||novaPosicio.equals("estirat")){
             posicio=GatPosicio.fromString(novaPosicio);
         }
         else{
-            throw new Exception("Valor \""+novaPosicio+"\" no suportat per GatPosicio");
+            throw new IllegalArgumentException("Valor \""+novaPosicio+"\" no suportat per GatPosicio");
         }
     }
 }
