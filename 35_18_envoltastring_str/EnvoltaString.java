@@ -16,7 +16,7 @@ public class EnvoltaString {
 
             EnvoltaString altre = (EnvoltaString) obj;
 
-            return valor.equalsIgnoreCase(altre.valor);
+            return ((String)valor).equals(altre.valor);
 
         }
 
