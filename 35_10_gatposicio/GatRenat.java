@@ -16,9 +16,7 @@ public class GatRenat{
     }
 
     public GatRenat(GatPosicio pos){
-        if(pos!=GatPosicio.ASSEGUT){
-            posicio=pos;
-        }
+        posicio=pos;
     }
     public GatRenat(String novaPosicio)throws IllegalArgumentException{
         if(novaPosicio.equalsIgnoreCase("dret")||novaPosicio.equalsIgnoreCase("assegut")||novaPosicio.equalsIgnoreCase("estirat")){
