@@ -18,12 +18,12 @@ public class EnvoltaString {
 
             EnvoltaString altre = (EnvoltaString) obj;
 
-            return ((String)valor).equals(altre.valor);
+            return ((String)valor).equalsIgnoreCase(altre.valor);
 
         }
         else if (obj instanceof String){
             EnvoltaString altre = new EnvoltaString((String)obj);
-            return ((String)valor).equals((String)altre.valor);
+            return ((String)valor).equalsIgnoreCase((String)altre.valor);
         }
 
         return false;
