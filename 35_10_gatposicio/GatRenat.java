@@ -11,6 +11,10 @@
 public class GatRenat{ 
     private GatPosicio posicio = GatPosicio.ASSEGUT;
 
+    public GatRenat(){
+        posicio=GatPosicio.ASSEGUT;
+    }
+
     public GatRenat(GatPosicio pos){
         posicio=pos;
     }
