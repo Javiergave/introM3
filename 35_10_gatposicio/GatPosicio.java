@@ -23,6 +23,6 @@ public enum GatPosicio{
         else if(text.equals("assegut")){
             return GatPosicio.ASSEGUT;
         }
-        throw new IllegalArgumentException("Valor "+text+" no suportat per GatPosicio");
+        throw new IllegalArgumentException("Valor \""+text+"\" no suportat per GatPosicio");
     }
 }
