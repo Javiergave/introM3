@@ -16,7 +16,7 @@ public class GatRenat{
     }
 
     public GatRenat(GatPosicio pos){
-        if(pos!=posicio){
+        if(pos!=GatPosicio.ASSEGUT){
             posicio=pos;
         }
     }
