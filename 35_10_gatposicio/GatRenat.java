@@ -19,7 +19,7 @@ public class GatRenat{
             posicio=GatPosicio.fromString(novaPosicio);
         }
         else{
-            throw new Exception("Valor "+novaPosicio+" no suportat per GatPosicio");
+            throw new Exception("Valor \""+novaPosicio+"\" no suportat per GatPosicio");
         }
     }
 
@@ -28,7 +28,7 @@ public class GatRenat{
     }
     public void setPosicio(GatPosicio pos)throws Exception{
         if(pos!=GatPosicio.ASSEGUT||pos!=GatPosicio.DRET||pos!=GatPosicio.ESTIRAT){
-            throw new Exception("Valor "+pos+" no suportat per GatPosicio");
+            throw new Exception("Valor \""+pos+"\" no suportat per GatPosicio");
         }
         else{
             posicio = pos;
@@ -39,7 +39,7 @@ public class GatRenat{
             posicio=GatPosicio.fromString(novaPosicio);
         }
         else{
-            throw new Exception("Valor "+novaPosicio+" no suportat per GatPosicio");
+            throw new Exception("Valor \""+novaPosicio+"\" no suportat per GatPosicio");
         }
     }
 }
