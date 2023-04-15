@@ -1,3 +1,5 @@
+import javax.management.monitor.StringMonitorMBean;
+
 public class EnvoltaString {
     private String valor;
 
@@ -18,6 +20,10 @@ public class EnvoltaString {
 
             return ((String)valor).equals(altre.valor);
 
+        }
+        else if (obj instanceof String){
+            EnvoltaString altre = new EnvoltaString((String)obj);
+            return ((String)valor).equals((String)altre.valor);
         }
 
         return false;
