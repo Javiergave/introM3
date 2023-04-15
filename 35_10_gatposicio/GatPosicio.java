@@ -14,13 +14,13 @@ public enum GatPosicio{
 
 
     public static GatPosicio fromString(String text)throws IllegalArgumentException{
-        if(text.equals("dret")){
+        if(text.equalsIgnoreCase("dret")){
             return GatPosicio.DRET;
         }
-        else if(text.equals("estirat")){
+        else if(text.equalsIgnoreCase("estirat")){
             return GatPosicio.ESTIRAT;
         }
-        else if(text.equals("assegut")){
+        else if(text.equalsIgnoreCase("assegut")){
             return GatPosicio.ASSEGUT;
         }
         throw new IllegalArgumentException("Valor \""+text+"\" no suportat per GatPosicio");

@@ -19,7 +19,7 @@ public class GatRenat{
         posicio=pos;
     }
     public GatRenat(String novaPosicio)throws IllegalArgumentException{
-        if(novaPosicio.equals("dret")||novaPosicio.equals("assegut")||novaPosicio.equals("estirat")){
+        if(novaPosicio.equalsIgnoreCase("dret")||novaPosicio.equalsIgnoreCase("assegut")||novaPosicio.equalsIgnoreCase("estirat")){
             posicio=GatPosicio.fromString(novaPosicio);
         }
         else{
@@ -39,7 +39,7 @@ public class GatRenat{
         }
     }
     public void setPosicio(String novaPosicio) throws IllegalArgumentException{
-        if(novaPosicio.equals("dret")||novaPosicio.equals("assegut")||novaPosicio.equals("estirat")){
+        if(novaPosicio.equalsIgnoreCase("dret")||novaPosicio.equalsIgnoreCase("assegut")||novaPosicio.equalsIgnoreCase("estirat")){
             posicio=GatPosicio.fromString(novaPosicio);
         }
         else{
