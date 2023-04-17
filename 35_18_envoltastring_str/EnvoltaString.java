@@ -1,5 +1,11 @@
-import javax.management.monitor.StringMonitorMBean;
-
+/*
+ * Copyright 2022 Javier García Vera
+ * 
+ * This is free software, licensed under the GNU General Public License V3.
+ * See http://www.gnu.org/licenses/gpl.html for more information
+ * 
+ */
+//Aquest programa envolcalla elements de la clase String i crea un nou equals per a que es puguin igualar encara que tinguin diferent capitalització
 public class EnvoltaString {
     private String valor;
 
