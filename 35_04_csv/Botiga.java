@@ -27,7 +27,7 @@ public class Botiga {
 
     public Vi afegeix(Vi nouVi) throws IOException{
         FileWriter file = new FileWriter("botiga.csv",true);
-        PrintWriter botigacsv= new PrintWriter(file);
+        BufferedWriter botigacsv= new BufferedWriter(file);
         if(nouVi.esValid()){
             if(cerca(nouVi.getNom())==null){  
                     String[] text = new String[3];
