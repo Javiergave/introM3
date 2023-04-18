@@ -88,6 +88,7 @@ public class Vi {
     }
 
     public static Vi deArrayString(String[] vins){
+        
         String nomvi=vins[0];
         String preuvi=vins[1];
         String estocvi=vins[2];

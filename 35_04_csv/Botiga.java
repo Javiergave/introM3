@@ -32,7 +32,7 @@ public class Botiga {
             if(cerca(nouVi.getNom())==null){  
                     String[] text = new String[3];
                     text = nouVi.aArrayString();
-                    botigacsv.append("\n"+text[0]+text[1]+text[2]);
+                    botigacsv.write("\n"+text[0]+text[1]+text[2]);
                     botigacsv.close();
                     file.close();
                     for(int i = 0; i<vins.length;i++){
@@ -46,7 +46,7 @@ public class Botiga {
             for(int i=0;i<vins.length;i++){
                 if(vins[i]==null){
                     vins[i]=nouVi;
-                    botigacsv.append(vins[i].getNom()+";"+vins[i].getPreu()+";"+vins[i].getEstoc());
+                    botigacsv.write("\n"+vins[i].getNom()+";"+vins[i].getPreu()+";"+vins[i].getEstoc());
                     botigacsv.close();
 
                     return vins[i];
