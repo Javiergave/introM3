@@ -38,7 +38,7 @@ public class Botiga {
                     int lin=0;
                     while (true){
                         String linia = read.readLine();
-                        if(linia==null||linia.charAt(linia.length()-1)=='\n'){
+                        if(linia==null||(linia.charAt(linia.length()-1)=='\n'&&lin>0)){
                             lin=0;
                             break;
                         }
@@ -69,7 +69,7 @@ public class Botiga {
             int lin=0;
             while (true){
                 String linia = read.readLine();
-                if(linia==null||linia.charAt(linia.length()-1)=='\n'){
+                if(linia==null||(linia.charAt(linia.length()-1)=='\n'&&lin>0)){
                     lin=0;
                     break;
                 }
