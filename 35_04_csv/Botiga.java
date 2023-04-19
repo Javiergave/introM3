@@ -39,6 +39,7 @@ public class Botiga {
                     while (true){
                         String linia = read.readLine();
                         if(linia==null){
+                            lin=0;
                             break;
                         }
                         else{
@@ -65,15 +66,44 @@ public class Botiga {
                     return nouVi;
                 }   
             }
-            for(int i=0;i<vins.length;i++){
-                if(vins[i]==null){
-                    vins[i]=nouVi;
-                    botigacsv.write("\n"+vins[i].getNom()+";"+vins[i].getPreu()+";"+vins[i].getEstoc());
-                    botigacsv.close();
-
-                    return vins[i];
+            int lin=0;
+            while (true){
+                String linia = read.readLine();
+                if(linia==null){
+                    lin=0;
+                    break;
+                }
+                else{
+                    lin++;
                 }
             }
+            boti.close();
+            read.close();
+
+            if(lin<1){
+                for(int i=0;i<vins.length;i++){
+                    if(vins[i]==null){
+                        vins[i]=nouVi;
+                        botigacsv.write("\n"+vins[i].getNom()+";"+vins[i].getPreu()+";"+vins[i].getEstoc());
+                        botigacsv.close();
+    
+                        return vins[i];
+                    }
+                }
+            }
+            else{
+                for(int i=0;i<vins.length;i++){
+                    if(vins[i]==null){
+                        vins[i]=nouVi;
+                        botigacsv.write(vins[i].getNom()+";"+vins[i].getPreu()+";"+vins[i].getEstoc());
+                        botigacsv.close();
+    
+                        return vins[i];
+                    }
+                }
+            }
+
+            
         
         return null;
     }
