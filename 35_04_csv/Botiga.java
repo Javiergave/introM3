@@ -49,12 +49,12 @@ public class Botiga {
                     boti.close();
                     read.close();
                     if(lin>0){
-                        botigacsv.write("\n"+text[0]+text[1]+text[2]);
+                        botigacsv.write(text[0]+text[1]+text[2]+"\n");
                         botigacsv.close();
                         file.close();
                     }
                     else{
-                        botigacsv.write(text[0]+text[1]+text[2]);
+                        botigacsv.write("\n"+text[0]+text[1]+text[2]);
                         botigacsv.close();
                         file.close();
                     }
