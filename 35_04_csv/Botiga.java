@@ -8,6 +8,7 @@
 //Aquest programa actua com una botiga de vins amb un espai maxim
 // i una quantitat de vins determinada
 import java.io.*;
+import java.nio.file.FileVisitResult;
 public class Botiga {
     private final int DEFAULT_MAX_VINS=10;
     private Vi[] vins; 
@@ -28,13 +29,34 @@ public class Botiga {
     public Vi afegeix(Vi nouVi) throws IOException{
         FileWriter file = new FileWriter("botiga.csv",true);
         BufferedWriter botigacsv= new BufferedWriter(file);
+        FileReader boti = new FileReader("botiga.csv");
+        BufferedReader read = new BufferedReader(boti);
         if(nouVi.esValid()){
             if(cerca(nouVi.getNom())==null){  
                     String[] text = new String[3];
                     text = nouVi.aArrayString();
-                    botigacsv.write("\n"+text[0]+text[1]+text[2]);
-                    botigacsv.close();
-                    file.close();
+                    int lin=0;
+                    while (true){
+                        String linia = read.readLine();
+                        if(linia==null){
+                            break;
+                        }
+                        else{
+                            lin++;
+                        }
+                    }
+                    boti.close();
+                    read.close();
+                    if(lin>0){
+                        botigacsv.write("\n"+text[0]+text[1]+text[2]);
+                        botigacsv.close();
+                        file.close();
+                    }
+                    else{
+                        botigacsv.write(text[0]+text[1]+text[2]);
+                        botigacsv.close();
+                        file.close();
+                    }
                     for(int i = 0; i<vins.length;i++){
                         if(vins[i]==null){
                             vins[i] = nouVi;
