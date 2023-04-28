@@ -9,6 +9,8 @@
 // i una quantitat de vins determinada
 import java.io.*;
 import java.nio.file.FileVisitResult;
+
+import javax.lang.model.util.Elements;
 public class Botiga {
     private final int DEFAULT_MAX_VINS=10;
     private Vi[] vins; 
@@ -38,23 +40,29 @@ public class Botiga {
                     int lin=0;
                     while (true){
                         String linia = read.readLine();
-                        if(linia==null||(linia.charAt(linia.length()-1)=='\n'&&lin>0)){
+                        if((linia==null&&lin==0)){
                             lin=0;
                             break;
                         }
                         else{
-                            lin++;
-                        }
+                            if(linia.charAt(linia.length()-1)!='\n'){
+                                lin=1;
+                                break;
+                            }
+                            else{
+                                lin++;
+                            }
+                        } 
                     }
                     boti.close();
                     read.close();
                     if(lin>0){
-                        botigacsv.write(text[0]+text[1]+text[2]+"\n");
+                        botigacsv.write("\n"+text[0]+text[1]+text[2]+"\n");
                         botigacsv.close();
                         file.close();
                     }
                     else{
-                        botigacsv.write("\n"+text[0]+text[1]+text[2]);
+                        botigacsv.write(text[0]+text[1]+text[2]+"\n");
                         botigacsv.close();
                         file.close();
                     }
@@ -66,27 +74,21 @@ public class Botiga {
                     return nouVi;
                 }   
             }
-            int lin=0;
-            while (true){
-                String linia = read.readLine();
-                if(linia==null||(linia.charAt(linia.length()-1)!='\n'&&lin>0)){
-                    lin=0;
-                    break;
-                }
-                else{
-                    lin++;
-                }
-            }
-            boti.close();
-            read.close();
+            
+            
 
             if(lin<1){
                 for(int i=0;i<vins.length;i++){
                     if(vins[i]==null){
                         vins[i]=nouVi;
-                        botigacsv.write("\n"+vins[i].getNom()+";"+vins[i].getPreu()+";"+vins[i].getEstoc());
+                        String linia=read.readLine();
+                        while(true){
+
+                        }
+                        botigacsv.write(vins[i].getNom()+";"+vins[i].getPreu()+";"+vins[i].getEstoc()+"\n");
                         botigacsv.close();
-    
+                        boti.close();
+                        read.close();
                         return vins[i];
                     }
                 }
