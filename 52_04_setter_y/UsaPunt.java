@@ -13,6 +13,11 @@
 
          Punt punt = new Punt();
 
+         if(args[0].isEmpty()||args[1].isEmpty()){
+            args[0] = "A";
+            args[1] = "B";
+         }
+
          int x = ((UtilString.esEnter(args[0])? Integer.parseInt(args[0]) : 0 ));// args[0] si hi és i és enter, o 0 altrament
 
          int y = ((UtilString.esEnter(args[1])? Integer.parseInt(args[1]) : 0 ));//  args[1] si hi és i és enter, o 0 altrament
