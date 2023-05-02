@@ -20,6 +20,16 @@ public class TestPunt {
         new Punt();
 
     }
+    @Test
+    public void constructorEspecific() {
+
+        Punt p = new Punt(1, 2);
+
+        assertEquals(1, p.getX());
+
+        assertEquals(2, p.getY());
+
+    }
 
     @Test
     public void suma() {
