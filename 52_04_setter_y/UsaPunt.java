@@ -13,7 +13,7 @@
 
          Punt punt = new Punt();
 
-         if(args[0].isEmpty()||args[1].isEmpty()){
+         if(args.length<2){
             args[0] = "A";
             args[1] = "B";
          }
