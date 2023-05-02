@@ -40,6 +40,13 @@ public class TestPunt {
         p.setY(69420);
         assertEquals(69420, p.getY());
     }
+    @Test
+    public void setX69420() {
+        Punt p = new Punt();
+
+        p.setX(69420);
+        assertEquals(69420, p.getX());
+    }
 
     @Test 
     public void constructorDefecteYZero(){
