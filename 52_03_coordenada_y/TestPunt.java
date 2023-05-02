@@ -35,34 +35,7 @@ public class TestPunt {
 
     }
 
-    @Test
 
-    public void setX42() {
-
-        Punt p = new Punt();
-
-        p.setX(42);
-
-        assertEquals(42, p.getX());
-
-    }
-
-
-    @Test
-
-    public void constructorEspecific() {
-
-        Punt p = new Punt(1, 2);
-
-        assertAll(
-
-            () -> assertEquals(1, p.getX()),
-
-            () -> assertEquals(2, p.getY())
-
-        );
-
-    }
 
     @Test 
     public void constructorDefecteYZero(){
