@@ -16,11 +16,13 @@
         int x = 0;
         int y= 0;
 
-        if(args.length>2){
+        if(args.length>0){
             x = ((UtilString.esEnter(args[0])? Integer.parseInt(args[0]) : 0 ));// args[0] si hi és i és enter, o 0 altrament
-
+        }
+        if(args.length>1){
             y = ((UtilString.esEnter(args[1])? Integer.parseInt(args[1]) : 0 ));//  args[1] si hi és i és enter, o 0 altrament
         }
+        
         
         
          punt.setX(x);
