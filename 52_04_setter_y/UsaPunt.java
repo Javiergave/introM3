@@ -13,15 +13,16 @@
 
          Punt punt = new Punt();
 
-         if(args.length<2){
-            args[0] = "A";
-            args[1] = "B";
-         }
+        int x = 0;
+        int y= 0;
 
-         int x = ((UtilString.esEnter(args[0])? Integer.parseInt(args[0]) : 0 ));// args[0] si hi és i és enter, o 0 altrament
+        if(args.length>2){
+            x = ((UtilString.esEnter(args[0])? Integer.parseInt(args[0]) : 0 ));// args[0] si hi és i és enter, o 0 altrament
 
-         int y = ((UtilString.esEnter(args[1])? Integer.parseInt(args[1]) : 0 ));//  args[1] si hi és i és enter, o 0 altrament
-
+            y = ((UtilString.esEnter(args[1])? Integer.parseInt(args[1]) : 0 ));//  args[1] si hi és i és enter, o 0 altrament
+        }
+        
+        
          punt.setX(x);
 
          punt.setY(y);
