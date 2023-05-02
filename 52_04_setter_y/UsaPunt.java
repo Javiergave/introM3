@@ -13,9 +13,9 @@
 
          Punt punt = new Punt();
 
-         int x = (UtilString.esEnter(args[0])?Integer.parseInt(args[0]):0);// args[0] si hi és i és enter, o 0 altrament
+         int x = ((UtilString.esEnter(args[0])?Integer.parseInt(args[0]):0));// args[0] si hi és i és enter, o 0 altrament
 
-         int y = (UtilString.esEnter(args[1])?Integer.parseInt(args[1]):0);//  args[1] si hi és i és enter, o 0 altrament
+         int y = ((UtilString.esEnter(args[1])?Integer.parseInt(args[1]):0));//  args[1] si hi és i és enter, o 0 altrament
 
          punt.setX(x);
 
