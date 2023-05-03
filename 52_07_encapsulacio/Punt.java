@@ -8,7 +8,7 @@ public class Punt {
 
     }
 
-    public void suma(Punt p){ coord[0]+=coord[0]; coord[1]+=coord[1]; }
+    public void suma(Punt p){ this.coord[0]+=p.coord[0]; this.coord[1]+=p.coord[1]; }
 
     public void setX(int x) {
 

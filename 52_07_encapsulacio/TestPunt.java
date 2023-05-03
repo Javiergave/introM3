@@ -49,6 +49,7 @@ public class TestPunt {
 
         Punt p = new Punt();
 
+
         assertEquals(0, p.getX());
 
     }
