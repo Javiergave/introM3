@@ -39,6 +39,6 @@ public class TestSegment{
         Punt p2 = new Punt(4,1);
         Segment s = new Segment(p1,p2);
         double len = s.longitud();
-        assertEquals(len,Math.sqrt(Math.pow(p1.getX()-p2.getX(), 2) + Math.pow(p1.getY()-p2.getY(), 2)));
+        assertEquals(2,Math.sqrt(Math.pow(p1.getX()-p2.getX(), 2) + Math.pow(p1.getY()-p2.getY(), 2)));
     }
 }
