@@ -19,13 +19,13 @@ public class UsaSegment {
             x1 = ((UtilString.esEnter(args[0])? Integer.parseInt(args[0]) : 0 ));// args[0] si hi és i és enter, o 0 altrament
         }
         if(args.length>1){    
-            y1 = ((UtilString.esEnter(args[1])? Integer.parseInt(args[0]) : 0 ));// args[1] si hi és i és enter, o 0 altrament
+            y1 = ((UtilString.esEnter(args[1])? Integer.parseInt(args[1]) : 0 ));// args[1] si hi és i és enter, o 0 altrament
         }
         if(args.length>2){
-            x2 = ((UtilString.esEnter(args[2])? Integer.parseInt(args[0]) : 0 ));// args[2] si hi és i és enter, o 0 altrament
+            x2 = ((UtilString.esEnter(args[2])? Integer.parseInt(args[2]) : 0 ));// args[2] si hi és i és enter, o 0 altrament
         }
         if(args.length>3){
-            y2 = ((UtilString.esEnter(args[3])? Integer.parseInt(args[0]) : 0 ));// args[3] si hi és i és enter, o 0 altrament
+            y2 = ((UtilString.esEnter(args[3])? Integer.parseInt(args[3]) : 0 ));// args[3] si hi és i és enter, o 0 altrament
         }
 
         Punt punt1 = new Punt(x1, y1);
