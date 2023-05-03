@@ -36,6 +36,6 @@ public class Punt {
         this.y=0;
     }
     public String toString(){
-        return ("x: "+x+", y: "+y);
+        return ("Punt("+x+", "+y+")");
     }
 }
