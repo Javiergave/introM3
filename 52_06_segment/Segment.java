@@ -32,6 +32,6 @@ public class Segment {
         p2 = p;
     }
     public String toString(){
-        return ("Segment("+p1.toString()+", "+p2.toString()+""+this.longitud());
+        return ("Segment("+p1.toString()+", "+p2.toString()+")");
     }
 }
