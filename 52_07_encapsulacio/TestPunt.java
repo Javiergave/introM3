@@ -48,9 +48,8 @@ public class TestPunt {
         // comprova que Punt() deixi a 0 la propietat x de Punt
 
         Punt p = new Punt();
-        Punt p1 = new Punt(0,0);
 
-        assertEquals(p,p1);
+        assertEquals(0, p.getX());
 
     }
 
