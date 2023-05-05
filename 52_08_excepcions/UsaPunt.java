@@ -27,18 +27,22 @@ public class UsaPunt {
         if(args.length>3){
             y2 = ((UtilString.esEnter(args[3])? Integer.parseInt(args[3]) : 0 ));//  args[1] si hi és i és enter, o 0 altrament
         }
-        Punt p1 = new Punt(x1, y1);
+        try{
+            Punt p1 = new Punt(x1, y1);
 
-        Punt p2 = new Punt(x2, y2);
+            Punt p2 = new Punt(x2, y2);
 
-        System.out.printf("p1: (%d, %d)%n", p1.getX(), p1.getY());
+            System.out.printf("p1: (%d, %d)%n", p1.getX(), p1.getY());
 
-        System.out.printf("p2: (%d, %d)%n", p2.getX(), p2.getY());
+            System.out.printf("p2: (%d, %d)%n", p2.getX(), p2.getY());
 
-        p1.suma(p2);
+            p1.suma(p2);
 
-        System.out.printf("p1+p2: (%d, %d)%n", p1.getX(), p1.getY());
-
+            System.out.printf("p1+p2: (%d, %d)%n", p1.getX(), p1.getY());
+        }
+        catch (IllegalArgumentException e){
+            System.out.println("No és un nombre adequat"); 
+        }
     }
 
 }

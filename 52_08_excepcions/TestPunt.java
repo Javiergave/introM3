@@ -32,6 +32,14 @@ public class TestPunt {
     }
 
     @Test
+    public void Excepcio(){
+        IllegalArgumentException thrown = assertThrows(IllegalArgumentException.class, () -> {
+            Punt p = new Punt(-1,-2);
+        }, "S'esperava IllegalArgumentException");
+
+    }
+
+    @Test
     public void suma() {
 
         Punt p1 = new Punt(0,1);

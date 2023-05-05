@@ -21,4 +21,10 @@ public class Vehicle {
         marca=marc;
         categoria=cat;
     }
+    public void setModel(String c){  this.model=c; } 
+    public String getModel(){ return model; } 
+    public void setMarca(String c){  this.marca=c; } 
+    public String getMarca(){ return marca; }
+    public void setCategoria(int c){  this.categoria=c; } 
+    public int getCategoria(){ return categoria; } 
 }

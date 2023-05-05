@@ -40,6 +40,9 @@ public class Client {
 
     public ArrayList<Lloguer> getLloguers() { return lloguers; }
 
+    public void setLlogers(Lloguer l){
+        this.lloguers.add(l);
+    }
 
     public void setNif(String nif) { this.nif = nif; }
 
@@ -50,8 +53,10 @@ public class Client {
 
     public String informe() {
 
-        // XXX: de moment buit
-
+        System.out.println("Nif del client: "+nif);
+        System.out.println("Nom del client: "+nom);
+        System.out.println("Teléfon del client: "+telefon);
+        System.out.println("Llogers actius: "+lloguers);    
         return null;
 
     }

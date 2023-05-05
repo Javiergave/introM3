@@ -30,12 +30,15 @@ public class Punt {
 
     public int getY(){ return coord[1]; }
 
-    public Punt(int x, int y) {
+    public Punt(int x, int y) throws IllegalArgumentException{
+        if(x>-1 && y>-1){
+            this.coord[0] = x;
 
-        this.coord[0] = x;
-
-        this.coord[1] = y;
-
+            this.coord[1] = y;
+        }
+        else{
+            throw new IllegalArgumentException();
+        }
     }
 
     public Punt(){
