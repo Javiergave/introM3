@@ -5,7 +5,7 @@
  * See http://www.gnu.org/licenses/gpl.html for more information
  * 
  */
-//Aquesta clase és un punt que té una coordenada x i y
+//Aquesta clase és un punt que té una coordenada x i y. Pot ser convertit a String
 public class Punt {
 
     private int x = 0;
