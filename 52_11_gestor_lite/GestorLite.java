@@ -19,11 +19,14 @@ public class GestorLite {
     }
     public static Client creaClientDemo(){
         return new Client("51590695Q","Eugènia Salinas Roig","93614214242");
-    }
+    }  
     public static void mostraClient(Client c){
         System.out.println("Client: "+c.getNom());
         System.out.println("        "+c.getNif());
         System.out.println("        "+c.getTelefon());   
-        System.out.println("Lloguers: "+c.getLloguers().toString()); 
+        System.out.print("Lloguers: "); 
+        for (int i = 0; i<c.getLloguers().size();i++){
+            System.out.println(c.getLloguers().get(i)); 
+        }
     }
 }
