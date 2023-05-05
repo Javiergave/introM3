@@ -28,7 +28,7 @@ public class GestorLite {
         System.out.println("Lloguers: "+c.getLloguers().size()); 
         for (int i = 0; i<c.getLloguers().size();i++){
             System.out.println("        "+(i+1)+". vehicle: "+c.getLloguers().get(i).getVehicle().getMarca()+" "+c.getLloguers().get(i).getVehicle().getModel()); 
-            System.out.println("            dies llogats: "+c.getLloguers().get(i).getDies()); 
+            System.out.println("           dies llogats: "+c.getLloguers().get(i).getDies()); 
         }
     }
 }
