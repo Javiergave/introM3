@@ -24,6 +24,6 @@ public class GestorLite {
         System.out.println("Client: "+c.getNom());
         System.out.println("        "+c.getNif());
         System.out.println("        "+c.getTelefon());   
-        System.out.println("Lloguers: "+c.getLloguers()); 
+        System.out.println("Lloguers: "+c.getLloguers().toString()); 
     }
 }
