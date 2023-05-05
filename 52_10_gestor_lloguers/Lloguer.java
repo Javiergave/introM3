@@ -14,7 +14,13 @@ public class Lloguer {
         dies=dia;
         cotxe=v;
     }
+    public Lloguer(Vehicle v,int dia){
+        dies=dia;
+        cotxe=v;
+    }
 
+    public Vehicle getVehicle(){ return cotxe; } 
+    public void setCosa(Vehicle c){  this.cotxe=c; } 
     public int getDies(){ return dies;  }
     public void setDies(int q){  dies = q;  }
 }

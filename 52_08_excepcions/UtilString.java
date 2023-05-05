@@ -14,11 +14,11 @@ public class UtilString {
 
         if (paraula.isEmpty()==false){
              
-            if (paraula.charAt(0)=='+'||Character.isDigit(paraula.charAt(0))){
+            if (paraula.charAt(0)=='+'||paraula.charAt(0)=='-'||Character.isDigit(paraula.charAt(0))){
 
                 for (int i = 1; (i <= paraula.length()-1); i++){
 
-                    if (Character.isDigit(paraula.charAt(i))==false||paraula.charAt(i)=='-'||paraula.charAt(i)=='+'){
+                    if (Character.isDigit(paraula.charAt(i))==false){
 
                         return false;
 
