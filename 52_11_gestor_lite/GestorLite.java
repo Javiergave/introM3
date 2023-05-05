@@ -13,8 +13,7 @@ public class GestorLite {
         demo.setLloguers(new Lloguer(new Vehicle("Seat", "600", 1), 2));
         demo.setLloguers(new Lloguer(new Vehicle("Tata", "Vista", 1), 5));
         demo.setLloguers(new Lloguer(new Vehicle("Fiat", "Uno", 3), 2));
-
-
+        System.out.println(demo.getLloguers().size()); 
         mostraClient(demo);
     }
     public static Client creaClientDemo(){
