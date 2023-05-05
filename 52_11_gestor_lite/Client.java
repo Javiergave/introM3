@@ -40,7 +40,7 @@ public class Client {
 
     public ArrayList<Lloguer> getLloguers() { return lloguers; }
 
-    public void setLlogers(Lloguer l){
+    public void setLloguers(Lloguer l){
         this.lloguers.add(l);
     }
 
