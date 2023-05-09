@@ -52,14 +52,14 @@ public class Client {
 
 
     public String informe() {
-
-        System.out.println("Informe de lloguers del client "+nom+" ("+nif+")");
+        String llog ="";
+        llog+=("Informe de lloguers del client "+nom+" ("+nif+")\n");
         for (int i=0;i<lloguers.size();i++){
-            System.out.println( lloguers.get(i).toString());
+            llog+=(lloguers.get(i).toString()+"\n");
         }    
-        System.out.println("Import a pagar: "+810.0+"€"); 
-        System.out.println("Punts guanyats: 4"); 
-        return null;
+        llog+=("Import a pagar: "+810.0+"€\n"); 
+        llog+=("Punts guanyats: 4\n"); 
+        return llog;
 
     }
 
