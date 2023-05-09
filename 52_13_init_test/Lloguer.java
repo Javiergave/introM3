@@ -23,4 +23,8 @@ public class Lloguer {
     public void setCosa(Vehicle c){  this.cotxe=c; } 
     public int getDies(){ return dies;  }
     public void setDies(int q){  dies = q;  }
+    @Override
+    public String toString(){
+        return (cotxe.getMarca()+" "+cotxe.getModel()+": "+(cotxe.getCategoria()*45*dies));
+    }
 }
