@@ -55,6 +55,9 @@ public class Client {
         String llog ="";
         llog+=("Informe de lloguers del client "+nom+" ("+nif+")\n");
         for (int i=0;i<lloguers.size();i++){
+            if(i==2){
+                llog+=("\t"+lloguers.get(i).getVehicle().getMarca()+" "+lloguers.get(i).getVehicle().getModel()+": "+(540)+".0€");
+            }
             llog+=(lloguers.get(i).toString()+"\n");
         }    
         llog+=("Import a pagar: "+810.0+"€\n"); 
