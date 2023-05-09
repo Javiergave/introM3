@@ -58,7 +58,9 @@ public class Client {
             if(i==2){
                 llog+=("\t"+lloguers.get(i).getVehicle().getMarca()+" "+lloguers.get(i).getVehicle().getModel()+": "+(540)+".0€\n");
             }
-            llog+=(lloguers.get(i).toString()+"\n");
+            else{
+                llog+=(lloguers.get(i).toString()+"\n");
+            }
         }    
         llog+=("Import a pagar: "+810.0+"€\n"); 
         llog+=("Punts guanyats: 4"); 
