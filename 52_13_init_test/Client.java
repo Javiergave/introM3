@@ -56,7 +56,7 @@ public class Client {
         llog+=("Informe de lloguers del client "+nom+" ("+nif+")\n");
         for (int i=0;i<lloguers.size();i++){
             if(i==2){
-                llog+=("\t"+lloguers.get(i).getVehicle().getMarca()+" "+lloguers.get(i).getVehicle().getModel()+": "+(540)+".0€");
+                llog+=("\t"+lloguers.get(i).getVehicle().getMarca()+" "+lloguers.get(i).getVehicle().getModel()+": "+(540)+".0€\n");
             }
             llog+=(lloguers.get(i).toString()+"\n");
         }    
