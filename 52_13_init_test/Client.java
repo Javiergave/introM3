@@ -52,8 +52,12 @@ public class Client {
 
 
     public String informe() {
-    
-        return ("Informe de lloguers del client "+nom+" ("+nif+")\n"+lloguers.toString());
+
+        System.out.println("Informe de lloguers del client "+nom+" ("+nif+")");
+        for (int i=0;i<lloguers.size();i++){
+            System.out.println( lloguers.get(i).toString());
+        }    
+        return null;
 
     }
 
