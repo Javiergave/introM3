@@ -58,7 +58,7 @@ public class Client {
             llog+=(lloguers.get(i).toString()+"\n");
         }    
         llog+=("Import a pagar: "+810.0+"€\n"); 
-        llog+=("Punts guanyats: 4\n"); 
+        llog+=("Punts guanyats: 4"); 
         return llog;
 
     }
