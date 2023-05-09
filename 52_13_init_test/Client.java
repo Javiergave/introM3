@@ -57,6 +57,7 @@ public class Client {
         for (int i=0;i<lloguers.size();i++){
             System.out.println( lloguers.get(i).toString());
         }    
+        System.out.println("Import a pagar: "+810.0+"€"); 
         return null;
 
     }
