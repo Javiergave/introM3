@@ -15,6 +15,6 @@ public class TestGestor {
     @Test
     public void informe(){
         Client c = GestorLite.creaClientDemo();
-        assertEquals(c.informe(),"Nif del client: "+c.getNif()+"\n"+"Nom del client: "+c.getNom()+"\n"+"Teléfon del client: "+c.getTelefon()+"\n"+"Llogers actius: "+c.getLloguers());
+        assertEquals(" ","Nif del client: "+c.getNif()+"\n"+"Nom del client: "+c.getNom()+"\n"+"Teléfon del client: "+c.getTelefon()+"\n"+"Llogers actius: "+c.getLloguers());
     }
 }
