@@ -52,12 +52,8 @@ public class Client {
 
 
     public String informe() {
-
-        System.out.println("Nif del client: "+nif);
-        System.out.println("Nom del client: "+nom);
-        System.out.println("Teléfon del client: "+telefon);
-        System.out.println("Llogers actius: "+lloguers);    
-        return ("Nif del client: "+nif+"\n"+"Nom del client: "+nom+"\n"+"Teléfon del client: "+telefon+"\n"+"Llogers actius: "+lloguers);
+    
+        return ("Informe del client "+nom+"("+nif+")\n"+"Llogers actius: "+lloguers);
 
     }
 
