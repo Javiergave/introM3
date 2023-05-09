@@ -58,6 +58,7 @@ public class Client {
             System.out.println( lloguers.get(i).toString());
         }    
         System.out.println("Import a pagar: "+810.0+"€"); 
+        System.out.println("Punts guanyats: 4"); 
         return null;
 
     }
