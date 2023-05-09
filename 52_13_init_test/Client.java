@@ -53,7 +53,7 @@ public class Client {
 
     public String informe() {
     
-        return ("Informe de llogers del client "+nom+" ("+nif+")\n"+"Llogers actius: "+lloguers);
+        return ("Informe de lloguers del client "+nom+" ("+nif+")\n"+"Lloguers actius: "+lloguers);
 
     }
 
