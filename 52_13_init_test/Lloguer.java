@@ -25,6 +25,6 @@ public class Lloguer {
     public void setDies(int q){  dies = q;  }
     @Override
     public String toString(){
-        return ("   "+cotxe.getMarca()+" "+cotxe.getModel()+": "+(cotxe.getCategoria()*90)+".0€");
+        return ("\t"+cotxe.getMarca()+" "+cotxe.getModel()+": "+(cotxe.getCategoria()*90)+".0€");
     }
 }
