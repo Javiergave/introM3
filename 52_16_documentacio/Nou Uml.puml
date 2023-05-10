@@ -19,7 +19,7 @@ class Client {
     - nom: String
     - telèfon: String
     + informe(): String
-    + quantitatPerLloguer(Lloguer,int):double
+    - quantitatPerLloguer(Lloguer,int):double
 }
 
 Vehicle <-left- Lloguer
