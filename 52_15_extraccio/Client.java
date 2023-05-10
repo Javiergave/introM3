@@ -112,7 +112,7 @@ public class Client {
     
     }
 
-    public double quantitatPerLloguer(Lloguer l,int cat){
+    private double quantitatPerLloguer(Lloguer l,int cat){
         double quantitat = 0;
     
         switch (cat) {
