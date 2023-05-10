@@ -56,7 +56,6 @@ public class Client {
         double total = 0;
     
         int bonificacions = 0;
-        double temp=0;
     
         String resultat = "Informe de lloguers del client " +
     
@@ -65,7 +64,8 @@ public class Client {
             " (" + getNif() + ")\n";
     
         for (Lloguer lloguer: lloguers) {
-            
+            double temp=0;
+
             temp+=quantitatPerLloguer(lloguer,lloguer.getVehicle().getCategoria());
     
     
@@ -115,39 +115,39 @@ public class Client {
     public double quantitatPerLloguer(Lloguer l,int cat){
         double quantitat = 0;
     
-            switch (cat) {
+        switch (cat) {
     
-                case 1:
+            case 1:
     
-                    quantitat += 3;
+                quantitat += 3;
     
-                    if (l.getDies() > 3) {
+                if (l.getDies() > 3) {
+  
+                    quantitat += (l.getDies() - 3) * 1.5;
+   
+                }
     
-                        quantitat += (l.getDies() - 3) * 1.5;
+                break;
     
-                    }
+            case 2:
     
-                    break;
+                quantitat += 4;
     
-                case 2:
+                if (l.getDies() > 2) {
     
-                    quantitat += 4;
+                    quantitat += (l.getDies() - 2) * 2.5;
     
-                    if (l.getDies() > 2) {
+                }
     
-                        quantitat += (l.getDies() - 2) * 2.5;
+                break;
     
-                    }
+            case 3:
     
-                    break;
+                quantitat += l.getDies() * 6;
     
-                case 3:
+                break;
     
-                    quantitat += l.getDies() * 6;
-    
-                    break;
-    
-            }
+        }
         return quantitat;
     }
 
