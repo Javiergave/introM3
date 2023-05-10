@@ -56,6 +56,7 @@ public class Client {
         double total = 0;
     
         int bonificacions = 0;
+        double temp=0;
     
         String resultat = "Informe de lloguers del client " +
     
@@ -64,8 +65,8 @@ public class Client {
             " (" + getNif() + ")\n";
     
         for (Lloguer lloguer: lloguers) {
-    
-            total+=quantitatPerLloguer(lloguer,lloguer.getVehicle().getCategoria());
+            
+            temp+=quantitatPerLloguer(lloguer,lloguer.getVehicle().getCategoria());
     
     
             // afegeix lloguers freqüents
@@ -94,9 +95,9 @@ public class Client {
     
                 lloguer.getVehicle().getModel() + ": " +
     
-                (total * 30) + "€" + "\n";
+                (temp * 30) + "€" + "\n";
     
-            total += total * 30;
+            total += temp * 30;
     
         }
     
