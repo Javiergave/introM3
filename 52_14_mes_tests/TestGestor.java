@@ -19,7 +19,7 @@ public class TestGestor {
     }
 
     public void informeBuit(){
-        Client c;
+        Client c = new Client("34563452","Eulàlia","34323453");
         assertEquals(c.informe(),"Informe de lloguers del client " + c.getNom() + " (" + c.getNif() + ")\n");
     }
 
