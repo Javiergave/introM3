@@ -37,7 +37,7 @@ public class Lloguer {
     public String toString(){
         return ("\t"+cotxe.getMarca()+" "+cotxe.getModel()+": "+(cotxe.getCategoria()*90)+".0€");
     }
-    public double quantitatPerLloguer(){
+    public double quantitat(){
         double quantitat_per_dia = 0;
         switch (this.getVehicle().getCategoria()) {
     
