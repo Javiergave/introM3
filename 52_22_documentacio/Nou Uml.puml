@@ -1,0 +1,31 @@
+@startuml
+class Vehicle {
+    + {static} BASIC = 1: int
+    + {static} GENERAL = 2: int
+    + {static} LUXE = 3: int
+    - model: String
+    - marca: String
+    - categoria: int
+    + Vehicle(marca, model, categoria)
+}
+
+class Lloguer {
+    - dies: int
+    + Lloguer(dies, vehicle)
+    + quantitatPerLloguer():double
+    + bonificacionsDeLloguer():int
+}
+
+class Client {
+    - nif: String
+    - nom: String
+    - telèfon: String
+    + informe(): String
+}
+
+Vehicle <-left- Lloguer
+Lloguer <-left- Client: *
+
+Vehicle <-left- Lloguer
+Lloguer <-left- Client
+@enduml
