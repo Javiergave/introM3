@@ -61,15 +61,15 @@ public class Client {
     private double importTotal(){
         double total=0;
         for (Lloguer lloguer: lloguers) {
-            total+=lloguer.quantitatPerLloguer() * EUROS_PER_UNITAT_DE_COST;
+            total+=lloguer.quantitat() * EUROS_PER_UNITAT_DE_COST;
         }
         return total;
 
     }  
-    private int bonificacionsTotal(){
+    private int bonificacions(){
         int total=0;
         for (Lloguer lloguer: lloguers) {
-            total+=lloguer.bonificacionsDeLloguer();
+            total+=lloguer.bonificacions();
         }
         return total;
 
@@ -94,14 +94,14 @@ public class Client {
     
                 lloguer.getVehicle().getModel() + ": " +
     
-                (lloguer.quantitatPerLloguer()* EUROS_PER_UNITAT_DE_COST) + "€" + "\n";
+                (lloguer.quantitat()* EUROS_PER_UNITAT_DE_COST) + "€" + "\n";
         }
         return resultat;
     }
     private String composaPeu(){
         return "Import a pagar: " + importTotal() + "€\n" +
     
-        "Punts guanyats: " + bonificacionsTotal() + "\n";
+        "Punts guanyats: " + bonificacions() + "\n";
     
     }
 
