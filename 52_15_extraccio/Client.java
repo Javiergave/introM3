@@ -66,7 +66,7 @@ public class Client {
         for (Lloguer lloguer: lloguers) {
             double temp=0;
 
-            temp+=quantitatPerLloguer(lloguer,lloguer.getVehicle().getCategoria());
+            temp+=quantitatPerLloguer(lloguer);
     
     
             // afegeix lloguers freqüents
@@ -112,10 +112,10 @@ public class Client {
     
     }
 
-    private double quantitatPerLloguer(Lloguer l,int cat){
+    private double quantitatPerLloguer(Lloguer l){
         double quantitat = 0;
     
-        switch (cat) {
+        switch (l.getVehicle().getCategoria()) {
     
             case 1:
     
