@@ -66,7 +66,7 @@ public class Client {
     
             // afegeix lloguers freqüents
     
-            bonificacions +=lloguer.bonificacionsDeLloguer();    
+            bonificacions +=lloguer.bonificacions();    
 
             // composa els resultats d'aquest lloguer
     
@@ -78,7 +78,7 @@ public class Client {
     
                 lloguer.getVehicle().getModel() + ": " +
     
-                (lloguer.quantitatPerLloguer()* 30) + "€" + "\n";
+                (lloguer.quantitat()* 30) + "€" + "\n";
     
     
         }
@@ -97,7 +97,7 @@ public class Client {
     private double importTotal(){
         double total=0;
         for (Lloguer lloguer: lloguers) {
-            total+=lloguer.quantitatPerLloguer() * 30;
+            total+=lloguer.quantitat() * 30;
         }
         return total;
 
