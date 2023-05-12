@@ -96,7 +96,7 @@ public class Client {
     
     }
 
-    public int bonificacionsDeLloguer(Lloguer l){
+    private int bonificacionsDeLloguer(Lloguer l){
         if (l.getVehicle().getCategoria() == Vehicle.LUXE &&
     
                     l.getDies()>1 ) {
