@@ -37,7 +37,7 @@ public class Lloguer {
     public String toString(){
         return ("\t"+cotxe.getMarca()+" "+cotxe.getModel()+": "+(cotxe.getCategoria()*90)+".0€");
     }
-    public double quantitatPerLloguer(){
+    public double quantitat(){
         double quantitat = 0;
         switch (this.getVehicle().getCategoria()) {
     
@@ -75,7 +75,7 @@ public class Lloguer {
         return quantitat;
     }
 
-    public int bonificacionsDeLloguer(){
+    public int bonificacions(){
         if (this.getVehicle().getCategoria() == Vehicle.LUXE &&
     
                     this.getDies()>DIES_LUXE ) {
