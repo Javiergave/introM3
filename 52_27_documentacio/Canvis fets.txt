@@ -1,0 +1,76 @@
+S'ha canviat el módul informe de aixó:
+ public String informe() {
+    
+        String resultat = "Informe de lloguers del client " +
+    
+            getNom() +
+    
+            " (" + getNif() + ")\n";
+    
+        for (Lloguer lloguer: lloguers) {
+            // composa els resultats d'aquest lloguer
+    
+            resultat += "\t" +
+    
+                lloguer.getVehicle().getMarca() +
+    
+                " " +
+    
+                lloguer.getVehicle().getModel() + ": " +
+    
+                (lloguer.quantitat()* 30) + "€" + "\n";
+    
+    
+        }
+    
+    
+        // afegeix informació final
+    
+        resultat += "Import a pagar: " + importTotal() + "€\n" +
+    
+            "Punts guanyats: " + bonificacions() + "\n";
+    
+        return resultat;
+    
+    }
+
+    A aixó:
+
+     public String informe() {
+    
+       return composaCapsalera()+composaDetall()+composaPeu();
+    
+    }
+
+Aixó significa que hem creat móduls a Client per composar l'informe segons les seves parts amb els seguents móduls:
+    private String composaCapsalera(){
+        return "Informe de lloguers del client " +
+    
+        getNom() +
+
+        " (" + getNif() + ")\n";
+    }
+    private String composaDetall(){
+        String resultat=""; 
+        for (Lloguer lloguer: lloguers) {
+            // composa els resultats d'aquest lloguer
+    
+            resultat += "\t" +
+    
+                lloguer.getVehicle().getMarca() +
+    
+                " " +
+    
+                lloguer.getVehicle().getModel() + ": " +
+    
+                (lloguer.quantitat()* 30) + "€" + "\n";
+        }
+        return resultat;
+    }
+    private String composaPeu(){
+        return "Import a pagar: " + importTotal() + "€\n" +
+    
+        "Punts guanyats: " + bonificacions() + "\n";
+    
+    } 
+    .
