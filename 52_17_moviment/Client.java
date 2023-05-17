@@ -66,7 +66,7 @@ public class Client {
         for (Lloguer lloguer: lloguers) {
             double temp=0;
 
-            temp+=lloguer.quantitatPerLloguer();
+            temp+=lloguer.quantitat();
     
     
             // afegeix lloguers freqüents
