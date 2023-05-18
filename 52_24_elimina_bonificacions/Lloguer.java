@@ -66,7 +66,7 @@ public class Lloguer {
         return quantitat;
     }
 
-    public int bonificacionsDeLloguer(){
+    public int bonificacions(){
         if (this.getVehicle().getCategoria() == Vehicle.LUXE &&
     
                     this.getDies()>1 ) {
