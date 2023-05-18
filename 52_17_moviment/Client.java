@@ -64,9 +64,7 @@ public class Client {
             " (" + getNif() + ")\n";
     
         for (Lloguer lloguer: lloguers) {
-            double temp=0;
-
-            temp+=lloguer.quantitat();
+            
     
     
             // afegeix lloguers freqüents
@@ -95,9 +93,9 @@ public class Client {
     
                 lloguer.getVehicle().getModel() + ": " +
     
-                (temp * 30) + "€" + "\n";
+                (lloguer.quantitat() * 30) + "€" + "\n";
     
-            total += temp * 30;
+            total += lloguer.quantitat() * 30;
     
         }
     
