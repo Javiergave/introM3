@@ -80,7 +80,7 @@ public class Client {
     
         resultat += "Import a pagar: " + importTotal() + "€\n" +
     
-            "Punts guanyats: " + bonificacions() + "\n";
+            "Punts guanyats: " + bonificacionsTotal() + "\n";
     
         return resultat;
     
@@ -94,7 +94,7 @@ public class Client {
         return total;
 
     }  
-    private int bonificacions(){
+    private int bonificacionsTotal(){
         int total=0;
         for (Lloguer lloguer: lloguers) {
             total+=lloguer.bonificacions();
