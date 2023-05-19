@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.Statement;
 import java.sql.SQLException;
 import java.sql.ResultSet;
+import java.util.*;
+
 public class Zoo {
 
     private static final String NOM_BASE_DE_DADES = "animals.bd";
@@ -82,30 +84,7 @@ public class Zoo {
     
         }
     }
-    public Categoria obteCategoriaPerNom(String nom) throws SQLException{
-        String sql = "select * from categoria where nom="+nom+";";
-        Statement st = null;
-        try {
     
-            st = conn.createStatement();
-    
-            ResultSet rs = st.executeQuery(sql);
-
-            int id = rs.getInt("id");
-            String nomcat = rs.getString("nom");
-            rs.close();
-            return new Categoria(id,nomcat);
-    
-        } finally {
-    
-            if (st != null) {
-    
-                st.close();
-    
-            }
-    
-        }
-    }
     public void afegeixCategoria(Categoria categoria) throws SQLException {
 
         String sql = String.format(
@@ -121,6 +100,70 @@ public class Zoo {
             st = conn.createStatement();
     
             st.executeUpdate(sql);
+    
+        } finally {
+    
+            if (st != null) {
+    
+                st.close();
+    
+            }
+    
+        }
+    
+    }
+    public Categoria obteCategoriaPerNom(String nom) throws SQLException{
+        String sql = "select id from categories where nom='"+nom+"' ORDER BY id limit 1;";
+        Statement st = null;
+        try {
+
+            st = conn.createStatement();
+
+            ResultSet rs = st.executeQuery(sql);
+            rs.next();
+            int id = rs.getInt("id");
+            rs.close();
+            return new Categoria(id,nom);
+
+        } finally {
+
+            if (st != null) {
+
+                st.close();
+
+            }
+
+        }
+    }
+    public List<Categoria> recuperaCategories() throws SQLException {
+
+        String sql = "SELECT * FROM CATEGORIES ORDER BY nom";
+    
+        Statement st = null;
+    
+        try {
+    
+            st = conn.createStatement();
+    
+            ResultSet rs = st.executeQuery(sql);
+    
+            List<Categoria> categories = new LinkedList<>();
+    
+            while (rs.next()) {
+    
+                int bdId = rs.getInt("id");
+    
+                String nom = rs.getString("nom");
+    
+                Categoria categoria = new Categoria(bdId, nom);
+    
+                categories.add(categoria);
+    
+            }
+    
+            rs.close();
+    
+            return categories;
     
         } finally {
     
