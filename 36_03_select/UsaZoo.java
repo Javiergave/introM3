@@ -12,32 +12,53 @@ public class UsaZoo {
         zoo.connecta();
 
         System.out.println("connectat");
-        zoo.creaTaulaCategories();
 
 
-        System.out.println("Eliminem la taula CATEGORIES per si existia");
-
-        zoo.eliminaTaulaCategories();
-
-
-        System.out.println("Creem la taula CATEGORIES (primer cop)");
+        System.out.println("Creem la taula CATEGORIES");
 
         zoo.creaTaulaCategories();
 
 
-        System.out.println("Eliminem la taula CATEGORIES");
+        System.out.println();
 
-        zoo.eliminaTaulaCategories();
+        System.out.println("Mostrem les categories disponibles inicialment");
 
-
-        System.out.println("Creem la taula CATEGORIES (segon cop)");
-
-        zoo.creaTaulaCategories();
+        ZooUtils.mostraCategories(zoo.recuperaCategories());
 
 
-        System.out.println("Creem la taula CATEGORIES (tercer cop)");
+        Categoria ocell = new Categoria("ocell");
 
-        zoo.creaTaulaCategories();
+        Categoria mamifer = new Categoria("mamífer");
+
+        System.out.println();
+
+        System.out.println("Inserim les categories: ");
+
+        System.out.println("\t"+ ocell);
+
+        System.out.println("\t"+ mamifer);
+
+        zoo.afegeixCategoria(ocell);
+
+        zoo.afegeixCategoria(mamifer);
+
+
+        System.out.println();
+
+        System.out.println("Mostrem les categories disponibles ara");
+
+        ZooUtils.mostraCategories(zoo.recuperaCategories());
+
+
+        System.out.println();
+
+        System.out.println("Consultem algunes categories");
+
+        System.out.println("En consultar per la categoria ocell obtenim " + zoo.obteCategoriaPerNom("ocell"));
+
+        System.out.println("En consultar per la categoria mamífer obtenim " + zoo.obteCategoriaPerNom("mamífer"));
+
+        System.out.println("En consultar per la categoria peix obtenim " + zoo.obteCategoriaPerNom("peix"));
 
 
         System.out.print("Finalment tanquem la connexió amb la base de dades: ");
