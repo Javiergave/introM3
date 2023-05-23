@@ -9,7 +9,9 @@ public class ZooUtils{
     private Connection conn = null;
 
     public static void mostraCategories(List<Categoria> cats) throws SQLException {
-
+        if(cats.size()<1){
+            System.out.println("Cap categoria"); 
+        }
         for (Categoria c : cats){
             System.out.println(c.toString()); 
         } 
