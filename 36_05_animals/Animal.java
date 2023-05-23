@@ -24,7 +24,7 @@ public class Animal {
         return (id<1);
     }
     public Animal(String nom, Categoria categoria) throws IllegalArgumentException{
-        if(nom==null){
+        if(nom==null||nom.isEmpty()){
             throw new IllegalArgumentException("El nom no pot ser null ni blanc");
         }
         if(categoria==null){
