@@ -92,6 +92,9 @@ public class Zoo {
                 "INSERT INTO CATEGORIES (nom) VALUES ('%s')",
     
                 categoria.getNom());
+
+        String sql2 = "select id from categories where nom='"+categoria.getNom()+"' ORDER BY id limit 1;";
+
     
         Statement st = null;
     
@@ -100,6 +103,12 @@ public class Zoo {
             st = conn.createStatement();
     
             st.executeUpdate(sql);
+
+            ResultSet rs= st.executeQuery(sql2);
+
+            rs.next();
+            int id = rs.getInt("id");
+            categoria.setId(id);
     
         } finally {
     
@@ -108,8 +117,8 @@ public class Zoo {
                 st.close();
     
             }
-    
         }
+
     
     }
     public Categoria obteCategoriaPerNom(String nom) throws SQLException{
