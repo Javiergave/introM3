@@ -34,7 +34,7 @@ public class Animal {
         this.cat=categoria;
     }
     public Animal(int id, String nom, Categoria categoria) throws IllegalArgumentException{
-        if(nom==null){
+        if(nom==null||nom.isEmpty()){
             throw new IllegalArgumentException("El nom no pot ser null ni blanc");
         }
         if(categoria==null){
