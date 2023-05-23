@@ -53,6 +53,9 @@ public class Categoria {
     @Override
 
     public String toString() {
+        if(id<1){
+            return "null";
+        }
 
         return "Categoria(id:" +
 
