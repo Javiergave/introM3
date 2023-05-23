@@ -47,9 +47,12 @@ public class Categoria {
 
     }
 
-    public void setId(int nid){
+    public void setId(int nid) throws IllegalArgumentException{
         if(nid>0){
             this.id=nid;
+        }
+        else{
+            throw new IllegalArgumentException("El id ha de ser un nombre positiu");
         }
     }
 
