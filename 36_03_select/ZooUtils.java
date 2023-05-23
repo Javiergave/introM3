@@ -15,7 +15,7 @@ public class ZooUtils{
         else{
             System.out.println("Nombre de categories: "+cats.size()); 
             for (Categoria c : cats){
-                System.out.println(c.toString()); 
+                System.out.println("    "+c.toString()); 
             } 
         }
 
