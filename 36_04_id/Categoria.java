@@ -48,7 +48,9 @@ public class Categoria {
     }
 
     public void setId(int nid){
-        this.id=nid;
+        if(nid>0){
+            this.id=nid;
+        }
     }
 
     public String getNom() { return nom; }
