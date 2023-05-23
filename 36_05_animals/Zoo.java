@@ -191,7 +191,7 @@ public class Zoo {
     }
 
     public void creaTaulaAnimals()throws SQLException {
-        String sql = "drop table if exists  animals ;"+"CREATE TABLE  animals (" +
+        String sql = "drop table if exists  ANIMALS ;"+"CREATE TABLE  ANIMALS (" +
     
                      "       id        INTEGER PRIMARY KEY AUTOINCREMENT," +
     
