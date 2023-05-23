@@ -123,6 +123,9 @@ public class Zoo {
             rs.next();
             int id = rs.getInt("id");
             rs.close();
+            if(id<1){
+                return null;
+            }
             return new Categoria(id,nom);
 
         } finally {
