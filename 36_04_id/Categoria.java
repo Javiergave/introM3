@@ -52,7 +52,7 @@ public class Categoria {
             this.id=nid;
         }
         else{
-            throw new IllegalArgumentException("El id ha de ser un nombre positiu");
+            throw new IllegalArgumentException("L'identificador ha de ser positiu");
         }
     }
 
