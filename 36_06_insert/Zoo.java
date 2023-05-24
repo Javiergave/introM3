@@ -291,8 +291,10 @@ public class Zoo {
             int id = rs.getInt("id");
             rs.close();
             if(id>0){
-                rs = st.executeQuery(insert);                
-                rs.close();
+                if(obteCategoriaPerNom(ani.getCategoria().getNom())!=null){
+                    rs = st.executeQuery(insert);                
+                    rs.close();
+                }
             }
             
         } finally {
