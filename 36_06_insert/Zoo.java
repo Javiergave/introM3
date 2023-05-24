@@ -19,8 +19,8 @@ public class Zoo {
     private static final String NOM_BASE_DE_DADES = "animals.bd";
 
     private static final String CADENA_DE_CONNEXIO = "jdbc:sqlite:" +
-
-                                                     NOM_BASE_DE_DADES;
+    NOM_BASE_DE_DADES +
+    "?integrity_check&foreign_key_check";
 
     private Connection conn = null;
 
@@ -275,13 +275,24 @@ public class Zoo {
 
     public void afegeixAnimal(Animal ani) throws SQLException{
 
-        String sql = "select id from ANIMALS where nom='"+ani.getNom()+"' ORDER BY id limit 1;";
-        String insert = "insert into ANIMALS(id,nom,categoria) values("+ani.getId()+","+ani.getNom()+","+ani.getCategoria()+");";
-
-        if(ani.getCategoria().idIndefinit()==false){
+        if(ani.idIndefinit()==false){
             return;
         }
+
+        String sql = "select id from ANIMALS where nom='"+ani.getNom()+"' ORDER BY id limit 1;";
+        String insert = "insert into ANIMALS(id,nom,categoria) values("+ani.getId()+","+ani.getNom()+","+ani.getCategoria()+");";
         Statement st = null;
+
+        if(ani.getCategoria().idIndefinit()){
+            if(obteCategoriaPerNom(ani.getCategoria().getNom())==null){
+                afegeixCategoria(ani.getCategoria());
+                int ida= (obteCategoriaPerNom(ani.getCategoria().getNom()).getId());
+            }
+            else{
+                
+            }
+            
+        }
         try {
 
             st = conn.createStatement();
@@ -290,17 +301,8 @@ public class Zoo {
             rs.next();
             int id = rs.getInt("id");
             rs.close();
-            if(id>0){
-                if(obteCategoriaPerNom(ani.getCategoria().getNom())!=null){
-                    rs = st.executeQuery(insert);                
-                    rs.close();
-                }
-                else{
-                    afegeixCategoria(ani.getCategoria());
-                    rs = st.executeQuery(insert);                
-                    rs.close();
-                }
-            }
+            
+
             
         } finally {
 
