@@ -278,7 +278,7 @@ public class Zoo {
         if(ani.idIndefinit()==false){
             return;
         }
-        int ida;
+        int ida=-1;
         String sql = "select id from ANIMALS where nom='"+ani.getNom()+"' ORDER BY id limit 1;";
         String insert = "insert into ANIMALS(id,nom,categoria) values("+ida+","+ani.getNom()+","+ani.getCategoria()+");";
         Statement st = null;
@@ -289,7 +289,7 @@ public class Zoo {
                 ida= (obteCategoriaPerNom(ani.getCategoria().getNom()).getId());
             }
             else{
-                ida = obteCategoriaPerNom(ani.getCategoria().getId());
+                ida = obteCategoriaPerNom(ani.getCategoria().getNom()).getId();
             }
             
         }
