@@ -77,6 +77,7 @@ public class Zoo {
         Statement st = null;
     
         try {
+            eliminaTaulaAnimals();
     
             st = conn.createStatement();
     
@@ -196,4 +197,112 @@ public class Zoo {
         }
     
     }
+
+    public void creaTaulaAnimals()throws SQLException {
+        String sql = "drop table if exists  ANIMALS ;"+"CREATE TABLE  ANIMALS (" +
+    
+                     "       id        INTEGER PRIMARY KEY AUTOINCREMENT," +
+    
+                     "       nom       VARCHAR(40),"+
+                     "       categoria INTEGER,"+
+                     "FOREIGN KEY(categoria) REFERENCES CATEGORIES(id))";
+    
+        Statement st = null;
+    
+        try {
+            creaTaulaCategories();
+    
+            st = conn.createStatement();
+    
+            st.executeUpdate(sql);
+    
+        } finally {
+    
+            if (st != null) {
+    
+                st.close();
+    
+            }
+    
+        }
+    }
+    public void eliminaTaulaAnimals()throws SQLException {
+        String sql = "drop TABLE if exists ANIMALS;";
+    
+        Statement st = null;
+    
+        try {
+    
+            st = conn.createStatement();
+    
+            st.executeUpdate(sql);
+    
+        } finally {
+    
+            if (st != null) {
+    
+                st.close();
+    
+            }
+    
+        }
+    }
+    /* retorna el nom de les taules definides a la bd */
+
+    public String getNomTaules() throws SQLException {
+
+        String sql = "SELECT name FROM sqlite_schema " +
+
+                    "WHERE name NOT LIKE 'sqlite%' " +
+
+                    "ORDER BY name";
+
+        List<String> taules = new ArrayList<>();
+
+        try (Statement st = conn.createStatement()) {
+
+            ResultSet rs = st.executeQuery(sql);
+
+            while (rs.next()) { taules.add(rs.getString("name")); }
+
+            rs.close();
+
+        }
+
+        return taules.size() > 0 ? String.join(", ", taules) : "cap";
+
+    }
+
+    public void afegeixAnimal(Animal ani) throws SQLException{
+
+        String sql = "select id from ANIMALS where nom='"+ani.getNom()+"' ORDER BY id limit 1;";
+        String insert = "insert into ANIMALS(id,nom,categoria) values("+ani.getId()+","+ani.getNom()+","+ani.getCategoria()+");";
+
+        if(ani.getCategoria().idIndefinit()==false){
+            return;
+        }
+        Statement st = null;
+        try {
+
+            st = conn.createStatement();
+
+            ResultSet rs = st.executeQuery(sql);
+            rs.next();
+            int id = rs.getInt("id");
+            rs.close();
+            if(id>0){
+                rs = st.executeQuery(insert);                
+                rs.close();
+            }
+            
+        } finally {
+
+            if (st != null) {
+
+                st.close();
+
+            }
+
+        }
+    } 
 }
