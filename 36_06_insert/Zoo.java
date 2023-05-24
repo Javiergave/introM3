@@ -295,6 +295,11 @@ public class Zoo {
                     rs = st.executeQuery(insert);                
                     rs.close();
                 }
+                else{
+                    afegeixCategoria(ani.getCategoria());
+                    rs = st.executeQuery(insert);                
+                    rs.close();
+                }
             }
             
         } finally {
