@@ -34,7 +34,7 @@ public class ZooUtils{
             System.out.println("Cap animal"); 
         }
         else{
-            System.out.println("Nombre de animals: "+anis.size()); 
+            System.out.println("Nombre d'animals: "+anis.size()); 
             for (Animal a : anis){
                 System.out.println("\t"+a.toString()); 
             } 
