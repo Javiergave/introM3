@@ -315,8 +315,8 @@ public class Zoo {
     } 
 
     public Animal obteAnimalPerNom(String nom) throws SQLException{
-        String sql = "SELECT (animals.id,"+
-        " CATEGORIES.nom)"+
+        String sql = "SELECT (animals.id as id_animal,"+
+        " CATEGORIES.nom nom_categoria)"+
  "FROM animals, CATEGORIES "+
  "WHERE animals.categoria = CATEGORIES.id "+
  "ORDER BY animals.nom limit 1;";
@@ -330,8 +330,8 @@ public class Zoo {
                 return null;
             }
             rs.next();
-            int id = rs.getInt("animals.id");
-            Categoria cat = obteCategoriaPerNom(rs.getString("categories.nom"));
+            int id = rs.getInt("id_animal");
+            Categoria cat = obteCategoriaPerNom(rs.getString("nom_categoria"));
             rs.close();
             if(id<1){
                 return null;
