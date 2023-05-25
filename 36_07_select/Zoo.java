@@ -315,8 +315,8 @@ public class Zoo {
     } 
 
     public Animal obteAnimalPerNom(String nom) throws SQLException{
-        String sql = "SELECT (animals.id as 'id_animal',"+
-        " CATEGORIES.nom as 'nom_categoria')"+
+        String sql = "SELECT (animals.id as id_animal,"+
+        " CATEGORIES.nom as nom_categoria)"+
  "FROM animals, CATEGORIES "+
  "WHERE animals.categoria = CATEGORIES.id "+
  "ORDER BY animals.nom limit 1;";
