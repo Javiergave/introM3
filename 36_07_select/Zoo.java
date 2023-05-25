@@ -14,6 +14,8 @@ import java.sql.SQLException;
 import java.sql.ResultSet;
 import java.util.*;
 
+import javax.xml.catalog.CatalogException;
+
 public class Zoo {
 
     private static final String NOM_BASE_DE_DADES = "animals.bd";
@@ -283,15 +285,12 @@ public class Zoo {
         String insert = "insert into ANIMALS(id,nom,categoria) values("+ida+","+ani.getNom()+","+ani.getCategoria()+");";
         Statement st = null;
 
-        if(ani.getCategoria().idIndefinit()){//Comprueba si la categoria del animal tiene id
-            if(obteCategoriaPerNom(ani.getCategoria().getNom())==null){//comprueba que la categoria del animal este en la bd
+        if(ani.getCategoria().idIndefinit()){
+            if(obteCategoriaPerNom(ani.getCategoria().getNom())==null){
                 afegeixCategoria(ani.getCategoria());
-                ida= (obteCategoriaPerNom(ani.getCategoria().getNom()).getId());
             }
-            else{
-                ida = obteCategoriaPerNom(ani.getCategoria().getNom()).getId();
-            }
-            
+            ida= (obteCategoriaPerNom(ani.getCategoria().getNom()).getId());
+
         }
         try {
 
@@ -314,4 +313,83 @@ public class Zoo {
 
         }
     } 
+
+    public Animal obteAnimalPerNom(String nom) throws SQLException{
+        String sql = "SELECT ANIMALS.id as id_animal,"+
+        "CATEGORIES.nom as nom_categoria"+
+ "FROM ANIMALS, CATEGORIES"+
+ "WHERE ANIMALS.categoria = CATEGORIES.id"+
+ "ORDER BY ANIMALS.nom limit 1;";
+        Statement st = null;
+        try {
+
+            st = conn.createStatement();
+
+            ResultSet rs = st.executeQuery(sql);
+            if (rs.next()){
+                return null;
+            }
+            rs.next();
+            int id = rs.getInt("id");
+            Categoria cat = obteCategoriaPerNom(rs.getString("nom_categoria"));
+            rs.close();
+            if(id<1){
+                return null;
+            }
+            return new Animal(id,nom,cat);
+
+        } finally {
+
+            if (st != null) {
+
+                st.close();
+
+            }
+
+        }
+    }
+
+    public List<Animal> recuperaAnimals() throws SQLException {
+
+        String sql = "SELECT animals.nom as ani_nom,animals.id as id_ani,categoria.nom as cat_nom FROM ANIMALS,CATEGORIES WHERE animal.categoria=categoria.id ORDER BY nom";
+    
+        Statement st = null;
+    
+        try {
+    
+            st = conn.createStatement();
+    
+            ResultSet rs = st.executeQuery(sql);
+    
+            List<Animal> anis = new LinkedList<>();
+    
+            while (rs.next()) {
+    
+                int bdId = rs.getInt("id_ani");
+    
+                String nom = rs.getString("ani_nom");
+
+                String nomcat = rs.getString("cat_nom");
+    
+                Animal ani = new Animal(bdId, nom,obteCategoriaPerNom(nomcat));
+    
+                anis.add(ani);
+    
+            }
+    
+            rs.close();
+    
+            return anis;
+    
+        } finally {
+    
+            if (st != null) {
+    
+                st.close();
+    
+            }
+    
+        }
+    
+    }
 }
