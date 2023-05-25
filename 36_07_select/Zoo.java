@@ -21,8 +21,8 @@ public class Zoo {
     private static final String NOM_BASE_DE_DADES = "animals.bd";
 
     private static final String CADENA_DE_CONNEXIO = "jdbc:sqlite:" +
-    NOM_BASE_DE_DADES +
-    "?integrity_check&foreign_key_check";
+    NOM_BASE_DE_DADES;
+    //"?integrity_check&foreign_key_check";
 
     private Connection conn = null;
 
@@ -315,8 +315,8 @@ public class Zoo {
     } 
 
     public Animal obteAnimalPerNom(String nom) throws SQLException{
-        String sql = "SELECT (ANIMALS.id as id_animal,"+
-        " CATEGORIES.nom nom_categoria)"+
+        String sql = "SELECT ANIMALS.id as id_animal,"+
+        " CATEGORIES.nom as nom_categoria "+
  "FROM ANIMALS, CATEGORIES "+
  "WHERE ANIMALS.categoria = CATEGORIES.id "+
  "ORDER BY ANIMALS.nom limit 1;";
