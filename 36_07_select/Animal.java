@@ -58,7 +58,7 @@ public class Animal {
 
             (id < 0 ? "indefinit" : id) +
 
-            ", " + nom + this.getCategoria().toString()+")";
+            ", " + nom +", "+ this.getCategoria().toString()+")";
 
     }
 }
