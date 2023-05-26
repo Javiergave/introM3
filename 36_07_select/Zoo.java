@@ -356,7 +356,7 @@ public class Zoo {
 
     public List<Animal> recuperaAnimals() throws SQLException {
 
-        String sql = "SELECT animals.nom as ani_nom,animals.id as id_ani,categories.nom as cat_nom FROM ANIMALS, CATEGORIES WHERE animals.categoria=categories.id ORDER BY animals.id asc;";
+        String sql = "SELECT animals.nom as ani_nom,animals.id as id_ani,categories.nom as cat_nom FROM ANIMALS, CATEGORIES WHERE animals.categoria=categories.id ORDER BY id_ani asc;";
     
         Statement st = null;
     
