@@ -15,11 +15,12 @@ public class Animal {
         if(this.idIndefinit()==false){
             return id; 
         }
-        return 0;
-    } 
+        return -1;
+    }
+    public void setId(int id){  this.id=id; } 
     public String getNom(){ return nom; } 
     public Categoria getCategoria(){ return cat; }
-    
+    public void setCategoria(Categoria c){  this.cat=c; } 
     public boolean idIndefinit(){
         return (id<1);
     }
@@ -56,7 +57,7 @@ public class Animal {
 
         return "Animal(id:" +
 
-            (id < 0 ? "indefinit" : id) +
+            (id <= 0 ? "indefinit" : id) +
 
             ", " + nom +", "+ this.getCategoria().toString()+")";
 

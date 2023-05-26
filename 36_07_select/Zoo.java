@@ -13,6 +13,7 @@ import java.sql.Statement;
 import java.sql.SQLException;
 import java.sql.ResultSet;
 import java.util.*;
+import java.util.function.ObjIntConsumer;
 
 import javax.xml.catalog.CatalogException;
 
@@ -280,19 +281,28 @@ public class Zoo {
         if(ani.idIndefinit()==false){
             return;
         }
-        String insert = "insert into ANIMALS(nom,categoria) values("+ani.getNom()+","+ani.getCategoria().getId()+");";
-        Statement st = null;
 
         if(ani.getCategoria().idIndefinit()){
             if(obteCategoriaPerNom(ani.getCategoria().getNom())==null){
                 afegeixCategoria(ani.getCategoria());
             }
         }
+        ani.setCategoria(obteCategoriaPerNom(ani.getCategoria().getNom()));
+        String insert = "insert into ANIMALS(nom,categoria) values(\""+ani.getNom()+"\","+ani.getCategoria().getId()+");";
+        Statement st = null;
+
+        String sql="select id from ANIMALS where nom=\""+ani.getNom()+"\";";
         try {
 
             st = conn.createStatement();
-
+            
             st.executeUpdate(insert);
+
+            ResultSet rs = st.executeQuery(sql);
+            rs.next();
+            int id = rs.getInt("id");
+            ani.setId(id);
+            rs.close();
             
         } finally {
 
@@ -317,10 +327,9 @@ public class Zoo {
             st = conn.createStatement();
 
             ResultSet rs = st.executeQuery(sql);
-            if (rs.next()){
+            if (rs.next()==false){
                 return null;
             }
-            rs.next();
             int id = rs.getInt("id_animal");
             Categoria cat = obteCategoriaPerNom(rs.getString("nom_categoria"));
             rs.close();
@@ -342,7 +351,7 @@ public class Zoo {
 
     public List<Animal> recuperaAnimals() throws SQLException {
 
-        String sql = "SELECT animals.nom as ani_nom,animals.id as id_ani,categories.nom as cat_nom FROM ANIMALS, CATEGORIES WHERE animals.categoria=categories.id ORDER BY animals.nom";
+        String sql = "SELECT animals.nom as ani_nom,animals.id as id_ani,categories.nom as cat_nom FROM ANIMALS, CATEGORIES WHERE animals.categoria=categories.id ORDER BY animals.id";
     
         Statement st = null;
     
