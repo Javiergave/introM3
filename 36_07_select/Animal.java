@@ -56,7 +56,7 @@ public class Animal {
 
         return "Animal(id:" +
 
-            (id <= 0 ? "indefinit" : id) +
+            (id < 0 ? "indefinit" : id) +
 
             ", " + nom +", "+ this.getCategoria().toString()+")";
 
