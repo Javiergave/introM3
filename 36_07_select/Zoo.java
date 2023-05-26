@@ -293,8 +293,7 @@ public class Zoo {
         String insert = "insert into ANIMALS(nom,categoria) values(\""+ani.getNom()+"\","+ani.getCategoria().getId()+");";
         Statement st = null;
 
-        if(obteAnimalPerNom(ani.getNom())!=null){
-        }
+        
 
         String sql="select id from ANIMALS where nom=\""+ani.getNom()+"\"order by id desc;";
         try {
@@ -307,6 +306,7 @@ public class Zoo {
             rs.next();
             int id = rs.getInt("id");
             if(obteAnimalPerNom(ani.getNom())!=null){
+                System.out.println("JAJAJ"); 
                 id=-1;
             }
             
