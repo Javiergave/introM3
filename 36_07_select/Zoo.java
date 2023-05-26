@@ -378,7 +378,7 @@ public class Zoo {
     
                 Animal ani = new Animal(bdId, nom,obteCategoriaPerNom(nomcat));
     
-                anis.add(ani);
+                anis.add(0,ani);
     
             }
     
