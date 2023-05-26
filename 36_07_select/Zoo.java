@@ -280,7 +280,7 @@ public class Zoo {
         if(ani.idIndefinit()==false){
             return;
         }
-        String insert = "insert into ANIMALS(nom,categoria) values("+ani.getNom()+","+ani.getCategoria()+");";
+        String insert = "insert into ANIMALS(nom,categoria) values("+ani.getNom()+","+ani.getCategoria().getId()+");";
         Statement st = null;
 
         if(ani.getCategoria().idIndefinit()){
