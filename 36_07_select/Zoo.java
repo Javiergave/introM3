@@ -281,7 +281,8 @@ public class Zoo {
             return;
         }
         int ida=-1;
-        String insert = "insert into ANIMALS(nom,categoria) values("+ani.getNom()+","+ani.getCategoria()+");";
+        String sql = "select id from ANIMALS where nom='"+ani.getNom()+"' ORDER BY id limit 1;";
+        String insert = "insert into ANIMALS(id,nom,categoria) values("+ida+","+ani.getNom()+","+ani.getCategoria()+");";
         Statement st = null;
 
         if(ani.getCategoria().idIndefinit()){
@@ -295,8 +296,13 @@ public class Zoo {
 
             st = conn.createStatement();
 
-            st.executeUpdate(insert);
-                   
+            ResultSet rs = st.executeQuery(sql);
+            rs.next();
+            int id = rs.getInt("id");
+            rs.close();
+            
+
+            
         } finally {
 
             if (st != null) {
@@ -314,6 +320,7 @@ public class Zoo {
  "FROM ANIMALS, CATEGORIES "+
  "WHERE ANIMALS.categoria = CATEGORIES.id "+
  "ORDER BY ANIMALS.nom limit 1;";
+ System.out.printf("XXX SQL |%s|%n",sql); 
         Statement st = null;
         try {
 
