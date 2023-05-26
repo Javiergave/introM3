@@ -302,14 +302,10 @@ public class Zoo {
             
             st.executeUpdate(insert);
 
+            int id =-1;
             ResultSet rs = st.executeQuery(sql);
             rs.next();
-            int id = rs.getInt("id");
-            if(obteAnimalPerNom(ani.getNom())!=null){
-                System.out.println("JAJAJ"); 
-                id=-1;
-            }
-            
+            id = rs.getInt("id");
             ani.setId(id);
             rs.close();
             
