@@ -287,11 +287,15 @@ public class Zoo {
                 afegeixCategoria(ani.getCategoria());
             }
         }
+        if(obteAnimalPerNom(ani.getNom())!=null){
+
+        }
+
         ani.setCategoria(obteCategoriaPerNom(ani.getCategoria().getNom()));
         String insert = "insert into ANIMALS(nom,categoria) values(\""+ani.getNom()+"\","+ani.getCategoria().getId()+");";
         Statement st = null;
 
-        String sql="select id from ANIMALS where nom=\""+ani.getNom()+"\";";
+        String sql="select id from ANIMALS where nom=\""+ani.getNom()+"\"order by id desc;";
         try {
 
             st = conn.createStatement();
