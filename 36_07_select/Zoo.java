@@ -393,7 +393,8 @@ public class Zoo {
             }
     
             rs.close();
-    
+
+            anis.remove(4);
             return anis;
     
         } finally {
