@@ -294,7 +294,6 @@ public class Zoo {
         Statement st = null;
 
         if(obteAnimalPerNom(ani.getNom())!=null){
-            insert = "update ANIMALS set id=4 where nom=\""+ani.getNom()+"\";";
         }
 
         String sql="select id from ANIMALS where nom=\""+ani.getNom()+"\"order by id desc;";
@@ -307,6 +306,10 @@ public class Zoo {
             ResultSet rs = st.executeQuery(sql);
             rs.next();
             int id = rs.getInt("id");
+            if(obteAnimalPerNom(ani.getNom())!=null){
+                id=-1;
+            }
+            
             ani.setId(id);
             rs.close();
             
