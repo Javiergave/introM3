@@ -291,7 +291,7 @@ public class Zoo {
         String insert = "insert into ANIMALS(nom,categoria) values(\""+ani.getNom()+"\","+ani.getCategoria().getId()+");";
         Statement st = null;
 
-        String sql="select id from ANIMALS where nom=\""+ani.getNom()+"\";";
+        String sql="select id from ANIMALS where nom=\""+ani.getNom()+"\"order by id desc;";
         try {
 
             st = conn.createStatement();
