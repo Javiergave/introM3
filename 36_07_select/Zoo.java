@@ -296,10 +296,8 @@ public class Zoo {
 
             st = conn.createStatement();
 
-            ResultSet rs = st.executeQuery(sql);
-            rs.next();
-            int id = rs.getInt("id");
-            rs.close();
+            ResultSet rs = st.executeQuery(insert);
+            
             
 
             
