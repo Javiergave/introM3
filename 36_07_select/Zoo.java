@@ -296,7 +296,7 @@ public class Zoo {
 
             st = conn.createStatement();
 
-            ResultSet rs = st.executeQuery(insert);
+            st.executeUpdate(insert);
             
             
 
