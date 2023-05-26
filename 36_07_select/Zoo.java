@@ -367,16 +367,26 @@ public class Zoo {
             ResultSet rs = st.executeQuery(sql);
     
             List<Animal> anis = new LinkedList<>();
+
+            int bdId = rs.getInt("id_ani");
+    
+            String nom = rs.getString("ani_nom");
+
+            String nomcat = rs.getString("cat_nom");
+    
+            Animal ani = new Animal(bdId, nom,obteCategoriaPerNom(nomcat));
+    
+            anis.add(0,ani);
     
             while (rs.next()) {
     
-                int bdId = rs.getInt("id_ani");
+                bdId = rs.getInt("id_ani");
     
-                String nom = rs.getString("ani_nom");
+                nom = rs.getString("ani_nom");
 
-                String nomcat = rs.getString("cat_nom");
+                nomcat = rs.getString("cat_nom");
     
-                Animal ani = new Animal(bdId, nom,obteCategoriaPerNom(nomcat));
+                ani = new Animal(bdId, nom,obteCategoriaPerNom(nomcat));
     
                 anis.add(0,ani);
     
