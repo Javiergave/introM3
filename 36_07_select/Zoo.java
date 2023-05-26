@@ -376,7 +376,7 @@ public class Zoo {
     
             Animal ani = new Animal(bdId, nom,obteCategoriaPerNom(nomcat));
     
-            anis.add(0,ani);
+            anis.add(ani);
     
             while (rs.next()) {
     
@@ -388,7 +388,7 @@ public class Zoo {
     
                 ani = new Animal(bdId, nom,obteCategoriaPerNom(nomcat));
     
-                anis.add(0,ani);
+                anis.add(ani);
     
             }
     
