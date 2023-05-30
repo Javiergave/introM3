@@ -424,7 +424,9 @@ public class Zoo {
                 ani.setCategoria(cat);
             }
             else{
-                afegeixCategoria(cat);
+                if(cat.idIndefinit()){
+                    afegeixCategoria(cat);
+                }
                 ani.setCategoria(cat);
 
                 afegeixAnimal(ani);
