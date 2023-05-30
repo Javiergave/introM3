@@ -325,7 +325,7 @@ public class Zoo {
         " CATEGORIES.nom as nom_categoria "+
  "FROM ANIMALS, CATEGORIES "+
  "WHERE ANIMALS.categoria = CATEGORIES.id and ANIMALS.nom=\""+nom+
- "\"ORDER BY ANIMALS.id desc limit 1;";
+ "\"ORDER BY ANIMALS.id asc limit 1;";
         Statement st = null;
         try {
 
