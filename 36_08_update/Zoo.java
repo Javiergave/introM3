@@ -424,9 +424,11 @@ public class Zoo {
             ani.setCategoria(cat);
         }
         else{
-            afegeixCategoria(cat);
-            cat.setId(obteCategoriaPerNom(cat.getNom()).getId());
-            
+            if(obteCategoriaPerNom(cat.getNom())==null){
+                afegeixCategoria(cat);
+                cat.setId(obteCategoriaPerNom(cat.getNom()).getId());
+
+            }
             ani.setCategoria(obteCategoriaPerNom(cat.getNom()));
             afegeixAnimal(ani);
         }
