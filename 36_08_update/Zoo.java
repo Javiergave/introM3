@@ -416,16 +416,16 @@ public class Zoo {
         Statement st = null;
 
         if(obteAnimalPerNom(ani.getNom())!=null){
-            if(obteCategoriaPerNom(cat.getNom())==null){
+            //if(obteCategoriaPerNom(cat.getNom())==null){
                 afegeixCategoria(cat);
                 cat.setId(obteCategoriaPerNom(cat.getNom()).getId());
 
-            }
+            //}
             ani.setCategoria(cat);
         }
         else{
-                afegeixCategoria(cat);
-                cat.setId(obteCategoriaPerNom(cat.getNom()).getId());
+            afegeixCategoria(cat);
+            cat.setId(obteCategoriaPerNom(cat.getNom()).getId());
             
             ani.setCategoria(obteCategoriaPerNom(cat.getNom()));
             afegeixAnimal(ani);
