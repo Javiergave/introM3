@@ -411,28 +411,29 @@ public class Zoo {
 
     public void canviaCategoria(Animal ani,Categoria cat) throws SQLException{
 
-        String update = String.format("UPDATE ANIMALS " +
-        "SET categoria = %d " +
-        "WHERE id = %d",
-        cat.getId(),
-        ani.getId()
-        );
-    
+        
         Statement st = null;
 
         try {
-        if(obteAnimalPerNom(ani.getNom())!=null){
-            if(obteCategoriaPerNom(cat.getNom())==null){
-                afegeixCategoria(cat);
-                cat.setId(obteCategoriaPerNom(cat.getNom()).getId());
+            if(obteAnimalPerNom(ani.getNom())!=null){
+                if(obteCategoriaPerNom(cat.getNom())==null){
+                    afegeixCategoria(cat);
+                    cat.setId(obteCategoriaPerNom(cat.getNom()).getId());
 
+                }
+                ani.setCategoria(cat);
             }
-            ani.setCategoria(cat);
-        }
-        else{
-            
-            afegeixAnimal(ani);
-        }
+            else{
+                
+                afegeixAnimal(ani);
+            }
+            String update = String.format("UPDATE ANIMALS " +
+            "SET categoria = %d " +
+            "WHERE id = %d",
+            cat.getId(),
+            ani.getId()
+            );
+    
             st = conn.createStatement();
     
             st.executeUpdate(update);
