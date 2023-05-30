@@ -419,7 +419,6 @@ public class Zoo {
                 if(cat.idIndefinit()){
                     afegeixCategoria(cat);
                     cat.setId(obteCategoriaPerNom(cat.getNom()).getId());
-
                 }
                 ani.setCategoria(cat);
             }
@@ -427,6 +426,7 @@ public class Zoo {
                 if(cat.idIndefinit()){
                     afegeixCategoria(cat);
                 }
+                cat.setId(obteCategoriaPerNom(cat.getNom()).getId());
                 ani.setCategoria(cat);
 
                 afegeixAnimal(ani);
