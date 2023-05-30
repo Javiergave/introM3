@@ -366,27 +366,20 @@ public class Zoo {
     
             ResultSet rs = st.executeQuery(sql);
     
+            
+
             List<Animal> anis = new LinkedList<>();
-
-            int bdId = rs.getInt("id_ani");
-    
-            String nom = rs.getString("ani_nom");
-
-            String nomcat = rs.getString("cat_nom");
-    
-            Animal ani = new Animal(bdId, nom,obteCategoriaPerNom(nomcat));
-    
-            anis.add(ani);
     
             while (rs.next()) {
+                
     
-                bdId = rs.getInt("id_ani");
+                int bdId = rs.getInt("id_ani");
     
-                nom = rs.getString("ani_nom");
+                String nom = rs.getString("ani_nom");
 
-                nomcat = rs.getString("cat_nom");
+                String nomcat = rs.getString("cat_nom");
     
-                ani = new Animal(bdId, nom,obteCategoriaPerNom(nomcat));
+                Animal ani = new Animal(bdId, nom,obteCategoriaPerNom(nomcat));
     
                 anis.add(ani);
     
@@ -394,7 +387,6 @@ public class Zoo {
     
             rs.close();
 
-            anis.remove(0);
             return anis;
     
         } finally {
@@ -452,8 +444,7 @@ public class Zoo {
 
     }
     public void eliminaAnimal(Animal ani)throws SQLException{
-        
-        if(ani.idIndefinit()||obteAnimalPerNom(ani.getNom())==null){
+        if(obteAnimalPerNom(ani.getNom())==null){
             return;
         }
 
@@ -478,10 +469,10 @@ public class Zoo {
         
     }
     public void eliminaCategoria(Categoria cat)throws SQLException{
-        if(cat.idIndefinit()||obteCategoriaPerNom(cat.getNom())==null){
+
+        if(cat.idIndefinit()){
             return;
         }
-
         String sql = "delete from CATEGORIES where id="+cat.getId()+";";
         Statement st = null;
         
