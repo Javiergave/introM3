@@ -424,7 +424,8 @@ public class Zoo {
                 ani.setCategoria(cat);
             }
             else{
-                afegeixCategoria(cat);
+                ani.setCategoria(cat);
+
                 afegeixAnimal(ani);
             }
             String update = String.format("UPDATE ANIMALS " +
