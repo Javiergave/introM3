@@ -394,7 +394,7 @@ public class Zoo {
     
             rs.close();
 
-            anis.remove(4);
+            anis.remove(0);
             return anis;
     
         } finally {
