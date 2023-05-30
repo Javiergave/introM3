@@ -416,7 +416,7 @@ public class Zoo {
 
         try {
             if(obteAnimalPerNom(ani.getNom())!=null){
-                if(obteCategoriaPerNom(cat.getNom())==null){
+                if(cat.idIndefinit()){
                     afegeixCategoria(cat);
                     cat.setId(obteCategoriaPerNom(cat.getNom()).getId());
 
