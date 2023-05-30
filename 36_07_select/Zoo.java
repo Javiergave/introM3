@@ -324,8 +324,8 @@ public class Zoo {
         String sql = "SELECT ANIMALS.id as id_animal,"+
         " CATEGORIES.nom as nom_categoria "+
  "FROM ANIMALS, CATEGORIES "+
- "WHERE ANIMALS.categoria = CATEGORIES.id "+
- "ORDER BY ANIMALS.id desc limit 1;";
+ "WHERE ANIMALS.categoria = CATEGORIES.id and ANIMALS.nom=\""+nom+
+ "\"ORDER BY ANIMALS.id desc limit 1;";
         Statement st = null;
         try {
 
