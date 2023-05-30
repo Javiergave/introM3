@@ -411,10 +411,16 @@ public class Zoo {
 
     public void canviaCategoria(Animal ani,Categoria cat) throws SQLException{
 
-        
+        String update = String.format("UPDATE ANIMALS " +
+        "SET categoria = %d " +
+        "WHERE id = %d",
+        cat.getId(),
+        ani.getId()
+        );
     
         Statement st = null;
 
+        try {
         if(obteAnimalPerNom(ani.getNom())!=null){
             if(obteCategoriaPerNom(cat.getNom())==null){
                 afegeixCategoria(cat);
@@ -427,16 +433,6 @@ public class Zoo {
             
             afegeixAnimal(ani);
         }
-
-        String update = String.format("UPDATE ANIMALS " +
-        "SET categoria = %d " +
-        "WHERE id = %d",
-        cat.getId(),
-        ani.getId()
-        );
-
-        try {
-    
             st = conn.createStatement();
     
             st.executeUpdate(update);
